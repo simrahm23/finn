@@ -5,7 +5,7 @@ tiers:
 
 base_weight:
   "M&A": 85
-  results: 80
+  results: 70             # in-line results are "worth knowing"; surprises below lift them
   management_change: 60    # refined by role below
   fund_raise: 75
   litigation: 60
@@ -31,10 +31,18 @@ refine:
     upgrade: 60
     reaffirm: 25
   earnings_call:
-    transcript: 45         # transcript adds signal; notices and links do not
+    transcript: 45
+  fund_raise:
+    debt: 35               # NCDs / commercial paper: routine funding, esp. for lenders         # transcript adds signal; notices and links do not
+
+results:
+  pat_yoy_surprise_pct: 20          # |PAT YoY| at or beyond this = a surprise
+  surprise_bonus: 10
+minor_corporate_action: 40          # subsidiary incorporation, strike-off, letter of comfort, timeline extension
+related_filing_cap: 55              # 2nd+ filing about the same results / same person
 
 modifiers:
-  price_move_beyond_threshold: 10   # same-day |return| beyond the user's price threshold
+  price_move_beyond_threshold: 10   # reaction-session |return| beyond threshold; only the top filing per stock-session gets it
   volume_beyond_threshold: 5
   negative_direction: 5             # downgrade, resignation of top role, adverse order
   portfolio_weight_per_pct: 0.5     # +0.5 per % of portfolio weight, max +5

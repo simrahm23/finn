@@ -12,7 +12,8 @@ def test_ordering():
     esop = score("unclassified", "routine", "ESOP allotment", 8, 9.0, 5.0)
     indep = score("management_change", "other_role", "Cessation of independent director", 4, None, None)
     assert cfo_exit[0] > indep[0] > esop[0]
-    assert results[1] == "needs_you" and cfo_exit[1] == "needs_you"
+    assert cfo_exit[1] == "needs_you"
+    assert results[1] == "worth_knowing"                          # in-line results are not urgent
     assert esop[1] == "routine"                                   # routine never escalates
     assert "Top exit" in cfo_exit[2]
 
@@ -21,6 +22,16 @@ def test_price_and_volume_chips():
     s, tier, chips = score("press_release", None, "Order win", 5, 5.4, 3.86)
     assert "Move +5.4%" in chips and "Vol 3.9×" in chips
     assert s == 40 + 10 + 5 + 2.5
+
+
+def test_results_surprise_and_minor_ma():
+    card = {"kind": "results", "verified": True, "metrics": [{"name": "PAT", "yoy_pct": 26.2}]}
+    s, tier, chips = score("results", None, "Q2 results", 7, None, 3.2, card=card)
+    assert tier == "needs_you" and "PAT +26% YoY" in chips          # 70 + 10 surprise + 5 vol + 3.5
+    s2, tier2, chips2 = score("M&A", None, "incorporated a wholly owned subsidiary in Canada", 5, None, None)
+    assert tier2 == "worth_knowing" and chips2[0] == "Group restructuring"
+    s3, *_ = score("press_release", None, "Order win", 5, 5.4, 3.86, market_boost=False)
+    assert s3 == 42.5
 
 
 def test_reaction_session():
@@ -67,3 +78,9 @@ def test_llm_cache_second_call_free(tmp_path, monkeypatch):
     assert len(calls) == 1
     u = client.usage()
     assert u["calls"] == 2 and u["cached"] == 1 and u["tokens_in"] == 10
+
+
+def test_unverified_card_gives_no_surprise():
+    card = {"kind": "results", "verified": False, "metrics": [{"name": "PAT", "yoy_pct": 538.0}]}
+    s, tier, chips = score("results", None, "Q2 results", 0, None, None, card=card)
+    assert s == 70 and not any("PAT" in c for c in chips)

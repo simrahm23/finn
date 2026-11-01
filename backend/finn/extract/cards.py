@@ -6,7 +6,7 @@ import json
 from . import management, results
 
 
-def run(con, max_results_tries: int = 3) -> dict:
+def run(con, max_results_tries: int = 4) -> dict:
     stats = {"results": 0, "management": 0, "skipped": [], "errors": []}
     lender = {r["symbol"]: bool(r["lender"]) for r in con.execute("SELECT symbol, lender FROM companies")}
 

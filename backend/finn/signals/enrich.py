@@ -103,22 +103,63 @@ def _price_index(con) -> dict:
 
 
 def run_materiality(con) -> int:
+    """Score every filing. Two passes: (1) score without market boost; (2) give the reaction-session price/volume
+    boost to the single most material filing per stock-session, and cap 2nd+ filings on the same results/person."""
+    from .. import config
     weights = {r["symbol"]: r["weight"] or 0 for r in con.execute("SELECT symbol, weight FROM companies")}
     prices = _price_index(con)
-    rows = con.execute("SELECT a.id, a.symbol, a.filed_at, a.headline, e.category, e.reasons_json FROM announcements a "
-                       "JOIN ann_enrichment e ON e.ann_id=a.id").fetchall()
+    rows = con.execute("SELECT a.id, a.symbol, a.filed_at, a.headline, e.category, e.reasons_json, e.summary, "
+                       "e.card_json FROM announcements a JOIN ann_enrichment e ON e.ann_id=a.id").fetchall()
+    scored = []
     for r in rows:
         sub = json.loads(r["reasons_json"] or "{}").get("sub")
-        ret = vr = None
+        card = json.loads(r["card_json"]) if r["card_json"] else None
+        ret = vr = sess = None
         if r["symbol"] in prices:
-            dates, m = prices[r["symbol"]]
+            dates, mk = prices[r["symbol"]]
             sess = materiality.reaction_session(r["filed_at"], dates)
             if sess:
-                ret, vr = m[sess]
-        s, tier, reasons = materiality.score(r["category"], sub, r["headline"], weights.get(r["symbol"], 0), ret, vr)
+                ret, vr = mk[sess]
+        text = f"{r['headline']} {r['summary'] or ''}"
+        args = (r["category"], sub, text, weights.get(r["symbol"], 0), ret, vr)
+        s0 = materiality.score(*args, card=card, market_boost=False)
+        scored.append({"r": r, "sub": sub, "card": card, "sess": sess, "ret": ret, "args": args, "res": s0})
+
+    # (2a) market boost to the top filing per (symbol, session)
+    best: dict = {}
+    for x in scored:
+        if x["sess"] and x["res"][1] != "routine":
+            k = (x["r"]["symbol"], x["sess"])
+            rank = (x["r"]["category"] == "results", x["card"] is not None, x["res"][0])  # results explain moves first
+            if k not in best or rank > best[k][0]:
+                best[k] = (rank, x)
+    for _, x in best.values():
+        x["res"] = materiality.score(*x["args"], card=x["card"], market_boost=True)
+
+    # (2b) related filings: one primary per symbol for results, one per person for management changes
+    cap = float(config.rules()["related_filing_cap"])
+    groups: dict = {}
+    for x in scored:
+        r = x["r"]
+        if r["category"] == "results":
+            key = ("results", r["symbol"])
+        elif r["category"] == "management_change" and x["card"]:
+            key = ("mgmt", r["symbol"], x["card"].get("person", "").lower())
+        else:
+            continue
+        groups.setdefault(key, []).append(x)
+    for members in groups.values():
+        members.sort(key=lambda x: (x["card"] is not None, x["res"][0]), reverse=True)
+        for x in members[1:]:
+            s, _, chips = x["res"]
+            if s > cap:
+                x["res"] = materiality.finish(cap, chips[:1] + ["Related filing"])
+
+    for x in scored:
+        s, tier, chips = x["res"]
         con.execute("UPDATE ann_enrichment SET materiality=?, tier=?, reasons_json=? WHERE ann_id=?",
-                    (s, tier, json.dumps({"sub": sub, "chips": reasons, "reaction_pct": ret}), r["id"]))
-    return len(rows)
+                    (s, tier, json.dumps({"sub": x["sub"], "chips": chips, "reaction_pct": x["ret"]}), x["r"]["id"]))
+    return len(scored)
 
 
 def run_summaries(con) -> dict:

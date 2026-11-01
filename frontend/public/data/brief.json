@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-01T16:18:58+05:30",
+ "generated_at": "2026-11-01T16:33:06+05:30",
  "window_max_days": 10,
  "items": [
   {
@@ -273,7 +273,8 @@
    "materiality": 81.5,
    "tier": "needs_you",
    "reasons": [
-    "Results"
+    "Results",
+    "PAT +24% YoY"
    ],
    "summary": "CDSL approved its audited financial results for Q2 and half year ended September 30, 2026.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/CDSL_31102026141138_OutcomeBM31102026_Signed.pdf",
@@ -345,10 +346,10 @@
    "exchange_category": "General Updates",
    "category": "M&A",
    "category_method": "rule",
-   "materiality": 88.5,
-   "tier": "needs_you",
+   "materiality": 43.5,
+   "tier": "worth_knowing",
    "reasons": [
-    "M&A",
+    "Group restructuring",
     "7% of portfolio"
    ],
    "summary": "Larsen & Toubro extended the completion timeline for selling L&T Network Services to Vyoma to March 31, 2027.",
@@ -422,11 +423,11 @@
    "exchange_category": "Investor Presentation",
    "category": "results",
    "category_method": "rule",
-   "materiality": 84.0,
-   "tier": "needs_you",
+   "materiality": 55.0,
+   "tier": "worth_knowing",
    "reasons": [
     "Results",
-    "8% of portfolio"
+    "Related filing"
    ],
    "summary": "Reliance Industries released its investor presentation for the quarter ended September 30, 2026.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/kavinavora_30102026194557_SE_30102026_IP.pdf",
@@ -448,7 +449,7 @@
     "Update",
     "8% of portfolio"
    ],
-   "summary": null,
+   "summary": "Reliance Industries released its un-audited financial results and media release for the period ended September 30, 2026.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/kavinavora_30102026194315_SE_30102026_MR.pdf",
    "price_reaction_pct": null,
    "card": null
@@ -462,8 +463,8 @@
    "exchange_category": "Outcome of Board Meeting",
    "category": "results",
    "category_method": "rule",
-   "materiality": 84.0,
-   "tier": "needs_you",
+   "materiality": 74.0,
+   "tier": "worth_knowing",
    "reasons": [
     "Results",
     "8% of portfolio"
@@ -538,11 +539,11 @@
    "exchange_category": "Outcome of Board Meeting",
    "category": "results",
    "category_method": "rule",
-   "materiality": 84.0,
-   "tier": "needs_you",
+   "materiality": 55.0,
+   "tier": "worth_knowing",
    "reasons": [
     "Results",
-    "8% of portfolio"
+    "Related filing"
    ],
    "summary": "Reliance Industries approved Q2 financial results and authorized non-convertible debentures up to Rs. 15,000 crore.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/kavinavora_30102026193952_SE_30102026_Results.pdf",
@@ -599,7 +600,8 @@
    "materiality": 81.5,
    "tier": "needs_you",
    "reasons": [
-    "Results"
+    "Results",
+    "PAT -45% YoY"
    ],
    "summary": "Dixon Technologies presented Q2 financial results showing revenue up 42% and PAT down 45% to Rs 411 crore.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/DIXON_30102026161836_OutcomewithPPT30102026.pdf",
@@ -704,12 +706,13 @@
    "exchange_category": "Outcome of Board Meeting",
    "category": "results",
    "category_method": "rule",
-   "materiality": 81.5,
-   "tier": "needs_you",
+   "materiality": 55.0,
+   "tier": "worth_knowing",
    "reasons": [
-    "Results"
+    "Results",
+    "Related filing"
    ],
-   "summary": null,
+   "summary": "Dixon Technologies reported consolidated revenue of 21863 crores for the quarter ended September 30, 2026.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/DIXON_30102026160547_Outcome30102026.pdf",
    "price_reaction_pct": null,
    "card": null
@@ -742,11 +745,10 @@
    "exchange_category": "General Updates",
    "category": "unclassified",
    "category_method": "llm",
-   "materiality": 12.5,
+   "materiality": 7.5,
    "tier": "routine",
    "reasons": [
-    "Routine",
-    "Vol 3.4×"
+    "Routine"
    ],
    "summary": null,
    "filing_url": "https://nsearchives.nseindia.com/corporate/SUNSEC_30102026151827_BMOutcome30102026_Conclusion.pdf",
@@ -762,10 +764,10 @@
    "exchange_category": "Allotment of Securities",
    "category": "fund_raise",
    "category_method": "rule",
-   "materiality": 77.5,
-   "tier": "needs_you",
+   "materiality": 37.5,
+   "tier": "routine",
    "reasons": [
-    "Fund raise"
+    "Debt raise"
    ],
    "summary": "Bajaj Finance allotted 2,06,950 secured redeemable non-convertible debentures raising Rs. 2,069.501 crore.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_30102026145301_REG30_Allotment_intimation.pdf",
@@ -781,7 +783,7 @@
    "exchange_category": "Outcome of Board Meeting",
    "category": "results",
    "category_method": "rule",
-   "materiality": 87.5,
+   "materiality": 77.5,
    "tier": "needs_you",
    "reasons": [
     "Results",
@@ -790,7 +792,63 @@
    "summary": "Sun Pharma approved its unaudited financial results for the quarter and half-year ended September 30, 2026.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/SUNSEC_30102026141321_BMOutcomeFinancialoct26signed.pdf",
    "price_reaction_pct": 0.95,
-   "card": null
+   "card": {
+    "kind": "results",
+    "period": "Q2 FY27 (Jul–Sep 2026)",
+    "basis": "consolidated",
+    "unit": "₹ crore",
+    "metrics": [
+     {
+      "name": "Revenue",
+      "applicable": true,
+      "current": 16198.71,
+      "prev_q": 15299.88,
+      "year_ago": 14478.31,
+      "qoq_pct": 5.9,
+      "yoy_pct": 11.9
+     },
+     {
+      "name": "EBITDA",
+      "applicable": true,
+      "current": 3475.06,
+      "prev_q": 4213.58,
+      "year_ago": 3496.53,
+      "qoq_pct": -17.5,
+      "yoy_pct": -0.6
+     },
+     {
+      "name": "PBT",
+      "applicable": true,
+      "current": 3159.37,
+      "prev_q": 4098.81,
+      "year_ago": 3137.09,
+      "qoq_pct": -22.9,
+      "yoy_pct": 0.7
+     },
+     {
+      "name": "PAT",
+      "applicable": true,
+      "current": 19885.3,
+      "prev_q": 2894.79,
+      "year_ago": 3117.95,
+      "qoq_pct": 586.9,
+      "yoy_pct": 537.8
+     }
+    ],
+    "ebitda_formula": "PBT + finance costs + depreciation − other income",
+    "checks": {
+     "verbatim": false,
+     "identities": false,
+     "cross_check": null
+    },
+    "verified": false,
+    "source": {
+     "label": "Results filing p.12",
+     "kind": "filing",
+     "url": "https://nsearchives.nseindia.com/corporate/SUNSEC_30102026141321_BMOutcomeFinancialoct26signed.pdf",
+     "page": 12
+    }
+   }
   },
   {
    "id": "nse:106836184",
@@ -858,11 +916,10 @@
    "exchange_category": "Press Release",
    "category": "press_release",
    "category_method": "rule",
-   "materiality": 47.5,
+   "materiality": 42.5,
    "tier": "worth_knowing",
    "reasons": [
-    "Update",
-    "Vol 3.4×"
+    "Update"
    ],
    "summary": "Sun Pharma announced U.S. approval for ILUMYA to treat adults with active psoriatic arthritis.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/SUNSEC_30102026080437_SE_Intimation_of_Press_Release_ILUMYA_PsA_Approval.pdf",
@@ -897,10 +954,11 @@
    "exchange_category": "Investor Presentation",
    "category": "results",
    "category_method": "rule",
-   "materiality": 82.0,
-   "tier": "needs_you",
+   "materiality": 55.0,
+   "tier": "worth_knowing",
    "reasons": [
-    "Results"
+    "Results",
+    "Related filing"
    ],
    "summary": "Asian Paints issued its investor presentation for the quarter and half-year ended September 30, 2026.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_29102026164544_SEIntimation_Investor_Presentation_Q2FY26-27pdfsigned.pdf",
@@ -916,12 +974,10 @@
    "exchange_category": "Appointment",
    "category": "management_change",
    "category_method": "rule",
-   "materiality": 100.0,
+   "materiality": 92.5,
    "tier": "needs_you",
    "reasons": [
-    "Top hire",
-    "Move +5.4%",
-    "Vol 3.9×"
+    "Top exit"
    ],
    "summary": "Trent announced Chairman Noel N. Tata's retirement and the appointment of Rajiv Dube as Non-Executive Director.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/TRENT_29102026163044_AppointmentofDirector.pdf",
@@ -951,12 +1007,10 @@
    "exchange_category": "Change in Director(s)",
    "category": "management_change",
    "category_method": "rule",
-   "materiality": 62.5,
+   "materiality": 47.5,
    "tier": "worth_knowing",
    "reasons": [
-    "Board change",
-    "Move +5.4%",
-    "Vol 3.9×"
+    "Director exit"
    ],
    "summary": "Chairman Noel N. Tata will retire from Trent on November 11, 2026, and become Chairman Emeritus.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/TRENT_29102026163102_AppointmentofDirector.pdf",
@@ -986,12 +1040,10 @@
    "exchange_category": "Appointment",
    "category": "management_change",
    "category_method": "rule",
-   "materiality": 62.5,
+   "materiality": 47.5,
    "tier": "worth_knowing",
    "reasons": [
-    "Board change",
-    "Move +5.4%",
-    "Vol 3.9×"
+    "Board change"
    ],
    "summary": "Trent appointed Mrs. Kalpana Merchant as a Non-Executive Independent Director, effective October 30, 2026.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/TRENT_29102026163140_AppointmentofDirector.pdf",
@@ -1021,12 +1073,11 @@
    "exchange_category": "Retirement",
    "category": "management_change",
    "category_method": "rule",
-   "materiality": 100.0,
-   "tier": "needs_you",
+   "materiality": 55.0,
+   "tier": "worth_knowing",
    "reasons": [
     "Top exit",
-    "Move +5.4%",
-    "Vol 3.9×"
+    "Related filing"
    ],
    "summary": "Noel N. Tata will retire as Chairman of Trent on November 11, 2026, becoming Chairman Emeritus.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/TRENT_29102026163122_AppointmentofDirector.pdf",
@@ -1056,12 +1107,10 @@
    "exchange_category": "Press Release",
    "category": "press_release",
    "category_method": "rule",
-   "materiality": 57.5,
+   "materiality": 42.5,
    "tier": "worth_knowing",
    "reasons": [
-    "Update",
-    "Move +5.4%",
-    "Vol 3.9×"
+    "Update"
    ],
    "summary": "Trent reported Q2 standalone revenue growth of 23% to Rs 5,788 crore and operating EBITDA growth of 37%.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/TRENT_29102026162053_PressReleaseOct2026.pdf",
@@ -1077,12 +1126,11 @@
    "exchange_category": "Investor Presentation",
    "category": "results",
    "category_method": "rule",
-   "materiality": 97.5,
-   "tier": "needs_you",
+   "materiality": 55.0,
+   "tier": "worth_knowing",
    "reasons": [
     "Results",
-    "Move +5.4%",
-    "Vol 3.9×"
+    "Related filing"
    ],
    "summary": "Trent released an investor presentation on its unaudited financial results for the quarter ended September 30, 2026.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/TRENT_29102026161637_InvestorPresentationQ2FY27.pdf",
@@ -1098,10 +1146,11 @@
    "exchange_category": "Outcome of Board Meeting",
    "category": "results",
    "category_method": "llm",
-   "materiality": 97.5,
+   "materiality": 87.5,
    "tier": "needs_you",
    "reasons": [
     "Results",
+    "PAT +9% YoY",
     "Move +5.4%",
     "Vol 3.9×"
    ],
@@ -1232,11 +1281,10 @@
    "exchange_category": "Press Release",
    "category": "press_release",
    "category_method": "rule",
-   "materiality": 47.0,
+   "materiality": 42.0,
    "tier": "worth_knowing",
    "reasons": [
-    "Update",
-    "Vol 3.7×"
+    "Update"
    ],
    "summary": "Asian Paints issued a press release regarding its financial performance for the quarter ended September 30, 2026.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_29102026141409_OutcomeofBM29102026signed.pdf",
@@ -1252,11 +1300,10 @@
    "exchange_category": "Updates",
    "category": "dividend",
    "category_method": "llm",
-   "materiality": 42.0,
-   "tier": "worth_knowing",
+   "materiality": 37.0,
+   "tier": "routine",
    "reasons": [
-    "Dividend",
-    "Vol 3.7×"
+    "Dividend"
    ],
    "summary": "Asian Paints approved an interim dividend of Rs 5.75 per equity share for FY 2026-27.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_29102026141215_OutcomeofBM29102026signed.pdf",
@@ -1272,10 +1319,11 @@
    "exchange_category": "Outcome of Board Meeting",
    "category": "results",
    "category_method": "rule",
-   "materiality": 87.0,
+   "materiality": 77.0,
    "tier": "needs_you",
    "reasons": [
     "Results",
+    "PAT +7% YoY",
     "Vol 3.7×"
    ],
    "summary": "Asian Paints approved its audited standalone and unaudited consolidated financial results for Q2 FY27.",
@@ -1348,11 +1396,10 @@
    "exchange_category": "Dividend",
    "category": "dividend",
    "category_method": "rule",
-   "materiality": 42.0,
-   "tier": "worth_knowing",
+   "materiality": 37.0,
+   "tier": "routine",
    "reasons": [
-    "Dividend",
-    "Vol 3.7×"
+    "Dividend"
    ],
    "summary": "Asian Paints declared an interim dividend of Rs. 5.75 per equity share for FY 2026-27.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_29102026140642_OutcomeofBM29102026signed.pdf",
@@ -1368,11 +1415,11 @@
    "exchange_category": "Outcome of Board Meeting",
    "category": "results",
    "category_method": "rule",
-   "materiality": 87.0,
-   "tier": "needs_you",
+   "materiality": 55.0,
+   "tier": "worth_knowing",
    "reasons": [
     "Results",
-    "Vol 3.7×"
+    "Related filing"
    ],
    "summary": "Asian Paints approved its Q2 financial results and declared an interim dividend of Rs. 5.75 per share.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_29102026140213_OutcomeofBM29102026signed.pdf",
@@ -1426,10 +1473,10 @@
    "exchange_category": "Other Restructuring",
    "category": "M&A",
    "category_method": "rule",
-   "materiality": 89.0,
-   "tier": "needs_you",
+   "materiality": 44.0,
+   "tier": "worth_knowing",
    "reasons": [
-    "M&A",
+    "Group restructuring",
     "8% of portfolio"
    ],
    "summary": "Reliance Industries announced the voluntary strike off of step-down subsidiary Hamleys (Franchising) Limited in the UK.",
@@ -1614,10 +1661,10 @@
    "exchange_category": "Acquisition",
    "category": "M&A",
    "category_method": "rule",
-   "materiality": 87.5,
-   "tier": "needs_you",
+   "materiality": 42.5,
+   "tier": "worth_knowing",
    "reasons": [
-    "M&A"
+    "Group restructuring"
    ],
    "summary": "Titan Company incorporated Titan Company Canada Inc. as a wholly owned subsidiary in Canada.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/TITAN_28102026134838_SEIntimation_-_Canada_Incorporation.pdf",
@@ -1633,13 +1680,12 @@
    "exchange_category": "Appointment",
    "category": "management_change",
    "category_method": "rule",
-   "materiality": 92.0,
+   "materiality": 87.0,
    "tier": "needs_you",
    "reasons": [
-    "Top hire",
-    "Vol 3.0×"
+    "Top hire"
    ],
-   "summary": null,
+   "summary": "KPIT Technologies announced financial results and the appointment of Mr. Anant Talaulicar to a subsidiary board.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/KPITTECH_28102026132119_1_Outcome.pdf",
    "price_reaction_pct": 3.87,
    "card": {
@@ -1667,13 +1713,12 @@
    "exchange_category": "Giving guarantees/indemnity/ becoming a surety for third party",
    "category": "M&A",
    "category_method": "rule",
-   "materiality": 92.0,
-   "tier": "needs_you",
+   "materiality": 42.0,
+   "tier": "worth_knowing",
    "reasons": [
-    "M&A",
-    "Vol 3.0×"
+    "Group restructuring"
    ],
-   "summary": null,
+   "summary": "KPIT Technologies issued financial results and a letter of comfort for its UK subsidiary.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/KPITTECH_28102026132739_1_Outcome.pdf",
    "price_reaction_pct": 3.87,
    "card": null
@@ -1687,13 +1732,12 @@
    "exchange_category": "Acquisition",
    "category": "M&A",
    "category_method": "rule",
-   "materiality": 92.0,
-   "tier": "needs_you",
+   "materiality": 42.0,
+   "tier": "worth_knowing",
    "reasons": [
-    "M&A",
-    "Vol 3.0×"
+    "Group restructuring"
    ],
-   "summary": null,
+   "summary": "KPIT Technologies approved financial results and the incorporation of a new wholly-owned subsidiary in Vietnam.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/KPITTECH_28102026132356_1_Outcome.pdf",
    "price_reaction_pct": 3.87,
    "card": null
@@ -1707,13 +1751,12 @@
    "exchange_category": "Sale or disposal",
    "category": "M&A",
    "category_method": "rule",
-   "materiality": 92.0,
-   "tier": "needs_you",
+   "materiality": 42.0,
+   "tier": "worth_knowing",
    "reasons": [
-    "M&A",
-    "Vol 3.0×"
+    "Group restructuring"
    ],
-   "summary": null,
+   "summary": "KPIT Technologies reported financial results and approved the strike-off of its step-down subsidiary Somit Solutions Limited.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/KPITTECH_28102026132555_1_Outcome.pdf",
    "price_reaction_pct": 3.87,
    "card": null
@@ -1727,11 +1770,10 @@
    "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
    "category": "investor_meetings",
    "category_method": "rule",
-   "materiality": 22.0,
+   "materiality": 17.0,
    "tier": "routine",
    "reasons": [
-    "Investor meet",
-    "Vol 3.0×"
+    "Investor meet"
    ],
    "summary": null,
    "filing_url": "https://nsearchives.nseindia.com/corporate/KPITTECH_28102026131505_Investor_Presentation_Sept_2026_Signed.pdf",
@@ -1747,11 +1789,11 @@
    "exchange_category": "Outcome of Board Meeting",
    "category": "results",
    "category_method": "llm",
-   "materiality": 87.0,
-   "tier": "needs_you",
+   "materiality": 55.0,
+   "tier": "worth_knowing",
    "reasons": [
     "Results",
-    "Vol 3.0×"
+    "Related filing"
    ],
    "summary": "KPIT Technologies approved its unaudited financial results for the quarter and half year ended September 30, 2026.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/KPITTECH_28102026125528_1_Outcome.pdf",
@@ -1771,6 +1813,7 @@
    "tier": "needs_you",
    "reasons": [
     "Results",
+    "PAT -29% YoY",
     "Vol 3.0×"
    ],
    "summary": "KPIT Technologies approved Q2 financial results and appointed Anant Talaulicar to its US subsidiary's board.",
@@ -1900,11 +1943,10 @@
    "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
    "category": "investor_meetings",
    "category_method": "rule",
-   "materiality": 23.5,
+   "materiality": 18.5,
    "tier": "routine",
    "reasons": [
     "Investor meet",
-    "Vol 3.2×",
     "7% of portfolio"
    ],
    "summary": null,
@@ -1921,11 +1963,11 @@
    "exchange_category": "General Updates",
    "category": "results",
    "category_method": "llm",
-   "materiality": 84.0,
-   "tier": "needs_you",
+   "materiality": 55.0,
+   "tier": "worth_knowing",
    "reasons": [
     "Results",
-    "8% of portfolio"
+    "Related filing"
    ],
    "summary": "Reliance Industries announced that Jio Platforms equity shares will commence trading on October 28, 2026.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/kavinavora_27102026220855_RIL_SELETTER_271026.pdf",
@@ -1960,11 +2002,10 @@
    "exchange_category": "General Updates",
    "category": "unclassified",
    "category_method": "llm",
-   "materiality": 12.0,
+   "materiality": 7.0,
    "tier": "routine",
    "reasons": [
-    "Routine",
-    "Vol 3.0×"
+    "Routine"
    ],
    "summary": null,
    "filing_url": "https://nsearchives.nseindia.com/corporate/KPITTECH_27102026194517_NRC_Outcome_October_2026_S.pdf",
@@ -2038,12 +2079,11 @@
    "exchange_category": "Updates",
    "category": "results",
    "category_method": "llm",
-   "materiality": 88.5,
-   "tier": "needs_you",
+   "materiality": 55.0,
+   "tier": "worth_knowing",
    "reasons": [
     "Results",
-    "Vol 3.2×",
-    "7% of portfolio"
+    "Related filing"
    ],
    "summary": "Larsen & Toubro shared its analyst presentation for the Q2 and H1 FY27 financial results.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/PAM_27102026183653_AnalystPresentationSep2026.pdf",
@@ -2082,6 +2122,7 @@
    "tier": "needs_you",
    "reasons": [
     "Results",
+    "PAT +26% YoY",
     "Vol 3.2×",
     "7% of portfolio"
    ],
@@ -2174,10 +2215,11 @@
    "exchange_category": "Investor Presentation",
    "category": "results",
    "category_method": "rule",
-   "materiality": 82.5,
-   "tier": "needs_you",
+   "materiality": 55.0,
+   "tier": "worth_knowing",
    "reasons": [
-    "Results"
+    "Results",
+    "Related filing"
    ],
    "summary": "Maruti Suzuki submitted an investor presentation on financial results for the quarter ended September 30, 2026.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/MARUTI_27102026154352_STxIntimation_InvestorPresentation_27Oct2026.pdf",
@@ -2212,8 +2254,8 @@
    "exchange_category": "Outcome of Board Meeting",
    "category": "results",
    "category_method": "rule",
-   "materiality": 82.5,
-   "tier": "needs_you",
+   "materiality": 72.5,
+   "tier": "worth_knowing",
    "reasons": [
     "Results"
    ],
@@ -2229,13 +2271,12 @@
    "filed_at": "2026-10-27T13:29:18+05:30",
    "headline": "Larsen & Toubro Limited has informed the Exchange regarding allotment of 21098 securities pursuant to ESOP/ESPS at its meeting held on October 27, 2026",
    "exchange_category": "Allotment of Securities",
-   "category": "fund_raise",
+   "category": "unclassified",
    "category_method": "rule",
-   "materiality": 78.5,
-   "tier": "needs_you",
+   "materiality": 5.0,
+   "tier": "routine",
    "reasons": [
-    "Fund raise",
-    "7% of portfolio"
+    "Routine"
    ],
    "summary": "Larsen & Toubro allotted 21,098 equity shares to employees exercising options under stock option schemes.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/PAM_27102026132854_ESOPAllotment27102026.pdf",
@@ -2251,10 +2292,10 @@
    "exchange_category": "Acquisition",
    "category": "M&A",
    "category_method": "rule",
-   "materiality": 87.5,
-   "tier": "needs_you",
+   "materiality": 42.5,
+   "tier": "worth_knowing",
    "reasons": [
-    "M&A"
+    "Group restructuring"
    ],
    "summary": "Maruti Suzuki approved incorporating OSAMU SUZUKI CENTRE OF EXCELLENCE FOUNDATION as a wholly owned subsidiary.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/MARUTI_27102026131704_Letter_to_Exchange.pdf",
@@ -2438,10 +2479,10 @@
    "exchange_category": "Allotment of Securities",
    "category": "fund_raise",
    "category_method": "rule",
-   "materiality": 77.5,
-   "tier": "needs_you",
+   "materiality": 37.5,
+   "tier": "routine",
    "reasons": [
-    "Fund raise"
+    "Debt raise"
    ],
    "summary": "Sun Pharma allotted non-convertible debentures worth INR 7,816 crore on a private placement basis.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/SUNSEC_26102026122925_SE_Intimation_of_allotment_of_NCDs_26_Oct_2026.pdf",
@@ -2579,7 +2620,7 @@
    "reasons": [
     "Transcript"
    ],
-   "summary": null,
+   "summary": "Persistent Systems submitted the transcript of the investor call held on October 15, 2026.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/PERSISTENTUSER1_23102026204328_PSLTranscriptSubmissionOctober2026Sd.pdf",
    "price_reaction_pct": 2.14,
    "card": null
@@ -2593,10 +2634,11 @@
    "exchange_category": "Updates",
    "category": "results",
    "category_method": "llm",
-   "materiality": 83.0,
-   "tier": "needs_you",
+   "materiality": 55.0,
+   "tier": "worth_knowing",
    "reasons": [
-    "Results"
+    "Results",
+    "Related filing"
    ],
    "summary": "Infosys submitted auditor reports with UDIN for its financial statements for the period ended September 30, 2026.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/Infosys_23102026200652_SE_filing_Auditors_report_with_UDIN.pdf",
@@ -2746,15 +2788,72 @@
    "exchange_category": "Outcome of Board Meeting",
    "category": "results",
    "category_method": "rule",
-   "materiality": 83.0,
-   "tier": "needs_you",
+   "materiality": 73.0,
+   "tier": "worth_knowing",
    "reasons": [
-    "Results"
+    "Results",
+    "PAT +6% YoY"
    ],
    "summary": "Infosys declared an interim dividend of ₹ 26 per share and approved granting 9,640 restricted stock units.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/Infosys_23102026160704_BM_Outcome_Oct232026_1.pdf",
    "price_reaction_pct": 1.06,
-   "card": null
+   "card": {
+    "kind": "results",
+    "period": "Q2 FY27 (Jul–Sep 2026)",
+    "basis": "consolidated",
+    "unit": "₹ crore",
+    "metrics": [
+     {
+      "name": "Revenue",
+      "applicable": true,
+      "current": 25483.0,
+      "prev_q": 25287.0,
+      "year_ago": 45472.0,
+      "qoq_pct": 0.8,
+      "yoy_pct": -44.0
+     },
+     {
+      "name": "EBITDA",
+      "applicable": true,
+      "current": 8144.0,
+      "prev_q": 8212.0,
+      "year_ago": -11921.0,
+      "qoq_pct": -0.8,
+      "yoy_pct": null
+     },
+     {
+      "name": "PBT",
+      "applicable": true,
+      "current": 11063.0,
+      "prev_q": 11028.0,
+      "year_ago": 10229.0,
+      "qoq_pct": 0.3,
+      "yoy_pct": 8.2
+     },
+     {
+      "name": "PAT",
+      "applicable": true,
+      "current": 7838.0,
+      "prev_q": 7775.0,
+      "year_ago": 7375.0,
+      "qoq_pct": 0.8,
+      "yoy_pct": 6.3
+     }
+    ],
+    "ebitda_formula": "PBT + finance costs + depreciation − other income",
+    "checks": {
+     "verbatim": true,
+     "identities": true,
+     "cross_check": null
+    },
+    "verified": true,
+    "source": {
+     "label": "Results filing p.18",
+     "kind": "filing",
+     "url": "https://nsearchives.nseindia.com/corporate/Infosys_23102026160704_BM_Outcome_Oct232026_1.pdf",
+     "page": 18
+    }
+   }
   },
   {
    "id": "nse:106826278",

@@ -62,3 +62,9 @@ def test_earnings_call_and_others():
 def test_general_updates_keywords():
     assert cat("General Updates", NSE_ROW["attchmntText"])[0] == "M&A"
     assert cat("General Updates", "Clarification on news item") is None
+
+
+def test_esop_and_debt():
+    assert cat("Allotment of Securities", "allotment of 21098 securities pursuant to ESOP/ESPS") == ("unclassified", "routine")
+    assert cat("Allotment of Securities", "allotment of 2,06,950 Non Convertible Debentures") == ("fund_raise", "debt")
+    assert cat("Allotment of Securities", "allotment pursuant to Qualified Institutions Placement") == ("fund_raise", None)

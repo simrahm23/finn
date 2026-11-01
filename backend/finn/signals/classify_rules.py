@@ -51,7 +51,7 @@ def classify(exchange_category: str, headline: str) -> Optional[Rule]:
     desc, text = exchange_category or "", headline or ""
     both = f"{desc} {text}"
 
-    if any(_has(p, desc) for p in ROUTINE_DESC):
+    if any(_has(p, desc) for p in ROUTINE_DESC) or _has(r"\b(esop|esos|esps|employee stock option)", both):
         return Rule("unclassified", 0.95, "routine")
 
     # Earnings call: transcript beats notice/recording.
@@ -88,6 +88,8 @@ def classify(exchange_category: str, headline: str) -> Optional[Rule]:
             if cat == "credit_rating":
                 sub = "downgrade" if _has(r"downgrad|negative", text) else "upgrade" if _has(r"upgrad", text) \
                     else "reaffirm" if _has(r"reaffirm|retain", text) else None
+            if cat == "fund_raise" and _has(r"non[- ]convertible|\bncds?\b|commercial paper|debenture|bonds?", text):
+                sub = "debt"
             return Rule(cat, conf, sub)
 
     # Generic NSE buckets ("General Updates", "Updates") - only clear keywords, else LLM.

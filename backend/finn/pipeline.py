@@ -5,6 +5,7 @@
   validate           check every JSON file in frontend/public/data against the contracts
   prices             ingest EOD prices (yfinance, bhavcopy fallback) + write prices.json   (A1)
   push [--days N]    ingest NSE filings, rules -> LLM -> materiality -> summaries; prints the ranked Brief
+  debug-pdf SYMBOL   show why a results PDF did or didn't yield a card
   gold-template      write 60 filings to tests/gold/announcements.csv for hand-labelling
   export             write brief.json / prices.json / meta.json from the DB (push does this too)
   research SYMBOL    build the research pack for one ticker                           (A8-A11)
@@ -103,6 +104,8 @@ def cmd_push(args) -> None:
         with db.session() as con:
             st = cards.run(con)
         print(f"Cards: {st['results']} results, {st['management']} management")
+        with db.session() as con:
+            enrich.run_materiality(con)          # re-score: results surprises and related filings need the cards
         for x in st["skipped"]:
             print(f"  skipped {x}")
         for x in st["errors"]:
@@ -154,6 +157,29 @@ def cmd_gold_template(args) -> None:
     print(f"Wrote {min(args.n, len(rows))} rows to {out}. Fill the `label` column with one of the 17 categories.")
 
 
+def cmd_debug_pdf(args) -> None:
+    """Why did a results card fail? Prints per-page text size and keyword hits for one filing URL or symbol."""
+    from .extract.results import _sq, pick_page
+    from .ingest import documents
+    urls = [args.target]
+    if not args.target.startswith("http"):
+        with db.session() as con:
+            urls = [r[0] for r in con.execute("SELECT a.attachment_url FROM announcements a JOIN ann_enrichment e ON "
+                                              "e.ann_id=a.id WHERE a.symbol=? AND e.category='results' ORDER BY a.filed_at DESC",
+                                              (args.target.upper(),))]
+    for url in urls:
+        path = documents.fetch_pdf(url)
+        print(f"\n{url}\n  downloaded: {bool(path)}")
+        if not path:
+            continue
+        texts = documents.page_texts(path, 60)
+        print(f"  pages: {len(texts)}, picked page: {None if pick_page(texts) is None else pick_page(texts) + 1}")
+        for i, t in enumerate(texts[:12]):
+            q = _sq(t)
+            hits = [k for k in ("beforetax", "revenuefromoperations", "totalincome", "consolidated", "quarterended") if k in q]
+            print(f"  p{i + 1:<3} {len(t):>6} chars  {hits}  {t[:80].strip()!r}")
+
+
 def cmd_export(_args) -> None:
     from . import export
     out = export.write_all()
@@ -185,6 +211,9 @@ def main(argv: list[str] | None = None) -> None:
     g.add_argument("--n", type=int, default=60)
     g.set_defaults(fn=cmd_gold_template)
     sub.add_parser("export").set_defaults(fn=cmd_export)
+    dp = sub.add_parser("debug-pdf")
+    dp.add_argument("target", help="a filing URL, or a symbol (checks its results filings)")
+    dp.set_defaults(fn=cmd_debug_pdf)
     r = sub.add_parser("research")
     r.add_argument("symbol")
     r.set_defaults(fn=_todo("A8-A11"))

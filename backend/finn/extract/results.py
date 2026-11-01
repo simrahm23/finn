@@ -23,20 +23,32 @@ SCHEMA = {"type": "object", "properties": {
     "required": ["found", "basis", "unit", "current_period_end", "lines"]}
 
 
+def _sq(t: str) -> str:
+    return re.sub(r"[^a-z]", "", t.lower())
+
+
 def pick_page(texts: list[str]) -> Optional[int]:
-    """Best page for the quarterly table: has revenue/total income AND profit before tax; prefer consolidated."""
+    """Best page for the quarterly table. Matching ignores spaces/punctuation, so 'Profit / (Loss) before Tax'
+    and words split across lines still match. Prefers consolidated, quarter columns, revenue line."""
     best, best_score = None, 0
     for i, t in enumerate(texts):
-        low = t.lower()
-        if "profit before tax" not in low and "profit/(loss) before tax" not in low:
+        q = _sq(t)
+        if "beforetax" not in q and "beforeexceptionalitemsandtax" not in q:
             continue
         s = 1
-        s += 2 if ("revenue from operations" in low or "interest earned" in low or "total income" in low) else 0
-        s += 2 if "consolidated" in low else 0
-        s += 1 if "quarter ended" in low or "three months ended" in low else 0
+        s += 2 if any(k in q for k in ("revenuefromoperations", "interestearned", "totalincome", "incomefromoperations",
+                                       "totalrevenue")) else 0
+        s += 2 if "consolidated" in q else 0
+        s += 1 if any(k in q for k in ("quarterended", "threemonthsended", "quarterending")) else 0
+        s += 1 if "netprofit" in q or "profitfortheperiod" in q or "profitafter" in q else 0
         if s > best_score:
             best, best_score = i, s
     return best if best_score >= 3 else None
+
+
+def text_stats(texts: list[str]) -> dict:
+    return {"pages": len(texts), "text_chars": sum(len(t) for t in texts),
+            "pages_with_before_tax": [i + 1 for i, t in enumerate(texts) if "beforetax" in _sq(t)]}
 
 
 def build_card(raw: dict, page_text: str, url: str, page_no: int, lender: bool) -> c.ResultsCard | None:
@@ -82,10 +94,13 @@ def extract(url: str, lender: bool = False) -> tuple[c.ResultsCard | None, str]:
     path = documents.fetch_pdf(url)
     if not path:
         return None, "pdf unavailable"
-    texts = documents.page_texts(path, 40)
+    texts = documents.page_texts(path, 60)
     i = pick_page(texts)
     if i is None:
-        return None, "no results table found (scanned or not a results statement)"
+        st = text_stats(texts)
+        why = "scanned PDF (no text)" if st["text_chars"] < 300 * max(1, st["pages"]) // 3 else \
+            f"no results table ({st['pages']} pages, 'before tax' on {st['pages_with_before_tax'] or 'none'})"
+        return None, why
     page_text = texts[i] + ("\n" + texts[i + 1] if i + 1 < len(texts) and "profit" not in texts[i].lower()[-800:] else "")
     raw = llm.generate_json("results", {"page_text": re.sub(r"[ \t]+", " ", page_text)[:9000]}, SCHEMA,
                             purpose="results")
