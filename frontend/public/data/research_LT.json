@@ -3,7 +3,7 @@
  "name": "Larsen & Toubro Ltd",
  "sector": "Capital Goods",
  "status": "ready",
- "built_at": "2026-11-01T17:28:50+05:30",
+ "built_at": "2026-11-01T19:18:28+05:30",
  "mock": false,
  "snapshot": {
   "kpis": [
@@ -157,6 +157,11 @@
     "repeated_in": [
      "Q1 FY27"
     ],
+    "tracking": {
+     "through": "H1 FY27",
+     "value": 11.4,
+     "status": "on_track"
+    },
     "verdict": "pending",
     "quote": "On Revenue, we expect growth to be in the range of 10% to 12% for FY27.",
     "source": {
@@ -181,6 +186,7 @@
     "repeated_in": [
      "Q1 FY27"
     ],
+    "tracking": null,
     "verdict": "pending",
     "quote": "Based on this visibility and the opportunities we are pursuing, we expect the group order inflows to grow in the range of 10% to 12% in FY27.",
     "source": {
@@ -203,6 +209,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "pending",
     "quote": "Coming on to margin: In line with our Revenue growth guidance, we continue to target the margin of around 7.8% for FY '27 with respect to the PPM portfolio.",
     "source": {
@@ -227,6 +234,7 @@
     "repeated_in": [
      "Q1 FY27"
     ],
+    "tracking": null,
     "verdict": "pending",
     "quote": "Accordingly, we are guiding the working capital to be around 10% in FY27, which remains well within our targeted range.",
     "source": {
@@ -252,6 +260,7 @@
      "Q2 FY26",
      "Q3 FY26"
     ],
+    "tracking": null,
     "verdict": "unverifiable",
     "quote": "With respect to the margins in the Projects and Manufacturing portfolio, we are targeting 8.5% for the year of FY26...",
     "source": {
@@ -274,6 +283,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "unverifiable",
     "quote": "However, with stronger collection intensity and improved contractual terms, our Net Working Capital to Revenue has improved sharply to 8.2% as of December '25, and we expect to close the year with a revised target of around 10%.",
     "source": {
@@ -304,6 +314,7 @@
      "Q1 FY26",
      "Q3 FY26"
     ],
+    "tracking": null,
     "verdict": "met",
     "quote": "We expect our group order inflows and group revenues to grow at 10% and 15% respectively for a FY26.",
     "source": {
@@ -329,6 +340,7 @@
      "Q1 FY26",
      "Q2 FY26"
     ],
+    "tracking": null,
     "verdict": "missed",
     "quote": "We expect our group order inflows and group revenues to grow at 10% and 15% respectively for a FY26.",
     "source": {
@@ -356,6 +368,7 @@
      "page": 5
     },
     "repeated_in": [],
+    "tracking": null,
     "verdict": "met",
     "quote": "We are confident of exceeding our full year FY '26 guidance of 10% growth in group order inflows for the current year.",
     "source": {
@@ -378,6 +391,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "unverifiable",
     "quote": "With respect to the margin in the Projects and Manufacturing portfolio, we continue to target the 8.3% to 8.5% range for the full year FY26.",
     "source": {
@@ -400,6 +414,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "unverifiable",
     "quote": "Our Net Working Capital-to-Revenue guidance for March ‘26 remains at 12%.",
     "source": {
@@ -422,6 +437,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "unverifiable",
     "quote": "...and our Net Working Capital to Revenue guidance for March '26 is at 12%.",
     "source": {
@@ -446,6 +462,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "pending",
     "quote": "On this reclassified basis, the FY26 margins for Projects, Products and Manufacturing was 7.8%, and we expect the same to be stable as well in FY27 as well.",
     "source": {
@@ -468,6 +485,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "unverifiable",
     "quote": "Over the next five years, we are targeting order inflow growth at a CAGR return of 10% to 12%, revenue growth of 12% to 15%, and a Return on Equity in the range of 16% to 17%.",
     "source": {
@@ -490,6 +508,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "unverifiable",
     "quote": "The Lakshya L31 targets 13% to 15% revenue CAGR growth for over five years with EBIT margins of 16% to 17%, reflecting a structurally stronger and higher-quality growth profile.",
     "source": {
@@ -554,109 +573,109 @@
  ],
  "build_log": [
   {
-   "ts": "2026-11-01T17:27:27+05:30",
+   "ts": "2026-11-01T19:17:06+05:30",
    "step": "screener",
    "status": "running",
    "detail": "financial tables + document links"
   },
   {
-   "ts": "2026-11-01T17:27:28+05:30",
+   "ts": "2026-11-01T19:17:07+05:30",
    "step": "screener",
    "status": "done",
    "detail": "Larsen & Toubro Ltd (consolidated); 35 transcripts listed"
   },
   {
-   "ts": "2026-11-01T17:27:28+05:30",
+   "ts": "2026-11-01T19:17:07+05:30",
    "step": "snapshot",
    "status": "done",
    "detail": "10 years; missing: nothing"
   },
   {
-   "ts": "2026-11-01T17:27:28+05:30",
+   "ts": "2026-11-01T19:17:07+05:30",
    "step": "guidance",
    "status": "running",
    "detail": "Q1 FY27 transcript"
   },
   {
-   "ts": "2026-11-01T17:27:30+05:30",
+   "ts": "2026-11-01T19:17:09+05:30",
    "step": "guidance",
    "status": "done",
    "detail": "Q1 FY27: 4/4 statements kept"
   },
   {
-   "ts": "2026-11-01T17:27:30+05:30",
+   "ts": "2026-11-01T19:17:09+05:30",
    "step": "guidance",
    "status": "running",
    "detail": "Q4 FY26 transcript"
   },
   {
-   "ts": "2026-11-01T17:27:30+05:30",
+   "ts": "2026-11-01T19:17:09+05:30",
    "step": "guidance",
    "status": "done",
    "detail": "Q4 FY26: 6/6 statements kept"
   },
   {
-   "ts": "2026-11-01T17:27:30+05:30",
+   "ts": "2026-11-01T19:17:09+05:30",
    "step": "guidance",
    "status": "running",
    "detail": "Q3 FY26 transcript"
   },
   {
-   "ts": "2026-11-01T17:27:30+05:30",
+   "ts": "2026-11-01T19:17:09+05:30",
    "step": "guidance",
    "status": "done",
    "detail": "Q3 FY26: 3/4 statements kept"
   },
   {
-   "ts": "2026-11-01T17:27:30+05:30",
+   "ts": "2026-11-01T19:17:09+05:30",
    "step": "guidance",
    "status": "running",
    "detail": "Q2 FY26 transcript"
   },
   {
-   "ts": "2026-11-01T17:27:30+05:30",
+   "ts": "2026-11-01T19:17:09+05:30",
    "step": "guidance",
    "status": "done",
    "detail": "Q2 FY26: 3/3 statements kept"
   },
   {
-   "ts": "2026-11-01T17:27:30+05:30",
+   "ts": "2026-11-01T19:17:09+05:30",
    "step": "guidance",
    "status": "running",
    "detail": "Q1 FY26 transcript"
   },
   {
-   "ts": "2026-11-01T17:27:31+05:30",
+   "ts": "2026-11-01T19:17:09+05:30",
    "step": "guidance",
    "status": "done",
    "detail": "Q1 FY26: 4/4 statements kept"
   },
   {
-   "ts": "2026-11-01T17:27:31+05:30",
+   "ts": "2026-11-01T19:17:09+05:30",
    "step": "guidance",
    "status": "running",
    "detail": "Q4 FY25 transcript"
   },
   {
-   "ts": "2026-11-01T17:27:31+05:30",
+   "ts": "2026-11-01T19:17:10+05:30",
    "step": "guidance",
    "status": "done",
    "detail": "Q4 FY25: 4/4 statements kept"
   },
   {
-   "ts": "2026-11-01T17:27:31+05:30",
+   "ts": "2026-11-01T19:17:10+05:30",
    "step": "actuals",
    "status": "done",
    "detail": "Q4 FY26 call: 4/8 actuals found"
   },
   {
-   "ts": "2026-11-01T17:27:31+05:30",
+   "ts": "2026-11-01T19:17:10+05:30",
    "step": "promises",
    "status": "done",
    "detail": "merged 9 restated promises"
   },
   {
-   "ts": "2026-11-01T17:28:50+05:30",
+   "ts": "2026-11-01T19:18:28+05:30",
    "step": "promises",
    "status": "done",
    "detail": "12 measurable (2 met, 0 partly, 1 missed, 4 pending, 5 can't check); 3 qualitative"

@@ -1,0 +1,450 @@
+{
+ "symbol": "TITAN",
+ "name": "Titan Company Ltd",
+ "sector": "Consumer",
+ "status": "ready",
+ "built_at": "2026-11-01T19:25:13+05:30",
+ "mock": false,
+ "snapshot": {
+  "kpis": [
+   {
+    "label": "Revenue (TTM)",
+    "value": 92417.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/TITAN/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Operating margin",
+    "value": 10.0,
+    "unit": "%",
+    "period": "FY26",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/TITAN/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Net profit (TTM)",
+    "value": 5760.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/TITAN/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "ROCE",
+    "value": 20.5,
+    "unit": "%",
+    "period": "latest",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/TITAN/consolidated/",
+     "page": null
+    }
+   }
+  ],
+  "years": [
+   "FY17",
+   "FY18",
+   "FY19",
+   "FY20",
+   "FY21",
+   "FY22",
+   "FY23",
+   "FY24",
+   "FY25",
+   "FY26"
+  ],
+  "revenue": [
+   13261.0,
+   16120.0,
+   19779.0,
+   21052.0,
+   21644.0,
+   28799.0,
+   40575.0,
+   51084.0,
+   60456.0,
+   87584.0
+  ],
+  "ebitda_margin_pct": [
+   9.0,
+   10.0,
+   10.0,
+   12.0,
+   8.0,
+   12.0,
+   12.0,
+   10.0,
+   9.0,
+   10.0
+  ],
+  "cfo": [
+   1712.0,
+   -51.0,
+   1243.0,
+   -348.0,
+   4139.0,
+   -724.0,
+   1370.0,
+   1695.0,
+   -541.0,
+   5590.0
+  ],
+  "pat": [
+   697.0,
+   1102.0,
+   1389.0,
+   1493.0,
+   974.0,
+   2198.0,
+   3274.0,
+   3496.0,
+   3337.0,
+   5073.0
+  ],
+  "cash_conversion_pct": [
+   246.0,
+   -5.0,
+   89.0,
+   -23.0,
+   425.0,
+   -33.0,
+   42.0,
+   48.0,
+   -16.0,
+   110.0
+  ],
+  "debt_to_equity": 1.95,
+  "business": null,
+  "business_source": null,
+  "missing": []
+ },
+ "promises": {
+  "scorecard": {
+   "met": 0,
+   "partly": 0,
+   "missed": 0,
+   "pending": 0,
+   "unverifiable": 5
+  },
+  "items": [
+   {
+    "id": "p2",
+    "said_in": "Q2 FY26",
+    "target_period": "FY26",
+    "metric": "revenue_growth (segment)",
+    "target_text": "Eyewear revenue growth of 13-14% in FY26",
+    "target_low": 13.0,
+    "target_high": 14.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "So as far as our growth outlook is concerned, we believe that we should be closing this year at a slightly higher number than what you are seeing, anywhere between 13% to 14%.",
+    "source": {
+     "label": "Q2 FY26 transcript p.9",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c3a5d70a-78ac-4407-aed7-e06b93e17a8f.pdf",
+     "page": 9
+    }
+   },
+   {
+    "id": "p5",
+    "said_in": "Q4 FY25",
+    "target_period": "FY26",
+    "metric": "ebitda_margin (segment)",
+    "target_text": "Jewellery margin guidance of 11% to 11.5%",
+    "target_low": 11.0,
+    "target_high": 11.5,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [
+     "Q1 FY26"
+    ],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "As far as coming to 11% to 11.5% margin guidance, I think that stays. We are not guiding you for any upside.",
+    "source": {
+     "label": "Q4 FY25 transcript p.6",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=0dac2b9f-43e8-45a3-b740-77eb219ad965.pdf",
+     "page": 6
+    }
+   },
+   {
+    "id": "p4",
+    "said_in": "Q1 FY26",
+    "target_period": "FY26",
+    "metric": "ebitda_margin (segment)",
+    "target_text": "Mid-teen EBIT margin for watches division for full year FY26",
+    "target_low": 15.0,
+    "target_high": null,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "I think we are hopeful that mid-teen kind of number we should be able to deliver full year basis for FY ‘26.",
+    "source": {
+     "label": "Q1 FY26 transcript p.10",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=91e6dc31-44a8-4bae-bea2-9f10e08c8dec.pdf",
+     "page": 10
+    }
+   },
+   {
+    "id": "p6",
+    "said_in": "Q4 FY25",
+    "target_period": "FY26",
+    "metric": "revenue_growth (segment)",
+    "target_text": "Targeting high double-digit growth for jewellery",
+    "target_low": 15.0,
+    "target_high": null,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "certainly, we are targeting and we are preparing and aiming for these high double-digit growths.",
+    "source": {
+     "label": "Q4 FY25 transcript p.6",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=0dac2b9f-43e8-45a3-b740-77eb219ad965.pdf",
+     "page": 6
+    }
+   },
+   {
+    "id": "p7",
+    "said_in": "Q4 FY25",
+    "target_period": "FY26",
+    "metric": "other (segment)",
+    "target_text": "Opening 40 to 50 Tanishq stores in FY26",
+    "target_low": 40.0,
+    "target_high": 50.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "40 to 50 stores.",
+    "source": {
+     "label": "Q4 FY25 transcript p.13",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=0dac2b9f-43e8-45a3-b740-77eb219ad965.pdf",
+     "page": 13
+    }
+   }
+  ],
+  "qualitative": [
+   {
+    "id": "p1",
+    "said_in": "Q4 FY26",
+    "target_period": "unspecified",
+    "metric": "revenue_growth (segment)",
+    "target_text": "Jewellery revenue growth of 15% to 20%",
+    "target_low": 15.0,
+    "target_high": 20.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "I think in the past, we have said between 15% to 20%. So, in a sense, that holds good and we hope to do that and maybe do a bit better.",
+    "source": {
+     "label": "Q4 FY26 transcript p.8",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1a3bc0e3-c7ff-4887-a18a-f73fd400e8ca.pdf",
+     "page": 8
+    }
+   }
+  ],
+  "commentary": null
+ },
+ "documents": [
+  {
+   "id": "t0",
+   "kind": "transcript",
+   "period": "Q1 FY27",
+   "title": "Q1 FY27 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f70a0a33-43cf-40b6-a753-67b06123e8de.pdf",
+   "pages": null
+  },
+  {
+   "id": "t1",
+   "kind": "transcript",
+   "period": "Q4 FY26",
+   "title": "Q4 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1a3bc0e3-c7ff-4887-a18a-f73fd400e8ca.pdf",
+   "pages": null
+  },
+  {
+   "id": "t2",
+   "kind": "transcript",
+   "period": "Q3 FY26",
+   "title": "Q3 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=0ee5b68b-8f66-4705-9a84-9debaa9aae1d.pdf",
+   "pages": null
+  },
+  {
+   "id": "t3",
+   "kind": "transcript",
+   "period": "Q2 FY26",
+   "title": "Q2 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c3a5d70a-78ac-4407-aed7-e06b93e17a8f.pdf",
+   "pages": null
+  },
+  {
+   "id": "t4",
+   "kind": "transcript",
+   "period": "Q1 FY26",
+   "title": "Q1 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=91e6dc31-44a8-4bae-bea2-9f10e08c8dec.pdf",
+   "pages": null
+  },
+  {
+   "id": "t5",
+   "kind": "transcript",
+   "period": "Q4 FY25",
+   "title": "Q4 FY25 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=0dac2b9f-43e8-45a3-b740-77eb219ad965.pdf",
+   "pages": null
+  }
+ ],
+ "build_log": [
+  {
+   "ts": "2026-11-01T19:25:12+05:30",
+   "step": "screener",
+   "status": "running",
+   "detail": "financial tables + document links"
+  },
+  {
+   "ts": "2026-11-01T19:25:12+05:30",
+   "step": "screener",
+   "status": "done",
+   "detail": "Titan Company Ltd (consolidated); 37 transcripts listed"
+  },
+  {
+   "ts": "2026-11-01T19:25:12+05:30",
+   "step": "snapshot",
+   "status": "done",
+   "detail": "10 years; missing: nothing"
+  },
+  {
+   "ts": "2026-11-01T19:25:12+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q1 FY27 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:25:13+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q1 FY27: 0/0 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:25:13+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q4 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:25:13+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q4 FY26: 1/1 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:25:13+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q3 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:25:13+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q3 FY26: 0/0 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:25:13+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q2 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:25:13+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q2 FY26: 1/2 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:25:13+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q1 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:25:13+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q1 FY26: 2/2 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:25:13+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q4 FY25 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:25:13+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q4 FY25: 3/3 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:25:13+05:30",
+   "step": "actuals",
+   "status": "done",
+   "detail": "Q4 FY26 call: 0/5 actuals found"
+  },
+  {
+   "ts": "2026-11-01T19:25:13+05:30",
+   "step": "promises",
+   "status": "done",
+   "detail": "merged 1 restated promises"
+  },
+  {
+   "ts": "2026-11-01T19:25:13+05:30",
+   "step": "promises",
+   "status": "done",
+   "detail": "5 measurable (0 met, 0 partly, 0 missed, 0 pending, 5 can't check); 1 qualitative"
+  }
+ ]
+}

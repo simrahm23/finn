@@ -1,0 +1,513 @@
+{
+ "symbol": "INFY",
+ "name": "Infosys Ltd",
+ "sector": "IT Services",
+ "status": "ready",
+ "built_at": "2026-11-01T19:23:51+05:30",
+ "mock": false,
+ "snapshot": {
+  "kpis": [
+   {
+    "label": "Revenue (TTM)",
+    "value": 189336.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/INFY/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Operating margin",
+    "value": 24.0,
+    "unit": "%",
+    "period": "FY26",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/INFY/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Net profit (TTM)",
+    "value": 30788.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/INFY/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "ROCE",
+    "value": 40.0,
+    "unit": "%",
+    "period": "latest",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/INFY/consolidated/",
+     "page": null
+    }
+   }
+  ],
+  "years": [
+   "FY17",
+   "FY18",
+   "FY19",
+   "FY20",
+   "FY21",
+   "FY22",
+   "FY23",
+   "FY24",
+   "FY25",
+   "FY26"
+  ],
+  "revenue": [
+   68484.0,
+   70522.0,
+   82675.0,
+   90791.0,
+   100472.0,
+   121641.0,
+   146767.0,
+   153670.0,
+   162990.0,
+   178650.0
+  ],
+  "ebitda_margin_pct": [
+   27.0,
+   27.0,
+   24.0,
+   25.0,
+   28.0,
+   26.0,
+   24.0,
+   24.0,
+   24.0,
+   24.0
+  ],
+  "cfo": [
+   11531.0,
+   13218.0,
+   14841.0,
+   17003.0,
+   23224.0,
+   23885.0,
+   22467.0,
+   25210.0,
+   35694.0,
+   33986.0
+  ],
+  "pat": [
+   14353.0,
+   16029.0,
+   15410.0,
+   16639.0,
+   19423.0,
+   22146.0,
+   24108.0,
+   26248.0,
+   26750.0,
+   29474.0
+  ],
+  "cash_conversion_pct": [
+   80.0,
+   82.0,
+   96.0,
+   102.0,
+   120.0,
+   108.0,
+   93.0,
+   96.0,
+   133.0,
+   115.0
+  ],
+  "debt_to_equity": 0.09,
+  "business": null,
+  "business_source": null,
+  "missing": []
+ },
+ "promises": {
+  "scorecard": {
+   "met": 3,
+   "partly": 0,
+   "missed": 0,
+   "pending": 5,
+   "unverifiable": 0
+  },
+  "items": [
+   {
+    "id": "p1",
+    "said_in": "Q2 FY27",
+    "target_period": "FY27",
+    "metric": "revenue_growth",
+    "target_text": "Revenue growth guidance is 1% to 2% in FY27",
+    "target_low": 1.0,
+    "target_high": 2.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "Based on our Q2 performance and revised outlook for rest of the year, our revenue growth guidance is 1% to 2% YoY.in constant currency terms.",
+    "source": {
+     "label": "Q2 FY27 transcript p.4",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7982fc61-7765-4981-ab3d-6aec36ba2137.pdf",
+     "page": 4
+    }
+   },
+   {
+    "id": "p7",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "ebitda_margin",
+    "target_text": "Operating margin guidance of 20% to 22% in FY27",
+    "target_low": 20.0,
+    "target_high": 22.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [
+     "Q1 FY27",
+     "Q2 FY27"
+    ],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "Our operating margin guidance for financial year '27 is 20% to 22%.",
+    "source": {
+     "label": "Q4 FY26 transcript p.4",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf",
+     "page": 4
+    }
+   },
+   {
+    "id": "p3",
+    "said_in": "Q2 FY27",
+    "target_period": "FY27",
+    "metric": "other",
+    "target_text": "Hire around 20,000 college graduates in FY27",
+    "target_low": 20000.0,
+    "target_high": 20000.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "For the full year, our target remains clear at approximately 20,000, so around 20,000 like last year.",
+    "source": {
+     "label": "Q2 FY27 transcript p.8",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7982fc61-7765-4981-ab3d-6aec36ba2137.pdf",
+     "page": 8
+    }
+   },
+   {
+    "id": "p4",
+    "said_in": "Q1 FY27",
+    "target_period": "FY27",
+    "metric": "revenue_growth",
+    "target_text": "Revenue growth guidance of 1.5% to 3% in FY27",
+    "target_low": 1.5,
+    "target_high": 3.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "With our Q1 results and a view for castes of the financial year, we are changing our revenue growth guidance to 1.5% to 3% Y-on-Y growth in constant currency terms.",
+    "source": {
+     "label": "Q1 FY27 transcript p.29",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=95f8af86-dc92-49dc-a7cf-ecce287f8cce.pdf",
+     "page": 29
+    }
+   },
+   {
+    "id": "p6",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "revenue_growth",
+    "target_text": "Revenue growth guidance of 1.5% to 3.5% in FY27",
+    "target_low": 1.5,
+    "target_high": 3.5,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "Our revenue growth guidance for the financial year 2027 is 1.5% to 3.5% growth year-on-year in constant currency terms.",
+    "source": {
+     "label": "Q4 FY26 transcript p.4",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf",
+     "page": 4
+    }
+   },
+   {
+    "id": "p8",
+    "said_in": "Q3 FY26",
+    "target_period": "FY26",
+    "metric": "revenue_growth",
+    "target_text": "Revenue growth guidance of 3% to 3.5% for FY26",
+    "target_low": 3.0,
+    "target_high": 3.5,
+    "unit": "%",
+    "actual": 3.5,
+    "actual_basis": "reported",
+    "actual_source": {
+     "label": "Reported, Q4 FY26 call p.4",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf",
+     "page": 4
+    },
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "met",
+    "quote": "The new revenue growth guidance for this financial year is 3% to 3.5% growth in constant currency.",
+    "source": {
+     "label": "Q3 FY26 transcript p.4",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=373b3501-e2a7-4ba4-bdd1-83f6bc21c25c.pdf",
+     "page": 4
+    }
+   },
+   {
+    "id": "p11",
+    "said_in": "Q2 FY26",
+    "target_period": "FY26",
+    "metric": "ebitda_margin",
+    "target_text": "Operating margin guidance of 20% to 22% for FY26",
+    "target_low": 20.0,
+    "target_high": 22.0,
+    "unit": "%",
+    "actual": 22.0,
+    "actual_basis": "reported",
+    "actual_source": {
+     "label": "Reported, Q4 FY26 call p.4",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf",
+     "page": 4
+    },
+    "repeated_in": [
+     "Q3 FY26"
+    ],
+    "tracking": null,
+    "verdict": "met",
+    "quote": "And our operating margin guidance remains the same as in the past quarter at 20% to 22% for the full year.",
+    "source": {
+     "label": "Q2 FY26 transcript p.3",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=cf4a6179-8e43-4959-b055-91f1f7f4f076.pdf",
+     "page": 3
+    }
+   },
+   {
+    "id": "p10",
+    "said_in": "Q2 FY26",
+    "target_period": "FY26",
+    "metric": "revenue_growth",
+    "target_text": "Revenue growth guidance of 2% to 3% for FY26",
+    "target_low": 2.0,
+    "target_high": 3.0,
+    "unit": "%",
+    "actual": 3.5,
+    "actual_basis": "reported",
+    "actual_source": {
+     "label": "Reported, Q4 FY26 call p.4",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf",
+     "page": 4
+    },
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "met",
+    "quote": "The new guidance is growth between 2% and 3% in constant currency terms for the full year.",
+    "source": {
+     "label": "Q2 FY26 transcript p.3",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=cf4a6179-8e43-4959-b055-91f1f7f4f076.pdf",
+     "page": 3
+    }
+   }
+  ],
+  "qualitative": [],
+  "commentary": null
+ },
+ "documents": [
+  {
+   "id": "t0",
+   "kind": "transcript",
+   "period": "Q2 FY27",
+   "title": "Q2 FY27 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7982fc61-7765-4981-ab3d-6aec36ba2137.pdf",
+   "pages": null
+  },
+  {
+   "id": "t1",
+   "kind": "transcript",
+   "period": "Q1 FY27",
+   "title": "Q1 FY27 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=95f8af86-dc92-49dc-a7cf-ecce287f8cce.pdf",
+   "pages": null
+  },
+  {
+   "id": "t2",
+   "kind": "transcript",
+   "period": "Q4 FY26",
+   "title": "Q4 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf",
+   "pages": null
+  },
+  {
+   "id": "t3",
+   "kind": "transcript",
+   "period": "Q3 FY26",
+   "title": "Q3 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b4632b94-2a41-4103-876d-cdb1f6848d64.pdf",
+   "pages": null
+  },
+  {
+   "id": "t4",
+   "kind": "transcript",
+   "period": "Q3 FY26",
+   "title": "Q3 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=373b3501-e2a7-4ba4-bdd1-83f6bc21c25c.pdf",
+   "pages": null
+  },
+  {
+   "id": "t5",
+   "kind": "transcript",
+   "period": "Q2 FY26",
+   "title": "Q2 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=cf4a6179-8e43-4959-b055-91f1f7f4f076.pdf",
+   "pages": null
+  }
+ ],
+ "build_log": [
+  {
+   "ts": "2026-11-01T19:22:32+05:30",
+   "step": "screener",
+   "status": "running",
+   "detail": "financial tables + document links"
+  },
+  {
+   "ts": "2026-11-01T19:22:32+05:30",
+   "step": "screener",
+   "status": "done",
+   "detail": "Infosys Ltd (consolidated); 38 transcripts listed"
+  },
+  {
+   "ts": "2026-11-01T19:22:32+05:30",
+   "step": "snapshot",
+   "status": "done",
+   "detail": "10 years; missing: nothing"
+  },
+  {
+   "ts": "2026-11-01T19:22:32+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q2 FY27 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:22:32+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q2 FY27: 3/3 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:22:32+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q1 FY27 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:22:32+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q1 FY27: 2/2 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:22:32+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q4 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:22:33+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q4 FY26: 2/2 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:22:33+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q3 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:22:33+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q3 FY26: 0/0 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:22:33+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q3 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:22:33+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q3 FY26: 2/2 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:22:33+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q2 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:22:33+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q2 FY26: 2/2 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:22:33+05:30",
+   "step": "actuals",
+   "status": "done",
+   "detail": "Q4 FY26 call: 4/4 actuals found"
+  },
+  {
+   "ts": "2026-11-01T19:22:33+05:30",
+   "step": "promises",
+   "status": "done",
+   "detail": "merged 3 restated promises"
+  },
+  {
+   "ts": "2026-11-01T19:23:51+05:30",
+   "step": "promises",
+   "status": "done",
+   "detail": "8 measurable (3 met, 0 partly, 0 missed, 5 pending, 0 can't check); 0 qualitative"
+  }
+ ]
+}

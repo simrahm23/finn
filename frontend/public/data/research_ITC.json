@@ -1,0 +1,164 @@
+{
+ "symbol": "ITC",
+ "name": "ITC Ltd",
+ "sector": "FMCG",
+ "status": "ready",
+ "built_at": "2026-11-01T19:25:12+05:30",
+ "mock": false,
+ "snapshot": {
+  "kpis": [
+   {
+    "label": "Revenue (TTM)",
+    "value": 76488.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/ITC/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Operating margin",
+    "value": 35.0,
+    "unit": "%",
+    "period": "FY26",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/ITC/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Net profit (TTM)",
+    "value": 20184.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/ITC/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "ROCE",
+    "value": 38.9,
+    "unit": "%",
+    "period": "latest",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/ITC/consolidated/",
+     "page": null
+    }
+   }
+  ],
+  "years": [
+   "FY17",
+   "FY18",
+   "FY19",
+   "FY20",
+   "FY21",
+   "FY22",
+   "FY23",
+   "FY24",
+   "FY25",
+   "FY26"
+  ],
+  "revenue": [
+   42768.0,
+   43449.0,
+   48340.0,
+   49388.0,
+   49257.0,
+   60645.0,
+   70919.0,
+   67932.0,
+   75323.0,
+   78868.0
+  ],
+  "ebitda_margin_pct": [
+   36.0,
+   38.0,
+   38.0,
+   39.0,
+   35.0,
+   34.0,
+   36.0,
+   37.0,
+   34.0,
+   35.0
+  ],
+  "cfo": [
+   10627.0,
+   13169.0,
+   12583.0,
+   14690.0,
+   12527.0,
+   15776.0,
+   18878.0,
+   17179.0,
+   17627.0,
+   18464.0
+  ],
+  "pat": [
+   10477.0,
+   11493.0,
+   12836.0,
+   15593.0,
+   13383.0,
+   15503.0,
+   19477.0,
+   20751.0,
+   35052.0,
+   21018.0
+  ],
+  "cash_conversion_pct": [
+   101.0,
+   115.0,
+   98.0,
+   94.0,
+   94.0,
+   102.0,
+   97.0,
+   83.0,
+   50.0,
+   88.0
+  ],
+  "debt_to_equity": 0.03,
+  "business": null,
+  "business_source": null,
+  "missing": []
+ },
+ "promises": null,
+ "documents": [],
+ "build_log": [
+  {
+   "ts": "2026-11-01T19:25:12+05:30",
+   "step": "screener",
+   "status": "running",
+   "detail": "financial tables + document links"
+  },
+  {
+   "ts": "2026-11-01T19:25:12+05:30",
+   "step": "screener",
+   "status": "done",
+   "detail": "ITC Ltd (consolidated); 0 transcripts listed"
+  },
+  {
+   "ts": "2026-11-01T19:25:12+05:30",
+   "step": "snapshot",
+   "status": "done",
+   "detail": "10 years; missing: nothing"
+  },
+  {
+   "ts": "2026-11-01T19:25:12+05:30",
+   "step": "promises",
+   "status": "skipped",
+   "detail": "no transcripts listed"
+  }
+ ]
+}

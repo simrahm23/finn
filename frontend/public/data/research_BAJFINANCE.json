@@ -1,0 +1,709 @@
+{
+ "symbol": "BAJFINANCE",
+ "name": "Bajaj Finance Ltd",
+ "sector": "NBFC",
+ "status": "ready",
+ "built_at": "2026-11-01T19:22:32+05:30",
+ "mock": false,
+ "snapshot": {
+  "kpis": [
+   {
+    "label": "Revenue (TTM)",
+    "value": 90331.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/BAJFINANCE/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Operating margin",
+    "value": 33.0,
+    "unit": "%",
+    "period": "FY26",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/BAJFINANCE/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Net profit (TTM)",
+    "value": 22066.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/BAJFINANCE/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "ROCE",
+    "value": 10.9,
+    "unit": "%",
+    "period": "latest",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/BAJFINANCE/consolidated/",
+     "page": null
+    }
+   }
+  ],
+  "years": [
+   "FY17",
+   "FY18",
+   "FY19",
+   "FY20",
+   "FY21",
+   "FY22",
+   "FY23",
+   "FY24",
+   "FY25",
+   "FY26"
+  ],
+  "revenue": [
+   9970.0,
+   12746.0,
+   18487.0,
+   26375.0,
+   26673.0,
+   31633.0,
+   41411.0,
+   54972.0,
+   68832.0,
+   81985.0
+  ],
+  "ebitda_margin_pct": [
+   28.8,
+   30.9,
+   34.1,
+   28.8,
+   23.7,
+   31.3,
+   38.7,
+   36.4,
+   33.4,
+   33.0
+  ],
+  "cfo": [
+   -10439.0,
+   -20566.0,
+   -29062.0,
+   -24412.0,
+   -807.0,
+   -37029.0,
+   -42112.0,
+   -72760.0,
+   -67792.0,
+   -65790.0
+  ],
+  "pat": [
+   1836.0,
+   2496.0,
+   3995.0,
+   5264.0,
+   4420.0,
+   7028.0,
+   11508.0,
+   14451.0,
+   16779.0,
+   19332.0
+  ],
+  "cash_conversion_pct": [
+   -569.0,
+   -824.0,
+   -727.0,
+   -464.0,
+   -18.0,
+   -527.0,
+   -366.0,
+   -503.0,
+   -404.0,
+   -340.0
+  ],
+  "debt_to_equity": null,
+  "business": null,
+  "business_source": null,
+  "missing": [
+   "debt to equity"
+  ]
+ },
+ "promises": {
+  "scorecard": {
+   "met": 0,
+   "partly": 1,
+   "missed": 1,
+   "pending": 9,
+   "unverifiable": 4
+  },
+  "items": [
+   {
+    "id": "p1",
+    "said_in": "Q2 FY27",
+    "target_period": "FY27",
+    "metric": "revenue_growth",
+    "target_text": "Loan growth of 26% to 27% in FY27",
+    "target_low": 26.0,
+    "target_high": 27.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": {
+     "through": "H1 FY27",
+     "value": 20.7,
+     "status": "behind"
+    },
+    "verdict": "pending",
+    "quote": "I would say FY27, two quarters gone. We're seeing the early onset of festival first 9, 10 days. I would say probably between 26%, 27% growth we should deliver now on a full year basis.",
+    "source": {
+     "label": "Q2 FY27 transcript p.12",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7873abcb-7f97-487d-a474-028b0a26feea.pdf",
+     "page": 12
+    }
+   },
+   {
+    "id": "p3",
+    "said_in": "Q2 FY27",
+    "target_period": "FY27",
+    "metric": "other",
+    "target_text": "Deliver 60-62 million new loans in FY27",
+    "target_low": 60.0,
+    "target_high": 62.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "We are well on track to deliver between 60 million to 62 million new loans in FY27.",
+    "source": {
+     "label": "Q2 FY27 transcript p.4",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7873abcb-7f97-487d-a474-028b0a26feea.pdf",
+     "page": 4
+    }
+   },
+   {
+    "id": "p4",
+    "said_in": "Q2 FY27",
+    "target_period": "FY27",
+    "metric": "other",
+    "target_text": "Add 18 to 20 million customers in FY27",
+    "target_low": 18.0,
+    "target_high": 20.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "We are clear about adding between 18 MM to 20 MM customers to the franchise in FY27.",
+    "source": {
+     "label": "Q2 FY27 transcript p.4",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7873abcb-7f97-487d-a474-028b0a26feea.pdf",
+     "page": 4
+    }
+   },
+   {
+    "id": "p6",
+    "said_in": "Q1 FY27",
+    "target_period": "FY27",
+    "metric": "ebitda_margin",
+    "target_text": "25 to 40 bps improvement in opex to NTI in FY27",
+    "target_low": 0.25,
+    "target_high": 0.4,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [
+     "Q2 FY27"
+    ],
+    "tracking": {
+     "through": "H1 FY27",
+     "value": 36.2,
+     "status": "on_track"
+    },
+    "verdict": "pending",
+    "quote": "Overall, we are confident of delivering 25 to 40 basis points improvement for FY '27 in opex to NTI.",
+    "source": {
+     "label": "Q1 FY27 transcript p.4",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b101e24e-b807-4c74-9025-90009f4b47a5.pdf",
+     "page": 4
+    }
+   },
+   {
+    "id": "p7",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "revenue_growth",
+    "target_text": "AUM growth of 20% to 24% in FY27",
+    "target_low": 20.0,
+    "target_high": 24.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": {
+     "through": "H1 FY27",
+     "value": 20.7,
+     "status": "on_track"
+    },
+    "verdict": "pending",
+    "quote": "In terms of AUM, we're confident of a 20% to 24% AUM growth, aided by new businesses that we've launched in the last few years as they begin to scale.",
+    "source": {
+     "label": "Q4 FY26 transcript p.7",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=a448b6b0-edb5-4b99-a122-d602950310af.pdf",
+     "page": 7
+    }
+   },
+   {
+    "id": "p8",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "ebitda_margin",
+    "target_text": "ROA guidance of 4.4% to 4.6% in FY27",
+    "target_low": 4.4,
+    "target_high": 4.6,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": {
+     "through": "H1 FY27",
+     "value": 36.2,
+     "status": "on_track"
+    },
+    "verdict": "pending",
+    "quote": "ROA came in as of fourth quarter at 4.6%. We continue to guide for 4.4% to 4.6%.",
+    "source": {
+     "label": "Q4 FY26 transcript p.8",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=a448b6b0-edb5-4b99-a122-d602950310af.pdf",
+     "page": 8
+    }
+   },
+   {
+    "id": "p11",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "ebitda_margin",
+    "target_text": "ROE of 19% to 20% in FY27",
+    "target_low": 19.0,
+    "target_high": 20.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": {
+     "through": "H1 FY27",
+     "value": 36.2,
+     "status": "on_track"
+    },
+    "verdict": "pending",
+    "quote": "Return on equity came in at 20% in the current quarter, we continue to guide for 19% to 20%.",
+    "source": {
+     "label": "Q4 FY26 transcript p.7",
+     "kind": "transcript",
+     "url": "https://cms-assets.bajajfinserv.in/is/content/bajajfinance/bajaj-finance-q4-fy26-earnings-conference-call-transcript?scl=1&fmt=pdf",
+     "page": 7
+    }
+   },
+   {
+    "id": "p12",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "other",
+    "target_text": "Add 15 to 17 million new customers in FY27",
+    "target_low": 15.0,
+    "target_high": 17.0,
+    "unit": "mn",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "In terms of customer franchise, we continue to be confident of adding 15 - 17 million new customers in FY27.",
+    "source": {
+     "label": "Q4 FY26 transcript p.6",
+     "kind": "transcript",
+     "url": "https://cms-assets.bajajfinserv.in/is/content/bajajfinance/bajaj-finance-q4-fy26-earnings-conference-call-transcript?scl=1&fmt=pdf",
+     "page": 6
+    }
+   },
+   {
+    "id": "p16",
+    "said_in": "Q2 FY26",
+    "target_period": "FY26",
+    "metric": "revenue_growth",
+    "target_text": "AUM growth in the region of 22-23% for FY26",
+    "target_low": 22.0,
+    "target_high": 23.0,
+    "unit": "%",
+    "actual": 19.1,
+    "actual_basis": "tables",
+    "actual_source": null,
+    "repeated_in": [
+     "Q3 FY26"
+    ],
+    "tracking": null,
+    "verdict": "partly",
+    "quote": "And we now think the growth will be in the region of 22-23% as compared to our earlier assessment of 24-25% due to a set of risk actions that we have taken in MSME business, and the revised assessment provided by BHFL on its AUM growth for FY '26.",
+    "source": {
+     "label": "Q2 FY26 transcript p.4",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=39ea369b-a7b8-42e8-b787-2d1df4efa020.pdf",
+     "page": 4
+    }
+   },
+   {
+    "id": "p14",
+    "said_in": "Q3 FY26",
+    "target_period": "FY26",
+    "metric": "other",
+    "target_text": "Expect 17 to 18 million customers to be added",
+    "target_low": 17.0,
+    "target_high": 18.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "We now expect 17 to 18 million customers to be added to the franchise in FY '26.",
+    "source": {
+     "label": "Q3 FY26 transcript p.4",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6eb34dc2-bde9-4df5-8b93-aad3d461140e.pdf",
+     "page": 4
+    }
+   },
+   {
+    "id": "p15",
+    "said_in": "Q2 FY26",
+    "target_period": "FY27",
+    "metric": "capex (segment)",
+    "target_text": "Gold loan portfolio of INR 27,000-30,000 crores by March 2027",
+    "target_low": 27000.0,
+    "target_high": 30000.0,
+    "unit": "₹ cr",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "It should be between INR 27,000 crores to INR 30,000 crores business by March '27.",
+    "source": {
+     "label": "Q2 FY26 transcript p.16",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=39ea369b-a7b8-42e8-b787-2d1df4efa020.pdf",
+     "page": 16
+    }
+   },
+   {
+    "id": "p17",
+    "said_in": "Q2 FY26",
+    "target_period": "FY26",
+    "metric": "other",
+    "target_text": "Add 16 to 17 million new customers in FY26",
+    "target_low": 16.0,
+    "target_high": 17.0,
+    "unit": "other",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "We now expect to add 16 to 17 million new customers in FY '26.",
+    "source": {
+     "label": "Q2 FY26 transcript p.4",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=39ea369b-a7b8-42e8-b787-2d1df4efa020.pdf",
+     "page": 4
+    }
+   },
+   {
+    "id": "p18",
+    "said_in": "Q2 FY26",
+    "target_period": "FY26",
+    "metric": "other",
+    "target_text": "Cost of funds between 7.5% to 7.55% for FY26",
+    "target_low": 7.5,
+    "target_high": 7.55,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "For FY '26, we expect cost of funds to be in the region of overall full year to be between 7.5% to 7.55%.",
+    "source": {
+     "label": "Q2 FY26 transcript p.4",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=39ea369b-a7b8-42e8-b787-2d1df4efa020.pdf",
+     "page": 4
+    }
+   },
+   {
+    "id": "p19",
+    "said_in": "Q2 FY26",
+    "target_period": "FY26",
+    "metric": "other",
+    "target_text": "Full year credit cost within 1.85% to 1.95% for FY26",
+    "target_low": 1.85,
+    "target_high": 1.95,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "As a result, we expect full year credit cost to come within 1.85% to 1.95% for FY'26, and we expect significant improvements in credit costs for FY'27.",
+    "source": {
+     "label": "Q2 FY26 transcript p.4",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=39ea369b-a7b8-42e8-b787-2d1df4efa020.pdf",
+     "page": 4
+    }
+   },
+   {
+    "id": "p20",
+    "said_in": "Q2 FY26",
+    "target_period": "FY26",
+    "metric": "revenue_growth (segment)",
+    "target_text": "MSME business to grow by 10-12% in FY26",
+    "target_low": 10.0,
+    "target_high": 12.0,
+    "unit": "%",
+    "actual": 6.0,
+    "actual_basis": "reported",
+    "actual_source": {
+     "label": "Reported, Q4 FY26 call p.3",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=a448b6b0-edb5-4b99-a122-d602950310af.pdf",
+     "page": 3
+    },
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "missed",
+    "quote": "We now expect MSME business to grow in the current full fiscal by 10-12% only.",
+    "source": {
+     "label": "Q2 FY26 transcript p.4",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=39ea369b-a7b8-42e8-b787-2d1df4efa020.pdf",
+     "page": 4
+    }
+   }
+  ],
+  "qualitative": [
+   {
+    "id": "p2",
+    "said_in": "Q2 FY27",
+    "target_period": "unspecified",
+    "metric": "revenue_growth",
+    "target_text": "Medium-term growth guidance of 20% to 25%",
+    "target_low": 20.0,
+    "target_high": 25.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "and medium term, we maintain a guidance of 20% to 25% on a year lower here and a year higher there.",
+    "source": {
+     "label": "Q2 FY27 transcript p.12",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7873abcb-7f97-487d-a474-028b0a26feea.pdf",
+     "page": 12
+    }
+   }
+  ],
+  "commentary": null
+ },
+ "documents": [
+  {
+   "id": "t0",
+   "kind": "transcript",
+   "period": "Q2 FY27",
+   "title": "Q2 FY27 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7873abcb-7f97-487d-a474-028b0a26feea.pdf",
+   "pages": null
+  },
+  {
+   "id": "t1",
+   "kind": "transcript",
+   "period": "Q1 FY27",
+   "title": "Q1 FY27 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b101e24e-b807-4c74-9025-90009f4b47a5.pdf",
+   "pages": null
+  },
+  {
+   "id": "t2",
+   "kind": "transcript",
+   "period": "Q4 FY26",
+   "title": "Q4 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=a448b6b0-edb5-4b99-a122-d602950310af.pdf",
+   "pages": null
+  },
+  {
+   "id": "t3",
+   "kind": "transcript",
+   "period": "Q4 FY26",
+   "title": "Q4 FY26 earnings call transcript",
+   "url": "https://cms-assets.bajajfinserv.in/is/content/bajajfinance/bajaj-finance-q4-fy26-earnings-conference-call-transcript?scl=1&fmt=pdf",
+   "pages": null
+  },
+  {
+   "id": "t4",
+   "kind": "transcript",
+   "period": "Q3 FY26",
+   "title": "Q3 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6eb34dc2-bde9-4df5-8b93-aad3d461140e.pdf",
+   "pages": null
+  },
+  {
+   "id": "t5",
+   "kind": "transcript",
+   "period": "Q2 FY26",
+   "title": "Q2 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=39ea369b-a7b8-42e8-b787-2d1df4efa020.pdf",
+   "pages": null
+  }
+ ],
+ "build_log": [
+  {
+   "ts": "2026-11-01T19:21:12+05:30",
+   "step": "screener",
+   "status": "running",
+   "detail": "financial tables + document links"
+  },
+  {
+   "ts": "2026-11-01T19:21:13+05:30",
+   "step": "screener",
+   "status": "done",
+   "detail": "Bajaj Finance Ltd (consolidated); 39 transcripts listed"
+  },
+  {
+   "ts": "2026-11-01T19:21:13+05:30",
+   "step": "snapshot",
+   "status": "done",
+   "detail": "10 years; missing: debt to equity"
+  },
+  {
+   "ts": "2026-11-01T19:21:13+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q2 FY27 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:21:13+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q2 FY27: 5/5 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:21:13+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q1 FY27 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:21:13+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q1 FY27: 1/1 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:21:13+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q4 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:21:13+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q4 FY26: 2/2 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:21:13+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q4 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:21:13+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q4 FY26: 4/4 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:21:13+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q3 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:21:13+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q3 FY26: 2/2 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:21:13+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q2 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:21:13+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q2 FY26: 6/6 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:21:13+05:30",
+   "step": "actuals",
+   "status": "done",
+   "detail": "Q4 FY26 call: 1/1 actuals found"
+  },
+  {
+   "ts": "2026-11-01T19:21:13+05:30",
+   "step": "promises",
+   "status": "done",
+   "detail": "merged 4 restated promises"
+  },
+  {
+   "ts": "2026-11-01T19:22:32+05:30",
+   "step": "promises",
+   "status": "done",
+   "detail": "15 measurable (0 met, 1 partly, 1 missed, 9 pending, 4 can't check); 1 qualitative"
+  }
+ ]
+}

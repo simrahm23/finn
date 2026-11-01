@@ -119,3 +119,24 @@ def test_repeated_promises_count_once():
     out = promises.merge_repeats([mk("Q3 FY26"), mk("Q4 FY25"), mk("Q1 FY26"), mk("Q2 FY26")])
     assert len(out) == 1 and out[0].said_in == "Q4 FY25"
     assert out[0].repeated_in == ["Q1 FY26", "Q2 FY26", "Q3 FY26"]
+
+
+def test_same_measure_guards():
+    assert not promises.same_measure("revenue_growth", "Revenue growth of 3% to 3.5% in constant currency for FY26")
+    assert not promises.same_measure("ebitda_margin", "Operating margin guidance of 20% to 22% for FY26")
+    assert promises.same_measure("ebitda_margin", "EBITDA margin of 21% for the full year")
+    assert not promises.same_measure("pat_growth", "Effective tax rate for FY26 likely to remain around 23%")
+    assert promises.same_measure("revenue_growth", "Group revenues to grow at 15% in FY26")
+
+
+def test_tracking_for_open_full_year_promise():
+    c = company()          # quarters: Q2 FY26, Q1 FY27, Q2 FY27 -> FY27 Q1 present, Q1 FY26 missing
+    through, val = snapshot.ytd(c, "revenue_growth", "FY27")
+    assert val is None and promises.track(c, "revenue_growth", "FY27", 10) is None   # no prior-year Q1 -> say nothing
+    c.tables["quarters"]["Sales"]["Q1 FY26"] = 58000.0
+    c.columns["quarters"].insert(0, "Q1 FY26")
+    through, val = snapshot.ytd(c, "revenue_growth", "FY27")
+    assert through == "H1 FY27" and val == round((63000 + 78750) / (58000 + 68000) * 100 - 100, 1)
+    t = promises.track(c, "revenue_growth", "FY27", 10)
+    assert t.status == "on_track" and t.through == "H1 FY27"
+    assert promises.track(c, "revenue_growth", "FY27", 20).status == "behind"

@@ -11,14 +11,17 @@
 ## What it does
 
 **Push: the Brief** (data as of Fri 30 Oct 2026 close; filings to Sun 1 Nov)
-- 120 NSE filings in 10 days across 18 holdings, ranked into **Needs you** (15), **Worth knowing**, and **Routine** (folded). Every card shows *why* it ranks there ("Results · PAT +26% YoY · Vol 3.2×").
-- **Results card:** Revenue, EBITDA, PBT, PAT with QoQ and YoY, read from the results PDF. A "checked against filing" tick appears only if every number is found on the cited page and PAT ≈ PBT − tax.
+- 120 NSE filings in 10 days across 18 holdings, ranked into **Needs you** (13), **Worth knowing**, and **Routine** (folded). Every card shows *why* it ranks there ("Results · PAT +26% YoY · Vol 3.2×").
+- **Morning note:** three sentences over the week's "Needs you" cards. Every number in it must appear in those cards, or there is no note.
+- **Triage to inbox zero:** swipe a card left (or tap ✓ Seen) once it's dealt with; the headline counts down to "Inbox zero ✓". Kept on the device.
+- **Results card:** Revenue, EBITDA, PBT, PAT with QoQ and YoY, read from the results PDF. The "checked" tick needs three things: every number found on the cited page, PAT ≈ PBT − tax, **and** revenue matching screener.in's quarterly table (same basis) within 2%.
 - **Management-change card:** who is joining or leaving, their role and date; for appointments, the person's profile **quoted from the filing's own annexure** (no LinkedIn scraping).
 - **Unusual moves:** price ±X% and volume ≥ k× the 20-day average. **You set X and k** on the Rules screen, with a live preview of how many alerts your settings would have produced.
 
-**Pull: Research** (any NSE ticker; 4 pre-built: LT, HAVELLS, CUMMINSIND, ASTRAL)
+**Pull: Research** (any NSE ticker; pre-built for all 18 holdings plus HAVELLS, CUMMINSIND, ASTRAL)
 - **Snapshot:** KPIs, 10-year revenue and margin trajectory, cash conversion (CFO ÷ PAT), debt to equity. All computed in code.
-- **Promise Tracker:** guidance from the last 6 earnings calls → verdict per promise (met / partly / missed / still open / can't check), each with the promise quote and the source of the delivered figure. Example: L&T *"group order inflows to grow 10% in FY26"* → **met** (10.0%, reported on the Q4 FY26 call); *"group revenues to grow 15% in FY26"* → **missed** (11.8%).
+- **Promise Tracker:** guidance from the last 6 earnings calls → verdict per promise (met / partly / missed / open / can't check), each with the promise quote and the source of the delivered figure. Examples: L&T *"group order inflows to grow 10% in FY26"* → **met** (10.0%, reported on the Q4 FY26 call); *"group revenues to grow 15% in FY26"* → **missed** (11.8%); Infosys *"3–3.5% constant-currency growth for FY26"* → **met** (3.5%, as reported). Open full-year promises show **on track / behind** from the quarters reported so far.
+- **Like for like or not at all:** segment targets aren't checked against company totals; constant-currency guidance isn't checked against rupee growth; EBIT-margin guidance isn't checked against an EBITDA-style margin. Those say "can't check" unless management reports the matching figure.
 
 ## How it thinks: code decides, models read
 
@@ -28,7 +31,7 @@
 
 **Guards against made-up numbers.** Inputs are only source text. Outputs follow a JSON schema with enums. Every extracted quote must be found in the source page (fuzzy match ≥ 88–90). A summary or commentary that mentions a number not in its source is dropped. Results must pass PAT = PBT − tax. When a check fails, the UI says "couldn't verify, open the filing" instead of showing the number.
 
-**Model routing and cost.** Rules classify 79% of filings with no model. `gemini-3.5-flash-lite` does bulk extraction in batches of 25; `gemini-3.5-flash` only writes commentary. Every response is cached by content hash, so a rerun makes zero model calls. **Total cost: ₹0 (free tier).**
+**Model routing and cost.** Rules classify 80% of filings with no model. `gemini-3.5-flash-lite` does bulk extraction in batches of 25; `gemini-3.5-flash` only writes the short commentary and morning note, and falls back to Flash-Lite automatically when its 20-requests/day free quota runs out (same output checks either way). Every response is cached by content hash, so a rerun makes zero model calls. **Total cost: ₹0 (free tier).**
 
 ## Measured on real data (1 Nov 2026)
 
@@ -36,9 +39,10 @@
 | --- | --- |
 | Filings classified by rules alone | 95 / 120 (79%) |
 | Category accuracy vs 60 hand-labelled filings | 78% first pass → **90%** after one round of rule fixes from the misses (rules 41/43, model 13/17). The gold set was also used for tuning; the 6 remaining misses are debatable Reg 30 / board-meeting notices |
-| Results cards that passed both checks | 5 / 7 (the other 2, SUNPHARMA and RELIANCE, were correctly flagged as not verified) |
+| Results cards: page + arithmetic checks | 7 of 9 passed; SUNPHARMA and RELIANCE correctly flagged |
+| Results cards: cross-check vs screener (independent source) | 8 match, **1 caught**: INFY passed both page checks but read the wrong column (₹25,483 cr vs ₹49,244 cr); tick removed |
 | Guidance quotes found verbatim in transcripts | 65 / 66 |
-| Ranking: "Needs you" before → after judgment rules | 40 → 15 of 120 |
+| Ranking: "Needs you" before → after judgment rules | 40 → 13 of 120 |
 
 ## Architecture
 
@@ -80,7 +84,7 @@ export GEMINI_API_KEY=...                 # PowerShell: $env:GEMINI_API_KEY="...
 python -m finn.pipeline prices            # 400 days of EOD prices, writes prices.json
 python -m finn.pipeline push              # filings -> rules -> model -> scores -> cards -> brief.json
 python -m finn.pipeline research LT       # any NSE ticker; or --demo for the 4
-python -m pytest -q                       # 45 tests
+python -m pytest -q                       # 50 tests
 python -m finn.pipeline eval-gold         # accuracy vs hand labels in tests/gold/announcements.csv
 
 cd ../frontend && npm install && npm run dev   # npm test for the rules tests

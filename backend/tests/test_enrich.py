@@ -84,3 +84,18 @@ def test_unverified_card_gives_no_surprise():
     card = {"kind": "results", "verified": False, "metrics": [{"name": "PAT", "yoy_pct": 538.0}]}
     s, tier, chips = score("results", None, "Q2 results", 0, None, None, card=card)
     assert s == 70 and not any("PAT" in c for c in chips)
+
+
+def test_morning_note_numbers_must_come_from_the_cards():
+    from finn.signals.note import numbers_ok
+    src = '{"chips": ["PAT +26% YoY", "Vol 3.2×"], "results": {"Revenue": {"current_cr": 78749.94, "yoy_pct": 15.8}}}'
+    assert numbers_ok("L&T profit rose 26% on 3.2× volume; revenue +15.8%.", src)
+    assert not numbers_ok("L&T profit rose 30%.", src)
+    assert numbers_ok("Trent's chairman retires.", src)
+
+
+def test_note_ignores_period_labels_and_years():
+    from finn.signals.note import numbers_ok
+    src = '{"chips": ["PAT +26% YoY"]}'
+    assert numbers_ok("In Q2 FY27, L&T's profit rose 26%; results for September 2026.", src)
+    assert not numbers_ok("In Q2 FY27, profit rose 31%.", src)

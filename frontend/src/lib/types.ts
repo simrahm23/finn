@@ -73,7 +73,8 @@ export interface BriefItem {
   price_reaction_pct: number | null;
   card: ResultsCard | ManagementCard | null;
 }
-export interface Brief { generated_at: string; window_max_days: number; items: BriefItem[] }
+export interface MorningNote { text: string; item_ids: string[]; window: string }
+export interface Brief { generated_at: string; window_max_days: number; items: BriefItem[]; note?: MorningNote | null }
 
 // ---------- prices.json ----------
 export interface SymbolPrices {
@@ -104,6 +105,7 @@ export interface Snapshot {
   business_source: Source | null;
   missing: string[];
 }
+export interface Tracking { through: string; value: number; status: "on_track" | "close" | "behind" }
 export interface Promise_ {
   id: string;
   said_in: string;
@@ -117,6 +119,7 @@ export interface Promise_ {
   actual_basis: "tables" | "reported" | null; // computed from reported tables, or stated by management on a later call
   actual_source: Source | null;
   repeated_in: string[]; // later calls that restated the same target
+  tracking?: Tracking | null; // open full-year promise: year-to-date vs target
   verdict: Verdict;
   quote: string;
   source: Source;

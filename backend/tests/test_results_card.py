@@ -70,3 +70,12 @@ def test_management_annexure_page_kept():
     texts = ["Intimation of appointment", "Details as per SEBI circular", "Notice of AGM", "Annexure I Brief profile of Mr X"]
     text, page = relevant_text(texts)
     assert "Brief profile" in text and page == 4
+
+
+def test_cross_check_catches_misread_columns():
+    from finn.extract.cards import cross_check
+    card = {"period": "Q2 FY27 (Jul–Sep 2026)", "metrics": [{"name": "Revenue", "current": 25483.0, "year_ago": 45000.0}]}
+    assert cross_check(card, {"Q2 FY27": 46000.0, "Q2 FY26": 44000.0}) is False      # passes page checks, fails source 2
+    ok = {"period": "Q2 FY27 (Jul–Sep 2026)", "metrics": [{"name": "Revenue", "current": 21793.64, "year_ago": 14855.0}]}
+    assert cross_check(ok, {"Q2 FY27": 21794.0, "Q2 FY26": 14855.0}) is True
+    assert cross_check(ok, {"Q1 FY27": 1.0}) is None                                  # not posted yet: unknown, not failed

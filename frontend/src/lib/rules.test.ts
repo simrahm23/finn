@@ -1,7 +1,7 @@
 // Run: npm test  (node's built-in test runner; no extra dependencies)
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { alerts, byTier, effectiveTier, triggers, windowStart, DEFAULT_PREFS } from "./rules.ts";
+import { alerts, byTier, effectiveTier, toggleSeenIds, triage, triggers, windowStart, DEFAULT_PREFS } from "./rules.ts";
 import type { BriefItem, Prices } from "./types.ts";
 
 test("triggers mirror the backend (inclusive thresholds)", () => {
@@ -39,4 +39,12 @@ test("alerts respect user thresholds and look back N sessions", () => {
   assert.equal(alerts(prices, { priceMovePct: 4, volumeMultiple: 2 }).length, 1);
   assert.equal(alerts(prices, { priceMovePct: 4, volumeMultiple: 1.5 }, 2).length, 2);
   assert.equal(alerts(prices, { priceMovePct: 6, volumeMultiple: 4 }).length, 0);
+});
+
+test("triage: seen items leave the open list and can come back", () => {
+  const needs = [item({ id: "a" }), item({ id: "b" })];
+  let seen = toggleSeenIds([], "a");
+  assert.deepEqual(triage(needs, seen).open.map((i) => i.id), ["b"]);
+  seen = toggleSeenIds(seen, "a");
+  assert.equal(triage(needs, seen).seen.length, 0);
 });

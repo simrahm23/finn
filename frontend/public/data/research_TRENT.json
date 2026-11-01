@@ -1,0 +1,164 @@
+{
+ "symbol": "TRENT",
+ "name": "Trent Ltd",
+ "sector": "Retail",
+ "status": "ready",
+ "built_at": "2026-11-01T19:25:13+05:30",
+ "mock": false,
+ "snapshot": {
+  "kpis": [
+   {
+    "label": "Revenue (TTM)",
+    "value": 22001.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/TRENT/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Operating margin",
+    "value": 19.0,
+    "unit": "%",
+    "period": "FY26",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/TRENT/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Net profit (TTM)",
+    "value": 1909.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/TRENT/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "ROCE",
+    "value": 28.3,
+    "unit": "%",
+    "period": "latest",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/TRENT/consolidated/",
+     "page": null
+    }
+   }
+  ],
+  "years": [
+   "FY17",
+   "FY18",
+   "FY19",
+   "FY20",
+   "FY21",
+   "FY22",
+   "FY23",
+   "FY24",
+   "FY25",
+   "FY26"
+  ],
+  "revenue": [
+   1812.0,
+   2157.0,
+   2630.0,
+   3486.0,
+   2593.0,
+   4498.0,
+   8242.0,
+   12375.0,
+   17135.0,
+   20074.0
+  ],
+  "ebitda_margin_pct": [
+   7.0,
+   10.0,
+   9.0,
+   15.0,
+   4.4,
+   13.0,
+   14.0,
+   16.0,
+   16.0,
+   19.0
+  ],
+  "cfo": [
+   102.0,
+   77.0,
+   21.0,
+   361.0,
+   285.0,
+   58.0,
+   595.0,
+   1349.0,
+   1661.0,
+   2668.0
+  ],
+  "pat": [
+   85.0,
+   87.0,
+   95.0,
+   106.0,
+   -181.0,
+   35.0,
+   394.0,
+   1477.0,
+   1534.0,
+   1721.0
+  ],
+  "cash_conversion_pct": [
+   120.0,
+   89.0,
+   22.0,
+   341.0,
+   null,
+   166.0,
+   151.0,
+   91.0,
+   108.0,
+   155.0
+  ],
+  "debt_to_equity": 0.3,
+  "business": null,
+  "business_source": null,
+  "missing": []
+ },
+ "promises": null,
+ "documents": [],
+ "build_log": [
+  {
+   "ts": "2026-11-01T19:25:13+05:30",
+   "step": "screener",
+   "status": "running",
+   "detail": "financial tables + document links"
+  },
+  {
+   "ts": "2026-11-01T19:25:13+05:30",
+   "step": "screener",
+   "status": "done",
+   "detail": "Trent Ltd (consolidated); 0 transcripts listed"
+  },
+  {
+   "ts": "2026-11-01T19:25:13+05:30",
+   "step": "snapshot",
+   "status": "done",
+   "detail": "10 years; missing: nothing"
+  },
+  {
+   "ts": "2026-11-01T19:25:13+05:30",
+   "step": "promises",
+   "status": "skipped",
+   "detail": "no transcripts listed"
+  }
+ ]
+}

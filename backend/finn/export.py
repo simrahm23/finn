@@ -34,7 +34,7 @@ def build_prices(con, symbols: list[str] | None = None) -> contracts.Prices:
     return contracts.Prices(as_of=as_of, lookback_sessions=20, symbols=out)
 
 
-def build_brief(con, window_days: int = 10) -> contracts.Brief:
+def build_brief(con, window_days: int = 10, with_note: bool = False) -> contracts.Brief:
     import json
     names = {r["symbol"]: r["name"] for r in con.execute("SELECT symbol, name FROM companies")}
     rows = con.execute("SELECT a.*, e.category, e.method, e.materiality, e.tier, e.reasons_json, e.summary, e.card_json "
@@ -51,7 +51,11 @@ def build_brief(con, window_days: int = 10) -> contracts.Brief:
             tier=r["tier"], reasons=meta.get("chips", []), summary=r["summary"], filing_url=r["attachment_url"] or "",
             price_reaction_pct=meta.get("reaction_pct"), card=card,
         ))
-    return contracts.Brief(generated_at=_now(), window_max_days=window_days, items=items)
+    brief = contracts.Brief(generated_at=_now(), window_max_days=window_days, items=items)
+    if with_note:
+        from .signals import note
+        brief.note = note.generate(items, brief.generated_at)
+    return brief
 
 
 def build_meta(con, prices: contracts.Prices | None) -> contracts.Meta:
@@ -75,17 +79,18 @@ def _now() -> str:
     return dt.datetime.now(dt.timezone(dt.timedelta(hours=5, minutes=30))).isoformat(timespec="seconds")
 
 
-def write_all(window_days: int = 10) -> dict:
+def write_all(window_days: int = 10, with_note: bool = True) -> dict:
     """prices.json + brief.json + meta.json. research_*.json mocks stay until the live API replaces them (A12)."""
     config.EXPORT_DIR.mkdir(parents=True, exist_ok=True)
     with db.session() as con:
         prices = build_prices(con)
-        brief = build_brief(con, window_days)
+        brief = build_brief(con, window_days, with_note)
         meta = build_meta(con, prices)
     (config.EXPORT_DIR / "prices.json").write_text(prices.model_dump_json(), encoding="utf-8")
     (config.EXPORT_DIR / "brief.json").write_text(brief.model_dump_json(indent=1), encoding="utf-8")
     (config.EXPORT_DIR / "meta.json").write_text(meta.model_dump_json(indent=1), encoding="utf-8")
-    return {"items": len(brief.items), "prices_as_of": prices.as_of, "llm": meta.llm.model_dump()}
+    return {"items": len(brief.items), "prices_as_of": prices.as_of, "llm": meta.llm.model_dump(),
+            "note": brief.note.text if brief.note else None}
 
 
 def write_prices() -> contracts.Prices:

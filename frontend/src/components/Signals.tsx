@@ -1,4 +1,5 @@
 // How a filing is shown at each tier: full card (needs you), compact row (worth knowing), folded line (routine).
+import { useRef, useState, type PointerEvent as RPE } from "react";
 import type { BriefItem, ManagementCard, ResultsCard } from "../lib/types";
 import { CATEGORY_LABEL } from "../lib/rules";
 import { cleanHeadline, crore, pct, signClass, when } from "../lib/format";
@@ -40,12 +41,35 @@ function MiniPerson({ card }: { card: ManagementCard }) {
   );
 }
 
-export function SignalCard({ item, now, onOpen }: { item: BriefItem; now: string; onOpen: (i: BriefItem) => void }) {
+export function SignalCard({ item, now, onOpen, onSeen }: {
+  item: BriefItem; now: string; onOpen: (i: BriefItem) => void; onSeen?: (id: string) => void;
+}) {
+  // Swipe left (or tap "Seen") to clear a card: the Brief counts down to inbox zero.
+  const start = useRef<number | null>(null);
+  const moved = useRef(false);
+  const [dx, setDx] = useState(0);
+  const down = (e: RPE) => { start.current = e.clientX; moved.current = false; };
+  const move = (e: RPE) => {
+    if (start.current === null) return;
+    const d = Math.min(0, e.clientX - start.current);
+    if (Math.abs(d) > 8) moved.current = true;
+    setDx(d);
+  };
+  const up = () => {
+    if (dx < -90 && onSeen) onSeen(item.id);
+    start.current = null;
+    setDx(0);
+  };
   const results = item.card?.kind === "results" ? item.card : null;
   const person = item.card?.kind === "management" ? item.card : null;
   const showResults = results && results.verified;
   return (
-    <button className="card" onClick={() => onOpen(item)}>
+    <div className="swipe">
+      {onSeen && <div className="swipe__under" style={{ opacity: Math.min(1, -dx / 90) }}>✓ Seen</div>}
+    <button className="card" onClick={() => { if (!moved.current) onOpen(item); }}
+            onPointerDown={onSeen ? down : undefined} onPointerMove={onSeen ? move : undefined}
+            onPointerUp={onSeen ? up : undefined} onPointerCancel={onSeen ? up : undefined}
+            style={{ transform: dx ? `translateX(${dx}px)` : undefined, transition: dx ? "none" : "transform .2s" }}>
       <div className="card__meta">
         <span><span className="card__sym">{item.symbol}</span> · {CATEGORY_LABEL[item.category] ?? item.category}</span>
         <span className="mono">{when(item.filed_at, now)}</span>
@@ -56,8 +80,16 @@ export function SignalCard({ item, now, onOpen }: { item: BriefItem; now: string
       {(showResults || person) && (
         <div className="card__body">{showResults ? <MiniResults card={results} /> : person && <MiniPerson card={person} />}</div>
       )}
-      <Reasons reasons={item.reasons} />
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", gap: 8 }}>
+        <Reasons reasons={item.reasons} />
+        {onSeen && (
+          <span role="button" tabIndex={0} className="seen-btn" aria-label="Mark as seen"
+                onClick={(e) => { e.stopPropagation(); onSeen(item.id); }}
+                onKeyDown={(e) => { if (e.key === "Enter") { e.stopPropagation(); onSeen(item.id); } }}>✓ Seen</span>
+        )}
+      </div>
     </button>
+    </div>
   );
 }
 

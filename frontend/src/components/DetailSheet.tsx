@@ -79,8 +79,9 @@ function PriceContext({ item, prices }: { item: BriefItem; prices: Prices | null
   );
 }
 
-export function DetailSheet({ item, prices, now, researchable, onClose }: {
+export function DetailSheet({ item, prices, now, researchable, onClose, seen, onToggleSeen }: {
   item: BriefItem; prices: Prices | null; now: string; researchable: boolean; onClose: () => void;
+  seen: boolean; onToggleSeen: (id: string) => void;
 }) {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
@@ -113,6 +114,11 @@ export function DetailSheet({ item, prices, now, researchable, onClose }: {
             ? <a className="btn btn--primary" href={digIn} onClick={onClose}>{results ? "Dig in: did they deliver?" : `Research ${item.company}`}</a>
             : <span className="btn btn--ghost faint" style={{ fontWeight: 500, fontSize: 13.5 }}>Research for {item.symbol} isn't pre-built in this demo yet</span>}
           {item.filing_url && <a className="btn btn--ghost" href={item.filing_url} target="_blank" rel="noreferrer">Open the filing</a>}
+          {item.tier === "needs_you" && (
+            <button className="btn btn--ghost" onClick={() => { onToggleSeen(item.id); onClose(); }}>
+              {seen ? "Move back to Needs you" : "✓ Mark as seen"}
+            </button>
+          )}
         </div>
       </div>
     </>

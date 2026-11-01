@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-01T18:10:33+05:30",
+ "generated_at": "2026-11-01T19:41:16+05:30",
  "prices_as_of": "2026-10-30",
  "filings_as_of": "2026-11-01T14:44:18+05:30",
  "mock": false,
@@ -9,10 +9,10 @@
   "models": "gemini-3.5-flash-lite / gemini-3.5-flash"
  },
  "llm": {
-  "calls": 116,
-  "cached": 58,
-  "tokens_in": 570717,
-  "tokens_out": 24370,
+  "calls": 436,
+  "cached": 289,
+  "tokens_in": 1869499,
+  "tokens_out": 45628,
   "cost_inr": 0.0
  }
 }

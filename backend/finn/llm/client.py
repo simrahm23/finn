@@ -82,8 +82,8 @@ def generate_json(prompt_name: str, payload: dict, schema: dict, model: str | No
         except Exception as e:  # noqa: BLE001
             err = e
             code = getattr(e, "code", None) or getattr(e, "status_code", None)
-            if code in (400, 401, 403, 404):
-                break                                # not retryable
+            if code in (400, 401, 403, 404) or "PerDay" in str(e):
+                break                                # not retryable (a daily quota won't reset in seconds)
             time.sleep(min(60, 5 * 2 ** attempt))    # 429 / 5xx / network: back off
     if out is not None:
         tin, tout = (um.prompt_token_count or 0), (um.candidates_token_count or 0)
@@ -94,6 +94,15 @@ def generate_json(prompt_name: str, payload: dict, schema: dict, model: str | No
             _log(con, model, purpose, False, tin, tout)
         return out
     raise LlmError(f"{prompt_name}: {type(err).__name__}: {err}")
+
+
+def generate_json_with_fallback(prompt_name: str, payload: dict, schema: dict, purpose: str | None = None) -> dict:
+    """Reasoning model first; if its (small) free-tier quota is exhausted or it fails, fall back to the bulk model.
+    Output is checked the same way either way, so the fallback can't lower the bar."""
+    try:
+        return generate_json(prompt_name, payload, schema, model=config.MODEL_FLASH, purpose=purpose, retries=2)
+    except LlmError:
+        return generate_json(prompt_name, payload, schema, model=config.MODEL_LITE, purpose=f"{purpose or prompt_name}:fallback")
 
 
 def usage() -> dict:

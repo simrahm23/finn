@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-01T18:10:33+05:30",
+ "generated_at": "2026-11-01T19:41:06+05:30",
  "window_max_days": 10,
  "items": [
   {
@@ -327,7 +327,7 @@
     "checks": {
      "verbatim": true,
      "identities": true,
-     "cross_check": null
+     "cross_check": true
     },
     "verified": true,
     "source": {
@@ -520,7 +520,7 @@
     "checks": {
      "verbatim": true,
      "identities": false,
-     "cross_check": null
+     "cross_check": true
     },
     "verified": false,
     "source": {
@@ -654,7 +654,7 @@
     "checks": {
      "verbatim": true,
      "identities": true,
-     "cross_check": null
+     "cross_check": true
     },
     "verified": true,
     "source": {
@@ -840,7 +840,7 @@
     "checks": {
      "verbatim": false,
      "identities": false,
-     "cross_check": null
+     "cross_check": true
     },
     "verified": false,
     "source": {
@@ -1206,7 +1206,7 @@
     "checks": {
      "verbatim": true,
      "identities": true,
-     "cross_check": null
+     "cross_check": true
     },
     "verified": true,
     "source": {
@@ -1379,7 +1379,7 @@
     "checks": {
      "verbatim": true,
      "identities": true,
-     "cross_check": null
+     "cross_check": true
     },
     "verified": true,
     "source": {
@@ -1870,7 +1870,7 @@
     "checks": {
      "verbatim": true,
      "identities": true,
-     "cross_check": null
+     "cross_check": true
     },
     "verified": true,
     "source": {
@@ -2180,7 +2180,7 @@
     "checks": {
      "verbatim": true,
      "identities": true,
-     "cross_check": null
+     "cross_check": true
     },
     "verified": true,
     "source": {
@@ -2389,10 +2389,11 @@
    "exchange_category": "Allotment of Securities",
    "category": "fund_raise",
    "category_method": "rule",
-   "materiality": 77.5,
-   "tier": "needs_you",
+   "materiality": 55.0,
+   "tier": "worth_knowing",
    "reasons": [
-    "Fund raise"
+    "Fund raise",
+    "Related filing"
    ],
    "summary": "Persistent Systems allotted 7,683,981 equity shares under a QIP at INR 5,550.00 per share.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/PERSISTENTUSER1_26102026232529_PersistentSEOutcomeAllotmentofsharesOct262026IIFLSigned.pdf",
@@ -2408,10 +2409,11 @@
    "exchange_category": "Committee Meeting Updates",
    "category": "fund_raise",
    "category_method": "llm",
-   "materiality": 77.5,
-   "tier": "needs_you",
+   "materiality": 55.0,
+   "tier": "worth_knowing",
    "reasons": [
-    "Fund raise"
+    "Fund raise",
+    "Related filing"
    ],
    "summary": "Persistent Systems approved the allotment of 7,683,981 equity shares under QIP at Rs 5,550 per share.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/PERSISTENTUSER1_26102026232129_PersistentSEOutcomeAllotmentofsharesOct262026IIFLSigned.pdf",
@@ -2796,8 +2798,7 @@
    "materiality": 73.0,
    "tier": "worth_knowing",
    "reasons": [
-    "Results",
-    "PAT +6% YoY"
+    "Results"
    ],
    "summary": "Infosys declared an interim dividend of ₹ 26 per share and approved granting 9,640 restricted stock units.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/Infosys_23102026160704_BM_Outcome_Oct232026_1.pdf",
@@ -2849,9 +2850,9 @@
     "checks": {
      "verbatim": true,
      "identities": true,
-     "cross_check": null
+     "cross_check": false
     },
-    "verified": true,
+    "verified": false,
     "source": {
      "label": "Results filing p.18",
      "kind": "filing",
@@ -2974,5 +2975,15 @@
    "price_reaction_pct": -1.82,
    "card": null
   }
- ]
+ ],
+ "note": {
+  "text": "Larsen & Toubro reported Q2 FY27 PAT +26% YoY. Trent announced Chairman Noel N. Tata's retirement, appointed Rajiv Dube as Non-Executive Director, and reported Q2 PAT +9% YoY. HDFC Bank appointed Anup Bagchi as MD and CEO.",
+  "item_ids": [
+   "nse:106830479",
+   "nse:106834503",
+   "nse:106834418",
+   "nse:106829496"
+  ],
+  "window": "last 7 days"
+ }
 }

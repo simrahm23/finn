@@ -150,3 +150,13 @@ def fetch(symbol: str) -> Company:
         if c.tables.get("profit-loss", {}).get("Sales") or c.tables.get("profit-loss", {}).get("Revenue"):
             return c
     raise RuntimeError(f"screener.in: could not read {symbol} ({last_err})")
+
+
+def fetch_basis(symbol: str, basis: str) -> Company:
+    """The page for one basis only (consolidated | standalone), for like-for-like cross-checks."""
+    symbol = symbol.upper()
+    path = f"/company/{symbol}/consolidated/" if basis == "consolidated" else f"/company/{symbol}/"
+    r = net.client().get(BASE + path)
+    if r.status_code != 200:
+        raise RuntimeError(f"screener {symbol} {basis}: HTTP {r.status_code}")
+    return parse(r.text, symbol, BASE + path, basis)

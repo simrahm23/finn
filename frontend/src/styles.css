@@ -94,6 +94,21 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid 
 .person-line { font-size: 14px; }
 .person-line b { font-weight: 600; }
 
+.swipe { position: relative; margin-bottom: 10px; }
+.swipe .card { margin-bottom: 0; touch-action: pan-y; }
+.swipe__under { position: absolute; inset: 0; border-radius: var(--r); background: var(--up-tint); color: var(--up);
+  display: flex; align-items: center; justify-content: flex-end; padding-right: 18px; font-weight: 600; font-size: 14px; }
+.seen-btn { flex: none; font: 600 12px/1 var(--sans); color: var(--ink-2); border: 1px solid var(--line); border-radius: 999px;
+  padding: 7px 10px; background: var(--card); white-space: nowrap; }
+.seen-btn:hover { color: var(--up); border-color: var(--up); }
+.inbox-zero { padding: 18px 14px; border: 1px solid var(--up); border-radius: var(--r); background: var(--up-tint); color: var(--up);
+  font-size: 14px; }
+.inbox-zero b { font-weight: 700; }
+.note { margin: 12px 0 0; padding: 10px 12px; border-left: 3px solid var(--accent); background: var(--card); border-radius: 0 10px 10px 0;
+  font-size: 14.5px; line-height: 1.5; }
+.note small { display: block; font: 600 10.5px/1 var(--mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3); margin-bottom: 6px; }
+.linkish { font: 500 11px/1 var(--mono); color: var(--ink-2); text-decoration: underline; text-underline-offset: 2px; }
+
 /* ---------- compact row (worth knowing) ---------- */
 .rows { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; }
 .row { display: grid; grid-template-columns: 64px 1fr auto; gap: 10px; align-items: start; width: 100%; text-align: left;

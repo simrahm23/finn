@@ -106,6 +106,11 @@ def cmd_push(args) -> None:
             st = cards.run(con)
         print(f"Cards: {st['results']} results, {st['management']} management")
         with db.session() as con:
+            cc = cards.cross_check_all(con)
+        print(f"Cross-check vs screener: {cc['match']} match, {len(cc['mismatch'])} mismatch, {cc['unknown']} not checkable")
+        for m in cc["mismatch"]:
+            print(f"  MISMATCH {m}  -> tick removed")
+        with db.session() as con:
             enrich.run_materiality(con)          # re-score: results surprises and related filings need the cards
         for x in st["skipped"]:
             print(f"  skipped {x}")
@@ -134,6 +139,8 @@ def cmd_push(args) -> None:
             print(f"         [card] {summary_line(r['card_json'])}")
     from . import export
     out = export.write_all(args.days)
+    from .signals import note as _note
+    print(f"\nMorning note: {out['note'] or '(none: ' + _note.LAST_REASON + ')'}")
     print(f"\nExported brief.json ({out['items']} items), prices.json (as of {out['prices_as_of']}), meta.json. "
           f"LLM total: {out['llm']['calls']} requests, {out['llm']['cached']} cached.")
 
@@ -190,14 +197,35 @@ def cmd_debug_pdf(args) -> None:
 def cmd_research(args) -> None:
     from .research import build
     db.init_db()
-    symbols = config.portfolio()["research_demo"] if args.demo else [args.symbol]
-    for sym in symbols:
+    if args.portfolio:
+        symbols = list(dict.fromkeys(config.portfolio()["research_demo"] + config.portfolio_symbols()))
+    elif args.demo:
+        symbols = config.portfolio()["research_demo"]
+    elif args.symbol:
+        symbols = [args.symbol]
+    else:
+        sys.exit("Give a SYMBOL, or --demo, or --portfolio")
+    built = set()
+    if args.skip_built:
+        built = {p.stem.replace("research_", "") for p in config.EXPORT_DIR.glob("research_*.json")
+                 if p.stem != "research_index" and '"mock": false' in p.read_text(encoding="utf-8")}
+    summary = []
+    for i, sym in enumerate(symbols, 1):
+        if sym.upper() in built:
+            print(f"\n=== {sym.upper()} ({i}/{len(symbols)}): already built, skipping ===")
+            continue
+        print(f"\n=== {sym.upper()} ({i}/{len(symbols)}) ===")
         print(f"\n=== {sym.upper()} ===")
         try:
             pack = build.build(sym)
         except Exception as e:  # noqa: BLE001  one company failing must not stop the others
             print(f"  FAILED: {type(e).__name__}: {e}")
+            summary.append((sym.upper(), "FAILED"))
             continue
+        sc = pack.promises.scorecard if pack.promises else None
+        summary.append((pack.symbol, f"{len(pack.snapshot.years) if pack.snapshot else 0} yrs; " + (
+            f"{sc.met} met, {sc.partly} partly, {sc.missed} missed, {sc.pending} open, {sc.unverifiable} can't check"
+            if sc else "no transcripts")))
         pr = pack.promises
         if pr:
             for p in pr.items[:8]:
@@ -206,11 +234,16 @@ def cmd_research(args) -> None:
             if pr.commentary:
                 print(f"   commentary: {pr.commentary.text}")
         print(f"  wrote research_{pack.symbol}.json")
+    if len(summary) > 1:
+        print("\nSummary:")
+        for sym, line in summary:
+            print(f"  {sym:<12} {line}")
 
 
 def cmd_export(_args) -> None:
     from . import export
     out = export.write_all()
+    print(f"Morning note: {out['note'] or '(none)'}")
     print(f"Exported brief.json ({out['items']} items), prices.json (as of {out['prices_as_of']}), meta.json")
 
 
@@ -286,6 +319,8 @@ def main(argv: list[str] | None = None) -> None:
     r = sub.add_parser("research")
     r.add_argument("symbol", nargs="?", default="")
     r.add_argument("--demo", action="store_true", help="build the research_demo set from portfolio.yaml")
+    r.add_argument("--portfolio", action="store_true", help="demo set + every holding")
+    r.add_argument("--skip-built", action="store_true", help="skip tickers that already have a real research file")
     r.set_defaults(fn=cmd_research)
     args = p.parse_args(argv)
     args.fn(args)

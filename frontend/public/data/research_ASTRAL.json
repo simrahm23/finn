@@ -3,7 +3,7 @@
  "name": "Astral Ltd",
  "sector": null,
  "status": "ready",
- "built_at": "2026-11-01T17:31:54+05:30",
+ "built_at": "2026-11-01T19:21:09+05:30",
  "mock": false,
  "snapshot": {
   "kpis": [
@@ -155,6 +155,11 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": {
+     "through": "Q1 FY27",
+     "value": 15.9,
+     "status": "behind"
+    },
     "verdict": "pending",
     "quote": "And if that is the case, our value growth for the full year will be more than 20%, in top line.",
     "source": {
@@ -179,6 +184,7 @@
     "repeated_in": [
      "Q1 FY27"
     ],
+    "tracking": null,
     "verdict": "pending",
     "quote": "Plumbing plumbing margin will be between 16 to 18%. So that whatever margin guidance we've been given we'll follow the same guidance for this year.",
     "source": {
@@ -201,6 +207,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "pending",
     "quote": "Paint, we have given guidance of 20% to 25% kind of top line growth.",
     "source": {
@@ -225,6 +232,7 @@
     "repeated_in": [
      "Q1 FY27"
     ],
+    "tracking": null,
     "verdict": "pending",
     "quote": "we in India we are targeting to grow minimum 15 to 20% kind of run rate UK we are going to grow at a double digit and paint we are expecting to grow minimum 25 to 30% kind of run rate for the FY27 both industrial and decorative paint",
     "source": {
@@ -247,6 +255,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "pending",
     "quote": "And adhesive, we have given 15% kind of guidance.",
     "source": {
@@ -269,6 +278,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "pending",
     "quote": "So we have given the guidance of minimum double-digit growth for volume.",
     "source": {
@@ -291,6 +301,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "pending",
     "quote": "I think we have said, 300 kind of level, 300 to 350 level kind of level will be there.",
     "source": {
@@ -313,6 +324,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "pending",
     "quote": "And next year we are expecting more than 25% growth into the paint because now all set because we have appointed dealers, we appointed our team, we have open up our distributor dealers.",
     "source": {
@@ -335,6 +347,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "pending",
     "quote": "we are confident that now in the coming year FY27 we will be growing at least minimum double digit kind of growth in a economy like UK growing double digit is a big number but we are confident that now we will be able to do that also",
     "source": {
@@ -357,6 +370,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "pending",
     "quote": "So this year UK business will be growing giving 8 to 10% plus EBITDA and at the same time adding more products and technology to the portfolio.",
     "source": {
@@ -379,6 +393,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "pending",
     "quote": "So we are expecting that the industry should be growing somewhere around 8% kind of volume in FY27 unless something abnormal happen in the country",
     "source": {
@@ -401,6 +416,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "pending",
     "quote": "So FY27 we are expecting that the volume should be in the range of 10 to 15% and the value I'm sure will be depend on the polymer",
     "source": {
@@ -423,6 +439,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "pending",
     "quote": "so this year we are targeting somewhere around 300 cr. Last year we spent I think 360 crores or something.",
     "source": {
@@ -445,6 +462,7 @@
     "actual_basis": "tables",
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "missed",
     "quote": "This year we have given a guidance of 20% growth for the full year and we are going to achieve it as per the guidance given by us.",
     "source": {
@@ -467,6 +485,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "pending",
     "quote": "So we said for the next year we are predicting that the double digit margin will be there.",
     "source": {
@@ -489,6 +508,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "unverifiable",
     "quote": "So for full layer Rs. 300 crores-Rs. 350 crores that previously we guided that remains the same?",
     "source": {
@@ -511,6 +531,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "unverifiable",
     "quote": "and we are confident that in the coming time we are expecting the paint to deliver good number, at least 20% kind of top-line growth for the full year.",
     "source": {
@@ -533,6 +554,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "unverifiable",
     "quote": "Now it looks like the volume has started picking up July onwards and we are confident of a double-digit growth this year as per our initial guidance.",
     "source": {
@@ -555,6 +577,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "unverifiable",
     "quote": "capex projection for the company so I I think will be somewhere around 250 to 300 crore max because Kanpur is still yet to be completed because machine are yet to be installed so thats why you can consider 300 crore max .",
     "source": {
@@ -577,6 +600,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "unverifiable",
     "quote": "But then we are optimally aiming for a lower double digit type of a volume this year if we get aided by this market buncy and market sentiment we can over deliver on what our projections are",
     "source": {
@@ -599,6 +623,11 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": {
+     "through": "Q1 FY27",
+     "value": 15.9,
+     "status": "behind"
+    },
     "verdict": "pending",
     "quote": "So we have completed I think three years when we given the guidance three and another two year we are going to target the 1500 what we have said.",
     "source": {
@@ -623,6 +652,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "unverifiable",
     "quote": "Bathware we will aim to grow at about 20%-25% for the next 5 years.",
     "source": {
@@ -645,6 +675,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "unverifiable",
     "quote": "Historically, UK has been 8% to 10% EBITDA company historically. So, margins will eventually settle in that 8% to 10% EBITDA range for the UK company because along with margin, there also we are going to focus on the top line growth as well.",
     "source": {
@@ -667,6 +698,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "unverifiable",
     "quote": "Whatever margin for the piping business, we have guided 16% to 18%. We have always guided the investor community that we will try for the 16% to 18% EBITDA in the piping business.",
     "source": {
@@ -731,109 +763,109 @@
  ],
  "build_log": [
   {
-   "ts": "2026-11-01T17:30:35+05:30",
+   "ts": "2026-11-01T19:19:50+05:30",
    "step": "screener",
    "status": "running",
    "detail": "financial tables + document links"
   },
   {
-   "ts": "2026-11-01T17:30:35+05:30",
+   "ts": "2026-11-01T19:19:50+05:30",
    "step": "screener",
    "status": "done",
    "detail": "Astral Ltd (consolidated); 38 transcripts listed"
   },
   {
-   "ts": "2026-11-01T17:30:35+05:30",
+   "ts": "2026-11-01T19:19:50+05:30",
    "step": "snapshot",
    "status": "done",
    "detail": "10 years; missing: nothing"
   },
   {
-   "ts": "2026-11-01T17:30:35+05:30",
+   "ts": "2026-11-01T19:19:50+05:30",
    "step": "guidance",
    "status": "running",
    "detail": "Q1 FY27 transcript"
   },
   {
-   "ts": "2026-11-01T17:30:35+05:30",
+   "ts": "2026-11-01T19:19:50+05:30",
    "step": "guidance",
    "status": "done",
    "detail": "Q1 FY27: 7/7 statements kept"
   },
   {
-   "ts": "2026-11-01T17:30:35+05:30",
+   "ts": "2026-11-01T19:19:50+05:30",
    "step": "guidance",
    "status": "running",
    "detail": "Q4 FY26 transcript"
   },
   {
-   "ts": "2026-11-01T17:30:36+05:30",
+   "ts": "2026-11-01T19:19:50+05:30",
    "step": "guidance",
    "status": "done",
    "detail": "Q4 FY26: 9/9 statements kept"
   },
   {
-   "ts": "2026-11-01T17:30:36+05:30",
+   "ts": "2026-11-01T19:19:50+05:30",
    "step": "guidance",
    "status": "running",
    "detail": "Q3 FY26 transcript"
   },
   {
-   "ts": "2026-11-01T17:30:36+05:30",
+   "ts": "2026-11-01T19:19:50+05:30",
    "step": "guidance",
    "status": "done",
    "detail": "Q3 FY26: transcript looks scanned"
   },
   {
-   "ts": "2026-11-01T17:30:36+05:30",
+   "ts": "2026-11-01T19:19:50+05:30",
    "step": "guidance",
    "status": "running",
    "detail": "Q2 FY26 transcript"
   },
   {
-   "ts": "2026-11-01T17:30:36+05:30",
+   "ts": "2026-11-01T19:19:50+05:30",
    "step": "guidance",
    "status": "done",
    "detail": "Q2 FY26: 5/5 statements kept"
   },
   {
-   "ts": "2026-11-01T17:30:36+05:30",
+   "ts": "2026-11-01T19:19:50+05:30",
    "step": "guidance",
    "status": "running",
    "detail": "Q1 FY26 transcript"
   },
   {
-   "ts": "2026-11-01T17:30:36+05:30",
+   "ts": "2026-11-01T19:19:50+05:30",
    "step": "guidance",
    "status": "done",
    "detail": "Q1 FY26: 6/6 statements kept"
   },
   {
-   "ts": "2026-11-01T17:30:36+05:30",
+   "ts": "2026-11-01T19:19:50+05:30",
    "step": "guidance",
    "status": "running",
    "detail": "Q4 FY25 transcript"
   },
   {
-   "ts": "2026-11-01T17:30:36+05:30",
+   "ts": "2026-11-01T19:19:50+05:30",
    "step": "guidance",
    "status": "done",
    "detail": "Q4 FY25: 3/3 statements kept"
   },
   {
-   "ts": "2026-11-01T17:30:36+05:30",
+   "ts": "2026-11-01T19:19:50+05:30",
    "step": "actuals",
    "status": "done",
    "detail": "Q4 FY26 call: 0/5 actuals found"
   },
   {
-   "ts": "2026-11-01T17:30:36+05:30",
+   "ts": "2026-11-01T19:19:50+05:30",
    "step": "promises",
    "status": "done",
    "detail": "merged 6 restated promises"
   },
   {
-   "ts": "2026-11-01T17:31:54+05:30",
+   "ts": "2026-11-01T19:21:09+05:30",
    "step": "promises",
    "status": "done",
    "detail": "21 measurable (0 met, 0 partly, 1 missed, 15 pending, 5 can't check); 3 qualitative"

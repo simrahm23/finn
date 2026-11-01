@@ -5,7 +5,7 @@ from __future__ import annotations
 import re
 from typing import Optional
 
-from .. import config, contracts as c
+from .. import contracts as c
 from ..extract import validate as v
 from ..ingest import documents
 from ..ingest.screener import Company, Transcript
@@ -44,6 +44,25 @@ def is_segment(scope: Optional[str], text: str) -> bool:
     return scope == "segment" or SEGMENT_WORDS.search(text or "") is not None
 
 
+NOT_TABLE_METRIC = re.compile(r"\b(tax|r&d|research and development|capex|capital expenditure|dividend|hir(e|ing)|"
+                              r"headcount|stores?|customers?|employees|run[- ]rate|market share|capacity)\b", re.I)
+OTHER_CURRENCY = re.compile(r"constant currency|\bcc\b|cc terms|in dollar|\busd\b|us\$|\$\s?\d", re.I)
+EBIT_NOT_EBITDA = re.compile(r"\b(ebit|operating) margin", re.I)
+EBITDA_WORDS = re.compile(r"ebitda|pbdit|\bopm\b", re.I)
+
+
+def same_measure(metric: str, text: str) -> bool:
+    """Is the promise measured the way our tables measure it? If not, say 'can't check' rather than compare
+    apples with oranges (constant-currency vs rupee growth, EBIT vs EBITDA margin, a tax rate vs growth)."""
+    if NOT_TABLE_METRIC.search(text or ""):
+        return False
+    if metric == "revenue_growth" and OTHER_CURRENCY.search(text or ""):
+        return False
+    if metric == "ebitda_margin" and EBIT_NOT_EBITDA.search(text or "") and not EBITDA_WORDS.search(text or ""):
+        return False
+    return True
+
+
 def period_ended(period: str, reported: set[str]) -> Optional[bool]:
     """True/False when we can tell from what has been reported; None for an unrecognised period."""
     period = (period or "").strip()
@@ -68,6 +87,18 @@ def verdict(metric: str, period: str, lo: Optional[float], hi: Optional[float], 
     if act is None:
         return "unverifiable", None
     return compare(metric, lo, act), act
+
+
+def track(company: Company, metric: str, period: str, lo: Optional[float]) -> Optional[c.Tracking]:
+    """Open full-year promise -> how the reported quarters are tracking against it."""
+    if metric not in CHECKABLE or lo is None or not re.match(r"^FY\d{2}$", period or ""):
+        return None
+    through, val = snapshot.ytd(company, metric, period)
+    if val is None:
+        return None
+    status = compare(metric, lo, val)
+    return c.Tracking(through=through, value=val,
+                      status={"met": "on_track", "partly": "close", "missed": "behind"}[status])
 
 
 def compare(metric: str, lo: float, act: float) -> str:
@@ -97,7 +128,7 @@ def fill_reported_actuals(items: list, transcripts: list, pages_by_quarter: dict
     for p in items:
         rq = reporting_quarter(p.target_period)
         if p.verdict == "unverifiable" and p.target_low is not None and p.metric.split(" ")[0] in REPORTABLE \
-                and rq in pages_by_quarter:
+                and rq in pages_by_quarter and not NOT_TABLE_METRIC.search(p.target_text):   # "higher is better" only
             todo.setdefault(rq, []).append(p)
     filled = 0
     for rq, ps in todo.items():
@@ -147,6 +178,7 @@ def merge_repeats(items: list) -> list:
         first = ps[0]
         first.repeated_in = [p.said_in for p in ps[1:] if p.said_in != first.said_in]
         best = next((p for p in ps if p.actual is not None), None)      # any copy that found the actual
+        first.tracking = first.tracking or next((p.tracking for p in ps if p.tracking), None)
         if best and first.actual is None:
             first.actual, first.actual_basis, first.actual_source, first.verdict = \
                 best.actual, best.actual_basis, best.actual_source, best.verdict
@@ -205,12 +237,14 @@ def build(company: Company, transcripts: list[Transcript], log) -> c.Promises:
             period = (s.get("target_period") or "").strip()
             lo, hi = s.get("target_low"), s.get("target_high")
             seg = is_segment(s.get("scope"), s.get("target_text", ""))   # short text only: quotes mention "business" freely
-            ver, act = verdict(s["metric"], period, lo, hi, company, reported, segment=seg)
+            like_for_like = same_measure(s["metric"], f"{s.get('target_text', '')} {s['quote']}")
+            ver, act = verdict(s["metric"], period, lo, hi, company, reported, segment=seg or not like_for_like)
+            trk = track(company, s["metric"], period, lo) if ver == "pending" and not seg and like_for_like else None
             p = c.Promise(
                 id=f"p{n}", said_in=t.quarter or t.call_month or "Earlier call", target_period=period or "unspecified",
                 metric=s["metric"] + (" (segment)" if seg else ""), target_text=s.get("target_text") or s["quote"][:60], target_low=lo, target_high=hi,
                 unit=s.get("unit") or "%", actual=act, actual_basis="tables" if act is not None else None,
-                verdict=ver, quote=s["quote"],
+                verdict=ver, quote=s["quote"], tracking=trk,
                 source=c.Source(label=f"{t.quarter or t.call_month} transcript p.{s['page']}", kind="transcript",
                                 url=t.url, page=s["page"]),
             )
@@ -233,8 +267,8 @@ def _commentary(name: str, items: list[c.Promise]) -> Optional[c.Commentary]:
              "target_low": p.target_low, "target_high": p.target_high, "actual": p.actual, "verdict": p.verdict}
             for p in items if p.verdict != "unverifiable"]
     try:
-        out = llm.generate_json("commentary", {"company": name, "promises": rows}, COMMENTARY_SCHEMA,
-                                model=config.MODEL_FLASH, purpose="commentary")
+        out = llm.generate_json_with_fallback("commentary", {"company": name, "promises": rows}, COMMENTARY_SCHEMA,
+                                              purpose="commentary")
     except llm.LlmError:
         return None
     ids = {r["id"] for r in rows}

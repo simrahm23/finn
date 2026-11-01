@@ -3,7 +3,7 @@
  "name": "Havells India Ltd",
  "sector": null,
  "status": "ready",
- "built_at": "2026-11-01T17:29:13+05:30",
+ "built_at": "2026-11-01T19:18:30+05:30",
  "mock": false,
  "snapshot": {
   "kpis": [
@@ -157,6 +157,7 @@
     "repeated_in": [
      "Q3 FY26"
     ],
+    "tracking": null,
     "verdict": "pending",
     "quote": "FY 26-27, right now, it's estimated about INR1,000 crores, but we'll know the exact numbers by end of March.",
     "source": {
@@ -179,6 +180,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "unverifiable",
     "quote": "You also have to figure the GST reduction. But if you take that out, I think overall, there could be a 5% to 10% increase in this quarter.",
     "source": {
@@ -201,6 +203,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "unverifiable",
     "quote": "FY 25-26 will be about INR1,450 crores.",
     "source": {
@@ -223,6 +226,7 @@
     "actual_basis": null,
     "actual_source": null,
     "repeated_in": [],
+    "tracking": null,
     "verdict": "pending",
     "quote": "I think last year, we did about Rs. 500 crores in the solar business. We definitely see that it could cross maybe Rs. 1,000 crores - Rs. 1,500 crores in the next couple of years.",
     "source": {
@@ -288,103 +292,103 @@
  ],
  "build_log": [
   {
-   "ts": "2026-11-01T17:28:50+05:30",
+   "ts": "2026-11-01T19:18:28+05:30",
    "step": "screener",
    "status": "running",
    "detail": "financial tables + document links"
   },
   {
-   "ts": "2026-11-01T17:28:51+05:30",
+   "ts": "2026-11-01T19:18:29+05:30",
    "step": "screener",
    "status": "done",
    "detail": "Havells India Ltd (consolidated); 45 transcripts listed"
   },
   {
-   "ts": "2026-11-01T17:28:51+05:30",
+   "ts": "2026-11-01T19:18:29+05:30",
    "step": "snapshot",
    "status": "done",
    "detail": "10 years; missing: nothing"
   },
   {
-   "ts": "2026-11-01T17:28:51+05:30",
+   "ts": "2026-11-01T19:18:29+05:30",
    "step": "guidance",
    "status": "running",
    "detail": "Q2 FY27 transcript"
   },
   {
-   "ts": "2026-11-01T17:28:51+05:30",
+   "ts": "2026-11-01T19:18:29+05:30",
    "step": "guidance",
    "status": "done",
    "detail": "Q2 FY27: 0/0 statements kept"
   },
   {
-   "ts": "2026-11-01T17:28:51+05:30",
+   "ts": "2026-11-01T19:18:29+05:30",
    "step": "guidance",
    "status": "running",
    "detail": "Q1 FY27 transcript"
   },
   {
-   "ts": "2026-11-01T17:28:51+05:30",
+   "ts": "2026-11-01T19:18:29+05:30",
    "step": "guidance",
    "status": "done",
    "detail": "Q1 FY27: 0/0 statements kept"
   },
   {
-   "ts": "2026-11-01T17:28:51+05:30",
+   "ts": "2026-11-01T19:18:29+05:30",
    "step": "guidance",
    "status": "running",
    "detail": "Q4 FY26 transcript"
   },
   {
-   "ts": "2026-11-01T17:29:13+05:30",
+   "ts": "2026-11-01T19:18:29+05:30",
    "step": "guidance",
    "status": "done",
    "detail": "Q4 FY26: 0/0 statements kept"
   },
   {
-   "ts": "2026-11-01T17:29:13+05:30",
+   "ts": "2026-11-01T19:18:29+05:30",
    "step": "guidance",
    "status": "running",
    "detail": "Q3 FY26 transcript"
   },
   {
-   "ts": "2026-11-01T17:29:13+05:30",
+   "ts": "2026-11-01T19:18:29+05:30",
    "step": "guidance",
    "status": "done",
    "detail": "Q3 FY26: 2/2 statements kept"
   },
   {
-   "ts": "2026-11-01T17:29:13+05:30",
+   "ts": "2026-11-01T19:18:29+05:30",
    "step": "guidance",
    "status": "running",
    "detail": "Q2 FY26 transcript"
   },
   {
-   "ts": "2026-11-01T17:29:13+05:30",
+   "ts": "2026-11-01T19:18:29+05:30",
    "step": "guidance",
    "status": "done",
    "detail": "Q2 FY26: 2/2 statements kept"
   },
   {
-   "ts": "2026-11-01T17:29:13+05:30",
+   "ts": "2026-11-01T19:18:29+05:30",
    "step": "guidance",
    "status": "running",
    "detail": "Q1 FY26 transcript"
   },
   {
-   "ts": "2026-11-01T17:29:13+05:30",
+   "ts": "2026-11-01T19:18:30+05:30",
    "step": "guidance",
    "status": "done",
    "detail": "Q1 FY26: 1/1 statements kept"
   },
   {
-   "ts": "2026-11-01T17:29:13+05:30",
+   "ts": "2026-11-01T19:18:30+05:30",
    "step": "promises",
    "status": "done",
    "detail": "merged 1 restated promises"
   },
   {
-   "ts": "2026-11-01T17:29:13+05:30",
+   "ts": "2026-11-01T19:18:30+05:30",
    "step": "promises",
    "status": "done",
    "detail": "4 measurable (0 met, 0 partly, 0 missed, 2 pending, 2 can't check); 0 qualitative"

@@ -1,13 +1,14 @@
 // Home: what changed and what matters. Ranked, folded, explained.
 import { useMemo, useState } from "react";
 import type { Brief as BriefT, BriefItem, Meta, Prices } from "../lib/types";
-import { byTier, inWindow, windowStart, WINDOWS, type Prefs, type WindowKey } from "../lib/rules";
+import { byTier, inWindow, triage, windowStart, WINDOWS, type Prefs, type WindowKey } from "../lib/rules";
 import { when } from "../lib/format";
 import { AlertStrip } from "../components/AlertStrip";
 import { RoutineAccordion, SignalCard, SignalRow } from "../components/Signals";
 
-export function BriefPage({ brief, prices, meta, prefs, symbol, onOpen }: {
-  brief: BriefT; prices: Prices | null; meta: Meta | null; prefs: Prefs; symbol: string | null; onOpen: (i: BriefItem) => void;
+export function BriefPage({ brief, prices, meta, prefs, symbol, onOpen, onSeen, onSeenAll }: {
+  brief: BriefT; prices: Prices | null; meta: Meta | null; prefs: Prefs; symbol: string | null;
+  onOpen: (i: BriefItem) => void; onSeen: (id: string) => void; onSeenAll: (ids: string[]) => void;
 }) {
   const now = meta?.generated_at ?? brief.generated_at;
   const [win, setWin] = useState<WindowKey>("24h");
@@ -17,6 +18,7 @@ export function BriefPage({ brief, prices, meta, prefs, symbol, onOpen }: {
     return symbol ? w.filter((i) => i.symbol === symbol) : w;
   }, [brief.items, start.getTime(), symbol]); // eslint-disable-line react-hooks/exhaustive-deps
   const tiers = byTier(all, prefs);
+  const { open, seen } = triage(tiers.needs_you, prefs.seen);
   const quiet = win === "24h" && tiers.needs_you.length + tiers.worth_knowing.length < 3;
   const winLabel = WINDOWS.find((w) => w.key === win)?.label.toLowerCase();
 
@@ -28,13 +30,18 @@ export function BriefPage({ brief, prices, meta, prefs, symbol, onOpen }: {
           <div className="dateline">{new Date(now).toLocaleDateString("en-IN", { timeZone: "Asia/Kolkata", weekday: "short", day: "numeric", month: "short" })}</div>
         </div>
         <p className="headline-count">
-          {tiers.needs_you.length === 0 ? "Nothing needs you" : <><em>{tiers.needs_you.length}</em> {tiers.needs_you.length === 1 ? "thing needs" : "things need"} you</>}
+          {tiers.needs_you.length === 0 ? "Nothing needs you"
+            : open.length === 0 ? <>Inbox zero <span className="up">✓</span></>
+            : <><em>{open.length}</em> {open.length === 1 ? "thing needs" : "things need"} you</>}
           {symbol ? ` in ${symbol}` : ""}
         </p>
         <p className="subline">
           {all.length} filings {win === "session" ? "since the last close" : `in the last ${winLabel}`}
-          {" · "}{tiers.routine.length} folded as routine
+          {" · "}{tiers.routine.length} folded as routine{seen.length > 0 && ` · ${seen.length} seen`}
         </p>
+        {brief.note && !symbol && (
+          <p className="note"><small>The week, in brief</small>{brief.note.text}</p>
+        )}
       </header>
 
       <div className="chips" role="tablist" aria-label="Time window">
@@ -58,10 +65,27 @@ export function BriefPage({ brief, prices, meta, prefs, symbol, onOpen }: {
         </>
       )}
 
-      <div className="section"><h2>Needs you</h2><span className="count">{tiers.needs_you.length}</span></div>
-      {tiers.needs_you.length
-        ? tiers.needs_you.map((i) => <SignalCard key={i.id} item={i} now={now} onOpen={onOpen} />)
-        : <div className="empty"><b>All clear.</b> Nothing in this window crossed your bar. That's the point.</div>}
+      <div className="section">
+        <h2>Needs you</h2>
+        <span className="count">
+          {open.length > 1 && <button className="linkish" onClick={() => onSeenAll(open.map((i) => i.id))}>mark all seen</button>}
+          {open.length > 1 && " · "}{open.length}
+        </span>
+      </div>
+      {open.length > 0 && <p className="fineprint" style={{ margin: "-2px 0 8px" }}>Swipe a card left, or tap ✓ Seen, once you've dealt with it.</p>}
+      {open.map((i) => <SignalCard key={i.id} item={i} now={now} onOpen={onOpen} onSeen={onSeen} />)}
+      {tiers.needs_you.length === 0 && <div className="empty"><b>All clear.</b> Nothing in this window crossed your bar. That's the point.</div>}
+      {tiers.needs_you.length > 0 && open.length === 0 && (
+        <div className="inbox-zero"><b>Inbox zero.</b> You've seen everything that needed you in this window.</div>
+      )}
+      {seen.length > 0 && (
+        <details className="routine" style={{ marginTop: 10 }}>
+          <summary>{seen.length} seen</summary>
+          <div className="rows" style={{ margin: "0 12px 12px" }}>
+            {seen.map((i) => <SignalRow key={i.id} item={i} now={now} onOpen={onOpen} />)}
+          </div>
+        </details>
+      )}
 
       {tiers.worth_knowing.length > 0 && (
         <>

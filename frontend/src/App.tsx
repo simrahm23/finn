@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import type { BriefItem } from "./lib/types";
 import { useBrief, useMeta, usePrices, useResearchIndex } from "./lib/data";
-import { loadPrefs, savePrefs, type Prefs } from "./lib/rules";
+import { loadPrefs, savePrefs, toggleSeenIds, type Prefs } from "./lib/rules";
 import { BriefPage } from "./pages/Brief";
 import { PortfolioPage } from "./pages/Portfolio";
 import { ResearchPage } from "./pages/Research";
@@ -42,13 +42,16 @@ export default function App() {
   const [open, setOpen] = useState<BriefItem | null>(null);
   useEffect(() => setOpen(null), [route]);            // any navigation (incl. back button) closes the sheet
   const setPrefs = useCallback((p: Prefs) => { setPrefsState(p); savePrefs(p); }, []);
+  const toggleSeen = useCallback((id: string) => setPrefs({ ...prefs, seen: toggleSeenIds(prefs.seen, id) }), [prefs, setPrefs]);
+  const seenAll = useCallback((ids: string[]) => setPrefs({ ...prefs, seen: [...new Set([...prefs.seen, ...ids])] }), [prefs, setPrefs]);
   const now = meta.data?.generated_at ?? brief.data?.generated_at ?? new Date().toISOString();
   const researchable = new Set((index.data ?? []).map((e) => e.symbol));
 
   let body: JSX.Element;
   if (brief.error && route.page === "brief") body = <div className="empty" style={{ marginTop: 24 }}><b>Couldn't load the brief.</b> {brief.error}</div>;
   else if (route.page === "brief") body = brief.data ? (
-    <BriefPage brief={brief.data} prices={prices.data} meta={meta.data} prefs={prefs} symbol={route.symbol} onOpen={setOpen} />
+    <BriefPage brief={brief.data} prices={prices.data} meta={meta.data} prefs={prefs} symbol={route.symbol} onOpen={setOpen}
+               onSeen={toggleSeen} onSeenAll={seenAll} />
   ) : <div className="loading">Loading brief…</div>;
   else if (route.page === "portfolio") body = prices.data
     ? <PortfolioPage prices={prices.data} brief={brief.data} prefs={prefs} /> : <div className="loading">Loading prices…</div>;
@@ -61,7 +64,8 @@ export default function App() {
   return (
     <>
       <main className="app">{body}</main>
-      {open && <DetailSheet item={open} prices={prices.data} now={now} researchable={researchable.has(open.symbol)} onClose={() => setOpen(null)} />}
+      {open && <DetailSheet item={open} prices={prices.data} now={now} researchable={researchable.has(open.symbol)}
+                            onClose={() => setOpen(null)} seen={prefs.seen.includes(open.id)} onToggleSeen={toggleSeen} />}
       <nav className="nav" aria-label="Main">
         <div className="nav__inner">
           {(["brief", "portfolio", "research", "rules"] as const).map((p) => (

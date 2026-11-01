@@ -29,10 +29,20 @@ What we tested, what broke, what we changed, and why. Kept as we built on 1 Nov 
 | 17:35 | "Partly" tolerance: 1 pp for margins, 3 pp for growth | A 3 pp margin miss is a large miss |
 | 18:10 | Gold set: 60 filings hand-labelled. 78% on first pass. Added rules from the misses (call notices and recordings → earnings_call; results press releases, presentations and newspaper ads → results, per the reference definition); rules now override earlier model labels | 7 of 13 misses were two clear patterns. Result: 90% (rules 41/43, model 13/17); the remaining 6 are debatable Reg 30 / board-meeting notices |
 
+| 18:50 | Research pre-built for all 18 holdings | Closes "works on any ticker" inside the app; same command for any other ticker |
+| 19:00 | Like-for-like guard: no verdict when guidance is in constant currency or USD (vs rupee tables), EBIT/"operating" margin (vs EBITDA-style), or not a table metric (tax rate, capex, hiring) | Audit of 22 companies found Infosys "met" CC guidance using rupee growth, an EBIT margin checked against EBITDA, and a tax-rate promise scored as growth |
+| 19:20 | Open full-year promises: year-to-date "on track / close / behind" from reported quarters | Most promises are for FY27; this turns them into signal |
+| 19:20 | Triage: swipe or tap "Seen" until "Inbox zero" | Make the triage-inbox interaction real |
+| 19:20 | Morning note: 3 sentences over "Needs you" cards, numbers checked against the cards | A one-glance summary for a busy PM |
+| 19:35 | Flash's free tier is 20 requests/day; automatic fallback to Flash-Lite; daily-quota errors are not retried | Research commentaries used up Flash's quota; the note failed |
+| 19:40 | Third check for results cards: revenue vs screener quarterly table (same basis, 2%) | INFY card passed page + arithmetic checks with a misread column (25,483 vs 49,244); caught, tick removed |
+| 19:30 | One card per equity fund raise; related filings capped | Persistent's QIP appeared three times |
+
 ## Measured results
 
 - Filings: 120 in 10 days across 18 holdings; rules classified 95 (79%) with no model; 25 went to Flash-Lite in one batch.
-- Brief: 15 "Needs you" (from 40 before the ranking rules).
+- Brief: 13 "Needs you" (from 40 before the ranking rules).
+- Results cards vs screener: 8 match, 1 mismatch caught (INFY).
 - Summaries: 53/60 written; 2 dropped because a number was not in the filing.
 - Results cards: 7 built; 5 verified (LT, TRENT, KPITTECH, CDSL, DIXON); 2 correctly flagged not verified (SUNPHARMA, RELIANCE); INFY scanned; MARUTI no table found.
 - Management cards: 10, e.g. HDFC Bank's new MD & CEO, Trent's chairman retiring.

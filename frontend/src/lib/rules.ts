@@ -123,3 +123,15 @@ export function alerts(prices: Prices, prefs: Pick<Prefs, "priceMovePct" | "volu
   const strength = (a: Alert) => Math.abs(a.ret ?? 0) / prefs.priceMovePct + (a.volRatio ?? 0) / prefs.volumeMultiple;
   return out.sort((a, b) => (a.date === b.date ? strength(b) - strength(a) : a.date < b.date ? 1 : -1));
 }
+
+
+// ---------- triage ----------
+/** Split "Needs you" into what's left to look at and what's been seen. */
+export function triage(needs: BriefItem[], seen: string[]) {
+  const s = new Set(seen);
+  return { open: needs.filter((i) => !s.has(i.id)), seen: needs.filter((i) => s.has(i.id)) };
+}
+
+export function toggleSeenIds(seen: string[], id: string): string[] {
+  return seen.includes(id) ? seen.filter((x) => x !== id) : [...seen, id];
+}

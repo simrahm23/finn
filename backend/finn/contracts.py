@@ -98,10 +98,17 @@ class BriefItem(BaseModel):
     card: Optional[Union[ResultsCard, ManagementCard]] = Field(default=None, discriminator="kind")
 
 
+class MorningNote(BaseModel):
+    text: str                       # <= 3 sentences, every number checked against the cards it summarises
+    item_ids: list[str]             # the BriefItems it covers
+    window: str = "last 7 days"
+
+
 class Brief(BaseModel):
     generated_at: str
     window_max_days: int            # how far back the file reaches; the UI filters inside it
     items: list[BriefItem]          # newest first
+    note: Optional[MorningNote] = None
 
 
 # ---------- prices.json ----------
@@ -146,6 +153,13 @@ class Snapshot(BaseModel):
     missing: list[str] = []         # tables or fields we could not get
 
 
+class Tracking(BaseModel):
+    """For a promise whose period is still open: the year-to-date figure from quarters already reported."""
+    through: str                    # "Q1 FY27", "H1 FY27", "9M FY27"
+    value: float
+    status: Literal["on_track", "close", "behind"]
+
+
 class Promise(BaseModel):
     id: str
     said_in: str                    # quarter the statement was made, "Q1 FY27"
@@ -159,6 +173,7 @@ class Promise(BaseModel):
     actual_basis: Optional[Literal["tables", "reported"]] = None   # computed from tables, or stated by management
     actual_source: Optional[Source] = None                         # where "reported" actuals were said
     repeated_in: list[str] = []                                    # later calls that restated the same target
+    tracking: Optional[Tracking] = None                            # open promises: year-to-date vs target
     verdict: Verdict
     quote: str
     source: Source

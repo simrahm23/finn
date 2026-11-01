@@ -1,0 +1,350 @@
+{
+ "symbol": "HDFCBANK",
+ "name": "HDFC Bank Ltd",
+ "sector": "Banking",
+ "status": "ready",
+ "built_at": "2026-11-01T19:21:11+05:30",
+ "mock": false,
+ "snapshot": {
+  "kpis": [
+   {
+    "label": "Revenue (TTM)",
+    "value": 359956.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/HDFCBANK/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Operating margin",
+    "value": -11.6,
+    "unit": "%",
+    "period": "FY26",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/HDFCBANK/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Net profit (TTM)",
+    "value": 83685.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/HDFCBANK/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "ROCE",
+    "value": 7.02,
+    "unit": "%",
+    "period": "latest",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/HDFCBANK/consolidated/",
+     "page": null
+    }
+   }
+  ],
+  "years": [
+   "FY17",
+   "FY18",
+   "FY19",
+   "FY20",
+   "FY21",
+   "FY22",
+   "FY23",
+   "FY24",
+   "FY25",
+   "FY26"
+  ],
+  "revenue": [
+   73271.0,
+   85288.0,
+   105161.0,
+   122189.0,
+   128552.0,
+   135936.0,
+   170754.0,
+   283649.0,
+   336367.0,
+   348615.0
+  ],
+  "ebitda_margin_pct": [
+   15.5,
+   15.7,
+   15.8,
+   11.9,
+   13.1,
+   15.3,
+   17.5,
+   -15.8,
+   -10.3,
+   -11.6
+  ],
+  "cfo": [
+   17282.0,
+   17214.0,
+   -62872.0,
+   -16869.0,
+   42476.0,
+   -11960.0,
+   20814.0,
+   19069.0,
+   127242.0,
+   113506.0
+  ],
+  "pat": [
+   15317.0,
+   18561.0,
+   22446.0,
+   27296.0,
+   31857.0,
+   38151.0,
+   46149.0,
+   65446.0,
+   73440.0,
+   79219.0
+  ],
+  "cash_conversion_pct": [
+   113.0,
+   93.0,
+   -280.0,
+   -62.0,
+   133.0,
+   -31.0,
+   45.0,
+   29.0,
+   173.0,
+   143.0
+  ],
+  "debt_to_equity": null,
+  "business": null,
+  "business_source": null,
+  "missing": [
+   "debt to equity"
+  ]
+ },
+ "promises": {
+  "scorecard": {
+   "met": 0,
+   "partly": 0,
+   "missed": 0,
+   "pending": 1,
+   "unverifiable": 0
+  },
+  "items": [
+   {
+    "id": "p2",
+    "said_in": "Q3 FY26",
+    "target_period": "FY27",
+    "metric": "revenue_growth",
+    "target_text": "System credit growth expected between 12% to 13%",
+    "target_low": 12.0,
+    "target_high": 13.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": {
+     "through": "H1 FY27",
+     "value": 6.5,
+     "status": "behind"
+    },
+    "verdict": "pending",
+    "quote": "So our understanding as of now is next year, we expect system growth to be between 12% to 13%, when you look at nominal GDP and the credit growth that's required to support nominal GDP.",
+    "source": {
+     "label": "Q3 FY26 transcript p.17",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6e45f8a0-0fe6-40a3-8e5a-51c53713e6f0.pdf",
+     "page": 17
+    }
+   }
+  ],
+  "qualitative": [
+   {
+    "id": "p1",
+    "said_in": "Q3 FY26",
+    "target_period": "FY27",
+    "metric": "revenue_growth",
+    "target_text": "Faster top line growth than the system in FY27",
+    "target_low": null,
+    "target_high": null,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "I would also like to reiterate that we shall meet the glide path that we had indicated earlier in terms of the growth, our top line growth, which is in line with the system this financial year and faster than the system in the next financial year.",
+    "source": {
+     "label": "Q3 FY26 transcript p.4",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6e45f8a0-0fe6-40a3-8e5a-51c53713e6f0.pdf",
+     "page": 4
+    }
+   }
+  ],
+  "commentary": null
+ },
+ "documents": [
+  {
+   "id": "t0",
+   "kind": "transcript",
+   "period": "Q2 FY27",
+   "title": "Q2 FY27 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d7e45614-ae12-4bb9-b92d-623b3a63f166.pdf",
+   "pages": null
+  },
+  {
+   "id": "t1",
+   "kind": "transcript",
+   "period": "Q1 FY27",
+   "title": "Q1 FY27 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=509cc499-6cb1-4d9f-8de9-9c7de6c70eef.pdf",
+   "pages": null
+  },
+  {
+   "id": "t2",
+   "kind": "transcript",
+   "period": "Q4 FY26",
+   "title": "Q4 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=a77abbbb-954a-4221-8240-67bf0da6ba1c.pdf",
+   "pages": null
+  },
+  {
+   "id": "t3",
+   "kind": "transcript",
+   "period": "Q3 FY26",
+   "title": "Q3 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=56739132-e21e-4503-aeb6-85f4f53c1244.pdf",
+   "pages": null
+  },
+  {
+   "id": "t4",
+   "kind": "transcript",
+   "period": "Q3 FY26",
+   "title": "Q3 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6e45f8a0-0fe6-40a3-8e5a-51c53713e6f0.pdf",
+   "pages": null
+  },
+  {
+   "id": "t5",
+   "kind": "transcript",
+   "period": "Q2 FY26",
+   "title": "Q2 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=145964f9-580c-4d3f-b239-759f7b6a7a28.pdf",
+   "pages": null
+  }
+ ],
+ "build_log": [
+  {
+   "ts": "2026-11-01T19:21:10+05:30",
+   "step": "screener",
+   "status": "running",
+   "detail": "financial tables + document links"
+  },
+  {
+   "ts": "2026-11-01T19:21:11+05:30",
+   "step": "screener",
+   "status": "done",
+   "detail": "HDFC Bank Ltd (consolidated); 21 transcripts listed"
+  },
+  {
+   "ts": "2026-11-01T19:21:11+05:30",
+   "step": "snapshot",
+   "status": "done",
+   "detail": "10 years; missing: debt to equity"
+  },
+  {
+   "ts": "2026-11-01T19:21:11+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q2 FY27 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:21:11+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q2 FY27: 0/0 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:21:11+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q1 FY27 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:21:11+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q1 FY27: 0/0 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:21:11+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q4 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:21:11+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q4 FY26: 0/0 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:21:11+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q3 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:21:11+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q3 FY26: 0/0 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:21:11+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q3 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:21:11+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q3 FY26: 2/2 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:21:11+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q2 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:21:11+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q2 FY26: 0/0 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:21:11+05:30",
+   "step": "promises",
+   "status": "done",
+   "detail": "1 measurable (0 met, 0 partly, 0 missed, 1 pending, 0 can't check); 1 qualitative"
+  }
+ ]
+}

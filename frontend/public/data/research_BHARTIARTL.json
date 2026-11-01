@@ -1,0 +1,367 @@
+{
+ "symbol": "BHARTIARTL",
+ "name": "Bharti Airtel Ltd",
+ "sector": "Telecom",
+ "status": "ready",
+ "built_at": "2026-11-01T19:25:12+05:30",
+ "mock": false,
+ "snapshot": {
+  "kpis": [
+   {
+    "label": "Revenue (TTM)",
+    "value": 220049.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/BHARTIARTL/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Operating margin",
+    "value": 55.0,
+    "unit": "%",
+    "period": "FY26",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/BHARTIARTL/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Net profit (TTM)",
+    "value": 36413.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/BHARTIARTL/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "ROCE",
+    "value": 17.6,
+    "unit": "%",
+    "period": "latest",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/BHARTIARTL/consolidated/",
+     "page": null
+    }
+   }
+  ],
+  "years": [
+   "FY17",
+   "FY18",
+   "FY19",
+   "FY20",
+   "FY21",
+   "FY22",
+   "FY23",
+   "FY24",
+   "FY25",
+   "FY26"
+  ],
+  "revenue": [
+   95468.0,
+   82639.0,
+   80780.0,
+   87539.0,
+   100616.0,
+   116547.0,
+   139145.0,
+   149982.0,
+   172985.0,
+   210973.0
+  ],
+  "ebitda_margin_pct": [
+   37.0,
+   36.0,
+   32.0,
+   42.0,
+   45.0,
+   49.0,
+   51.0,
+   52.0,
+   49.0,
+   55.0
+  ],
+  "cfo": [
+   28280.0,
+   29854.0,
+   20070.0,
+   18129.0,
+   48205.0,
+   55017.0,
+   65325.0,
+   78898.0,
+   98332.0,
+   122230.0
+  ],
+  "pat": [
+   4241.0,
+   2184.0,
+   1688.0,
+   -30664.0,
+   -12364.0,
+   8305.0,
+   12287.0,
+   8558.0,
+   37481.0,
+   33823.0
+  ],
+  "cash_conversion_pct": [
+   667.0,
+   1367.0,
+   1189.0,
+   null,
+   null,
+   662.0,
+   532.0,
+   922.0,
+   262.0,
+   361.0
+  ],
+  "debt_to_equity": 1.31,
+  "business": null,
+  "business_source": null,
+  "missing": []
+ },
+ "promises": {
+  "scorecard": {
+   "met": 0,
+   "partly": 0,
+   "missed": 0,
+   "pending": 2,
+   "unverifiable": 0
+  },
+  "items": [
+   {
+    "id": "p2",
+    "said_in": "Q3 FY26",
+    "target_period": "FY29",
+    "metric": "capex",
+    "target_text": "Reach 1 gigawatt capacity in Data Centers in three to four years",
+    "target_low": 1.0,
+    "target_high": 1.0,
+    "unit": "GW",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "Our plan is to reach 1 gigawatt capacity in the next three to four years and grow significantly ahead of the market.",
+    "source": {
+     "label": "Q3 FY26 transcript p.5",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1fbe1f35-07ac-4458-9799-d075511bcd53.pdf",
+     "page": 5
+    }
+   },
+   {
+    "id": "p3",
+    "said_in": "Q3 FY26",
+    "target_period": "FY29",
+    "metric": "other (segment)",
+    "target_text": "Reach about 25% share in Data Center market in 3 to 4 years",
+    "target_low": 25.0,
+    "target_high": 25.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "and our sense is that, in the next three to four years, we will have about a gigawatt capacity, which will give us about 25% share, so we are committed to stepping up investments in Data Centers.",
+    "source": {
+     "label": "Q3 FY26 transcript p.6",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1fbe1f35-07ac-4458-9799-d075511bcd53.pdf",
+     "page": 6
+    }
+   }
+  ],
+  "qualitative": [
+   {
+    "id": "p1",
+    "said_in": "Q4 FY26",
+    "target_period": "unspecified",
+    "metric": "capex (segment)",
+    "target_text": "Financial services allocation of Rs. 20,000 Crores",
+    "target_low": 20000.0,
+    "target_high": null,
+    "unit": "₹ cr",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "And the total amount that we are looking at allocating in the next five years, we have stated Rs. 20,000 Crores, of which Rs.14,000 Crores has to come from Airtel.",
+    "source": {
+     "label": "Q4 FY26 transcript p.12",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e76d0ca2-740a-4e0f-986a-2ad0ad39d515.pdf",
+     "page": 12
+    }
+   }
+  ],
+  "commentary": null
+ },
+ "documents": [
+  {
+   "id": "t0",
+   "kind": "transcript",
+   "period": "Q1 FY27",
+   "title": "Q1 FY27 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ca87613b-39c3-4571-8ea9-8f77df1b6428.pdf",
+   "pages": null
+  },
+  {
+   "id": "t1",
+   "kind": "transcript",
+   "period": "Q4 FY26",
+   "title": "Q4 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e76d0ca2-740a-4e0f-986a-2ad0ad39d515.pdf",
+   "pages": null
+  },
+  {
+   "id": "t2",
+   "kind": "transcript",
+   "period": "Q3 FY26",
+   "title": "Q3 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1fbe1f35-07ac-4458-9799-d075511bcd53.pdf",
+   "pages": null
+  },
+  {
+   "id": "t3",
+   "kind": "transcript",
+   "period": "Q2 FY26",
+   "title": "Q2 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b8f70dc5-c46b-481a-961c-ecbd39a6f45d.pdf",
+   "pages": null
+  },
+  {
+   "id": "t4",
+   "kind": "transcript",
+   "period": "Q1 FY26",
+   "title": "Q1 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e7bdada9-733e-41a6-bdd9-f61d71d30335.pdf",
+   "pages": null
+  },
+  {
+   "id": "t5",
+   "kind": "transcript",
+   "period": "Q4 FY25",
+   "title": "Q4 FY25 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=75c7f6b8-2b0d-4c5f-9404-f1778e5acab2.pdf",
+   "pages": null
+  }
+ ],
+ "build_log": [
+  {
+   "ts": "2026-11-01T19:25:11+05:30",
+   "step": "screener",
+   "status": "running",
+   "detail": "financial tables + document links"
+  },
+  {
+   "ts": "2026-11-01T19:25:11+05:30",
+   "step": "screener",
+   "status": "done",
+   "detail": "Bharti Airtel Ltd (consolidated); 18 transcripts listed"
+  },
+  {
+   "ts": "2026-11-01T19:25:11+05:30",
+   "step": "snapshot",
+   "status": "done",
+   "detail": "10 years; missing: nothing"
+  },
+  {
+   "ts": "2026-11-01T19:25:11+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q1 FY27 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:25:11+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q1 FY27: 0/0 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:25:11+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q4 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:25:11+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q4 FY26: 1/1 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:25:11+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q3 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:25:12+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q3 FY26: 2/2 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:25:12+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q2 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:25:12+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q2 FY26: 0/0 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:25:12+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q1 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:25:12+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q1 FY26: 0/0 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:25:12+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q4 FY25 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:25:12+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q4 FY25: 0/0 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:25:12+05:30",
+   "step": "promises",
+   "status": "done",
+   "detail": "2 measurable (0 met, 0 partly, 0 missed, 2 pending, 0 can't check); 1 qualitative"
+  }
+ ]
+}

@@ -1,0 +1,436 @@
+{
+ "symbol": "PERSISTENT",
+ "name": "Persistent Systems Ltd",
+ "sector": "IT Services",
+ "status": "ready",
+ "built_at": "2026-11-01T19:23:52+05:30",
+ "mock": false,
+ "snapshot": {
+  "kpis": [
+   {
+    "label": "Revenue (TTM)",
+    "value": 16801.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/PERSISTENT/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Operating margin",
+    "value": 19.0,
+    "unit": "%",
+    "period": "FY26",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/PERSISTENT/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Net profit (TTM)",
+    "value": 1803.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/PERSISTENT/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "ROCE",
+    "value": 34.4,
+    "unit": "%",
+    "period": "latest",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/PERSISTENT/consolidated/",
+     "page": null
+    }
+   }
+  ],
+  "years": [
+   "FY17",
+   "FY18",
+   "FY19",
+   "FY20",
+   "FY21",
+   "FY22",
+   "FY23",
+   "FY24",
+   "FY25",
+   "FY26"
+  ],
+  "revenue": [
+   2878.0,
+   3034.0,
+   3366.0,
+   3566.0,
+   4188.0,
+   5711.0,
+   8351.0,
+   9822.0,
+   11939.0,
+   14748.0
+  ],
+  "ebitda_margin_pct": [
+   16.0,
+   15.0,
+   17.0,
+   14.0,
+   16.0,
+   17.0,
+   18.0,
+   17.0,
+   17.0,
+   19.0
+  ],
+  "cfo": [
+   286.0,
+   421.0,
+   432.0,
+   352.0,
+   736.0,
+   845.0,
+   956.0,
+   1302.0,
+   1157.0,
+   1767.0
+  ],
+  "pat": [
+   301.0,
+   323.0,
+   352.0,
+   340.0,
+   451.0,
+   690.0,
+   921.0,
+   1093.0,
+   1400.0,
+   1865.0
+  ],
+  "cash_conversion_pct": [
+   95.0,
+   130.0,
+   123.0,
+   104.0,
+   163.0,
+   122.0,
+   104.0,
+   119.0,
+   83.0,
+   95.0
+  ],
+  "debt_to_equity": 0.07,
+  "business": null,
+  "business_source": null,
+  "missing": []
+ },
+ "promises": {
+  "scorecard": {
+   "met": 0,
+   "partly": 0,
+   "missed": 0,
+   "pending": 3,
+   "unverifiable": 1
+  },
+  "items": [
+   {
+    "id": "p1",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "revenue_growth",
+    "target_text": "$2 billion run rate by FY27 Q4",
+    "target_low": 2000.0,
+    "target_high": 2000.0,
+    "unit": "₹ cr",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "the $2 billion by FY27, that's a run rate. We are marching towards it steadily. And again, look, if the macro goes in a different direction going ahead, we'll tackle it as it comes. But otherwise, the run rate wise, we are confident, we are marching towards it steadily and we'll get there plus minus a quarter at worst.",
+    "source": {
+     "label": "Q4 FY26 transcript p.18",
+     "kind": "transcript",
+     "url": "https://www.persistent.com/wp-content/uploads/2026/04/Analyst-Call-Transcript-Q4FY26.pdf",
+     "page": 18
+    }
+   },
+   {
+    "id": "p3",
+    "said_in": "Q2 FY26",
+    "target_period": "FY27",
+    "metric": "other",
+    "target_text": "Reaching $2 billion by end of FY27",
+    "target_low": 2000.0,
+    "target_high": 2000.0,
+    "unit": "$ billion",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "We are making steady progress towards our aspiration of reaching $2 billion by end of FY27.",
+    "source": {
+     "label": "Q2 FY26 transcript p.12",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f38819d8-e17e-417b-960f-c192b4d17af5.pdf",
+     "page": 12
+    }
+   },
+   {
+    "id": "p4",
+    "said_in": "Q2 FY26",
+    "target_period": "FY26",
+    "metric": "ebitda_margin",
+    "target_text": "Effective tax rate for FY26 is likely to remain in the range of 22.5% to 23.5%",
+    "target_low": 22.5,
+    "target_high": 23.5,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "As discussed in the previous quarter's earnings call, the effective tax rate for FY26 is likely to remain in the range of 22.5% to 23.5%.",
+    "source": {
+     "label": "Q2 FY26 transcript p.6",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f38819d8-e17e-417b-960f-c192b4d17af5.pdf",
+     "page": 6
+    }
+   },
+   {
+    "id": "p5",
+    "said_in": "Q1 FY26",
+    "target_period": "FY27",
+    "metric": "revenue_growth",
+    "target_text": "$2 billion by end of FY27",
+    "target_low": 2.0,
+    "target_high": 2.0,
+    "unit": "₹ cr",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "We remain committed to our goal of reaching 2 billion dollars by end of FY27.",
+    "source": {
+     "label": "Q1 FY26 transcript p.13",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=35397e08-8726-451b-aa02-a838a82bd45e.pdf",
+     "page": 13
+    }
+   }
+  ],
+  "qualitative": [
+   {
+    "id": "p2",
+    "said_in": "Q4 FY26",
+    "target_period": "unspecified",
+    "metric": "ebitda_margin",
+    "target_text": "Margin aspiration in the 16 to 17% range",
+    "target_low": 16.0,
+    "target_high": 17.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "Our aspiration continues to be in the 16 to 17% range. But remember in this environment our first priority is growth, our first priority is investing back into business and developing capabilities.",
+    "source": {
+     "label": "Q4 FY26 transcript p.26",
+     "kind": "transcript",
+     "url": "https://www.persistent.com/wp-content/uploads/2026/04/Analyst-Call-Transcript-Q4FY26.pdf",
+     "page": 26
+    }
+   },
+   {
+    "id": "p6",
+    "said_in": "Q1 FY26",
+    "target_period": "unspecified",
+    "metric": "other",
+    "target_text": "Europe revenue share of 15%",
+    "target_low": 15.0,
+    "target_high": 15.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "where we have clearly said that we want to be 15% in revenue terms as we go ahead in the next 2-3 years, we'll look at that.",
+    "source": {
+     "label": "Q1 FY26 transcript p.31",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=35397e08-8726-451b-aa02-a838a82bd45e.pdf",
+     "page": 31
+    }
+   }
+  ],
+  "commentary": null
+ },
+ "documents": [
+  {
+   "id": "t0",
+   "kind": "transcript",
+   "period": "Q2 FY27",
+   "title": "Q2 FY27 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=524eadda-3966-4f4f-8888-bfaf2cb0d69e.pdf",
+   "pages": null
+  },
+  {
+   "id": "t1",
+   "kind": "transcript",
+   "period": "Q1 FY27",
+   "title": "Q1 FY27 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b1c49752-0908-4750-9177-398a60654630.pdf",
+   "pages": null
+  },
+  {
+   "id": "t2",
+   "kind": "transcript",
+   "period": "Q4 FY26",
+   "title": "Q4 FY26 earnings call transcript",
+   "url": "https://www.persistent.com/wp-content/uploads/2026/04/Analyst-Call-Transcript-Q4FY26.pdf",
+   "pages": null
+  },
+  {
+   "id": "t3",
+   "kind": "transcript",
+   "period": "Q3 FY26",
+   "title": "Q3 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b68ef2b0-b285-4696-8c08-e3bb58039b0e.pdf",
+   "pages": null
+  },
+  {
+   "id": "t4",
+   "kind": "transcript",
+   "period": "Q2 FY26",
+   "title": "Q2 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f38819d8-e17e-417b-960f-c192b4d17af5.pdf",
+   "pages": null
+  },
+  {
+   "id": "t5",
+   "kind": "transcript",
+   "period": "Q1 FY26",
+   "title": "Q1 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=35397e08-8726-451b-aa02-a838a82bd45e.pdf",
+   "pages": null
+  }
+ ],
+ "build_log": [
+  {
+   "ts": "2026-11-01T19:23:51+05:30",
+   "step": "screener",
+   "status": "running",
+   "detail": "financial tables + document links"
+  },
+  {
+   "ts": "2026-11-01T19:23:52+05:30",
+   "step": "screener",
+   "status": "done",
+   "detail": "Persistent Systems Ltd (consolidated); 34 transcripts listed"
+  },
+  {
+   "ts": "2026-11-01T19:23:52+05:30",
+   "step": "snapshot",
+   "status": "done",
+   "detail": "10 years; missing: nothing"
+  },
+  {
+   "ts": "2026-11-01T19:23:52+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q2 FY27 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:23:52+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q2 FY27: 0/0 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:23:52+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q1 FY27 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:23:52+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q1 FY27: 0/0 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:23:52+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q4 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:23:52+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q4 FY26: 2/2 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:23:52+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q3 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:23:52+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q3 FY26: 0/0 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:23:52+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q2 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:23:52+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q2 FY26: 2/2 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:23:52+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q1 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:23:52+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q1 FY26: 2/2 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:23:52+05:30",
+   "step": "promises",
+   "status": "done",
+   "detail": "4 measurable (0 met, 0 partly, 0 missed, 3 pending, 1 can't check); 2 qualitative"
+  }
+ ]
+}

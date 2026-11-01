@@ -149,6 +149,8 @@ def run_materiality(con) -> int:
         r = x["r"]
         if r["category"] == "results":
             key = ("results", r["symbol"])
+        elif r["category"] == "fund_raise" and x["sub"] != "debt":
+            key = ("fund_raise", r["symbol"])          # one equity raise = one card; the rest are related filings
         elif r["category"] == "management_change" and x["card"]:
             key = ("mgmt", r["symbol"], x["card"].get("person", "").lower())
         else:

@@ -1,0 +1,324 @@
+{
+ "symbol": "MARUTI",
+ "name": "Maruti Suzuki India Ltd",
+ "sector": "Auto",
+ "status": "ready",
+ "built_at": "2026-11-01T19:26:37+05:30",
+ "mock": false,
+ "snapshot": {
+  "kpis": [
+   {
+    "label": "Revenue (TTM)",
+    "value": 208192.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/MARUTI/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Operating margin",
+    "value": 12.0,
+    "unit": "%",
+    "period": "FY26",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/MARUTI/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Net profit (TTM)",
+    "value": 13451.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/MARUTI/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "ROCE",
+    "value": 18.9,
+    "unit": "%",
+    "period": "latest",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/MARUTI/consolidated/",
+     "page": null
+    }
+   }
+  ],
+  "years": [
+   "FY17",
+   "FY18",
+   "FY19",
+   "FY20",
+   "FY21",
+   "FY22",
+   "FY23",
+   "FY24",
+   "FY25",
+   "FY26"
+  ],
+  "revenue": [
+   68085.0,
+   79809.0,
+   86068.0,
+   75660.0,
+   70372.0,
+   88330.0,
+   118410.0,
+   141858.0,
+   152913.0,
+   183316.0
+  ],
+  "ebitda_margin_pct": [
+   15.0,
+   15.0,
+   13.0,
+   10.0,
+   8.0,
+   7.0,
+   11.0,
+   13.0,
+   13.0,
+   12.0
+  ],
+  "cfo": [
+   10282.0,
+   11788.0,
+   6601.0,
+   3496.0,
+   8856.0,
+   1840.0,
+   10815.0,
+   16801.0,
+   16180.0,
+   19100.0
+  ],
+  "pat": [
+   7511.0,
+   7881.0,
+   7651.0,
+   5678.0,
+   4389.0,
+   3880.0,
+   8264.0,
+   13488.0,
+   14500.0,
+   14680.0
+  ],
+  "cash_conversion_pct": [
+   137.0,
+   150.0,
+   86.0,
+   62.0,
+   202.0,
+   47.0,
+   131.0,
+   125.0,
+   112.0,
+   130.0
+  ],
+  "debt_to_equity": 0.0,
+  "business": null,
+  "business_source": null,
+  "missing": []
+ },
+ "promises": {
+  "scorecard": {
+   "met": 0,
+   "partly": 0,
+   "missed": 0,
+   "pending": 1,
+   "unverifiable": 0
+  },
+  "items": [
+   {
+    "id": "p1",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "revenue_growth",
+    "target_text": "Maruti Suzuki growth of over 10% in FY27",
+    "target_low": 10.0,
+    "target_high": null,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": {
+     "through": "H1 FY27",
+     "value": 30.7,
+     "status": "on_track"
+    },
+    "verdict": "pending",
+    "quote": "The broad expectation, which our Chairman also conveyed, is growth of over 10% this year as compared to the last year.",
+    "source": {
+     "label": "Q4 FY26 transcript p.8",
+     "kind": "transcript",
+     "url": "https://az-ci-afde-prd-arena-03-efddeyfchzf9akbb.z01.azurefd.net/msilintiwebpdfcopyfromdefault/Transcript_earnings_call_Maruti_Suzuki_Q4_FY_26.pdf",
+     "page": 8
+    }
+   }
+  ],
+  "qualitative": [],
+  "commentary": null
+ },
+ "documents": [
+  {
+   "id": "t0",
+   "kind": "transcript",
+   "period": "Q4 FY26",
+   "title": "Q4 FY26 earnings call transcript",
+   "url": "https://az-ci-afde-prd-arena-03-efddeyfchzf9akbb.z01.azurefd.net/msilintiwebpdfcopyfromdefault/Transcript_earnings_call_Maruti_Suzuki_Q4_FY_26.pdf",
+   "pages": null
+  },
+  {
+   "id": "t1",
+   "kind": "transcript",
+   "period": "Q3 FY26",
+   "title": "Q3 FY26 earnings call transcript",
+   "url": "https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Transcript_earnings_call_Maruti_Suzuki_Q3_FY_26.pdf",
+   "pages": null
+  },
+  {
+   "id": "t2",
+   "kind": "transcript",
+   "period": "Q2 FY26",
+   "title": "Q2 FY26 earnings call transcript",
+   "url": "https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Transcript_earnings_call_Maruti_Suzuki_Q2_FY_26.pdf",
+   "pages": null
+  },
+  {
+   "id": "t3",
+   "kind": "transcript",
+   "period": "Q1 FY26",
+   "title": "Q1 FY26 earnings call transcript",
+   "url": "https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Transcript_earnings_call_Maruti_Suzuki_Q1_FY_26.pdf",
+   "pages": null
+  },
+  {
+   "id": "t4",
+   "kind": "transcript",
+   "period": "Q4 FY25",
+   "title": "Q4 FY25 earnings call transcript",
+   "url": "https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Transcript_earnings_call_Maruti_Suzuki_Q4_FY_25.pdf",
+   "pages": null
+  },
+  {
+   "id": "t5",
+   "kind": "transcript",
+   "period": "Q3 FY25",
+   "title": "Q3 FY25 earnings call transcript",
+   "url": "https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Transcript_earnings_call_Maruti_Suzuki_Q3_FY_25.pdf",
+   "pages": null
+  }
+ ],
+ "build_log": [
+  {
+   "ts": "2026-11-01T19:26:32+05:30",
+   "step": "screener",
+   "status": "running",
+   "detail": "financial tables + document links"
+  },
+  {
+   "ts": "2026-11-01T19:26:32+05:30",
+   "step": "screener",
+   "status": "done",
+   "detail": "Maruti Suzuki India Ltd (consolidated); 37 transcripts listed"
+  },
+  {
+   "ts": "2026-11-01T19:26:32+05:30",
+   "step": "snapshot",
+   "status": "done",
+   "detail": "10 years; missing: nothing"
+  },
+  {
+   "ts": "2026-11-01T19:26:32+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q4 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:26:33+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q4 FY26: 1/1 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:26:33+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q3 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:26:34+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q3 FY26: transcript download failed"
+  },
+  {
+   "ts": "2026-11-01T19:26:34+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q2 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:26:34+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q2 FY26: transcript download failed"
+  },
+  {
+   "ts": "2026-11-01T19:26:34+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q1 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:26:35+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q1 FY26: transcript download failed"
+  },
+  {
+   "ts": "2026-11-01T19:26:35+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q4 FY25 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:26:36+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q4 FY25: transcript download failed"
+  },
+  {
+   "ts": "2026-11-01T19:26:36+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q3 FY25 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:26:37+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q3 FY25: transcript download failed"
+  },
+  {
+   "ts": "2026-11-01T19:26:37+05:30",
+   "step": "promises",
+   "status": "done",
+   "detail": "1 measurable (0 met, 0 partly, 0 missed, 1 pending, 0 can't check); 0 qualitative"
+  }
+ ]
+}

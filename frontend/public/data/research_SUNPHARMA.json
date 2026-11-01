@@ -1,0 +1,463 @@
+{
+ "symbol": "SUNPHARMA",
+ "name": "Sun Pharmaceutical Industries Ltd",
+ "sector": "Pharma",
+ "status": "ready",
+ "built_at": "2026-11-01T19:26:37+05:30",
+ "mock": false,
+ "snapshot": {
+  "kpis": [
+   {
+    "label": "Revenue (TTM)",
+    "value": 61631.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/SUNPHARMA/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Operating margin",
+    "value": 28.0,
+    "unit": "%",
+    "period": "FY26",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/SUNPHARMA/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Net profit (TTM)",
+    "value": 10987.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/SUNPHARMA/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "ROCE",
+    "value": 20.5,
+    "unit": "%",
+    "period": "latest",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/SUNPHARMA/consolidated/",
+     "page": null
+    }
+   }
+  ],
+  "years": [
+   "FY17",
+   "FY18",
+   "FY19",
+   "FY20",
+   "FY21",
+   "FY22",
+   "FY23",
+   "FY24",
+   "FY25",
+   "FY26"
+  ],
+  "revenue": [
+   31578.0,
+   26489.0,
+   29066.0,
+   32838.0,
+   33498.0,
+   38654.0,
+   43886.0,
+   48497.0,
+   52578.0,
+   58462.0
+  ],
+  "ebitda_margin_pct": [
+   32.0,
+   21.0,
+   22.0,
+   21.0,
+   25.0,
+   27.0,
+   27.0,
+   27.0,
+   29.0,
+   28.0
+  ],
+  "cfo": [
+   7082.0,
+   3907.0,
+   2196.0,
+   6555.0,
+   6170.0,
+   8985.0,
+   4959.0,
+   12135.0,
+   14072.0,
+   12419.0
+  ],
+  "pat": [
+   7846.0,
+   2542.0,
+   3208.0,
+   4172.0,
+   2272.0,
+   3389.0,
+   8513.0,
+   9610.0,
+   10965.0,
+   11509.0
+  ],
+  "cash_conversion_pct": [
+   90.0,
+   154.0,
+   68.0,
+   157.0,
+   272.0,
+   265.0,
+   58.0,
+   126.0,
+   128.0,
+   108.0
+  ],
+  "debt_to_equity": 0.04,
+  "business": null,
+  "business_source": null,
+  "missing": []
+ },
+ "promises": {
+  "scorecard": {
+   "met": 0,
+   "partly": 0,
+   "missed": 0,
+   "pending": 2,
+   "unverifiable": 1
+  },
+  "items": [
+   {
+    "id": "p2",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "revenue_growth",
+    "target_text": "High single-digit top line growth in FY27",
+    "target_low": 10.0,
+    "target_high": null,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": {
+     "through": "H1 FY27",
+     "value": 11.2,
+     "status": "on_track"
+    },
+    "verdict": "pending",
+    "quote": "On the guidance, we expect high single-digit consolidated top line growth for FY27 based on our current understanding of the regulatory and macro environment.",
+    "source": {
+     "label": "Q4 FY26 transcript p.6",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=287022b2-8de5-487d-8d0d-77b819ee3eb4.pdf",
+     "page": 6
+    }
+   },
+   {
+    "id": "p3",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "other",
+    "target_text": "R&D spend to be 6% to 7% of sales",
+    "target_low": 6.0,
+    "target_high": 7.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "We expect our FY27 R&D spend to be 6% to 7% of the sales for the next year.",
+    "source": {
+     "label": "Q4 FY26 transcript p.6",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=287022b2-8de5-487d-8d0d-77b819ee3eb4.pdf",
+     "page": 6
+    }
+   },
+   {
+    "id": "p6",
+    "said_in": "Q1 FY26",
+    "target_period": "FY26",
+    "metric": "other",
+    "target_text": "Full year effective tax rate around 25%",
+    "target_low": 25.0,
+    "target_high": 25.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "For the full year, we can consider around 25%.",
+    "source": {
+     "label": "Q1 FY26 transcript p.12",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e9f2ef68-3852-4c76-b699-37803a05f264.pdf",
+     "page": 12
+    }
+   }
+  ],
+  "qualitative": [
+   {
+    "id": "p1",
+    "said_in": "Q1 FY27",
+    "target_period": "FY27",
+    "metric": "revenue_growth",
+    "target_text": "High single-digit revenue growth for the full year",
+    "target_low": null,
+    "target_high": null,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "Think we should stick on to the high single-digit growth for the full year.",
+    "source": {
+     "label": "Q1 FY27 transcript p.10",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=34be7c92-1d9f-4010-ba30-2344c959bc5e.pdf",
+     "page": 10
+    }
+   },
+   {
+    "id": "p4",
+    "said_in": "Q4 FY26",
+    "target_period": "Q4 FY27",
+    "metric": "other",
+    "target_text": "Acquisition completion expected in Q4 FY27",
+    "target_low": null,
+    "target_high": null,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "We expect the acquisition to be completed in Q4 FY27.",
+    "source": {
+     "label": "Q4 FY26 transcript p.6",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=287022b2-8de5-487d-8d0d-77b819ee3eb4.pdf",
+     "page": 6
+    }
+   },
+   {
+    "id": "p5",
+    "said_in": "Q4 FY26",
+    "target_period": "unspecified",
+    "metric": "other",
+    "target_text": "Cost synergies in the range of about $350 million",
+    "target_low": 350.0,
+    "target_high": 350.0,
+    "unit": "₹ cr",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "There are also significant potential synergies that could come out, which we have highlighted could be in the range of about $350 million which could be materialized in the next two to four years.",
+    "source": {
+     "label": "Q4 FY26 transcript p.9",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=293c1789-7308-4864-982a-192b016de087.pdf",
+     "page": 9
+    }
+   },
+   {
+    "id": "p7",
+    "said_in": "Q1 FY26",
+    "target_period": "FY26",
+    "metric": "other (segment)",
+    "target_text": "Launch UNLOXCYT in the US in second half of FY26",
+    "target_low": null,
+    "target_high": null,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "We are planning to launch UNLOXCYT in the US in the second half of FY'26.",
+    "source": {
+     "label": "Q1 FY26 transcript p.6",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e9f2ef68-3852-4c76-b699-37803a05f264.pdf",
+     "page": 6
+    }
+   }
+  ],
+  "commentary": null
+ },
+ "documents": [
+  {
+   "id": "t0",
+   "kind": "transcript",
+   "period": "Q1 FY27",
+   "title": "Q1 FY27 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=34be7c92-1d9f-4010-ba30-2344c959bc5e.pdf",
+   "pages": null
+  },
+  {
+   "id": "t1",
+   "kind": "transcript",
+   "period": "Q4 FY26",
+   "title": "Q4 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=287022b2-8de5-487d-8d0d-77b819ee3eb4.pdf",
+   "pages": null
+  },
+  {
+   "id": "t2",
+   "kind": "transcript",
+   "period": "Q4 FY26",
+   "title": "Q4 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=293c1789-7308-4864-982a-192b016de087.pdf",
+   "pages": null
+  },
+  {
+   "id": "t3",
+   "kind": "transcript",
+   "period": "Q3 FY26",
+   "title": "Q3 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1082d0ab-d6fb-40f5-873e-d7301397cd05.pdf",
+   "pages": null
+  },
+  {
+   "id": "t4",
+   "kind": "transcript",
+   "period": "Q2 FY26",
+   "title": "Q2 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=97dcb020-6882-4de1-8e04-97d06256d293.pdf",
+   "pages": null
+  },
+  {
+   "id": "t5",
+   "kind": "transcript",
+   "period": "Q1 FY26",
+   "title": "Q1 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e9f2ef68-3852-4c76-b699-37803a05f264.pdf",
+   "pages": null
+  }
+ ],
+ "build_log": [
+  {
+   "ts": "2026-11-01T19:26:37+05:30",
+   "step": "screener",
+   "status": "running",
+   "detail": "financial tables + document links"
+  },
+  {
+   "ts": "2026-11-01T19:26:37+05:30",
+   "step": "screener",
+   "status": "done",
+   "detail": "Sun Pharmaceutical Industries Ltd (consolidated); 26 transcripts listed"
+  },
+  {
+   "ts": "2026-11-01T19:26:37+05:30",
+   "step": "snapshot",
+   "status": "done",
+   "detail": "10 years; missing: nothing"
+  },
+  {
+   "ts": "2026-11-01T19:26:37+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q1 FY27 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:26:37+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q1 FY27: 1/1 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:26:37+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q4 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:26:37+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q4 FY26: 3/3 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:26:37+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q4 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:26:37+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q4 FY26: 1/1 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:26:37+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q3 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:26:37+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q3 FY26: 0/0 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:26:37+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q2 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:26:37+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q2 FY26: 0/0 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:26:37+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q1 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:26:37+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q1 FY26: 2/2 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:26:37+05:30",
+   "step": "promises",
+   "status": "done",
+   "detail": "3 measurable (0 met, 0 partly, 0 missed, 2 pending, 1 can't check); 4 qualitative"
+  }
+ ]
+}

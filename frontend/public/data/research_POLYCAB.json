@@ -1,0 +1,721 @@
+{
+ "symbol": "POLYCAB",
+ "name": "Polycab India Ltd",
+ "sector": "Cables & Wires",
+ "status": "ready",
+ "built_at": "2026-11-01T19:26:38+05:30",
+ "mock": false,
+ "snapshot": {
+  "kpis": [
+   {
+    "label": "Revenue (TTM)",
+    "value": 34609.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/POLYCAB/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Operating margin",
+    "value": 14.0,
+    "unit": "%",
+    "period": "FY26",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/POLYCAB/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Net profit (TTM)",
+    "value": 3202.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/POLYCAB/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "ROCE",
+    "value": 33.2,
+    "unit": "%",
+    "period": "latest",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/POLYCAB/consolidated/",
+     "page": null
+    }
+   }
+  ],
+  "years": [
+   "FY17",
+   "FY18",
+   "FY19",
+   "FY20",
+   "FY21",
+   "FY22",
+   "FY23",
+   "FY24",
+   "FY25",
+   "FY26"
+  ],
+  "revenue": [
+   5500.0,
+   6770.0,
+   7986.0,
+   8830.0,
+   8792.0,
+   12204.0,
+   14108.0,
+   18039.0,
+   22408.0,
+   28884.0
+  ],
+  "ebitda_margin_pct": [
+   9.0,
+   11.0,
+   12.0,
+   13.0,
+   13.0,
+   10.0,
+   13.0,
+   14.0,
+   13.0,
+   14.0
+  ],
+  "cfo": [
+   296.0,
+   362.0,
+   1230.0,
+   244.0,
+   1252.0,
+   512.0,
+   1428.0,
+   1296.0,
+   1809.0,
+   3811.0
+  ],
+  "pat": [
+   233.0,
+   359.0,
+   500.0,
+   766.0,
+   886.0,
+   917.0,
+   1282.0,
+   1803.0,
+   2046.0,
+   2708.0
+  ],
+  "cash_conversion_pct": [
+   127.0,
+   101.0,
+   246.0,
+   32.0,
+   141.0,
+   56.0,
+   111.0,
+   72.0,
+   88.0,
+   141.0
+  ],
+  "debt_to_equity": 0.02,
+  "business": null,
+  "business_source": null,
+  "missing": []
+ },
+ "promises": {
+  "scorecard": {
+   "met": 0,
+   "partly": 0,
+   "missed": 0,
+   "pending": 6,
+   "unverifiable": 3
+  },
+  "items": [
+   {
+    "id": "p1",
+    "said_in": "Q2 FY27",
+    "target_period": "FY30",
+    "metric": "ebitda_margin (segment)",
+    "target_text": "Sustaining medium- to long-term EBITDA margins within 11-13%",
+    "target_low": 11.0,
+    "target_high": 13.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "In line with our Project Spring roadmap, we remain confident of sustaining medium- to long-term EBITDA margins within our guided range of 11% to 13%.",
+    "source": {
+     "label": "Q2 FY27 transcript p.7",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=77b6d277-0ffc-440d-ba8a-2bd9bc3dc43e.pdf",
+     "page": 7
+    }
+   },
+   {
+    "id": "p14",
+    "said_in": "Q3 FY26",
+    "target_period": "FY30",
+    "metric": "ebitda_margin (segment)",
+    "target_text": "EBITDA margins in the range of 8% to 10% by FY30",
+    "target_low": 8.0,
+    "target_high": 10.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [
+     "Q4 FY26",
+     "Q2 FY27"
+    ],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "Looking ahead, we are confident in the long-term potential of the FMEG segment and remain on track to achieve our Project Spring targets of 1.5x - 2x industry growth and EBITDA margins in the range of 8% to 10% by FY30, positioning the business for sustained growth and value creation.",
+    "source": {
+     "label": "Q3 FY26 transcript p.7",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c54bf2c3-22fa-45e1-bf1a-2194e7b46183.pdf",
+     "page": 7
+    }
+   },
+   {
+    "id": "p4",
+    "said_in": "Q1 FY27",
+    "target_period": "FY2030",
+    "metric": "ebitda_margin (segment)",
+    "target_text": "FMEG EBITDA margins of 8% to 10% by FY 2030",
+    "target_low": 8.0,
+    "target_high": 10.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "EBIT margins for the quarter were 8%, very much in line with the milestones laid out under Project Spring, where we target EBITDA margins of 8% to 10% by FY 2030.",
+    "source": {
+     "label": "Q1 FY27 transcript p.6",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e47a217c-cefa-4ff6-8e34-6bbd07d42b13.pdf",
+     "page": 6
+    }
+   },
+   {
+    "id": "p6",
+    "said_in": "Q1 FY27",
+    "target_period": "FY2030",
+    "metric": "other",
+    "target_text": "Exports north of 10% of overall top line by 2030",
+    "target_low": 10.0,
+    "target_high": null,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "We have given our guidance of going north of 10% of our overall top line by 2030.",
+    "source": {
+     "label": "Q1 FY27 transcript p.19",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e47a217c-cefa-4ff6-8e34-6bbd07d42b13.pdf",
+     "page": 19
+    }
+   },
+   {
+    "id": "p8",
+    "said_in": "Q4 FY26",
+    "target_period": "FY30",
+    "metric": "other",
+    "target_text": "Export contribution of >10% by FY30",
+    "target_low": 10.0,
+    "target_high": null,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "We remain firm on track to achieve our target of greater than 10% contribution from exports by financial year 2030.",
+    "source": {
+     "label": "Q4 FY26 transcript p.8",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f66f17ac-c40f-4309-afca-3e66af0956a0.pdf",
+     "page": 8
+    }
+   },
+   {
+    "id": "p12",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "capex",
+    "target_text": "Annual capex guidance of INR 12-16 billion per annum",
+    "target_low": 12.0,
+    "target_high": 16.0,
+    "unit": "₹ cr",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "During FY26, we incurred capex of INR 14.8 billion, in line with our annual guidance of INR 12 billion to INR 16 billion per annum.",
+    "source": {
+     "label": "Q4 FY26 transcript p.9",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f66f17ac-c40f-4309-afca-3e66af0956a0.pdf",
+     "page": 9
+    }
+   },
+   {
+    "id": "p13",
+    "said_in": "Q3 FY26",
+    "target_period": "FY30",
+    "metric": "capex",
+    "target_text": "Investing ₹12,000 to ₹16,000 crores annually through FY30",
+    "target_low": 12000.0,
+    "target_high": 16000.0,
+    "unit": "₹ cr",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "Capital expenditure for the quarter was ₹ 3.4 billion, taking the 9M FY26 total to ₹ 10.9 billion, in-line with our Project Spring guidance of investing ₹ 12 billion to ₹ 16 billion annually through FY30.",
+    "source": {
+     "label": "Q3 FY26 transcript p.5",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c54bf2c3-22fa-45e1-bf1a-2194e7b46183.pdf",
+     "page": 5
+    }
+   },
+   {
+    "id": "p15",
+    "said_in": "Q3 FY26",
+    "target_period": "FY30",
+    "metric": "other (segment)",
+    "target_text": "Project Spring targets of 1.5x - 2x industry growth by FY30",
+    "target_low": 1.5,
+    "target_high": 2.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "Looking ahead, we are confident in the long-term potential of the FMEG segment and remain on track to achieve our Project Spring targets of 1.5x - 2x industry growth and EBITDA margins in the range of 8% to 10% by FY30, positioning the business for sustained growth and value creation.",
+    "source": {
+     "label": "Q3 FY26 transcript p.7",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c54bf2c3-22fa-45e1-bf1a-2194e7b46183.pdf",
+     "page": 7
+    }
+   },
+   {
+    "id": "p23",
+    "said_in": "Q2 FY26",
+    "target_period": "FY2030",
+    "metric": "capex",
+    "target_text": "Capex guidance of ₹12 billion - ₹16 billion annually",
+    "target_low": 12.0,
+    "target_high": 16.0,
+    "unit": "₹ cr",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "in line with our Project Spring guidance of investing ₹ 12 billion - ₹ 16 billion annually through to FY 2030.",
+    "source": {
+     "label": "Q2 FY26 transcript p.6",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7a5825e0-67d1-41af-96e0-d78387aaba8d.pdf",
+     "page": 6
+    }
+   }
+  ],
+  "qualitative": [
+   {
+    "id": "p3",
+    "said_in": "Q2 FY27",
+    "target_period": "FY28",
+    "metric": "other (segment)",
+    "target_text": "Commissioning EHV plant in FY28",
+    "target_low": null,
+    "target_high": null,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "pending",
+    "quote": "So I would like to take this opportunity to sort of also let the investor community know that in terms of our EHV plant timelines, we are expecting the EHV plant to now commission somewhere in FY 2028, the next year, though, so FY28.",
+    "source": {
+     "label": "Q2 FY27 transcript p.18",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=77b6d277-0ffc-440d-ba8a-2bd9bc3dc43e.pdf",
+     "page": 18
+    }
+   },
+   {
+    "id": "p5",
+    "said_in": "Q1 FY27",
+    "target_period": "unspecified",
+    "metric": "ebitda_margin (segment)",
+    "target_text": "Wires & Cables margin guidance of 11% to 13%",
+    "target_low": 11.0,
+    "target_high": 13.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "Consistent with our Project Spring roadmap, we continue to maintain our medium- to long-term margin guidance of 11% to 13% for this business.",
+    "source": {
+     "label": "Q1 FY27 transcript p.5",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e47a217c-cefa-4ff6-8e34-6bbd07d42b13.pdf",
+     "page": 5
+    }
+   },
+   {
+    "id": "p7",
+    "said_in": "Q1 FY27",
+    "target_period": "unspecified",
+    "metric": "other (segment)",
+    "target_text": "Grow at 1.5x to 2x of industry growth in FMEG",
+    "target_low": 1.5,
+    "target_high": 2.0,
+    "unit": "x",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "Our strategic priorities remain unchanged to grow at 1.5x to 2x of the industry growth while progressively enhancing profitability.",
+    "source": {
+     "label": "Q1 FY27 transcript p.6",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e47a217c-cefa-4ff6-8e34-6bbd07d42b13.pdf",
+     "page": 6
+    }
+   },
+   {
+    "id": "p10",
+    "said_in": "Q4 FY26",
+    "target_period": "unspecified",
+    "metric": "capex",
+    "target_text": "Planned capex of INR 60-80 billion over next 5 years",
+    "target_low": 60.0,
+    "target_high": 80.0,
+    "unit": "₹ cr",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "We remain on track to execute our planned capex program of INR 60 billion to INR 80 billion over the next 5 years, which will further enhance our capabilities, scale and innovation.",
+    "source": {
+     "label": "Q4 FY26 transcript p.6",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f66f17ac-c40f-4309-afca-3e66af0956a0.pdf",
+     "page": 6
+    }
+   },
+   {
+    "id": "p11",
+    "said_in": "Q4 FY26",
+    "target_period": "unspecified",
+    "metric": "ebitda_margin (segment)",
+    "target_text": "Achieving 8% to 10% EBITDA margins by FY30 for FMEG",
+    "target_low": 8.0,
+    "target_high": 10.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "EBIT margins for the quarter stood at 4.1%, in line with our Project Spring trajectory of achieving 8% to 10% EBITDA margins by financial year 2030.",
+    "source": {
+     "label": "Q4 FY26 transcript p.8",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f66f17ac-c40f-4309-afca-3e66af0956a0.pdf",
+     "page": 8
+    }
+   },
+   {
+    "id": "p16",
+    "said_in": "Q3 FY26",
+    "target_period": "unspecified",
+    "metric": "other",
+    "target_text": "Spend around 3% to 5% of B2C top-line annually on A&P",
+    "target_low": 3.0,
+    "target_high": 5.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "Pulkit, as far as run rate is concerned, see, we've given a guidance that we want to spend around 3% to 5% of B2C top-line every year on A&P.",
+    "source": {
+     "label": "Q3 FY26 transcript p.14",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c54bf2c3-22fa-45e1-bf1a-2194e7b46183.pdf",
+     "page": 14
+    }
+   },
+   {
+    "id": "p17",
+    "said_in": "Q3 FY26",
+    "target_period": "unspecified",
+    "metric": "ebitda_margin (segment)",
+    "target_text": "Long-term guidance of 11% to 13% for cables and wires",
+    "target_low": 11.0,
+    "target_high": 13.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "And if I had to add to that, to refer to our Project Spring guidance, we've given a long-term guidance of 11% to 13%.",
+    "source": {
+     "label": "Q3 FY26 transcript p.15",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c54bf2c3-22fa-45e1-bf1a-2194e7b46183.pdf",
+     "page": 15
+    }
+   },
+   {
+    "id": "p21",
+    "said_in": "Q3 FY26",
+    "target_period": "unspecified",
+    "metric": "other",
+    "target_text": "Spend around 3% to 5% of B2C top-line annually on A&P",
+    "target_low": 3.0,
+    "target_high": 5.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "Pulkit, as far as run rate is concerned, see, we've given a guidance that we want to spend around 3% to 5% of B2C top-line every year on A&P.",
+    "source": {
+     "label": "Q3 FY26 transcript p.14",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c54bf2c3-22fa-45e1-bf1a-2194e7b46183.pdf",
+     "page": 14
+    }
+   },
+   {
+    "id": "p22",
+    "said_in": "Q3 FY26",
+    "target_period": "unspecified",
+    "metric": "ebitda_margin (segment)",
+    "target_text": "Long-term guidance of 11% to 13% for cables and wires",
+    "target_low": 11.0,
+    "target_high": 13.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "tracking": null,
+    "verdict": "unverifiable",
+    "quote": "And if I had to add to that, to refer to our Project Spring guidance, we've given a long-term guidance of 11% to 13%.",
+    "source": {
+     "label": "Q3 FY26 transcript p.15",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c54bf2c3-22fa-45e1-bf1a-2194e7b46183.pdf",
+     "page": 15
+    }
+   }
+  ],
+  "commentary": null
+ },
+ "documents": [
+  {
+   "id": "t0",
+   "kind": "transcript",
+   "period": "Q2 FY27",
+   "title": "Q2 FY27 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=77b6d277-0ffc-440d-ba8a-2bd9bc3dc43e.pdf",
+   "pages": null
+  },
+  {
+   "id": "t1",
+   "kind": "transcript",
+   "period": "Q1 FY27",
+   "title": "Q1 FY27 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e47a217c-cefa-4ff6-8e34-6bbd07d42b13.pdf",
+   "pages": null
+  },
+  {
+   "id": "t2",
+   "kind": "transcript",
+   "period": "Q4 FY26",
+   "title": "Q4 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f66f17ac-c40f-4309-afca-3e66af0956a0.pdf",
+   "pages": null
+  },
+  {
+   "id": "t3",
+   "kind": "transcript",
+   "period": "Q3 FY26",
+   "title": "Q3 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c54bf2c3-22fa-45e1-bf1a-2194e7b46183.pdf",
+   "pages": null
+  },
+  {
+   "id": "t4",
+   "kind": "transcript",
+   "period": "Q3 FY26",
+   "title": "Q3 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c54bf2c3-22fa-45e1-bf1a-2194e7b46183.pdf",
+   "pages": null
+  },
+  {
+   "id": "t5",
+   "kind": "transcript",
+   "period": "Q2 FY26",
+   "title": "Q2 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7a5825e0-67d1-41af-96e0-d78387aaba8d.pdf",
+   "pages": null
+  }
+ ],
+ "build_log": [
+  {
+   "ts": "2026-11-01T19:26:37+05:30",
+   "step": "screener",
+   "status": "running",
+   "detail": "financial tables + document links"
+  },
+  {
+   "ts": "2026-11-01T19:26:38+05:30",
+   "step": "screener",
+   "status": "done",
+   "detail": "Polycab India Ltd (consolidated); 35 transcripts listed"
+  },
+  {
+   "ts": "2026-11-01T19:26:38+05:30",
+   "step": "snapshot",
+   "status": "done",
+   "detail": "10 years; missing: nothing"
+  },
+  {
+   "ts": "2026-11-01T19:26:38+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q2 FY27 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:26:38+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q2 FY27: 3/3 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:26:38+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q1 FY27 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:26:38+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q1 FY27: 4/4 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:26:38+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q4 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:26:38+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q4 FY26: 5/5 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:26:38+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q3 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:26:38+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q3 FY26: 5/5 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:26:38+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q3 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:26:38+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q3 FY26: 5/5 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:26:38+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q2 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T19:26:38+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q2 FY26: 1/1 statements kept"
+  },
+  {
+   "ts": "2026-11-01T19:26:38+05:30",
+   "step": "promises",
+   "status": "done",
+   "detail": "merged 5 restated promises"
+  },
+  {
+   "ts": "2026-11-01T19:26:38+05:30",
+   "step": "promises",
+   "status": "done",
+   "detail": "9 measurable (0 met, 0 partly, 0 missed, 6 pending, 3 can't check); 9 qualitative"
+  }
+ ]
+}

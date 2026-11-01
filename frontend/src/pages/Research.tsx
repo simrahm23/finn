@@ -5,7 +5,12 @@ import { useResearch, useResearchIndex } from "../lib/data";
 import { crore } from "../lib/format";
 import { SourceChip } from "../components/bits";
 
-const VERDICT_LABEL = { met: "Met", partly: "Partly", missed: "Missed", pending: "Pending", unverifiable: "Can't check" } as const;
+const VERDICT_LABEL = { met: "Met", partly: "Partly", missed: "Missed", pending: "Open", unverifiable: "Can't check" } as const;
+const TRACK = {
+  on_track: { label: "On track", cls: "pill--met" },
+  close: { label: "Close", cls: "pill--partly" },
+  behind: { label: "Behind", cls: "pill--missed" },
+} as const;
 
 function TrajectoryChart({ s }: { s: Snapshot }) {
   const W = 340, H = 150, pad = { l: 4, r: 4, t: 14, b: 22 };
@@ -65,13 +70,13 @@ function SnapshotView({ pack }: { pack: ResearchPack }) {
         {s.kpis.map((k) => (
           <div className="kpi" key={k.label}>
             <small>{k.label}</small>
-            <b>{k.unit === "%" ? `${k.value?.toFixed(1)}%` : crore(k.value)}</b>
+            <b>{k.value === null ? "—" : k.unit === "%" ? `${k.value.toFixed(1)}%` : crore(k.value)}</b>
             <span>{k.unit !== "%" ? `${k.unit} · ` : ""}{k.period}</span>
           </div>
         ))}
       </div>
       <div className="block">
-        <h3><span>Trajectory</span><span>revenue ▮ · EBITDA margin —</span></h3>
+        <h3><span>Trajectory</span><span>revenue ▮ · operating margin —</span></h3>
         <TrajectoryChart s={s} />
       </div>
       <div className="block">
@@ -104,15 +109,20 @@ function PromiseItem({ p }: { p: Promise_ }) {
           <div className="promise__meta">Said in {p.said_in} · for {p.target_period}
             {p.repeated_in?.length > 0 && <> · reiterated {p.repeated_in.length === 1 ? "once more" : `on ${p.repeated_in.length} later calls`}</>}</div>
         </div>
-        <span className={`pill pill--${p.verdict}`}>{VERDICT_LABEL[p.verdict]}</span>
+        {p.verdict === "pending" && p.tracking
+          ? <span className={`pill ${TRACK[p.tracking.status].cls}`} title="Open promise: year-to-date tracking">{TRACK[p.tracking.status].label}</span>
+          : <span className={`pill pill--${p.verdict}`}>{VERDICT_LABEL[p.verdict]}</span>}
       </div>
       {p.verdict !== "unverifiable" && p.target_low !== null && (
         <div className="promise__vs">
           <span className="muted">Promised <b className="num" style={{ color: "var(--ink)" }}>
             {p.target_low !== null ? (p.target_high !== null && p.target_high !== p.target_low ? `${p.target_low}–${p.target_high}` : p.target_low) : "—"}{p.unit === "%" ? "%" : ""}</b></span>
-          <span className="muted">Delivered <b className="num" style={{ color: "var(--ink)" }}>{actual}</b>
+          {p.tracking && p.verdict === "pending"
+            ? <span className="muted">So far <b className="num" style={{ color: "var(--ink)" }}>{p.tracking.value.toFixed(1)}%</b>
+                <span className="faint" style={{ fontSize: 11.5 }}> · {p.tracking.through}, from reported quarters</span></span>
+            : <span className="muted">Delivered <b className="num" style={{ color: "var(--ink)" }}>{actual}</b>
             {p.actual_basis === "tables" && <span className="faint" style={{ fontSize: 11.5 }}> · from reported financials</span>}
-          </span>
+          </span>}
         </div>
       )}
       <p className="quote">“{p.quote}”</p>
@@ -130,7 +140,8 @@ function PromisesView({ pack }: { pack: ResearchPack }) {
   const sc = pr.scorecard;
   const order = (q: string) => { const m = q.match(/Q(\d)\s*FY(\d+)/); return m ? Number(m[2]) * 10 + Number(m[1]) : 0; };
   const judged = pr.items.filter((p) => p.verdict === "met" || p.verdict === "partly" || p.verdict === "missed");
-  const pending = pr.items.filter((p) => p.verdict === "pending");
+  const tracked = pr.items.filter((p) => p.verdict === "pending" && p.tracking);
+  const pending = pr.items.filter((p) => p.verdict === "pending" && !p.tracking);
   const unver = pr.items.filter((p) => p.verdict === "unverifiable");
   const groups = new Map<string, Promise_[]>();
   for (const p of judged) groups.set(p.said_in, [...(groups.get(p.said_in) ?? []), p]);
@@ -143,8 +154,13 @@ function PromisesView({ pack }: { pack: ResearchPack }) {
         <div><b className="down">{sc.missed}</b><small>missed</small></div>
         <div><b className="muted">{sc.pending}</b><small>still open</small></div>
       </div>
+      {tracked.length > 0 && (
+        <p className="fineprint" style={{ marginTop: 6 }}>
+          Of the open promises, {tracked.filter((p) => p.tracking!.status === "on_track").length} on track and {tracked.filter((p) => p.tracking!.status === "behind").length} behind, judged on the quarters reported so far.
+        </p>
+      )}
       {pr.commentary && <div className="block" style={{ fontSize: 14.5 }}>{pr.commentary.text}</div>}
-      {judged.length === 0 && (
+      {judged.length === 0 && tracked.length === 0 && (
         <div className="empty" style={{ marginTop: 12 }}><b>No promise has come due yet.</b> Management's targets in these calls are for
           periods that haven't ended. They're listed below and will be judged as results arrive.</div>
       )}
@@ -154,6 +170,12 @@ function PromisesView({ pack }: { pack: ResearchPack }) {
           {list.map((p) => <PromiseItem key={p.id} p={p} />)}
         </div>
       ))}
+      {tracked.length > 0 && (
+        <>
+          <div className="section"><h2>Open · tracking so far</h2><span className="count">{tracked.length}</span></div>
+          {tracked.map((p) => <PromiseItem key={p.id} p={p} />)}
+        </>
+      )}
       {pending.length > 0 && (
         <details className="routine" style={{ marginTop: 14 }} open={judged.length === 0}>
           <summary>{pending.length} {pending.length === 1 ? "promise" : "promises"} still open (period not over yet)</summary>
