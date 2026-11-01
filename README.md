@@ -2,7 +2,7 @@
 
 **A triage inbox for a portfolio.** Every filing and price move across 18 holdings is ranked so only a handful reach "Needs you"; routine paperwork folds into one line. Tap a results card and **"Dig in: did they deliver?"** opens a Promise Tracker that checks what management promised on earnings calls against what was delivered, with every number linked to the page it came from.
 
-**Live app:** _[LIVE LINK]_ (best on a phone) · Built for the ENAM Holdings AI Engineer Build Challenge, 1 Nov 2026.
+**Live app:** https://finn-8yp3.vercel.app (best on a phone) · Built for the ENAM Holdings AI Engineer Build Challenge, 1 Nov 2026.
 
 | Brief | Detail sheet | Did they deliver? |
 | --- | --- | --- |
@@ -35,7 +35,7 @@
 | Check | Result |
 | --- | --- |
 | Filings classified by rules alone | 95 / 120 (79%) |
-| Category accuracy vs 60 hand-labelled filings | _[eval-gold result]_ |
+| Category accuracy vs 60 hand-labelled filings | 78% first pass → **90%** after one round of rule fixes from the misses (rules 41/43, model 13/17). The gold set was also used for tuning; the 6 remaining misses are debatable Reg 30 / board-meeting notices |
 | Results cards that passed both checks | 5 / 7 (the other 2, SUNPHARMA and RELIANCE, were correctly flagged as not verified) |
 | Guidance quotes found verbatim in transcripts | 65 / 66 |
 | Ranking: "Needs you" before → after judgment rules | 40 → 15 of 120 |
@@ -80,7 +80,8 @@ export GEMINI_API_KEY=...                 # PowerShell: $env:GEMINI_API_KEY="...
 python -m finn.pipeline prices            # 400 days of EOD prices, writes prices.json
 python -m finn.pipeline push              # filings -> rules -> model -> scores -> cards -> brief.json
 python -m finn.pipeline research LT       # any NSE ticker; or --demo for the 4
-python -m pytest -q                       # 44 tests
+python -m pytest -q                       # 45 tests
+python -m finn.pipeline eval-gold         # accuracy vs hand labels in tests/gold/announcements.csv
 
 cd ../frontend && npm install && npm run dev   # npm test for the rules tests
 ```

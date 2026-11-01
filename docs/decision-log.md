@@ -27,6 +27,7 @@ What we tested, what broke, what we changed, and why. Kept as we built on 1 Nov 
 | 17:15 | Period not over → "pending" first; read 6 calls (adds the year-start call where full-year guidance is set); judged promises shown first | Most promises in the last 5 calls were for FY27 and were mislabelled "can't check" |
 | 17:30 | The same target restated on several calls counts once ("reiterated on N later calls") | Cummins showed "4 met" for one promise repeated on 4 calls |
 | 17:35 | "Partly" tolerance: 1 pp for margins, 3 pp for growth | A 3 pp margin miss is a large miss |
+| 18:10 | Gold set: 60 filings hand-labelled. 78% on first pass. Added rules from the misses (call notices and recordings → earnings_call; results press releases, presentations and newspaper ads → results, per the reference definition); rules now override earlier model labels | 7 of 13 misses were two clear patterns. Result: 90% (rules 41/43, model 13/17); the remaining 6 are debatable Reg 30 / board-meeting notices |
 
 ## Measured results
 
@@ -37,4 +38,5 @@ What we tested, what broke, what we changed, and why. Kept as we built on 1 Nov 
 - Management cards: 10, e.g. HDFC Bank's new MD & CEO, Trent's chairman retiring.
 - Guidance quotes kept after the verbatim check: 65/66.
 - L&T Promise Tracker: "order inflow +10% in FY26" met (10.0%, reported on the Q4 FY26 call); "revenue +15% in FY26" missed (11.8%). Cummins: "double-digit revenue growth in FY26" met (16.9%), reiterated on 3 later calls.
+- Category accuracy (60 hand-labelled filings): 78% → 90% after one round of rule fixes (gold set also used for tuning).
 - Cost: ₹0 (Gemini free tier).

@@ -150,6 +150,12 @@ def cmd_gold_template(args) -> None:
     rows.sort(key=lambda r: r["rule_category"] is not None)
     out = config.BACKEND / "tests" / "gold" / "announcements.csv"
     out.parent.mkdir(parents=True, exist_ok=True)
+    if out.exists() and not args.force and "label" in out.read_text(encoding="utf-8-sig", errors="ignore"):
+        import csv as _csv
+        labelled = sum(1 for r in _csv.DictReader(out.read_text(encoding="utf-8-sig", errors="ignore").splitlines())
+                       if (r.get("label") or "").strip())
+        if labelled:
+            sys.exit(f"{out.name} already has {labelled} labels. Not overwriting (use --force to start over).")
     with out.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["id", "symbol", "exchange_category", "headline", "rule_category", "label"])
         w.writeheader()
@@ -208,11 +214,23 @@ def cmd_export(_args) -> None:
     print(f"Exported brief.json ({out['items']} items), prices.json (as of {out['prices_as_of']}), meta.json")
 
 
+def _decodes(raw: bytes, enc: str) -> bool:
+    try:
+        raw.decode(enc)
+        return True
+    except UnicodeDecodeError:
+        return False
+
+
 def cmd_eval_gold(_args) -> None:
     """Accuracy of FINN's categories against your hand labels in tests/gold/announcements.csv."""
     import csv
     path = config.BACKEND / "tests" / "gold" / "announcements.csv"
-    rows = [r for r in csv.DictReader(path.open(encoding="utf-8")) if (r.get("label") or "").strip()]
+    if not path.exists():
+        sys.exit("No gold set yet. Run `python -m finn.pipeline gold-template`, label it, then run this again.")
+    raw = path.read_bytes()
+    text = next((raw.decode(enc) for enc in ("utf-8-sig", "cp1252") if _decodes(raw, enc)), raw.decode("latin-1"))
+    rows = [r for r in csv.DictReader(text.splitlines()) if (r.get("label") or "").strip()]   # utf-8-sig: Excel's BOM
     if not rows:
         sys.exit(f"No labels yet in {path}. Fill the `label` column first.")
     with db.session() as con:
@@ -258,6 +276,7 @@ def main(argv: list[str] | None = None) -> None:
     pu.set_defaults(fn=cmd_push)
     g = sub.add_parser("gold-template")
     g.add_argument("--n", type=int, default=60)
+    g.add_argument("--force", action="store_true")
     g.set_defaults(fn=cmd_gold_template)
     sub.add_parser("export").set_defaults(fn=cmd_export)
     sub.add_parser("eval-gold").set_defaults(fn=cmd_eval_gold)

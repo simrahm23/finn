@@ -46,16 +46,22 @@ def _batches(xs, n=BATCH):
 
 
 def run_rules(con) -> int:
-    rows = con.execute("SELECT a.id, a.exchange_category, a.headline FROM announcements a LEFT JOIN ann_enrichment e "
-                       "ON e.ann_id=a.id WHERE e.ann_id IS NULL OR e.method='rule'").fetchall()
+    """Rules first, always: a rule match overrides any earlier model label (keeping its summary). A filing a rule
+    used to match but no longer does is cleared, so the model classifies it on this run."""
+    rows = con.execute("SELECT a.id, a.exchange_category, a.headline, e.method FROM announcements a "
+                       "LEFT JOIN ann_enrichment e ON e.ann_id=a.id").fetchall()
     n = 0
     for r in rows:
         rule = classify_rules.classify(r["exchange_category"], r["headline"])
         if rule:
             n += 1
-            db.upsert(con, "ann_enrichment", {"ann_id": r["id"], "category": rule.category, "confidence": rule.confidence,
-                                              "method": "rule", "reasons_json": json.dumps({"sub": rule.sub}),
-                                              "prompt_version": "rules-v1"}, ["ann_id"])
+            con.execute("INSERT INTO ann_enrichment(ann_id, category, confidence, method, reasons_json, prompt_version) "
+                        "VALUES (?,?,?,?,?,?) ON CONFLICT(ann_id) DO UPDATE SET category=excluded.category, "
+                        "confidence=excluded.confidence, method='rule', reasons_json=excluded.reasons_json, "
+                        "prompt_version=excluded.prompt_version",
+                        (r["id"], rule.category, rule.confidence, "rule", json.dumps({"sub": rule.sub}), "rules-v2"))
+        elif r["method"] == "rule":
+            con.execute("DELETE FROM ann_enrichment WHERE ann_id=?", (r["id"],))
     return n
 
 

@@ -51,14 +51,23 @@ def classify(exchange_category: str, headline: str) -> Optional[Rule]:
     desc, text = exchange_category or "", headline or ""
     both = f"{desc} {text}"
 
+    results_words = r"\b(financial results?|quarterly results|results? for the|performance of the company|quarter ended|q[1-4]\s*(fy)?\s*'?\d{2})"
+
+    # Reference: results "includes results decks, shareholder letters, and ads confirming results were published".
+    if _has(r"newspaper", both) and _has(results_words, text):
+        return Rule("results", 0.85, "routine")              # the results ad: right category, still folded
     if any(_has(p, desc) for p in ROUTINE_DESC) or _has(r"\b(esop|esos|esps|employee stock option)", both):
         return Rule("unclassified", 0.95, "routine")
 
-    # Earnings call: transcript beats notice/recording.
+    # Earnings call: transcript > recording/notice. Call wording beats NSE's mixed "investor meet / con. call" bucket.
     if _has(r"transcript", both) and _has(r"call|conference|earnings", both):
         return Rule("earnings_call", 0.95, "transcript")
-    if _has(r"audio|video recording|earnings call|conference call", text) and not _has(r"investor meet", desc):
+    if _has(r"(conference|con\.|earnings|analysts?'?|investors?'?|results)\s*call|recording|audio|webcast", text):
         return Rule("earnings_call", 0.85, None)
+    if _has(r"(investor|analyst|earnings|results)\s+presentation|presentation on (the )?(financial )?results", text):
+        return Rule("results", 0.85, None)
+    if _has(r"press release", both) and _has(results_words, text):
+        return Rule("results", 0.85, None)
 
     if _has(r"record date", desc):
         if _has(r"dividend", text):

@@ -5,7 +5,7 @@ Hello ENAM team,
 
 Please find my submission for the FINN build challenge.
 
-- **Live app (open on a phone):** [LIVE LINK]
+- **Live app (open on a phone):** https://finn-8yp3.vercel.app
 - **Repository:** https://github.com/simrahm23/finn
 - **AI build history:** [LINKS]
 
@@ -16,6 +16,7 @@ The push side hands off to the pull side: "Dig in: did they deliver?" opens a **
 **Key decisions.**
 - **Code decides, models read.** Gemini turns text into typed JSON and writes short summaries. Every number, score and verdict is computed in code.
 - **Nothing unverified is shown as fact.** Quotes must appear on the cited page (65 of 66 did); results must pass PAT = PBT − tax; a summary with a number not in its source is dropped. The checks flagged two bad extractions (a "PAT +538%" for Sun Pharma among them), and FINN shows "open the filing" instead.
+- **Measured, not assumed.** I hand-labelled 60 filings: categories were 78% right on the first pass and 90% after one round of rule fixes driven by the misses (the gold set was used for that tuning, so I report both).
 - **Cost.** Rules classify 79% of filings with no model; Flash-Lite handles bulk extraction in batches; Flash only writes commentary; everything is cached. Total spend: ₹0.
 - **Push is batch, pull is pre-built.** Both produce static JSON, so the app loads instantly on a phone and doesn't depend on a live scraper during review.
 

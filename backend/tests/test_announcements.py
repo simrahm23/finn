@@ -68,3 +68,14 @@ def test_esop_and_debt():
     assert cat("Allotment of Securities", "allotment of 21098 securities pursuant to ESOP/ESPS") == ("unclassified", "routine")
     assert cat("Allotment of Securities", "allotment of 2,06,950 Non Convertible Debentures") == ("fund_raise", "debt")
     assert cat("Allotment of Securities", "allotment pursuant to Qualified Institutions Placement") == ("fund_raise", None)
+
+
+def test_gold_set_patterns():
+    inv = "Analysts/Institutional Investor Meet/Con. Call Updates"
+    assert cat(inv, "Schedule of Conference Call to be held on 4 Nov 2026")[0] == "earnings_call"
+    assert cat(inv, "Link of Recording of the earnings call")[0] == "earnings_call"
+    assert cat(inv, "Investor Presentation for Q2 FY27")[0] == "results"
+    assert cat(inv, "Schedule of analyst meet with Fidelity")[0] == "investor_meetings"
+    assert cat("Press Release", "Press Release on the performance of the Company for the quarter ended September 30, 2026")[0] == "results"
+    assert cat("Copy of Newspaper Publication", "copy of newspaper advertisement of financial results") == ("results", "routine")
+    assert cat("Copy of Newspaper Publication", "notice of postal ballot") == ("unclassified", "routine")
