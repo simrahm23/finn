@@ -1,0 +1,47 @@
+# Materiality: deterministic and editable. Score = base weight + modifiers, clipped to 0-100.
+tiers:
+  needs_you: 75       # >= 75
+  worth_knowing: 40   # 40-74; below 40 = routine (collapsed)
+
+base_weight:
+  "M&A": 85
+  results: 80
+  management_change: 60    # refined by role below
+  fund_raise: 75
+  litigation: 60
+  pledging: 70
+  credit_rating: 45        # refined by action below
+  capex: 60
+  bonus_split: 45
+  insider_trading: 45
+  press_release: 40
+  dividend: 35
+  earnings_call: 30
+  investor_meetings: 15
+  agm_egm: 15
+  postal_ballot: 15
+  unclassified: 5
+
+refine:
+  management_change:
+    top_role: 85           # CEO, MD, CFO, Chairman, whole-time director
+    other_role: 45         # independent / non-executive director, company secretary
+  credit_rating:
+    downgrade: 75
+    upgrade: 60
+    reaffirm: 25
+  earnings_call:
+    transcript: 45         # transcript adds signal; notices and links do not
+
+modifiers:
+  price_move_beyond_threshold: 10   # same-day |return| beyond the user's price threshold
+  volume_beyond_threshold: 5
+  negative_direction: 5             # downgrade, resignation of top role, adverse order
+  portfolio_weight_per_pct: 0.5     # +0.5 per % of portfolio weight, max +5
+
+# Defaults for the Rules screen (the browser stores the user's own values).
+alert_defaults:
+  price_move_pct: 4.0
+  volume_multiple: 2.0
+  volume_lookback_sessions: 20
+  categories: [results, "M&A", management_change, fund_raise, litigation, pledging, credit_rating]

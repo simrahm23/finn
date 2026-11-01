@@ -1,0 +1,22 @@
+# secrets
+.env
+*.env
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# data: PDFs and caches stay local; the seeded finn.db snapshot IS committed
+backend/data/docs/
+backend/data/cache/
+backend/data/*.db-journal
+backend/data/*.db-wal
+backend/data/*.db-shm
+backend/tests/fixtures/*.pdf
+
+# node
+node_modules/
+frontend/dist/
+.vercel/

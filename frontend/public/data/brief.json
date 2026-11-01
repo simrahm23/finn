@@ -1,0 +1,284 @@
+{
+ "generated_at": "2026-11-01T13:55:00+05:30",
+ "window_max_days": 10,
+ "items": [
+  {
+   "id": "nse:mock-kpit-cessation",
+   "symbol": "KPITTECH",
+   "company": "KPIT Technologies",
+   "filed_at": "2026-10-31T18:25:33+05:30",
+   "headline": "Cessation: Rajiv Lal, completion of tenure",
+   "exchange_category": "Cessation",
+   "category": "management_change",
+   "category_method": "rule",
+   "materiality": 52.0,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Director exit",
+    "Completion of tenure"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/KPITTECH_31102026182503_KPIT_Rajiv_Lal_Completion_of_Tenure-S.pdf",
+   "price_reaction_pct": null,
+   "card": {
+    "kind": "management",
+    "direction": "leaving",
+    "person": "Rajiv Lal",
+    "role": "[MOCK] Director (role to be extracted)",
+    "effective_date": null,
+    "reason": "Completion of tenure",
+    "profile": null,
+    "source": {
+     "label": "Filing p.1",
+     "kind": "filing",
+     "url": "https://nsearchives.nseindia.com/corporate/KPITTECH_31102026182503_KPIT_Rajiv_Lal_Completion_of_Tenure-S.pdf",
+     "page": 1
+    }
+   }
+  },
+  {
+   "id": "nse:mock-routine-5",
+   "symbol": "ITC",
+   "company": "ITC",
+   "filed_at": "2026-10-31T15:00:00+05:30",
+   "headline": "Closure of trading window",
+   "exchange_category": "Trading Window",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 13.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/MOCK_5.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:mock-lt-vyoma",
+   "symbol": "LT",
+   "company": "Larsen & Toubro",
+   "filed_at": "2026-10-31T13:00:35+05:30",
+   "headline": "Extension of timeline: business transfer to Vyoma.AI and sale of L&T Network Services stake",
+   "exchange_category": "General Updates",
+   "category": "M&A",
+   "category_method": "llm",
+   "materiality": 62.0,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Subsidiary deal",
+    "Timeline extended"
+   ],
+   "summary": "[MOCK] Completion deadline extended for an intra-group transfer; no new deal terms.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/AB_31102026130022_SEIntimation_ExtensionofBTAVyoma_31102026.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:mock-routine-3",
+   "symbol": "RELIANCE",
+   "company": "Reliance Industries",
+   "filed_at": "2026-10-31T13:00:00+05:30",
+   "headline": "Schedule of analyst meet",
+   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+   "category": "investor_meetings",
+   "category_method": "rule",
+   "materiality": 11.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/MOCK_3.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:mock-routine-1",
+   "symbol": "INFY",
+   "company": "Infosys",
+   "filed_at": "2026-10-31T11:00:00+05:30",
+   "headline": "Newspaper advertisement of results",
+   "exchange_category": "Copy of Newspaper Publication",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 9.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/MOCK_1.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:mock-lt-results",
+   "symbol": "LT",
+   "company": "Larsen & Toubro",
+   "filed_at": "2026-10-30T17:40:00+05:30",
+   "headline": "[MOCK] Financial results for the quarter ended September 30, 2026",
+   "exchange_category": "Financial Result Updates",
+   "category": "results",
+   "category_method": "rule",
+   "materiality": 88.0,
+   "tier": "needs_you",
+   "reasons": [
+    "Results",
+    "7% of portfolio"
+   ],
+   "summary": "[MOCK] Revenue up, margin down; numbers below are invented for UI work.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/MOCK_LT_results.pdf",
+   "price_reaction_pct": null,
+   "card": {
+    "kind": "results",
+    "period": "Q2 FY27 (Jul–Sep 2026) [MOCK NUMBERS]",
+    "basis": "consolidated",
+    "unit": "₹ crore",
+    "metrics": [
+     {
+      "name": "Revenue",
+      "applicable": true,
+      "current": 67000.0,
+      "prev_q": 63000.0,
+      "year_ago": 60000.0,
+      "qoq_pct": 6.3,
+      "yoy_pct": 11.7
+     },
+     {
+      "name": "EBITDA",
+      "applicable": true,
+      "current": 6600.0,
+      "prev_q": 6300.0,
+      "year_ago": 6200.0,
+      "qoq_pct": 4.8,
+      "yoy_pct": 6.5
+     },
+     {
+      "name": "PBT",
+      "applicable": true,
+      "current": 5400.0,
+      "prev_q": 5000.0,
+      "year_ago": 4900.0,
+      "qoq_pct": 8.0,
+      "yoy_pct": 10.2
+     },
+     {
+      "name": "PAT",
+      "applicable": true,
+      "current": 4000.0,
+      "prev_q": 3700.0,
+      "year_ago": 3600.0,
+      "qoq_pct": 8.1,
+      "yoy_pct": 11.1
+     }
+    ],
+    "ebitda_formula": "PBT + finance costs + depreciation − other income",
+    "checks": {
+     "verbatim": true,
+     "identities": true,
+     "cross_check": null
+    },
+    "verified": true,
+    "source": {
+     "label": "Results filing p.2",
+     "kind": "filing",
+     "url": "https://nsearchives.nseindia.com/corporate/MOCK_LT_results.pdf",
+     "page": 2
+    }
+   }
+  },
+  {
+   "id": "nse:mock-routine-4",
+   "symbol": "TITAN",
+   "company": "Titan Company",
+   "filed_at": "2026-10-30T14:00:00+05:30",
+   "headline": "Allotment of shares under ESOP",
+   "exchange_category": "ESOP/ESOS/ESPS",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 12.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/MOCK_4.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:mock-routine-2",
+   "symbol": "DIXON",
+   "company": "Dixon Technologies",
+   "filed_at": "2026-10-30T12:00:00+05:30",
+   "headline": "Reg 74(5) certificate",
+   "exchange_category": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 10.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/MOCK_2.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:mock-routine-0",
+   "symbol": "INFY",
+   "company": "Infosys",
+   "filed_at": "2026-10-30T10:00:00+05:30",
+   "headline": "Closure of trading window",
+   "exchange_category": "Trading Window",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 8.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/MOCK_0.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:mock-hdfc-director",
+   "symbol": "HDFCBANK",
+   "company": "HDFC Bank",
+   "filed_at": "2026-10-01T18:23:52+05:30",
+   "headline": "Change in Director(s): Anup Bagchi",
+   "exchange_category": "Change in Director(s)",
+   "category": "management_change",
+   "category_method": "rule",
+   "materiality": 78.0,
+   "tier": "needs_you",
+   "reasons": [
+    "Board change",
+    "8% of portfolio"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/HDFCBANK3_01102026182319_SE_Intimation-_Anup_Bagchi.pdf",
+   "price_reaction_pct": null,
+   "card": {
+    "kind": "management",
+    "direction": "joining",
+    "person": "Anup Bagchi",
+    "role": "[MOCK] Role to be extracted",
+    "effective_date": null,
+    "reason": null,
+    "profile": "[MOCK] The brief profile will be quoted from Annexure I of this filing.",
+    "source": {
+     "label": "Filing, Annexure I",
+     "kind": "filing",
+     "url": "https://nsearchives.nseindia.com/corporate/HDFCBANK3_01102026182319_SE_Intimation-_Anup_Bagchi.pdf",
+     "page": null
+    }
+   }
+  }
+ ]
+}

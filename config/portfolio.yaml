@@ -1,0 +1,24 @@
+# Mock portfolio: 18 NSE names across sectors and sizes. Weights are % of portfolio.
+# All 18 verified on yfinance (.NS) in the 13:25 spike, last date 2026-10-30.
+portfolio:
+  - {symbol: RELIANCE,   sector: Energy & Telecom,  weight: 8}
+  - {symbol: HDFCBANK,   sector: Banking,           weight: 8, lender: true}
+  - {symbol: ICICIBANK,  sector: Banking,           weight: 7, lender: true}
+  - {symbol: BAJFINANCE, sector: NBFC,              weight: 5, lender: true}
+  - {symbol: INFY,       sector: IT Services,       weight: 6}
+  - {symbol: PERSISTENT, sector: IT Services,       weight: 5}
+  - {symbol: KPITTECH,   sector: Auto Software,     weight: 4}
+  - {symbol: BHARTIARTL, sector: Telecom,           weight: 6}
+  - {symbol: ITC,        sector: FMCG,              weight: 6}
+  - {symbol: TITAN,      sector: Consumer,          weight: 5}
+  - {symbol: TRENT,      sector: Retail,            weight: 5}
+  - {symbol: ASIANPAINT, sector: Paints,            weight: 4}
+  - {symbol: MARUTI,     sector: Auto,              weight: 5}
+  - {symbol: SUNPHARMA,  sector: Pharma,            weight: 5}
+  - {symbol: LT,         sector: Capital Goods,     weight: 7}
+  - {symbol: POLYCAB,    sector: Cables & Wires,    weight: 4}
+  - {symbol: DIXON,      sector: Electronics Mfg,   weight: 3}
+  - {symbol: CDSL,       sector: Capital Markets,   weight: 3}
+
+# Pre-built for the Pull demo (all passed the screener spike: 35-46 text transcripts each).
+research_demo: [LT, HAVELLS, CUMMINSIND, ASTRAL]

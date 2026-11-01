@@ -1,0 +1,17 @@
+{
+ "generated_at": "2026-11-01T13:55:00+05:30",
+ "prices_as_of": "2026-10-30",
+ "filings_as_of": "2026-11-01T13:55:00+05:30",
+ "mock": true,
+ "sources": {
+  "prices": "mock (real last close)",
+  "announcements": "mock"
+ },
+ "llm": {
+  "calls": 0,
+  "cached": 0,
+  "tokens_in": 0,
+  "tokens_out": 0,
+  "cost_inr": 0.0
+ }
+}
