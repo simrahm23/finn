@@ -19,8 +19,8 @@ def local_path(url: str, folder: str = "_filings") -> Path:
 def fetch_pdf(url: str, folder: str = "_filings", min_interval: float = 0.5) -> Path | None:
     """Returns the cached file path, downloading if needed. None on failure (caller degrades)."""
     global _last_fetch
-    if not url or not url.lower().split("?")[0].endswith(".pdf"):
-        return None
+    if not url or not url.startswith("http"):
+        return None                     # links need not end in .pdf (company IR sites); we check the bytes instead
     path = local_path(url, folder)
     if path.exists() and path.stat().st_size > 0:
         return path

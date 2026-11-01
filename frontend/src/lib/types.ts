@@ -114,6 +114,9 @@ export interface Promise_ {
   target_high: number | null;
   unit: string;
   actual: number | null;
+  actual_basis: "tables" | "reported" | null; // computed from reported tables, or stated by management on a later call
+  actual_source: Source | null;
+  repeated_in: string[]; // later calls that restated the same target
   verdict: Verdict;
   quote: string;
   source: Source;

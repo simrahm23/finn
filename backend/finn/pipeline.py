@@ -8,7 +8,7 @@
   debug-pdf SYMBOL   show why a results PDF did or didn't yield a card
   gold-template      write 60 filings to tests/gold/announcements.csv for hand-labelling
   export             write brief.json / prices.json / meta.json from the DB (push does this too)
-  research SYMBOL    build the research pack for one ticker                           (A8-A11)
+  research SYMBOL    build the research pack for any NSE ticker (or --demo for the 4)
 """
 from __future__ import annotations
 
@@ -180,6 +180,27 @@ def cmd_debug_pdf(args) -> None:
             print(f"  p{i + 1:<3} {len(t):>6} chars  {hits}  {t[:80].strip()!r}")
 
 
+def cmd_research(args) -> None:
+    from .research import build
+    db.init_db()
+    symbols = config.portfolio()["research_demo"] if args.demo else [args.symbol]
+    for sym in symbols:
+        print(f"\n=== {sym.upper()} ===")
+        try:
+            pack = build.build(sym)
+        except Exception as e:  # noqa: BLE001  one company failing must not stop the others
+            print(f"  FAILED: {type(e).__name__}: {e}")
+            continue
+        pr = pack.promises
+        if pr:
+            for p in pr.items[:8]:
+                act = "-" if p.actual is None else f"{p.actual}"
+                print(f"   {p.verdict:<12} {p.said_in:<8} -> {p.target_period:<8} {p.target_text[:48]:<48} actual {act}")
+            if pr.commentary:
+                print(f"   commentary: {pr.commentary.text}")
+        print(f"  wrote research_{pack.symbol}.json")
+
+
 def cmd_export(_args) -> None:
     from . import export
     out = export.write_all()
@@ -215,8 +236,9 @@ def main(argv: list[str] | None = None) -> None:
     dp.add_argument("target", help="a filing URL, or a symbol (checks its results filings)")
     dp.set_defaults(fn=cmd_debug_pdf)
     r = sub.add_parser("research")
-    r.add_argument("symbol")
-    r.set_defaults(fn=_todo("A8-A11"))
+    r.add_argument("symbol", nargs="?", default="")
+    r.add_argument("--demo", action="store_true", help="build the research_demo set from portfolio.yaml")
+    r.set_defaults(fn=cmd_research)
     args = p.parse_args(argv)
     args.fn(args)
 

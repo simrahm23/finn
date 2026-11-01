@@ -1,0 +1,842 @@
+{
+ "symbol": "ASTRAL",
+ "name": "Astral Ltd",
+ "sector": null,
+ "status": "ready",
+ "built_at": "2026-11-01T17:31:54+05:30",
+ "mock": false,
+ "snapshot": {
+  "kpis": [
+   {
+    "label": "Revenue (TTM)",
+    "value": 6785.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/ASTRAL/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Operating margin",
+    "value": 16.0,
+    "unit": "%",
+    "period": "FY26",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/ASTRAL/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Net profit (TTM)",
+    "value": 576.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/ASTRAL/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "ROCE",
+    "value": 19.2,
+    "unit": "%",
+    "period": "latest",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/ASTRAL/consolidated/",
+     "page": null
+    }
+   }
+  ],
+  "years": [
+   "FY17",
+   "FY18",
+   "FY19",
+   "FY20",
+   "FY21",
+   "FY22",
+   "FY23",
+   "FY24",
+   "FY25",
+   "FY26"
+  ],
+  "revenue": [
+   1895.0,
+   2073.0,
+   2507.0,
+   2578.0,
+   3176.0,
+   4394.0,
+   5158.0,
+   5641.0,
+   5832.0,
+   6569.0
+  ],
+  "ebitda_margin_pct": [
+   14.0,
+   15.0,
+   15.0,
+   17.0,
+   20.0,
+   17.0,
+   16.0,
+   16.0,
+   16.0,
+   16.0
+  ],
+  "cfo": [
+   114.0,
+   282.0,
+   342.0,
+   405.0,
+   664.0,
+   543.0,
+   557.0,
+   823.0,
+   630.0,
+   1117.0
+  ],
+  "pat": [
+   145.0,
+   176.0,
+   197.0,
+   250.0,
+   408.0,
+   490.0,
+   472.0,
+   546.0,
+   519.0,
+   535.0
+  ],
+  "cash_conversion_pct": [
+   79.0,
+   160.0,
+   174.0,
+   162.0,
+   163.0,
+   111.0,
+   118.0,
+   151.0,
+   121.0,
+   209.0
+  ],
+  "debt_to_equity": 0.06,
+  "business": null,
+  "business_source": null,
+  "missing": []
+ },
+ "promises": {
+  "scorecard": {
+   "met": 0,
+   "partly": 0,
+   "missed": 1,
+   "pending": 15,
+   "unverifiable": 5
+  },
+  "items": [
+   {
+    "id": "p1",
+    "said_in": "Q1 FY27",
+    "target_period": "FY27",
+    "metric": "revenue_growth",
+    "target_text": "Value growth for full year more than 20%",
+    "target_low": 20.0,
+    "target_high": null,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "pending",
+    "quote": "And if that is the case, our value growth for the full year will be more than 20%, in top line.",
+    "source": {
+     "label": "Q1 FY27 transcript p.7",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2026/08/Equirus-Astral-Aug12-2026-1.pdf",
+     "page": 7
+    }
+   },
+   {
+    "id": "p12",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "ebitda_margin (segment)",
+    "target_text": "Plumbing margin between 16 to 18% in FY27",
+    "target_low": 16.0,
+    "target_high": 18.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [
+     "Q1 FY27"
+    ],
+    "verdict": "pending",
+    "quote": "Plumbing plumbing margin will be between 16 to 18%. So that whatever margin guidance we've been given we'll follow the same guidance for this year.",
+    "source": {
+     "label": "Q4 FY26 transcript p.24",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2026/05/Analysts-Meet-2026-Transcript.pdf",
+     "page": 24
+    }
+   },
+   {
+    "id": "p3",
+    "said_in": "Q1 FY27",
+    "target_period": "FY27",
+    "metric": "revenue_growth (segment)",
+    "target_text": "Paint top line growth of 20% to 25%",
+    "target_low": 20.0,
+    "target_high": 25.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "pending",
+    "quote": "Paint, we have given guidance of 20% to 25% kind of top line growth.",
+    "source": {
+     "label": "Q1 FY27 transcript p.17",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2026/08/Equirus-Astral-Aug12-2026-1.pdf",
+     "page": 17
+    }
+   },
+   {
+    "id": "p9",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "revenue_growth (segment)",
+    "target_text": "Adhesive business growth of 15-20% in India for FY27",
+    "target_low": 15.0,
+    "target_high": 20.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [
+     "Q1 FY27"
+    ],
+    "verdict": "pending",
+    "quote": "we in India we are targeting to grow minimum 15 to 20% kind of run rate UK we are going to grow at a double digit and paint we are expecting to grow minimum 25 to 30% kind of run rate for the FY27 both industrial and decorative paint",
+    "source": {
+     "label": "Q4 FY26 transcript p.15",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2026/05/Analysts-Meet-2026-Transcript.pdf",
+     "page": 15
+    }
+   },
+   {
+    "id": "p5",
+    "said_in": "Q1 FY27",
+    "target_period": "FY27",
+    "metric": "ebitda_margin (segment)",
+    "target_text": "Adhesive margin guidance of 15%",
+    "target_low": 15.0,
+    "target_high": 15.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "pending",
+    "quote": "And adhesive, we have given 15% kind of guidance.",
+    "source": {
+     "label": "Q1 FY27 transcript p.17",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2026/08/Equirus-Astral-Aug12-2026-1.pdf",
+     "page": 17
+    }
+   },
+   {
+    "id": "p6",
+    "said_in": "Q1 FY27",
+    "target_period": "FY27",
+    "metric": "volume_growth (segment)",
+    "target_text": "Minimum double-digit volume growth for plumbing",
+    "target_low": 10.0,
+    "target_high": null,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "pending",
+    "quote": "So we have given the guidance of minimum double-digit growth for volume.",
+    "source": {
+     "label": "Q1 FY27 transcript p.17",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2026/08/Equirus-Astral-Aug12-2026-1.pdf",
+     "page": 17
+    }
+   },
+   {
+    "id": "p7",
+    "said_in": "Q1 FY27",
+    "target_period": "FY27",
+    "metric": "capex",
+    "target_text": "Capex budget of 300 to 350 crores for FY27",
+    "target_low": 300.0,
+    "target_high": 350.0,
+    "unit": "₹ cr",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "pending",
+    "quote": "I think we have said, 300 kind of level, 300 to 350 level kind of level will be there.",
+    "source": {
+     "label": "Q1 FY27 transcript p.16",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2026/08/Equirus-Astral-Aug12-2026-1.pdf",
+     "page": 16
+    }
+   },
+   {
+    "id": "p8",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "revenue_growth (segment)",
+    "target_text": "Paint business revenue growth of 25-30% in FY27",
+    "target_low": 25.0,
+    "target_high": 30.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "pending",
+    "quote": "And next year we are expecting more than 25% growth into the paint because now all set because we have appointed dealers, we appointed our team, we have open up our distributor dealers.",
+    "source": {
+     "label": "Q4 FY26 transcript p.11",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2026/05/Analysts-Meet-2026-Transcript.pdf",
+     "page": 11
+    }
+   },
+   {
+    "id": "p10",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "revenue_growth (segment)",
+    "target_text": "UK adhesive revenue growth in double-digit for FY27",
+    "target_low": 10.0,
+    "target_high": 10.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "pending",
+    "quote": "we are confident that now in the coming year FY27 we will be growing at least minimum double digit kind of growth in a economy like UK growing double digit is a big number but we are confident that now we will be able to do that also",
+    "source": {
+     "label": "Q4 FY26 transcript p.11",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2026/05/Analysts-Meet-2026-Transcript.pdf",
+     "page": 11
+    }
+   },
+   {
+    "id": "p11",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "ebitda_margin (segment)",
+    "target_text": "UK business EBITDA margin of 8-10% this year",
+    "target_low": 8.0,
+    "target_high": 10.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "pending",
+    "quote": "So this year UK business will be growing giving 8 to 10% plus EBITDA and at the same time adding more products and technology to the portfolio.",
+    "source": {
+     "label": "Q4 FY26 transcript p.3",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2026/05/Analysts-Meet-2026-Transcript.pdf",
+     "page": 3
+    }
+   },
+   {
+    "id": "p13",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "volume_growth (segment)",
+    "target_text": "Industry volume growth of 8% in FY27",
+    "target_low": 8.0,
+    "target_high": 8.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "pending",
+    "quote": "So we are expecting that the industry should be growing somewhere around 8% kind of volume in FY27 unless something abnormal happen in the country",
+    "source": {
+     "label": "Q4 FY26 transcript p.11",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2026/05/Analysts-Meet-2026-Transcript.pdf",
+     "page": 11
+    }
+   },
+   {
+    "id": "p14",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "volume_growth (segment)",
+    "target_text": "Piping volume growth of 10-15% in FY27",
+    "target_low": 10.0,
+    "target_high": 15.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "pending",
+    "quote": "So FY27 we are expecting that the volume should be in the range of 10 to 15% and the value I'm sure will be depend on the polymer",
+    "source": {
+     "label": "Q4 FY26 transcript p.15",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2026/05/Analysts-Meet-2026-Transcript.pdf",
+     "page": 15
+    }
+   },
+   {
+    "id": "p16",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "capex",
+    "target_text": "Capex of around 300 crores in FY27",
+    "target_low": 300.0,
+    "target_high": 300.0,
+    "unit": "₹ cr",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "pending",
+    "quote": "so this year we are targeting somewhere around 300 cr. Last year we spent I think 360 crores or something.",
+    "source": {
+     "label": "Q4 FY26 transcript p.18",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2026/05/Analysts-Meet-2026-Transcript.pdf",
+     "page": 18
+    }
+   },
+   {
+    "id": "p17",
+    "said_in": "Q2 FY26",
+    "target_period": "FY26",
+    "metric": "revenue_growth",
+    "target_text": "20% growth for the full year in FY26",
+    "target_low": 20.0,
+    "target_high": 20.0,
+    "unit": "%",
+    "actual": 12.6,
+    "actual_basis": "tables",
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "missed",
+    "quote": "This year we have given a guidance of 20% growth for the full year and we are going to achieve it as per the guidance given by us.",
+    "source": {
+     "label": "Q2 FY26 transcript p.3",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2025/11/Transcript.pdf",
+     "page": 3
+    }
+   },
+   {
+    "id": "p18",
+    "said_in": "Q2 FY26",
+    "target_period": "FY27",
+    "metric": "ebitda_margin (segment)",
+    "target_text": "Double-digit EBITDA margin in UK business next year",
+    "target_low": 10.0,
+    "target_high": null,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "pending",
+    "quote": "So we said for the next year we are predicting that the double digit margin will be there.",
+    "source": {
+     "label": "Q2 FY26 transcript p.6",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2025/11/Transcript.pdf",
+     "page": 6
+    }
+   },
+   {
+    "id": "p21",
+    "said_in": "Q2 FY26",
+    "target_period": "FY26",
+    "metric": "capex",
+    "target_text": "CAPEX of Rs. 300 crores-Rs. 350 crores for full year",
+    "target_low": 300.0,
+    "target_high": 350.0,
+    "unit": "₹ cr",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "unverifiable",
+    "quote": "So for full layer Rs. 300 crores-Rs. 350 crores that previously we guided that remains the same?",
+    "source": {
+     "label": "Q2 FY26 transcript p.13",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2025/11/Transcript.pdf",
+     "page": 13
+    }
+   },
+   {
+    "id": "p22",
+    "said_in": "Q1 FY26",
+    "target_period": "FY26",
+    "metric": "revenue_growth (segment)",
+    "target_text": "Paint business top-line growth of 20% for full year",
+    "target_low": 20.0,
+    "target_high": 20.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "unverifiable",
+    "quote": "and we are confident that in the coming time we are expecting the paint to deliver good number, at least 20% kind of top-line growth for the full year.",
+    "source": {
+     "label": "Q1 FY26 transcript p.5",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2025/08/Transcript-of-Earning-Call-held-on-12th-August-2025.pdf",
+     "page": 5
+    }
+   },
+   {
+    "id": "p27",
+    "said_in": "Q1 FY26",
+    "target_period": "FY26",
+    "metric": "volume_growth (segment)",
+    "target_text": "Double-digit growth this year in the pipe business",
+    "target_low": 10.0,
+    "target_high": null,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "unverifiable",
+    "quote": "Now it looks like the volume has started picking up July onwards and we are confident of a double-digit growth this year as per our initial guidance.",
+    "source": {
+     "label": "Q1 FY26 transcript p.2",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2025/08/Transcript-of-Earning-Call-held-on-12th-August-2025.pdf",
+     "page": 2
+    }
+   },
+   {
+    "id": "p28",
+    "said_in": "Q4 FY25",
+    "target_period": "FY26",
+    "metric": "capex",
+    "target_text": "Capex budget around 250 to 300 crore max in FY26",
+    "target_low": 250.0,
+    "target_high": 300.0,
+    "unit": "₹ cr",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "unverifiable",
+    "quote": "capex projection for the company so I I think will be somewhere around 250 to 300 crore max because Kanpur is still yet to be completed because machine are yet to be installed so thats why you can consider 300 crore max .",
+    "source": {
+     "label": "Q4 FY25 transcript p.19",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2025/05/Analyst-Meet-2025-Transcript.pdf",
+     "page": 19
+    }
+   },
+   {
+    "id": "p29",
+    "said_in": "Q4 FY25",
+    "target_period": "FY26",
+    "metric": "volume_growth",
+    "target_text": "Lower double-digit volume growth this year",
+    "target_low": 10.0,
+    "target_high": null,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "unverifiable",
+    "quote": "But then we are optimally aiming for a lower double digit type of a volume this year if we get aided by this market buncy and market sentiment we can over deliver on what our projections are",
+    "source": {
+     "label": "Q4 FY25 transcript p.11",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2025/05/Analyst-Meet-2025-Transcript.pdf",
+     "page": 11
+    }
+   },
+   {
+    "id": "p30",
+    "said_in": "Q4 FY25",
+    "target_period": "FY27",
+    "metric": "revenue_growth",
+    "target_text": "Target 1500 crore for new growth initiatives by FY27",
+    "target_low": 1500.0,
+    "target_high": 1500.0,
+    "unit": "₹ cr",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "pending",
+    "quote": "So we have completed I think three years when we given the guidance three and another two year we are going to target the 1500 what we have said.",
+    "source": {
+     "label": "Q4 FY25 transcript p.11",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2025/05/Analyst-Meet-2025-Transcript.pdf",
+     "page": 11
+    }
+   }
+  ],
+  "qualitative": [
+   {
+    "id": "p20",
+    "said_in": "Q2 FY26",
+    "target_period": "unspecified",
+    "metric": "revenue_growth (segment)",
+    "target_text": "Bathware growth of 20-25% for next 5 years",
+    "target_low": 20.0,
+    "target_high": 25.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "unverifiable",
+    "quote": "Bathware we will aim to grow at about 20%-25% for the next 5 years.",
+    "source": {
+     "label": "Q2 FY26 transcript p.13",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2025/11/Transcript.pdf",
+     "page": 13
+    }
+   },
+   {
+    "id": "p25",
+    "said_in": "Q1 FY26",
+    "target_period": "unspecified",
+    "metric": "ebitda_margin (segment)",
+    "target_text": "UK business margins settle in 8-10% EBITDA range",
+    "target_low": 8.0,
+    "target_high": 10.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "unverifiable",
+    "quote": "Historically, UK has been 8% to 10% EBITDA company historically. So, margins will eventually settle in that 8% to 10% EBITDA range for the UK company because along with margin, there also we are going to focus on the top line growth as well.",
+    "source": {
+     "label": "Q1 FY26 transcript p.9",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2025/08/Transcript-of-Earning-Call-held-on-12th-August-2025.pdf",
+     "page": 9
+    }
+   },
+   {
+    "id": "p26",
+    "said_in": "Q1 FY26",
+    "target_period": "unspecified",
+    "metric": "ebitda_margin (segment)",
+    "target_text": "Piping business EBITDA guided at 16% to 18%",
+    "target_low": 16.0,
+    "target_high": 18.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "unverifiable",
+    "quote": "Whatever margin for the piping business, we have guided 16% to 18%. We have always guided the investor community that we will try for the 16% to 18% EBITDA in the piping business.",
+    "source": {
+     "label": "Q1 FY26 transcript p.15",
+     "kind": "transcript",
+     "url": "https://www.astralltd.com/wp-content/uploads/2025/08/Transcript-of-Earning-Call-held-on-12th-August-2025.pdf",
+     "page": 15
+    }
+   }
+  ],
+  "commentary": null
+ },
+ "documents": [
+  {
+   "id": "t0",
+   "kind": "transcript",
+   "period": "Q1 FY27",
+   "title": "Q1 FY27 earnings call transcript",
+   "url": "https://www.astralltd.com/wp-content/uploads/2026/08/Equirus-Astral-Aug12-2026-1.pdf",
+   "pages": null
+  },
+  {
+   "id": "t1",
+   "kind": "transcript",
+   "period": "Q4 FY26",
+   "title": "Q4 FY26 earnings call transcript",
+   "url": "https://www.astralltd.com/wp-content/uploads/2026/05/Analysts-Meet-2026-Transcript.pdf",
+   "pages": null
+  },
+  {
+   "id": "t2",
+   "kind": "transcript",
+   "period": "Q3 FY26",
+   "title": "Q3 FY26 earnings call transcript",
+   "url": "https://nsearchives.nseindia.com/corporate/ASTRAL_05022026201047_Earning_Call.pdf",
+   "pages": null
+  },
+  {
+   "id": "t3",
+   "kind": "transcript",
+   "period": "Q2 FY26",
+   "title": "Q2 FY26 earnings call transcript",
+   "url": "https://www.astralltd.com/wp-content/uploads/2025/11/Transcript.pdf",
+   "pages": null
+  },
+  {
+   "id": "t4",
+   "kind": "transcript",
+   "period": "Q1 FY26",
+   "title": "Q1 FY26 earnings call transcript",
+   "url": "https://www.astralltd.com/wp-content/uploads/2025/08/Transcript-of-Earning-Call-held-on-12th-August-2025.pdf",
+   "pages": null
+  },
+  {
+   "id": "t5",
+   "kind": "transcript",
+   "period": "Q4 FY25",
+   "title": "Q4 FY25 earnings call transcript",
+   "url": "https://www.astralltd.com/wp-content/uploads/2025/05/Analyst-Meet-2025-Transcript.pdf",
+   "pages": null
+  }
+ ],
+ "build_log": [
+  {
+   "ts": "2026-11-01T17:30:35+05:30",
+   "step": "screener",
+   "status": "running",
+   "detail": "financial tables + document links"
+  },
+  {
+   "ts": "2026-11-01T17:30:35+05:30",
+   "step": "screener",
+   "status": "done",
+   "detail": "Astral Ltd (consolidated); 38 transcripts listed"
+  },
+  {
+   "ts": "2026-11-01T17:30:35+05:30",
+   "step": "snapshot",
+   "status": "done",
+   "detail": "10 years; missing: nothing"
+  },
+  {
+   "ts": "2026-11-01T17:30:35+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q1 FY27 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:30:35+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q1 FY27: 7/7 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:30:35+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q4 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:30:36+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q4 FY26: 9/9 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:30:36+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q3 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:30:36+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q3 FY26: transcript looks scanned"
+  },
+  {
+   "ts": "2026-11-01T17:30:36+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q2 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:30:36+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q2 FY26: 5/5 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:30:36+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q1 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:30:36+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q1 FY26: 6/6 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:30:36+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q4 FY25 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:30:36+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q4 FY25: 3/3 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:30:36+05:30",
+   "step": "actuals",
+   "status": "done",
+   "detail": "Q4 FY26 call: 0/5 actuals found"
+  },
+  {
+   "ts": "2026-11-01T17:30:36+05:30",
+   "step": "promises",
+   "status": "done",
+   "detail": "merged 6 restated promises"
+  },
+  {
+   "ts": "2026-11-01T17:31:54+05:30",
+   "step": "promises",
+   "status": "done",
+   "detail": "21 measurable (0 met, 0 partly, 1 missed, 15 pending, 5 can't check); 3 qualitative"
+  }
+ ]
+}

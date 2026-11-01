@@ -1,43 +1,43 @@
 {
  "symbol": "LT",
- "name": "Larsen & Toubro",
+ "name": "Larsen & Toubro Ltd",
  "sector": "Capital Goods",
  "status": "ready",
- "built_at": "2026-11-01T13:55:00+05:30",
- "mock": true,
+ "built_at": "2026-11-01T17:28:50+05:30",
+ "mock": false,
  "snapshot": {
   "kpis": [
    {
     "label": "Revenue (TTM)",
-    "value": 260000.0,
+    "value": 300904.0,
     "unit": "₹ cr",
-    "period": "TTM [MOCK]",
+    "period": "TTM",
     "source": {
-     "label": "screener.in",
+     "label": "screener.in tables",
      "kind": "screener",
      "url": "https://www.screener.in/company/LT/consolidated/",
      "page": null
     }
    },
    {
-    "label": "EBITDA margin",
-    "value": 10.4,
+    "label": "Operating margin",
+    "value": 13.0,
     "unit": "%",
-    "period": "FY26 [MOCK]",
+    "period": "FY26",
     "source": {
-     "label": "screener.in",
+     "label": "screener.in tables",
      "kind": "screener",
      "url": "https://www.screener.in/company/LT/consolidated/",
      "page": null
     }
    },
    {
-    "label": "PAT (TTM)",
-    "value": 16000.0,
+    "label": "Net profit (TTM)",
+    "value": 20895.0,
     "unit": "₹ cr",
-    "period": "TTM [MOCK]",
+    "period": "TTM",
     "source": {
-     "label": "screener.in",
+     "label": "screener.in tables",
      "kind": "screener",
      "url": "https://www.screener.in/company/LT/consolidated/",
      "page": null
@@ -45,11 +45,11 @@
    },
    {
     "label": "ROCE",
-    "value": 15.0,
+    "value": 14.6,
     "unit": "%",
-    "period": "FY26 [MOCK]",
+    "period": "latest",
     "source": {
-     "label": "screener.in",
+     "label": "screener.in tables",
      "kind": "screener",
      "url": "https://www.screener.in/company/LT/consolidated/",
      "page": null
@@ -69,201 +69,597 @@
    "FY26"
   ],
   "revenue": [
-   100000.0,
-   110000.0,
-   121000.0,
-   133100.0,
-   146410.0,
-   161051.0,
-   177156.0,
-   194872.0,
-   214359.0,
-   235795.0
+   109312.0,
+   119683.0,
+   135220.0,
+   145452.0,
+   135979.0,
+   156521.0,
+   183341.0,
+   221113.0,
+   255734.0,
+   285874.0
   ],
   "ebitda_margin_pct": [
-   11.5,
-   11.2,
-   11.8,
-   11.0,
-   10.5,
-   10.9,
-   10.6,
-   10.3,
-   10.2,
-   10.4
+   15.0,
+   17.0,
+   17.0,
+   17.0,
+   17.0,
+   16.0,
+   15.0,
+   13.0,
+   14.0,
+   13.0
   ],
   "cfo": [
-   6000.0,
-   6600.0,
-   7260.0,
-   7986.0,
-   8784.6,
-   9663.06,
-   10629.359999999999,
-   11692.32,
-   12861.539999999999,
-   14147.699999999999
+   6655.0,
+   -10031.0,
+   -4756.0,
+   6694.0,
+   23074.0,
+   19164.0,
+   22777.0,
+   18266.0,
+   9151.0,
+   16741.0
   ],
   "pat": [
-   5500.0,
-   6050.0,
-   6655.0,
-   7320.5,
-   8052.55,
-   8857.805,
-   9743.58,
-   10717.960000000001,
-   11789.745,
-   12968.725
+   6486.0,
+   8004.0,
+   10217.0,
+   10894.0,
+   12921.0,
+   10419.0,
+   12531.0,
+   15547.0,
+   17673.0,
+   18954.0
   ],
   "cash_conversion_pct": [
-   109.1,
-   109.1,
-   109.1,
-   109.1,
-   109.1,
-   109.1,
-   109.1,
-   109.1,
-   109.1,
-   109.1
+   103.0,
+   -125.0,
+   -47.0,
+   61.0,
+   179.0,
+   184.0,
+   182.0,
+   117.0,
+   52.0,
+   88.0
   ],
-  "debt_to_equity": 1.1,
-  "business": "[MOCK] Business description will be quoted from the annual report.",
+  "debt_to_equity": 1.24,
+  "business": null,
   "business_source": null,
   "missing": []
  },
  "promises": {
   "scorecard": {
    "met": 2,
-   "partly": 1,
+   "partly": 0,
    "missed": 1,
-   "pending": 1,
-   "unverifiable": 0
+   "pending": 4,
+   "unverifiable": 5
   },
   "items": [
    {
-    "id": "p1",
+    "id": "p6",
     "said_in": "Q4 FY26",
     "target_period": "FY27",
-    "metric": "order_inflow_growth",
-    "target_text": "[MOCK] ~10% order inflow growth",
+    "metric": "revenue_growth",
+    "target_text": "Revenue growth in the range of 10% to 12% for FY27",
     "target_low": 10.0,
-    "target_high": 10.0,
+    "target_high": 12.0,
     "unit": "%",
     "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [
+     "Q1 FY27"
+    ],
     "verdict": "pending",
-    "quote": "[MOCK QUOTE] ...",
+    "quote": "On Revenue, we expect growth to be in the range of 10% to 12% for FY27.",
     "source": {
-     "label": "Q4 FY26 transcript p.6",
+     "label": "Q4 FY26 transcript p.13",
      "kind": "transcript",
-     "url": "https://example.invalid/mock.pdf",
-     "page": 6
-    }
-   },
-   {
-    "id": "p2",
-    "said_in": "Q4 FY25",
-    "target_period": "FY26",
-    "metric": "revenue_growth",
-    "target_text": "[MOCK] 15% revenue growth",
-    "target_low": 15.0,
-    "target_high": 15.0,
-    "unit": "%",
-    "actual": 15.8,
-    "verdict": "met",
-    "quote": "[MOCK QUOTE] ...",
-    "source": {
-     "label": "Q4 FY25 transcript p.5",
-     "kind": "transcript",
-     "url": "https://example.invalid/mock.pdf",
-     "page": 5
-    }
-   },
-   {
-    "id": "p3",
-    "said_in": "Q4 FY25",
-    "target_period": "FY26",
-    "metric": "ebitda_margin",
-    "target_text": "[MOCK] core margin ~8.5%",
-    "target_low": 8.5,
-    "target_high": 8.5,
-    "unit": "%",
-    "actual": 7.9,
-    "verdict": "partly",
-    "quote": "[MOCK QUOTE] ...",
-    "source": {
-     "label": "Q4 FY25 transcript p.9",
-     "kind": "transcript",
-     "url": "https://example.invalid/mock.pdf",
-     "page": 9
-    }
-   },
-   {
-    "id": "p4",
-    "said_in": "Q2 FY26",
-    "target_period": "FY26",
-    "metric": "order_inflow_growth",
-    "target_text": "[MOCK] 10% order inflow growth",
-    "target_low": 10.0,
-    "target_high": 10.0,
-    "unit": "%",
-    "actual": 4.0,
-    "verdict": "missed",
-    "quote": "[MOCK QUOTE] ...",
-    "source": {
-     "label": "Q2 FY26 transcript p.4",
-     "kind": "transcript",
-     "url": "https://example.invalid/mock.pdf",
-     "page": 4
+     "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2026AnalysttransL&T%20Q4%20FY26%20Earnings%20Call%20Transcript.pdf",
+     "page": 13
     }
    },
    {
     "id": "p5",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "order_inflow_growth",
+    "target_text": "Group order inflows to grow 10% to 12% in FY27",
+    "target_low": 10.0,
+    "target_high": 12.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [
+     "Q1 FY27"
+    ],
+    "verdict": "pending",
+    "quote": "Based on this visibility and the opportunities we are pursuing, we expect the group order inflows to grow in the range of 10% to 12% in FY27.",
+    "source": {
+     "label": "Q4 FY26 transcript p.13",
+     "kind": "transcript",
+     "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2026AnalysttransL&T%20Q4%20FY26%20Earnings%20Call%20Transcript.pdf",
+     "page": 13
+    }
+   },
+   {
+    "id": "p3",
     "said_in": "Q1 FY27",
     "target_period": "FY27",
+    "metric": "ebitda_margin (segment)",
+    "target_text": "EBITDA margin of around 7.8% for PPM portfolio in FY27",
+    "target_low": 7.8,
+    "target_high": 7.8,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "pending",
+    "quote": "Coming on to margin: In line with our Revenue growth guidance, we continue to target the margin of around 7.8% for FY '27 with respect to the PPM portfolio.",
+    "source": {
+     "label": "Q1 FY27 transcript p.11",
+     "kind": "transcript",
+     "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2027AnalysttransL&T-Earnings-Jul28-2026.pdf",
+     "page": 11
+    }
+   },
+   {
+    "id": "p8",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "other",
+    "target_text": "Working capital to be around 10% in FY27",
+    "target_low": 10.0,
+    "target_high": 10.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [
+     "Q1 FY27"
+    ],
+    "verdict": "pending",
+    "quote": "Accordingly, we are guiding the working capital to be around 10% in FY27, which remains well within our targeted range.",
+    "source": {
+     "label": "Q4 FY26 transcript p.13",
+     "kind": "transcript",
+     "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2026AnalysttransL&T%20Q4%20FY26%20Earnings%20Call%20Transcript.pdf",
+     "page": 13
+    }
+   },
+   {
+    "id": "p23",
+    "said_in": "Q4 FY25",
+    "target_period": "FY26",
+    "metric": "ebitda_margin (segment)",
+    "target_text": "Projects and Manufacturing portfolio margin targeting 8.5% in FY26",
+    "target_low": 8.5,
+    "target_high": 8.5,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [
+     "Q2 FY26",
+     "Q3 FY26"
+    ],
+    "verdict": "unverifiable",
+    "quote": "With respect to the margins in the Projects and Manufacturing portfolio, we are targeting 8.5% for the year of FY26...",
+    "source": {
+     "label": "Q4 FY25 transcript p.12",
+     "kind": "transcript",
+     "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2025AnalysttransL&T%20Q4FY25%20Earnings%20Call%20Transcript.pdf",
+     "page": 12
+    }
+   },
+   {
+    "id": "p12",
+    "said_in": "Q3 FY26",
+    "target_period": "FY26",
+    "metric": "other",
+    "target_text": "Net Working Capital to Revenue target of around 10% for FY26",
+    "target_low": 10.0,
+    "target_high": 10.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "unverifiable",
+    "quote": "However, with stronger collection intensity and improved contractual terms, our Net Working Capital to Revenue has improved sharply to 8.2% as of December '25, and we expect to close the year with a revised target of around 10%.",
+    "source": {
+     "label": "Q3 FY26 transcript p.9",
+     "kind": "transcript",
+     "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2026AnalysttransL&T%20Transcript%20Q3FY26.pdf",
+     "page": 9
+    }
+   },
+   {
+    "id": "p22",
+    "said_in": "Q4 FY25",
+    "target_period": "FY26",
+    "metric": "order_inflow_growth",
+    "target_text": "Group order inflows to grow at 10% in FY26",
+    "target_low": 10.0,
+    "target_high": 10.0,
+    "unit": "%",
+    "actual": 10.0,
+    "actual_basis": "reported",
+    "actual_source": {
+     "label": "Reported, Q4 FY26 call p.5",
+     "kind": "transcript",
+     "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2026AnalysttransL&T%20Q4%20FY26%20Earnings%20Call%20Transcript.pdf",
+     "page": 5
+    },
+    "repeated_in": [
+     "Q1 FY26",
+     "Q3 FY26"
+    ],
+    "verdict": "met",
+    "quote": "We expect our group order inflows and group revenues to grow at 10% and 15% respectively for a FY26.",
+    "source": {
+     "label": "Q4 FY25 transcript p.12",
+     "kind": "transcript",
+     "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2025AnalysttransL&T%20Q4FY25%20Earnings%20Call%20Transcript.pdf",
+     "page": 12
+    }
+   },
+   {
+    "id": "p21",
+    "said_in": "Q4 FY25",
+    "target_period": "FY26",
+    "metric": "revenue_growth",
+    "target_text": "Group revenues to grow at 15% in FY26",
+    "target_low": 15.0,
+    "target_high": 15.0,
+    "unit": "%",
+    "actual": 11.8,
+    "actual_basis": "tables",
+    "actual_source": null,
+    "repeated_in": [
+     "Q1 FY26",
+     "Q2 FY26"
+    ],
+    "verdict": "missed",
+    "quote": "We expect our group order inflows and group revenues to grow at 10% and 15% respectively for a FY26.",
+    "source": {
+     "label": "Q4 FY25 transcript p.12",
+     "kind": "transcript",
+     "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2025AnalysttransL&T%20Q4FY25%20Earnings%20Call%20Transcript.pdf",
+     "page": 12
+    }
+   },
+   {
+    "id": "p16",
+    "said_in": "Q2 FY26",
+    "target_period": "FY26",
+    "metric": "order_inflow_growth",
+    "target_text": "Exceeding full year order inflow growth of 10%",
+    "target_low": 10.0,
+    "target_high": null,
+    "unit": "%",
+    "actual": 10.0,
+    "actual_basis": "reported",
+    "actual_source": {
+     "label": "Reported, Q4 FY26 call p.5",
+     "kind": "transcript",
+     "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2026AnalysttransL&T%20Q4%20FY26%20Earnings%20Call%20Transcript.pdf",
+     "page": 5
+    },
+    "repeated_in": [],
+    "verdict": "met",
+    "quote": "We are confident of exceeding our full year FY '26 guidance of 10% growth in group order inflows for the current year.",
+    "source": {
+     "label": "Q2 FY26 transcript p.9",
+     "kind": "transcript",
+     "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2026AnalysttransL&T%20Q2FY26%20Earnings%20Call%20Transcript%20.pdf",
+     "page": 9
+    }
+   },
+   {
+    "id": "p19",
+    "said_in": "Q1 FY26",
+    "target_period": "FY26",
+    "metric": "ebitda_margin (segment)",
+    "target_text": "Projects and Manufacturing margin range of 8.3% to 8.5%",
+    "target_low": 8.3,
+    "target_high": 8.5,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "unverifiable",
+    "quote": "With respect to the margin in the Projects and Manufacturing portfolio, we continue to target the 8.3% to 8.5% range for the full year FY26.",
+    "source": {
+     "label": "Q1 FY26 transcript p.9",
+     "kind": "transcript",
+     "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2026AnalysttransL&T%20Earnings%20Call%20Transcript%20Q1FY26.pdf",
+     "page": 9
+    }
+   },
+   {
+    "id": "p20",
+    "said_in": "Q1 FY26",
+    "target_period": "FY26",
     "metric": "capex",
-    "target_text": "[MOCK] capex in line with plan",
+    "target_text": "Net Working Capital-to-Revenue guidance of 12% for March 26",
+    "target_low": 12.0,
+    "target_high": 12.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "unverifiable",
+    "quote": "Our Net Working Capital-to-Revenue guidance for March ‘26 remains at 12%.",
+    "source": {
+     "label": "Q1 FY26 transcript p.9",
+     "kind": "transcript",
+     "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2026AnalysttransL&T%20Earnings%20Call%20Transcript%20Q1FY26.pdf",
+     "page": 9
+    }
+   },
+   {
+    "id": "p24",
+    "said_in": "Q4 FY25",
+    "target_period": "FY26",
+    "metric": "other",
+    "target_text": "Net Working Capital to Revenue guidance at 12% for March '26",
+    "target_low": 12.0,
+    "target_high": 12.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "unverifiable",
+    "quote": "...and our Net Working Capital to Revenue guidance for March '26 is at 12%.",
+    "source": {
+     "label": "Q4 FY25 transcript p.12",
+     "kind": "transcript",
+     "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2025AnalysttransL&T%20Q4FY25%20Earnings%20Call%20Transcript.pdf",
+     "page": 12
+    }
+   }
+  ],
+  "qualitative": [
+   {
+    "id": "p7",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "ebitda_margin (segment)",
+    "target_text": "PP&M margins expected to be stable in FY27",
     "target_low": null,
     "target_high": null,
     "unit": "%",
     "actual": null,
-    "verdict": "met",
-    "quote": "[MOCK QUOTE] ...",
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "pending",
+    "quote": "On this reclassified basis, the FY26 margins for Projects, Products and Manufacturing was 7.8%, and we expect the same to be stable as well in FY27 as well.",
     "source": {
-     "label": "Q1 FY27 transcript p.11",
+     "label": "Q4 FY26 transcript p.13",
      "kind": "transcript",
-     "url": "https://example.invalid/mock.pdf",
-     "page": 11
+     "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2026AnalysttransL&T%20Q4%20FY26%20Earnings%20Call%20Transcript.pdf",
+     "page": 13
+    }
+   },
+   {
+    "id": "p9",
+    "said_in": "Q4 FY26",
+    "target_period": "unspecified",
+    "metric": "order_inflow_growth",
+    "target_text": "Order inflow growth CAGR of 10% to 12% over Lakshya 31",
+    "target_low": 10.0,
+    "target_high": 12.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "unverifiable",
+    "quote": "Over the next five years, we are targeting order inflow growth at a CAGR return of 10% to 12%, revenue growth of 12% to 15%, and a Return on Equity in the range of 16% to 17%.",
+    "source": {
+     "label": "Q4 FY26 transcript p.13",
+     "kind": "transcript",
+     "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2026AnalysttransL&T%20Q4%20FY26%20Earnings%20Call%20Transcript.pdf",
+     "page": 13
+    }
+   },
+   {
+    "id": "p10",
+    "said_in": "Q4 FY26",
+    "target_period": "unspecified",
+    "metric": "revenue_growth",
+    "target_text": "Revenue growth CAGR of 12% to 15% over Lakshya 31",
+    "target_low": 12.0,
+    "target_high": 15.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "unverifiable",
+    "quote": "The Lakshya L31 targets 13% to 15% revenue CAGR growth for over five years with EBIT margins of 16% to 17%, reflecting a structurally stronger and higher-quality growth profile.",
+    "source": {
+     "label": "Q4 FY26 transcript p.12",
+     "kind": "transcript",
+     "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2026AnalysttransL&T%20Q4%20FY26%20Earnings%20Call%20Transcript.pdf",
+     "page": 12
     }
    }
   ],
-  "qualitative": [],
-  "commentary": {
-   "text": "[MOCK] Delivered on revenue; margin and order-inflow guidance slipped.",
-   "cites": [
-    "p2",
-    "p3",
-    "p4"
-   ]
-  }
+  "commentary": null
  },
  "documents": [
   {
-   "id": "mock-doc",
+   "id": "t0",
    "kind": "transcript",
    "period": "Q1 FY27",
-   "title": "[MOCK] Q1 FY27 earnings call transcript",
-   "url": "https://example.invalid/mock.pdf",
+   "title": "Q1 FY27 earnings call transcript",
+   "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2027AnalysttransL&T-Earnings-Jul28-2026.pdf",
+   "pages": null
+  },
+  {
+   "id": "t1",
+   "kind": "transcript",
+   "period": "Q4 FY26",
+   "title": "Q4 FY26 earnings call transcript",
+   "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2026AnalysttransL&T%20Q4%20FY26%20Earnings%20Call%20Transcript.pdf",
+   "pages": null
+  },
+  {
+   "id": "t2",
+   "kind": "transcript",
+   "period": "Q3 FY26",
+   "title": "Q3 FY26 earnings call transcript",
+   "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2026AnalysttransL&T%20Transcript%20Q3FY26.pdf",
+   "pages": null
+  },
+  {
+   "id": "t3",
+   "kind": "transcript",
+   "period": "Q2 FY26",
+   "title": "Q2 FY26 earnings call transcript",
+   "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2026AnalysttransL&T%20Q2FY26%20Earnings%20Call%20Transcript%20.pdf",
+   "pages": null
+  },
+  {
+   "id": "t4",
+   "kind": "transcript",
+   "period": "Q1 FY26",
+   "title": "Q1 FY26 earnings call transcript",
+   "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2026AnalysttransL&T%20Earnings%20Call%20Transcript%20Q1FY26.pdf",
+   "pages": null
+  },
+  {
+   "id": "t5",
+   "kind": "transcript",
+   "period": "Q4 FY25",
+   "title": "Q4 FY25 earnings call transcript",
+   "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2025AnalysttransL&T%20Q4FY25%20Earnings%20Call%20Transcript.pdf",
    "pages": null
   }
  ],
  "build_log": [
   {
-   "ts": "2026-11-01T13:55:00+05:30",
-   "step": "mock data",
+   "ts": "2026-11-01T17:27:27+05:30",
+   "step": "screener",
+   "status": "running",
+   "detail": "financial tables + document links"
+  },
+  {
+   "ts": "2026-11-01T17:27:28+05:30",
+   "step": "screener",
    "status": "done",
-   "detail": "Hand-made for UI work"
+   "detail": "Larsen & Toubro Ltd (consolidated); 35 transcripts listed"
+  },
+  {
+   "ts": "2026-11-01T17:27:28+05:30",
+   "step": "snapshot",
+   "status": "done",
+   "detail": "10 years; missing: nothing"
+  },
+  {
+   "ts": "2026-11-01T17:27:28+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q1 FY27 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:27:30+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q1 FY27: 4/4 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:27:30+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q4 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:27:30+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q4 FY26: 6/6 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:27:30+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q3 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:27:30+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q3 FY26: 3/4 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:27:30+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q2 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:27:30+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q2 FY26: 3/3 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:27:30+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q1 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:27:31+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q1 FY26: 4/4 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:27:31+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q4 FY25 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:27:31+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q4 FY25: 4/4 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:27:31+05:30",
+   "step": "actuals",
+   "status": "done",
+   "detail": "Q4 FY26 call: 4/8 actuals found"
+  },
+  {
+   "ts": "2026-11-01T17:27:31+05:30",
+   "step": "promises",
+   "status": "done",
+   "detail": "merged 9 restated promises"
+  },
+  {
+   "ts": "2026-11-01T17:28:50+05:30",
+   "step": "promises",
+   "status": "done",
+   "detail": "12 measurable (2 met, 0 partly, 1 missed, 4 pending, 5 can't check); 3 qualitative"
   }
  ]
 }

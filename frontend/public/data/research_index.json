@@ -1,0 +1,26 @@
+[
+ {
+  "symbol": "ASTRAL",
+  "name": "Astral Ltd",
+  "built_at": "2026-11-01T17:31:54+05:30",
+  "mock": false
+ },
+ {
+  "symbol": "CUMMINSIND",
+  "name": "Cummins India Ltd",
+  "built_at": "2026-11-01T17:30:35+05:30",
+  "mock": false
+ },
+ {
+  "symbol": "HAVELLS",
+  "name": "Havells India Ltd",
+  "built_at": "2026-11-01T17:29:13+05:30",
+  "mock": false
+ },
+ {
+  "symbol": "LT",
+  "name": "Larsen & Toubro Ltd",
+  "built_at": "2026-11-01T17:28:50+05:30",
+  "mock": false
+ }
+]

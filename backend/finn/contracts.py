@@ -156,6 +156,9 @@ class Promise(BaseModel):
     target_high: Optional[float] = None
     unit: str = "%"
     actual: Optional[float] = None
+    actual_basis: Optional[Literal["tables", "reported"]] = None   # computed from tables, or stated by management
+    actual_source: Optional[Source] = None                         # where "reported" actuals were said
+    repeated_in: list[str] = []                                    # later calls that restated the same target
     verdict: Verdict
     quote: str
     source: Source

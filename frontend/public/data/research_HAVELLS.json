@@ -1,0 +1,393 @@
+{
+ "symbol": "HAVELLS",
+ "name": "Havells India Ltd",
+ "sector": null,
+ "status": "ready",
+ "built_at": "2026-11-01T17:29:13+05:30",
+ "mock": false,
+ "snapshot": {
+  "kpis": [
+   {
+    "label": "Revenue (TTM)",
+    "value": 25243.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/HAVELLS/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Operating margin",
+    "value": 10.0,
+    "unit": "%",
+    "period": "FY26",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/HAVELLS/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Net profit (TTM)",
+    "value": 1662.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/HAVELLS/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "ROCE",
+    "value": 24.9,
+    "unit": "%",
+    "period": "latest",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/HAVELLS/consolidated/",
+     "page": null
+    }
+   }
+  ],
+  "years": [
+   "FY17",
+   "FY18",
+   "FY19",
+   "FY20",
+   "FY21",
+   "FY22",
+   "FY23",
+   "FY24",
+   "FY25",
+   "FY26"
+  ],
+  "revenue": [
+   6130.0,
+   8116.0,
+   10073.0,
+   9440.0,
+   10457.0,
+   13938.0,
+   16911.0,
+   18590.0,
+   21778.0,
+   22528.0
+  ],
+  "ebitda_margin_pct": [
+   13.0,
+   13.0,
+   12.0,
+   11.0,
+   15.0,
+   13.0,
+   10.0,
+   10.0,
+   10.0,
+   10.0
+  ],
+  "cfo": [
+   767.0,
+   1100.0,
+   501.0,
+   827.0,
+   660.0,
+   1728.0,
+   565.0,
+   1953.0,
+   1523.0,
+   1572.0
+  ],
+  "pat": [
+   494.0,
+   661.0,
+   788.0,
+   735.0,
+   1044.0,
+   1196.0,
+   1072.0,
+   1271.0,
+   1470.0,
+   1689.0
+  ],
+  "cash_conversion_pct": [
+   155.0,
+   166.0,
+   64.0,
+   113.0,
+   63.0,
+   144.0,
+   53.0,
+   154.0,
+   104.0,
+   93.0
+  ],
+  "debt_to_equity": 0.02,
+  "business": null,
+  "business_source": null,
+  "missing": []
+ },
+ "promises": {
+  "scorecard": {
+   "met": 0,
+   "partly": 0,
+   "missed": 0,
+   "pending": 2,
+   "unverifiable": 2
+  },
+  "items": [
+   {
+    "id": "p4",
+    "said_in": "Q2 FY26",
+    "target_period": "FY27",
+    "metric": "capex",
+    "target_text": "FY 26-27 capex estimated at INR1,000 crores",
+    "target_low": 1000.0,
+    "target_high": 1000.0,
+    "unit": "₹ cr",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [
+     "Q3 FY26"
+    ],
+    "verdict": "pending",
+    "quote": "FY 26-27, right now, it's estimated about INR1,000 crores, but we'll know the exact numbers by end of March.",
+    "source": {
+     "label": "Q2 FY26 transcript p.12",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=783e02f6-2b40-4dbd-b077-7bb9e1ea693c.pdf",
+     "page": 12
+    }
+   },
+   {
+    "id": "p2",
+    "said_in": "Q3 FY26",
+    "target_period": "Q4 FY26",
+    "metric": "other",
+    "target_text": "Price increase of 5% to 10% in this quarter",
+    "target_low": 5.0,
+    "target_high": 10.0,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "unverifiable",
+    "quote": "You also have to figure the GST reduction. But if you take that out, I think overall, there could be a 5% to 10% increase in this quarter.",
+    "source": {
+     "label": "Q3 FY26 transcript p.5",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2292e7c9-0098-4067-a7a1-b5c2a5b755b6.pdf",
+     "page": 5
+    }
+   },
+   {
+    "id": "p3",
+    "said_in": "Q2 FY26",
+    "target_period": "FY26",
+    "metric": "capex",
+    "target_text": "FY 25-26 capex of INR1,450 crores",
+    "target_low": 1450.0,
+    "target_high": 1450.0,
+    "unit": "₹ cr",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "unverifiable",
+    "quote": "FY 25-26 will be about INR1,450 crores.",
+    "source": {
+     "label": "Q2 FY26 transcript p.12",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=783e02f6-2b40-4dbd-b077-7bb9e1ea693c.pdf",
+     "page": 12
+    }
+   },
+   {
+    "id": "p5",
+    "said_in": "Q1 FY26",
+    "target_period": "FY27",
+    "metric": "other (segment)",
+    "target_text": "Solar business to cross Rs. 1,000-1,500 crores",
+    "target_low": 1000.0,
+    "target_high": 1500.0,
+    "unit": "₹ cr",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "pending",
+    "quote": "I think last year, we did about Rs. 500 crores in the solar business. We definitely see that it could cross maybe Rs. 1,000 crores - Rs. 1,500 crores in the next couple of years.",
+    "source": {
+     "label": "Q1 FY26 transcript p.8",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f06ac0bc-fd4a-4321-b6d4-af1bf9dcb01e.pdf",
+     "page": 8
+    }
+   }
+  ],
+  "qualitative": [],
+  "commentary": null
+ },
+ "documents": [
+  {
+   "id": "t0",
+   "kind": "transcript",
+   "period": "Q2 FY27",
+   "title": "Q2 FY27 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=160d9e40-34d9-4f66-8c1f-e1c50f663569.pdf",
+   "pages": null
+  },
+  {
+   "id": "t1",
+   "kind": "transcript",
+   "period": "Q1 FY27",
+   "title": "Q1 FY27 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=5e39e029-d034-49cf-b1b7-14523890ac2a.pdf",
+   "pages": null
+  },
+  {
+   "id": "t2",
+   "kind": "transcript",
+   "period": "Q4 FY26",
+   "title": "Q4 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d6d676cf-d73c-4a15-a3dd-8c2bf8213110.pdf",
+   "pages": null
+  },
+  {
+   "id": "t3",
+   "kind": "transcript",
+   "period": "Q3 FY26",
+   "title": "Q3 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2292e7c9-0098-4067-a7a1-b5c2a5b755b6.pdf",
+   "pages": null
+  },
+  {
+   "id": "t4",
+   "kind": "transcript",
+   "period": "Q2 FY26",
+   "title": "Q2 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=783e02f6-2b40-4dbd-b077-7bb9e1ea693c.pdf",
+   "pages": null
+  },
+  {
+   "id": "t5",
+   "kind": "transcript",
+   "period": "Q1 FY26",
+   "title": "Q1 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f06ac0bc-fd4a-4321-b6d4-af1bf9dcb01e.pdf",
+   "pages": null
+  }
+ ],
+ "build_log": [
+  {
+   "ts": "2026-11-01T17:28:50+05:30",
+   "step": "screener",
+   "status": "running",
+   "detail": "financial tables + document links"
+  },
+  {
+   "ts": "2026-11-01T17:28:51+05:30",
+   "step": "screener",
+   "status": "done",
+   "detail": "Havells India Ltd (consolidated); 45 transcripts listed"
+  },
+  {
+   "ts": "2026-11-01T17:28:51+05:30",
+   "step": "snapshot",
+   "status": "done",
+   "detail": "10 years; missing: nothing"
+  },
+  {
+   "ts": "2026-11-01T17:28:51+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q2 FY27 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:28:51+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q2 FY27: 0/0 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:28:51+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q1 FY27 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:28:51+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q1 FY27: 0/0 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:28:51+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q4 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:29:13+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q4 FY26: 0/0 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:29:13+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q3 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:29:13+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q3 FY26: 2/2 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:29:13+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q2 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:29:13+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q2 FY26: 2/2 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:29:13+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q1 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:29:13+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q1 FY26: 1/1 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:29:13+05:30",
+   "step": "promises",
+   "status": "done",
+   "detail": "merged 1 restated promises"
+  },
+  {
+   "ts": "2026-11-01T17:29:13+05:30",
+   "step": "promises",
+   "status": "done",
+   "detail": "4 measurable (0 met, 0 partly, 0 missed, 2 pending, 2 can't check); 0 qualitative"
+  }
+ ]
+}

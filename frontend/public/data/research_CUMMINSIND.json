@@ -1,0 +1,374 @@
+{
+ "symbol": "CUMMINSIND",
+ "name": "Cummins India Ltd",
+ "sector": null,
+ "status": "ready",
+ "built_at": "2026-11-01T17:30:35+05:30",
+ "mock": false,
+ "snapshot": {
+  "kpis": [
+   {
+    "label": "Revenue (TTM)",
+    "value": 12662.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/CUMMINSIND/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Operating margin",
+    "value": 21.0,
+    "unit": "%",
+    "period": "FY26",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/CUMMINSIND/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "Net profit (TTM)",
+    "value": 2367.0,
+    "unit": "₹ cr",
+    "period": "TTM",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/CUMMINSIND/consolidated/",
+     "page": null
+    }
+   },
+   {
+    "label": "ROCE",
+    "value": 39.5,
+    "unit": "%",
+    "period": "latest",
+    "source": {
+     "label": "screener.in tables",
+     "kind": "screener",
+     "url": "https://www.screener.in/company/CUMMINSIND/consolidated/",
+     "page": null
+    }
+   }
+  ],
+  "years": [
+   "FY17",
+   "FY18",
+   "FY19",
+   "FY20",
+   "FY21",
+   "FY22",
+   "FY23",
+   "FY24",
+   "FY25",
+   "FY26"
+  ],
+  "revenue": [
+   5106.0,
+   5112.0,
+   5697.0,
+   5191.0,
+   4360.0,
+   6171.0,
+   7772.0,
+   9000.0,
+   10391.0,
+   12143.0
+  ],
+  "ebitda_margin_pct": [
+   16.0,
+   14.0,
+   15.0,
+   11.0,
+   14.0,
+   14.0,
+   16.0,
+   20.0,
+   20.0,
+   21.0
+  ],
+  "cfo": [
+   748.0,
+   632.0,
+   553.0,
+   601.0,
+   789.0,
+   712.0,
+   820.0,
+   1285.0,
+   1683.0,
+   1734.0
+  ],
+  "pat": [
+   736.0,
+   712.0,
+   743.0,
+   706.0,
+   635.0,
+   934.0,
+   1228.0,
+   1721.0,
+   2000.0,
+   2362.0
+  ],
+  "cash_conversion_pct": [
+   102.0,
+   89.0,
+   74.0,
+   85.0,
+   124.0,
+   76.0,
+   67.0,
+   75.0,
+   84.0,
+   73.0
+  ],
+  "debt_to_equity": 0.0,
+  "business": null,
+  "business_source": null,
+  "missing": []
+ },
+ "promises": {
+  "scorecard": {
+   "met": 1,
+   "partly": 0,
+   "missed": 0,
+   "pending": 1,
+   "unverifiable": 0
+  },
+  "items": [
+   {
+    "id": "p6",
+    "said_in": "Q4 FY25",
+    "target_period": "FY26",
+    "metric": "revenue_growth",
+    "target_text": "Double-digit revenue growth in financial year 2025, '26",
+    "target_low": 10.0,
+    "target_high": null,
+    "unit": "%",
+    "actual": 16.9,
+    "actual_basis": "tables",
+    "actual_source": null,
+    "repeated_in": [
+     "Q1 FY26",
+     "Q2 FY26",
+     "Q3 FY26"
+    ],
+    "verdict": "met",
+    "quote": "Going forward, we anticipate double-digit revenue growth in financial year 2025, '26, while remaining cautiously optimistic, given the uncertainty from changes in global tax and trade policies...",
+    "source": {
+     "label": "Q4 FY25 transcript p.4",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1e318165-1511-495b-bb72-7b5391a23016.pdf",
+     "page": 4
+    }
+   },
+   {
+    "id": "p3",
+    "said_in": "Q3 FY26",
+    "target_period": "FY27",
+    "metric": "revenue_growth",
+    "target_text": "Double-digit domestic growth in FY27",
+    "target_low": 10.0,
+    "target_high": null,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "pending",
+    "quote": "For the domestic growth, I can say that for financial year '27, we will target double-digit growth.",
+    "source": {
+     "label": "Q3 FY26 transcript p.4",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=dd1502b2-99ca-4254-9c2f-c446b090114f.pdf",
+     "page": 4
+    }
+   }
+  ],
+  "qualitative": [
+   {
+    "id": "p1",
+    "said_in": "Q4 FY26",
+    "target_period": "FY27",
+    "metric": "revenue_growth",
+    "target_text": "Moderate growth across segments in FY27",
+    "target_low": null,
+    "target_high": null,
+    "unit": "%",
+    "actual": null,
+    "actual_basis": null,
+    "actual_source": null,
+    "repeated_in": [],
+    "verdict": "pending",
+    "quote": "The company expects moderate growth across segments in the financial year 2026/'27.",
+    "source": {
+     "label": "Q4 FY26 transcript p.4",
+     "kind": "transcript",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=5fc0ce89-0765-417a-b55b-fdf1efa7d419.pdf",
+     "page": 4
+    }
+   }
+  ],
+  "commentary": null
+ },
+ "documents": [
+  {
+   "id": "t0",
+   "kind": "transcript",
+   "period": "Q1 FY27",
+   "title": "Q1 FY27 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=9794a95c-b9b9-4625-8663-efd651a05187.pdf",
+   "pages": null
+  },
+  {
+   "id": "t1",
+   "kind": "transcript",
+   "period": "Q4 FY26",
+   "title": "Q4 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=5fc0ce89-0765-417a-b55b-fdf1efa7d419.pdf",
+   "pages": null
+  },
+  {
+   "id": "t2",
+   "kind": "transcript",
+   "period": "Q3 FY26",
+   "title": "Q3 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=dd1502b2-99ca-4254-9c2f-c446b090114f.pdf",
+   "pages": null
+  },
+  {
+   "id": "t3",
+   "kind": "transcript",
+   "period": "Q2 FY26",
+   "title": "Q2 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=cff3233e-af87-4950-a2ef-46ee79205bc7.pdf",
+   "pages": null
+  },
+  {
+   "id": "t4",
+   "kind": "transcript",
+   "period": "Q1 FY26",
+   "title": "Q1 FY26 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6c61209e-6eb6-4745-9b28-59c0d058feee.pdf",
+   "pages": null
+  },
+  {
+   "id": "t5",
+   "kind": "transcript",
+   "period": "Q4 FY25",
+   "title": "Q4 FY25 earnings call transcript",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1e318165-1511-495b-bb72-7b5391a23016.pdf",
+   "pages": null
+  }
+ ],
+ "build_log": [
+  {
+   "ts": "2026-11-01T17:29:13+05:30",
+   "step": "screener",
+   "status": "running",
+   "detail": "financial tables + document links"
+  },
+  {
+   "ts": "2026-11-01T17:29:14+05:30",
+   "step": "screener",
+   "status": "done",
+   "detail": "Cummins India Ltd (consolidated); 41 transcripts listed"
+  },
+  {
+   "ts": "2026-11-01T17:29:14+05:30",
+   "step": "snapshot",
+   "status": "done",
+   "detail": "10 years; missing: nothing"
+  },
+  {
+   "ts": "2026-11-01T17:29:14+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q1 FY27 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:29:14+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q1 FY27: 0/0 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:29:14+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q4 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:29:14+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q4 FY26: 1/1 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:29:14+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q3 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:29:14+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q3 FY26: 2/2 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:29:14+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q2 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:29:14+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q2 FY26: 1/1 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:29:14+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q1 FY26 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:29:14+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q1 FY26: 1/1 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:29:14+05:30",
+   "step": "guidance",
+   "status": "running",
+   "detail": "Q4 FY25 transcript"
+  },
+  {
+   "ts": "2026-11-01T17:29:14+05:30",
+   "step": "guidance",
+   "status": "done",
+   "detail": "Q4 FY25: 1/1 statements kept"
+  },
+  {
+   "ts": "2026-11-01T17:29:14+05:30",
+   "step": "promises",
+   "status": "done",
+   "detail": "merged 3 restated promises"
+  },
+  {
+   "ts": "2026-11-01T17:30:35+05:30",
+   "step": "promises",
+   "status": "done",
+   "detail": "2 measurable (1 met, 0 partly, 0 missed, 1 pending, 0 can't check); 1 qualitative"
+  }
+ ]
+}
