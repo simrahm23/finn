@@ -6,6 +6,7 @@
   prices             ingest EOD prices (yfinance, bhavcopy fallback) + write prices.json   (A1)
   push [--days N]    ingest NSE filings, rules -> LLM -> materiality -> summaries; prints the ranked Brief
   debug-pdf SYMBOL   show why a results PDF did or didn't yield a card
+  eval-gold          accuracy of categories vs your labels in tests/gold/announcements.csv
   gold-template      write 60 filings to tests/gold/announcements.csv for hand-labelling
   export             write brief.json / prices.json / meta.json from the DB (push does this too)
   research SYMBOL    build the research pack for any NSE ticker (or --demo for the 4)
@@ -207,6 +208,33 @@ def cmd_export(_args) -> None:
     print(f"Exported brief.json ({out['items']} items), prices.json (as of {out['prices_as_of']}), meta.json")
 
 
+def cmd_eval_gold(_args) -> None:
+    """Accuracy of FINN's categories against your hand labels in tests/gold/announcements.csv."""
+    import csv
+    path = config.BACKEND / "tests" / "gold" / "announcements.csv"
+    rows = [r for r in csv.DictReader(path.open(encoding="utf-8")) if (r.get("label") or "").strip()]
+    if not rows:
+        sys.exit(f"No labels yet in {path}. Fill the `label` column first.")
+    with db.session() as con:
+        got = {r["ann_id"]: (r["category"], r["method"]) for r in con.execute("SELECT ann_id, category, method FROM ann_enrichment")}
+    ok = by_method = 0
+    stats = {"rule": [0, 0], "llm": [0, 0]}
+    wrong = []
+    for r in rows:
+        cat, method = got.get(r["id"], (None, None))
+        hit = cat == r["label"].strip()
+        ok += hit
+        if method in stats:
+            stats[method][0] += hit
+            stats[method][1] += 1
+        if not hit:
+            wrong.append((r["symbol"], r["label"], cat, r["headline"][:70]))
+    by_method = ", ".join(f"{m}: {a}/{n}" for m, (a, n) in stats.items() if n)
+    print(f"Category accuracy: {ok}/{len(rows)} = {100 * ok / len(rows):.0f}%  ({by_method})")
+    for w in wrong:
+        print(f"  {w[0]:<11} labelled {w[1]:<17} FINN {str(w[2]):<17} {w[3]}")
+
+
 def _todo(task: str):
     def run(_args):
         sys.exit(f"Not built yet: task {task} in the roadmap.")
@@ -232,6 +260,7 @@ def main(argv: list[str] | None = None) -> None:
     g.add_argument("--n", type=int, default=60)
     g.set_defaults(fn=cmd_gold_template)
     sub.add_parser("export").set_defaults(fn=cmd_export)
+    sub.add_parser("eval-gold").set_defaults(fn=cmd_eval_gold)
     dp = sub.add_parser("debug-pdf")
     dp.add_argument("target", help="a filing URL, or a symbol (checks its results filings)")
     dp.set_defaults(fn=cmd_debug_pdf)
