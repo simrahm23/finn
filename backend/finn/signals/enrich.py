@@ -1,0 +1,151 @@
+"""Push enrichment: rules -> LLM for leftovers -> materiality -> summaries (validated).
+Order matters for cost: the LLM only sees what rules could not decide, and only important items get summaries."""
+from __future__ import annotations
+
+import json
+import re
+
+from .. import config, db
+from ..ingest import documents
+from ..llm import client as llm
+from . import classify_rules, materiality
+
+CATEGORIES = list(materiality.LABEL)
+SUBS = ["top_role", "other_role", "transcript", "upgrade", "downgrade", "reaffirm", "none"]
+BATCH = 25
+
+CLASSIFY_SCHEMA = {"type": "object", "properties": {"results": {"type": "array", "items": {
+    "type": "object", "properties": {
+        "i": {"type": "integer"}, "category": {"type": "string", "enum": CATEGORIES},
+        "confidence": {"type": "number"}, "sub": {"type": "string", "enum": SUBS}, "summary": {"type": "string"}},
+    "required": ["i", "category", "confidence", "sub", "summary"]}}}, "required": ["results"]}
+SUMMARY_SCHEMA = {"type": "object", "properties": {"results": {"type": "array", "items": {
+    "type": "object", "properties": {"i": {"type": "integer"}, "summary": {"type": "string"}},
+    "required": ["i", "summary"]}}}, "required": ["results"]}
+
+NUM = re.compile(r"\d[\d,]*\.?\d*")
+
+
+def numbers_grounded(summary: str, source: str) -> bool:
+    """Every number in the summary must appear in the source text (commas ignored)."""
+    src = source.replace(",", "")
+    return all(n.replace(",", "").rstrip(".") in src for n in NUM.findall(summary))
+
+
+def _snip(url: str, k: int, n: int, step: str) -> str:
+    print(f"\r  {step}: reading filing PDFs {k + 1}/{n}   ", end="", flush=True)
+    text = documents.snippet(url)
+    if k + 1 == n:
+        print()
+    return text
+
+
+def _batches(xs, n=BATCH):
+    for i in range(0, len(xs), n):
+        yield xs[i:i + n]
+
+
+def run_rules(con) -> int:
+    rows = con.execute("SELECT a.id, a.exchange_category, a.headline FROM announcements a LEFT JOIN ann_enrichment e "
+                       "ON e.ann_id=a.id WHERE e.ann_id IS NULL OR e.method='rule'").fetchall()
+    n = 0
+    for r in rows:
+        rule = classify_rules.classify(r["exchange_category"], r["headline"])
+        if rule:
+            n += 1
+            db.upsert(con, "ann_enrichment", {"ann_id": r["id"], "category": rule.category, "confidence": rule.confidence,
+                                              "method": "rule", "reasons_json": json.dumps({"sub": rule.sub}),
+                                              "prompt_version": "rules-v1"}, ["ann_id"])
+    return n
+
+
+def run_llm_classify(con) -> dict:
+    rows = con.execute("SELECT a.id, a.exchange_category, a.headline, a.attachment_url FROM announcements a "
+                       "LEFT JOIN ann_enrichment e ON e.ann_id=a.id WHERE e.ann_id IS NULL").fetchall()
+    stats = {"items": len(rows), "classified": 0, "summaries_dropped": 0, "errors": []}
+    for b, batch in enumerate(_batches(list(rows)), 1):
+        con.commit()                     # release the write lock before the LLM client writes its cache
+        items = [{"i": k, "exchange_category": r["exchange_category"], "headline": r["headline"][:400],
+                  "text": _snip(r["attachment_url"], k, len(batch), "classify")} for k, r in enumerate(batch)]
+        print(f"  classify: asking {config.MODEL_LITE} about {len(items)} filings (batch {b})...", flush=True)
+        try:
+            out = llm.generate_json("classify", {"items": items}, CLASSIFY_SCHEMA, purpose="classify")
+        except llm.LlmError as e:
+            stats["errors"].append(str(e))
+            continue
+        for res in out.get("results", []):
+            k = res.get("i")
+            if not isinstance(k, int) or not 0 <= k < len(batch) or res.get("category") not in CATEGORIES:
+                continue
+            r, src = batch[k], items[k]["headline"] + " " + items[k]["text"]
+            summary = (res.get("summary") or "").strip()
+            if summary and not numbers_grounded(summary, src):
+                summary, stats["summaries_dropped"] = "", stats["summaries_dropped"] + 1
+            sub = None if res.get("sub") == "none" else res.get("sub")
+            db.upsert(con, "ann_enrichment", {"ann_id": r["id"], "category": res["category"],
+                                              "confidence": float(res.get("confidence") or 0), "method": "llm",
+                                              "reasons_json": json.dumps({"sub": sub}), "summary": summary or None,
+                                              "prompt_version": "classify-v1"}, ["ann_id"])
+            stats["classified"] += 1
+    return stats
+
+
+def _price_index(con) -> dict:
+    from .price_volume import daily_returns_pct, volume_ratios
+    idx = {}
+    for (s,) in con.execute("SELECT DISTINCT symbol FROM prices_daily").fetchall():
+        rows = con.execute("SELECT date, close, volume FROM prices_daily WHERE symbol=? ORDER BY date", (s,)).fetchall()
+        dates = [r["date"] for r in rows]
+        rets = daily_returns_pct([r["close"] for r in rows])
+        vrs = volume_ratios([r["volume"] or 0 for r in rows])
+        idx[s] = (dates, dict(zip(dates, zip(rets, vrs))))
+    return idx
+
+
+def run_materiality(con) -> int:
+    weights = {r["symbol"]: r["weight"] or 0 for r in con.execute("SELECT symbol, weight FROM companies")}
+    prices = _price_index(con)
+    rows = con.execute("SELECT a.id, a.symbol, a.filed_at, a.headline, e.category, e.reasons_json FROM announcements a "
+                       "JOIN ann_enrichment e ON e.ann_id=a.id").fetchall()
+    for r in rows:
+        sub = json.loads(r["reasons_json"] or "{}").get("sub")
+        ret = vr = None
+        if r["symbol"] in prices:
+            dates, m = prices[r["symbol"]]
+            sess = materiality.reaction_session(r["filed_at"], dates)
+            if sess:
+                ret, vr = m[sess]
+        s, tier, reasons = materiality.score(r["category"], sub, r["headline"], weights.get(r["symbol"], 0), ret, vr)
+        con.execute("UPDATE ann_enrichment SET materiality=?, tier=?, reasons_json=? WHERE ann_id=?",
+                    (s, tier, json.dumps({"sub": sub, "chips": reasons, "reaction_pct": ret}), r["id"]))
+    return len(rows)
+
+
+def run_summaries(con) -> dict:
+    rows = con.execute("SELECT a.id, a.headline, a.attachment_url, e.category FROM announcements a JOIN ann_enrichment e "
+                       "ON e.ann_id=a.id WHERE e.tier IN ('needs_you','worth_knowing') AND e.summary IS NULL").fetchall()
+    stats = {"items": len(rows), "written": 0, "dropped": 0, "errors": []}
+    for b, batch in enumerate(_batches(list(rows)), 1):
+        con.commit()
+        items = [{"i": k, "category": r["category"], "headline": r["headline"][:400],
+                  "text": _snip(r["attachment_url"], k, len(batch), "summaries")} for k, r in enumerate(batch)]
+        print(f"  summaries: asking {config.MODEL_LITE} about {len(items)} filings (batch {b})...", flush=True)
+        try:
+            out = llm.generate_json("summarise", {"items": items}, SUMMARY_SCHEMA, purpose="summarise")
+        except llm.LlmError as e:
+            stats["errors"].append(str(e))
+            continue
+        for res in out.get("results", []):
+            k = res.get("i")
+            if not isinstance(k, int) or not 0 <= k < len(batch):
+                continue
+            summary = (res.get("summary") or "").strip()
+            src = items[k]["headline"] + " " + items[k]["text"]
+            if not summary:
+                continue
+            if not numbers_grounded(summary, src):
+                stats["dropped"] += 1
+                continue
+            con.execute("UPDATE ann_enrichment SET summary=? WHERE ann_id=?", (summary, batch[k]["id"]))
+            stats["written"] += 1
+    return stats

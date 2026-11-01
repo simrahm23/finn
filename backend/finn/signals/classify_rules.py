@@ -60,8 +60,17 @@ def classify(exchange_category: str, headline: str) -> Optional[Rule]:
     if _has(r"audio|video recording|earnings call|conference call", text) and not _has(r"investor meet", desc):
         return Rule("earnings_call", 0.85, None)
 
+    if _has(r"record date", desc):
+        if _has(r"dividend", text):
+            return Rule("dividend", 0.9, None)
+        if _has(r"bonus|split|sub-?division", text):
+            return Rule("bonus_split", 0.9, None)
+        return None
+    if _has(r"other restructuring", desc):
+        return Rule("M&A", 0.7, None)
+
     # Management change: exchange categories are explicit; the role decides weight.
-    if _has(r"change in (director|management|key managerial)|cessation|resignation|appointment|re-?appointment", desc) \
+    if _has(r"change in (director|management|key managerial)|cessation|resignation|retirement|appointment|re-?appointment", desc) \
             or _has(r"\b(resign|appointed|appointment of|cessation|completion of (his|her)? ?tenure)\b", text):
         if not _has(r"auditor|scrutini[sz]er|registrar|share transfer agent", both):
             return Rule("management_change", 0.9, "top_role" if _has(TOP_ROLE, both) else "other_role")

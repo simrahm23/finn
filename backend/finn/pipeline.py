@@ -4,9 +4,9 @@
   mocks              write clearly-labelled mock JSON into frontend/public/data (for UI work)
   validate           check every JSON file in frontend/public/data against the contracts
   prices             ingest EOD prices (yfinance, bhavcopy fallback) + write prices.json   (A1)
-  push [--days N]    ingest NSE announcements + rule classification (A2-A3; LLM, scores, cards next)
+  push [--days N]    ingest NSE filings, rules -> LLM -> materiality -> summaries; prints the ranked Brief
   gold-template      write 60 filings to tests/gold/announcements.csv for hand-labelling
-  export             write brief.json / prices.json / meta.json for the frontend      (A7)
+  export             write brief.json / prices.json / meta.json from the DB (push does this too)
   research SYMBOL    build the research pack for one ticker                           (A8-A11)
 """
 from __future__ import annotations
@@ -73,36 +73,65 @@ def cmd_prices(_args) -> None:
 
 
 def cmd_push(args) -> None:
-    from collections import Counter
-
     from .ingest import announcements
-    from .signals import classify_rules
+    from .llm import client as llm
+    from .signals import enrich
     db.init_db()
-    s = announcements.run(days=args.days)
-    print(f"Announcements {s['from']} -> {s['to']}: {s['rows']} filings")
-    print("  per symbol:", ", ".join(f"{k} {v}" for k, v in s["per_symbol"].items()))
-    if s["errors"]:
-        print("  ERRORS:", s["errors"])
-
-    hit, miss = Counter(), Counter()
+    if not args.skip_fetch:
+        s = announcements.run(days=args.days)
+        print(f"Announcements {s['from']} -> {s['to']}: {s['rows']} filings")
+        if s["errors"]:
+            print("  ERRORS:", s["errors"])
     with db.session() as con:
-        rows = con.execute("SELECT a.id, a.exchange_category, a.headline FROM announcements a "
-                           "LEFT JOIN ann_enrichment e ON e.ann_id = a.id WHERE e.method IS NULL OR e.method='rule'").fetchall()
-        for r in rows:
-            rule = classify_rules.classify(r["exchange_category"], r["headline"])
-            if rule is None:
-                miss[r["exchange_category"]] += 1
-                continue
-            hit[rule.category] += 1
-            db.upsert(con, "ann_enrichment", {"ann_id": r["id"], "category": rule.category, "confidence": rule.confidence,
-                                              "method": "rule", "reasons_json": json.dumps({"sub": rule.sub}),
-                                              "prompt_version": "rules-v1"}, ["ann_id"])
-    total = sum(hit.values()) + sum(miss.values())
-    print(f"\nRules classified {sum(hit.values())}/{total} ({100 * sum(hit.values()) / max(total, 1):.0f}%). By category:")
-    print("  " + ", ".join(f"{k} {v}" for k, v in hit.most_common()))
-    print(f"Left for the LLM (A4): {sum(miss.values())}. Their NSE categories:")
-    for k, v in miss.most_common(15):
-        print(f"  {v:>3}  {k}")
+        total = con.execute("SELECT COUNT(*) FROM announcements").fetchone()[0]
+        n_rules = enrich.run_rules(con)
+    print(f"Rules: {n_rules}/{total} classified ({100 * n_rules / max(total, 1):.0f}%)")
+    before = llm.usage()
+    if not args.no_llm:
+        with db.session() as con:
+            st = enrich.run_llm_classify(con)
+        print(f"LLM classify: {st['classified']}/{st['items']} (summaries dropped for ungrounded numbers: "
+              f"{st['summaries_dropped']}) {st['errors'] or ''}")
+    with db.session() as con:
+        enrich.run_materiality(con)
+    if not args.no_llm:
+        with db.session() as con:
+            st = enrich.run_summaries(con)
+        print(f"Summaries: {st['written']}/{st['items']} written, {st['dropped']} dropped (ungrounded) {st['errors'] or ''}")
+    if not args.no_llm and not args.no_cards:
+        from .extract import cards
+        with db.session() as con:
+            st = cards.run(con)
+        print(f"Cards: {st['results']} results, {st['management']} management")
+        for x in st["skipped"]:
+            print(f"  skipped {x}")
+        for x in st["errors"]:
+            print(f"  ERROR {x}")
+    after = llm.usage()
+    print(f"LLM this run: {after['calls'] - before['calls']} requests, {after['cached'] - before['cached']} from cache, "
+          f"{after['tokens_in'] - before['tokens_in']} tokens in")
+
+    with db.session() as con:
+        rows = con.execute("SELECT a.symbol, a.filed_at, a.headline, e.category, e.method, e.materiality, e.tier, "
+                           "e.reasons_json, e.summary, e.card_json FROM announcements a JOIN ann_enrichment e ON e.ann_id=a.id "
+                           "ORDER BY e.materiality DESC, a.filed_at DESC").fetchall()
+        unscored = total - len(rows)
+    tiers = {t: sum(r["tier"] == t for r in rows) for t in ("needs_you", "worth_knowing", "routine")}
+    print(f"\nBrief: {tiers['needs_you']} need you, {tiers['worth_knowing']} worth knowing, {tiers['routine']} routine"
+          + (f", {unscored} unclassified (LLM skipped/failed)" if unscored else ""))
+    for r in rows[: args.top]:
+        chips = ", ".join(json.loads(r["reasons_json"] or "{}").get("chips", []))
+        print(f"  {r['materiality']:>5}  {r['tier']:<13} {r['symbol']:<11} {r['category']:<17} [{chips}]")
+        print(f"         {r['headline'][:110]}")
+        if r["summary"]:
+            print(f"         -> {r['summary']}")
+        if r["card_json"]:
+            from .extract.cards import summary_line
+            print(f"         [card] {summary_line(r['card_json'])}")
+    from . import export
+    out = export.write_all(args.days)
+    print(f"\nExported brief.json ({out['items']} items), prices.json (as of {out['prices_as_of']}), meta.json. "
+          f"LLM total: {out['llm']['calls']} requests, {out['llm']['cached']} cached.")
 
 
 def cmd_gold_template(args) -> None:
@@ -125,6 +154,12 @@ def cmd_gold_template(args) -> None:
     print(f"Wrote {min(args.n, len(rows))} rows to {out}. Fill the `label` column with one of the 17 categories.")
 
 
+def cmd_export(_args) -> None:
+    from . import export
+    out = export.write_all()
+    print(f"Exported brief.json ({out['items']} items), prices.json (as of {out['prices_as_of']}), meta.json")
+
+
 def _todo(task: str):
     def run(_args):
         sys.exit(f"Not built yet: task {task} in the roadmap.")
@@ -141,11 +176,15 @@ def main(argv: list[str] | None = None) -> None:
     sub.add_parser("prices").set_defaults(fn=cmd_prices)
     pu = sub.add_parser("push")
     pu.add_argument("--days", type=int, default=10)
+    pu.add_argument("--no-llm", action="store_true", help="rules + scores only")
+    pu.add_argument("--skip-fetch", action="store_true", help="reuse filings already in the DB")
+    pu.add_argument("--top", type=int, default=15)
+    pu.add_argument("--no-cards", action="store_true", help="skip results/management card extraction")
     pu.set_defaults(fn=cmd_push)
     g = sub.add_parser("gold-template")
     g.add_argument("--n", type=int, default=60)
     g.set_defaults(fn=cmd_gold_template)
-    sub.add_parser("export").set_defaults(fn=_todo("A7"))
+    sub.add_parser("export").set_defaults(fn=cmd_export)
     r = sub.add_parser("research")
     r.add_argument("symbol")
     r.set_defaults(fn=_todo("A8-A11"))

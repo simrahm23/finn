@@ -1,32 +1,180 @@
 {
- "generated_at": "2026-11-01T13:55:00+05:30",
+ "generated_at": "2026-11-01T16:18:58+05:30",
  "window_max_days": 10,
  "items": [
   {
-   "id": "nse:mock-kpit-cessation",
+   "id": "nse:106838789",
+   "symbol": "MARUTI",
+   "company": "Maruti Suzuki India",
+   "filed_at": "2026-11-01T14:44:18+05:30",
+   "headline": "Maruti Suzuki India Limited has informed the Exchange about Maruti Suzuki Production Volume: October 2026",
+   "exchange_category": "General Updates",
+   "category": "press_release",
+   "category_method": "llm",
+   "materiality": 42.5,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Update"
+   ],
+   "summary": "Maruti Suzuki reported a total production volume of 260,003 vehicles in October 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/MARUTIASHISH_01112026143647_STxIntimation_Prod_Oct2026.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:106838788",
+   "symbol": "CDSL",
+   "company": "Central Depository Services (India)",
+   "filed_at": "2026-11-01T14:40:47+05:30",
+   "headline": "CDSL has informed the Exchange about Copy of Newspaper Publication",
+   "exchange_category": "Copy of Newspaper Publication",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 5.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/CDSL_01112026143902_Newspaper_31102026_Final_Signed.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:106838779",
+   "symbol": "MARUTI",
+   "company": "Maruti Suzuki India",
+   "filed_at": "2026-11-01T13:45:06+05:30",
+   "headline": "Maruti Suzuki India Limited has informed the Exchange regarding a press release dated November 01, 2026, titled \"Maruti Suzuki sales in October 2026\".",
+   "exchange_category": "Press Release",
+   "category": "press_release",
+   "category_method": "rule",
+   "materiality": 42.5,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Update"
+   ],
+   "summary": "Maruti Suzuki reported highest-ever monthly sales of 276,120 units in October 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/MARUTIASHISH_01112026133641_StxIntimation_Sales_Oct2026.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:106838744",
+   "symbol": "ICICIBANK",
+   "company": "ICICI Bank",
+   "filed_at": "2026-11-01T09:43:51+05:30",
+   "headline": "Disclosure under Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+   "exchange_category": "General Updates",
+   "category": "litigation",
+   "category_method": "llm",
+   "materiality": 63.5,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Litigation",
+    "7% of portfolio"
+   ],
+   "summary": "ICICI Bank received an Order in Appeal from Telangana GST department confirming a penalty of Rs 6,95,418.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/ICICI2022_01112026094235_BSENSE01112026.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:106838688",
+   "symbol": "HDFCBANK",
+   "company": "HDFC Bank",
+   "filed_at": "2026-10-31T22:16:44+05:30",
+   "headline": "HDFC Bank Limited has informed the Exchange about change in Management",
+   "exchange_category": "Change in Management",
+   "category": "management_change",
+   "category_method": "rule",
+   "materiality": 49.0,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Board change",
+    "8% of portfolio"
+   ],
+   "summary": "Sanjay D'Souza superannuated as Group Head of Business Banking at HDFC Bank on October 31, 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/HDFCBANK3_31102026221631_SE_INTIMATION-_Sanjay_Dsouza.pdf",
+   "price_reaction_pct": null,
+   "card": {
+    "kind": "management",
+    "direction": "leaving",
+    "person": "Sanjay D’Souza",
+    "role": "Group Head – Business Banking, Emerging & Micro Enterprises Group",
+    "effective_date": "2026-10-31",
+    "reason": "Superannuation",
+    "profile": null,
+    "source": {
+     "label": "Filing p.1",
+     "kind": "filing",
+     "url": "https://nsearchives.nseindia.com/corporate/HDFCBANK3_31102026221631_SE_INTIMATION-_Sanjay_Dsouza.pdf",
+     "page": 1
+    }
+   }
+  },
+  {
+   "id": "nse:106838574",
+   "symbol": "SUNPHARMA",
+   "company": "Sun Pharmaceutical Industries",
+   "filed_at": "2026-10-31T20:14:24+05:30",
+   "headline": "Completion and Results of Postal Ballot dated 01 October 2026",
+   "exchange_category": "General Updates",
+   "category": "postal_ballot",
+   "category_method": "llm",
+   "materiality": 17.5,
+   "tier": "routine",
+   "reasons": [
+    "Postal ballot"
+   ],
+   "summary": "Sun Pharma announced the approval of all special resolutions submitted to shareholders via postal ballot.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/SUNSEC_31102026201341_SEIntimationforVR_-_31_October_2026.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:106838529",
+   "symbol": "DIXON",
+   "company": "Dixon Technologies (India)",
+   "filed_at": "2026-10-31T19:32:44+05:30",
+   "headline": "Dixon Technologies (India) Limited has informed the Exchange about copy of newspaper publication of Unaudited Financial Results (standalone & consolidated) of the Company for the quarter and half year ended 30th September, 2026",
+   "exchange_category": "Copy of Newspaper Publication",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 5.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/DIXON_31102026192630_NewspaperAdvertisement31101026.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:106838441",
    "symbol": "KPITTECH",
    "company": "KPIT Technologies",
    "filed_at": "2026-10-31T18:25:33+05:30",
-   "headline": "Cessation: Rajiv Lal, completion of tenure",
+   "headline": "KPIT Technologies Limited has informed the Exchange that Prof. Rajiv Lal (DIN: 09360601) completed his 2nd term as an Independent Director of the Company on October 31, 2026, and consequently he has ceased to be a Director of the Company w.e.f. the end of business hours of said date.",
    "exchange_category": "Cessation",
    "category": "management_change",
    "category_method": "rule",
-   "materiality": 52.0,
+   "materiality": 47.0,
    "tier": "worth_knowing",
    "reasons": [
-    "Director exit",
-    "Completion of tenure"
+    "Board change"
    ],
-   "summary": null,
+   "summary": "Prof. Rajiv Lal stepped down as Independent Director of KPIT Technologies on October 31, 2026.",
    "filing_url": "https://nsearchives.nseindia.com/corporate/KPITTECH_31102026182503_KPIT_Rajiv_Lal_Completion_of_Tenure-S.pdf",
    "price_reaction_pct": null,
    "card": {
     "kind": "management",
     "direction": "leaving",
-    "person": "Rajiv Lal",
-    "role": "[MOCK] Director (role to be extracted)",
-    "effective_date": null,
-    "reason": "Completion of tenure",
+    "person": "Prof. Rajiv Lal",
+    "role": "Independent Director",
+    "effective_date": "2026-10-31",
+    "reason": "Completion of 2nd term",
     "profile": null,
     "source": {
      "label": "Filing p.1",
@@ -37,141 +185,140 @@
    }
   },
   {
-   "id": "nse:mock-routine-5",
-   "symbol": "ITC",
-   "company": "ITC",
-   "filed_at": "2026-10-31T15:00:00+05:30",
-   "headline": "Closure of trading window",
-   "exchange_category": "Trading Window",
-   "category": "unclassified",
-   "category_method": "rule",
-   "materiality": 13.0,
-   "tier": "routine",
-   "reasons": [
-    "Routine"
-   ],
-   "summary": null,
-   "filing_url": "https://nsearchives.nseindia.com/corporate/MOCK_5.pdf",
-   "price_reaction_pct": null,
-   "card": null
-  },
-  {
-   "id": "nse:mock-lt-vyoma",
-   "symbol": "LT",
-   "company": "Larsen & Toubro",
-   "filed_at": "2026-10-31T13:00:35+05:30",
-   "headline": "Extension of timeline: business transfer to Vyoma.AI and sale of L&T Network Services stake",
-   "exchange_category": "General Updates",
-   "category": "M&A",
-   "category_method": "llm",
-   "materiality": 62.0,
-   "tier": "worth_knowing",
-   "reasons": [
-    "Subsidiary deal",
-    "Timeline extended"
-   ],
-   "summary": "[MOCK] Completion deadline extended for an intra-group transfer; no new deal terms.",
-   "filing_url": "https://nsearchives.nseindia.com/corporate/AB_31102026130022_SEIntimation_ExtensionofBTAVyoma_31102026.pdf",
-   "price_reaction_pct": null,
-   "card": null
-  },
-  {
-   "id": "nse:mock-routine-3",
+   "id": "nse:106838338",
    "symbol": "RELIANCE",
    "company": "Reliance Industries",
-   "filed_at": "2026-10-31T13:00:00+05:30",
-   "headline": "Schedule of analyst meet",
+   "filed_at": "2026-10-31T17:34:03+05:30",
+   "headline": "Audio recording of the discussion on the Unaudited Financial Results (Consolidated and Standalone) of the Company for the quarter and half year ended September 30, 2026, at the analyst meet held on October 30, 2026, is available on the website of the Company.",
    "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
    "category": "investor_meetings",
    "category_method": "rule",
-   "materiality": 11.0,
+   "materiality": 19.0,
    "tier": "routine",
    "reasons": [
-    "Routine"
+    "Investor meet",
+    "8% of portfolio"
    ],
    "summary": null,
-   "filing_url": "https://nsearchives.nseindia.com/corporate/MOCK_3.pdf",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/kavinavora_31102026173331_SE_31102026_AR.pdf",
    "price_reaction_pct": null,
    "card": null
   },
   {
-   "id": "nse:mock-routine-1",
-   "symbol": "INFY",
-   "company": "Infosys",
-   "filed_at": "2026-10-31T11:00:00+05:30",
-   "headline": "Newspaper advertisement of results",
+   "id": "nse:106838334",
+   "symbol": "SUNPHARMA",
+   "company": "Sun Pharmaceutical Industries",
+   "filed_at": "2026-10-31T17:32:02+05:30",
+   "headline": "Sun Pharmaceutical Industries Limited has informed the Exchange about Copy of Newspaper Publication",
    "exchange_category": "Copy of Newspaper Publication",
    "category": "unclassified",
    "category_method": "rule",
-   "materiality": 9.0,
+   "materiality": 5.0,
    "tier": "routine",
    "reasons": [
     "Routine"
    ],
    "summary": null,
-   "filing_url": "https://nsearchives.nseindia.com/corporate/MOCK_1.pdf",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/SUNSEC_31102026173121_SEIntimationforFinancialResultsNewspaperadvertisement.pdf",
    "price_reaction_pct": null,
    "card": null
   },
   {
-   "id": "nse:mock-lt-results",
-   "symbol": "LT",
-   "company": "Larsen & Toubro",
-   "filed_at": "2026-10-30T17:40:00+05:30",
-   "headline": "[MOCK] Financial results for the quarter ended September 30, 2026",
-   "exchange_category": "Financial Result Updates",
+   "id": "nse:106838164",
+   "symbol": "CDSL",
+   "company": "Central Depository Services (India)",
+   "filed_at": "2026-10-31T15:56:44+05:30",
+   "headline": "CDSL has informed the Exchange about Presentation for the quarter and half year ended September 30, 2026.",
+   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+   "category": "investor_meetings",
+   "category_method": "rule",
+   "materiality": 16.5,
+   "tier": "routine",
+   "reasons": [
+    "Investor meet"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/CDSL_31102026155542_CDSL_InvestorPresentation_Signed.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:106838023",
+   "symbol": "CDSL",
+   "company": "Central Depository Services (India)",
+   "filed_at": "2026-10-31T14:27:13+05:30",
+   "headline": "CDSL has informed the Exchange regarding Media Release relating to financial results for the quarter and half year ended September 30, 2026.",
+   "exchange_category": "Press Release",
+   "category": "press_release",
+   "category_method": "rule",
+   "materiality": 41.5,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Update"
+   ],
+   "summary": "CDSL reported a 22% growth in consolidated total income and net profit for Q2FY27.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/CDSL_31102026142410_Press_release_Signed.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:106838015",
+   "symbol": "CDSL",
+   "company": "Central Depository Services (India)",
+   "filed_at": "2026-10-31T14:16:32+05:30",
+   "headline": "CDSL has submitted to the Exchange, the financial results for the quarter and half year ended September 30, 2026.",
+   "exchange_category": "Outcome of Board Meeting",
    "category": "results",
    "category_method": "rule",
-   "materiality": 88.0,
+   "materiality": 81.5,
    "tier": "needs_you",
    "reasons": [
-    "Results",
-    "7% of portfolio"
+    "Results"
    ],
-   "summary": "[MOCK] Revenue up, margin down; numbers below are invented for UI work.",
-   "filing_url": "https://nsearchives.nseindia.com/corporate/MOCK_LT_results.pdf",
+   "summary": "CDSL approved its audited financial results for Q2 and half year ended September 30, 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/CDSL_31102026141138_OutcomeBM31102026_Signed.pdf",
    "price_reaction_pct": null,
    "card": {
     "kind": "results",
-    "period": "Q2 FY27 (Jul–Sep 2026) [MOCK NUMBERS]",
+    "period": "Q2 FY27 (Jul–Sep 2026)",
     "basis": "consolidated",
     "unit": "₹ crore",
     "metrics": [
      {
       "name": "Revenue",
       "applicable": true,
-      "current": 67000.0,
-      "prev_q": 63000.0,
-      "year_ago": 60000.0,
-      "qoq_pct": 6.3,
-      "yoy_pct": 11.7
+      "current": 394.48,
+      "prev_q": 292.76,
+      "year_ago": 318.88,
+      "qoq_pct": 34.7,
+      "yoy_pct": 23.7
      },
      {
       "name": "EBITDA",
       "applicable": true,
-      "current": 6600.0,
-      "prev_q": 6300.0,
-      "year_ago": 6200.0,
-      "qoq_pct": 4.8,
-      "yoy_pct": 6.5
+      "current": 226.8,
+      "prev_q": 139.46,
+      "year_ago": 176.29,
+      "qoq_pct": 62.6,
+      "yoy_pct": 28.7
      },
      {
       "name": "PBT",
       "applicable": true,
-      "current": 5400.0,
-      "prev_q": 5000.0,
-      "year_ago": 4900.0,
-      "qoq_pct": 8.0,
-      "yoy_pct": 10.2
+      "current": 230.39,
+      "prev_q": 166.67,
+      "year_ago": 182.65,
+      "qoq_pct": 38.2,
+      "yoy_pct": 26.1
      },
      {
       "name": "PAT",
       "applicable": true,
-      "current": 4000.0,
-      "prev_q": 3700.0,
-      "year_ago": 3600.0,
-      "qoq_pct": 8.1,
-      "yoy_pct": 11.1
+      "current": 173.3,
+      "prev_q": 117.67,
+      "year_ago": 139.93,
+      "qoq_pct": 47.3,
+      "yoy_pct": 23.8
      }
     ],
     "ebitda_formula": "PBT + finance costs + depreciation − other income",
@@ -182,103 +329,2546 @@
     },
     "verified": true,
     "source": {
-     "label": "Results filing p.2",
+     "label": "Results filing p.10",
      "kind": "filing",
-     "url": "https://nsearchives.nseindia.com/corporate/MOCK_LT_results.pdf",
-     "page": 2
+     "url": "https://nsearchives.nseindia.com/corporate/CDSL_31102026141138_OutcomeBM31102026_Signed.pdf",
+     "page": 10
     }
    }
   },
   {
-   "id": "nse:mock-routine-4",
-   "symbol": "TITAN",
-   "company": "Titan Company",
-   "filed_at": "2026-10-30T14:00:00+05:30",
-   "headline": "Allotment of shares under ESOP",
-   "exchange_category": "ESOP/ESOS/ESPS",
-   "category": "unclassified",
+   "id": "nse:106837941",
+   "symbol": "LT",
+   "company": "Larsen & Toubro",
+   "filed_at": "2026-10-31T13:00:35+05:30",
+   "headline": "Updates on the Business Transfer Agreement with Vyoma.AI Limited (Vyoma), Wholly owned Subsidiary of the Company and Share Purchase Agreement towards sale of entire stake held in L&T Network Services Private Limited to Vyoma Extension of timeline of completion",
+   "exchange_category": "General Updates",
+   "category": "M&A",
    "category_method": "rule",
-   "materiality": 12.0,
-   "tier": "routine",
-   "reasons": [
-    "Routine"
-   ],
-   "summary": null,
-   "filing_url": "https://nsearchives.nseindia.com/corporate/MOCK_4.pdf",
-   "price_reaction_pct": null,
-   "card": null
-  },
-  {
-   "id": "nse:mock-routine-2",
-   "symbol": "DIXON",
-   "company": "Dixon Technologies",
-   "filed_at": "2026-10-30T12:00:00+05:30",
-   "headline": "Reg 74(5) certificate",
-   "exchange_category": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
-   "category": "unclassified",
-   "category_method": "rule",
-   "materiality": 10.0,
-   "tier": "routine",
-   "reasons": [
-    "Routine"
-   ],
-   "summary": null,
-   "filing_url": "https://nsearchives.nseindia.com/corporate/MOCK_2.pdf",
-   "price_reaction_pct": null,
-   "card": null
-  },
-  {
-   "id": "nse:mock-routine-0",
-   "symbol": "INFY",
-   "company": "Infosys",
-   "filed_at": "2026-10-30T10:00:00+05:30",
-   "headline": "Closure of trading window",
-   "exchange_category": "Trading Window",
-   "category": "unclassified",
-   "category_method": "rule",
-   "materiality": 8.0,
-   "tier": "routine",
-   "reasons": [
-    "Routine"
-   ],
-   "summary": null,
-   "filing_url": "https://nsearchives.nseindia.com/corporate/MOCK_0.pdf",
-   "price_reaction_pct": null,
-   "card": null
-  },
-  {
-   "id": "nse:mock-hdfc-director",
-   "symbol": "HDFCBANK",
-   "company": "HDFC Bank",
-   "filed_at": "2026-10-01T18:23:52+05:30",
-   "headline": "Change in Director(s): Anup Bagchi",
-   "exchange_category": "Change in Director(s)",
-   "category": "management_change",
-   "category_method": "rule",
-   "materiality": 78.0,
+   "materiality": 88.5,
    "tier": "needs_you",
    "reasons": [
-    "Board change",
+    "M&A",
+    "7% of portfolio"
+   ],
+   "summary": "Larsen & Toubro extended the completion timeline for selling L&T Network Services to Vyoma to March 31, 2027.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/AB_31102026130022_SEIntimation_ExtensionofBTAVyoma_31102026.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:106837634",
+   "symbol": "BHARTIARTL",
+   "company": "Bharti Airtel",
+   "filed_at": "2026-10-30T22:40:24+05:30",
+   "headline": "Bharti Airtel Limited has informed the Exchange about Action(s) taken or orders passed",
+   "exchange_category": "Action(s) taken or orders passed",
+   "category": "litigation",
+   "category_method": "rule",
+   "materiality": 63.0,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Litigation"
+   ],
+   "summary": "Bharti Airtel received an order from the Telecom Regulatory Authority of India.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/BHARTIARTL_30102026223927_BhartiAirtelSTXdisclosure.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:106837485",
+   "symbol": "DIXON",
+   "company": "Dixon Technologies (India)",
+   "filed_at": "2026-10-30T20:32:52+05:30",
+   "headline": "Dixon Technologies (India) Limited has informed the Exchange about Link of Recording",
+   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+   "category": "investor_meetings",
+   "category_method": "rule",
+   "materiality": 16.5,
+   "tier": "routine",
+   "reasons": [
+    "Investor meet"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/DIXON_30102026203021_ConferenceCallRecordingIntimation30102026.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:106837454",
+   "symbol": "SUNPHARMA",
+   "company": "Sun Pharmaceutical Industries",
+   "filed_at": "2026-10-30T20:13:58+05:30",
+   "headline": "Sun Pharmaceutical Industries Limited has informed the Exchange about Link of Recording",
+   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+   "category": "investor_meetings",
+   "category_method": "rule",
+   "materiality": 17.5,
+   "tier": "routine",
+   "reasons": [
+    "Investor meet"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/SUNPHARMA456_30102026201207_IntimationSE20261030_Q2FY27_Call_Recording_Signed.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:106837413",
+   "symbol": "RELIANCE",
+   "company": "Reliance Industries",
+   "filed_at": "2026-10-30T19:47:12+05:30",
+   "headline": "Reliance Industries Limited has informed the Exchange about Investor Presentation",
+   "exchange_category": "Investor Presentation",
+   "category": "results",
+   "category_method": "rule",
+   "materiality": 84.0,
+   "tier": "needs_you",
+   "reasons": [
+    "Results",
+    "8% of portfolio"
+   ],
+   "summary": "Reliance Industries released its investor presentation for the quarter ended September 30, 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/kavinavora_30102026194557_SE_30102026_IP.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:106837406",
+   "symbol": "RELIANCE",
+   "company": "Reliance Industries",
+   "filed_at": "2026-10-30T19:43:24+05:30",
+   "headline": "In continuation of our letter of today's date on the Unaudited Financial Results (Consolidated and Standalone) for the quarter and half year ended September 30, 2026, we attach a copy of media release being issued by the Company.",
+   "exchange_category": "Press Release",
+   "category": "press_release",
+   "category_method": "rule",
+   "materiality": 44.0,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Update",
     "8% of portfolio"
    ],
    "summary": null,
-   "filing_url": "https://nsearchives.nseindia.com/corporate/HDFCBANK3_01102026182319_SE_Intimation-_Anup_Bagchi.pdf",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/kavinavora_30102026194315_SE_30102026_MR.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:106837394",
+   "symbol": "RELIANCE",
+   "company": "Reliance Industries",
+   "filed_at": "2026-10-30T19:40:11+05:30",
+   "headline": "In continuation of our letter dated October 27, 2026, we wish to inform you that the Board of Directors of the Company, at its meeting held today, has, inter alia:1. approved the unaudited Financial Results (Consolidated and Standalone) for the quarter and half year ended September 30, 2026; and2. passed an enabling resolution authorising the issuance of listed, secured / unsecured, redeemable non-convertible debentures up to Rs. 15,000 crore, in one or more tranches, on private placement basis.",
+   "exchange_category": "Outcome of Board Meeting",
+   "category": "results",
+   "category_method": "rule",
+   "materiality": 84.0,
+   "tier": "needs_you",
+   "reasons": [
+    "Results",
+    "8% of portfolio"
+   ],
+   "summary": "Reliance Industries approved Q2 financial results and authorized issuing debentures up to Rs. 15,000 crore.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/kavinavora_30102026193935_SE_30102026_Results.pdf",
+   "price_reaction_pct": null,
+   "card": {
+    "kind": "results",
+    "period": "Q2 FY27 (Jul–Sep 2026)",
+    "basis": "consolidated",
+    "unit": "₹ crore",
+    "metrics": [
+     {
+      "name": "Revenue",
+      "applicable": true,
+      "current": 332861.0,
+      "prev_q": 311850.0,
+      "year_ago": 258898.0,
+      "qoq_pct": 6.7,
+      "yoy_pct": 28.6
+     },
+     {
+      "name": "EBITDA",
+      "applicable": true,
+      "current": 56616.0,
+      "prev_q": 47517.0,
+      "year_ago": 45885.0,
+      "qoq_pct": 19.1,
+      "yoy_pct": 23.4
+     },
+     {
+      "name": "PBT",
+      "applicable": true,
+      "current": 38613.0,
+      "prev_q": 30630.0,
+      "year_ago": 29124.0,
+      "qoq_pct": 26.1,
+      "yoy_pct": 32.6
+     },
+     {
+      "name": "PAT",
+      "applicable": true,
+      "current": 29250.0,
+      "prev_q": 23001.0,
+      "year_ago": 22146.0,
+      "qoq_pct": 27.2,
+      "yoy_pct": 32.1
+     }
+    ],
+    "ebitda_formula": "PBT + finance costs + depreciation − other income",
+    "checks": {
+     "verbatim": true,
+     "identities": false,
+     "cross_check": null
+    },
+    "verified": false,
+    "source": {
+     "label": "Results filing p.10",
+     "kind": "filing",
+     "url": "https://nsearchives.nseindia.com/corporate/kavinavora_30102026193935_SE_30102026_Results.pdf",
+     "page": 10
+    }
+   }
+  },
+  {
+   "id": "nse:106837395",
+   "symbol": "RELIANCE",
+   "company": "Reliance Industries",
+   "filed_at": "2026-10-30T19:40:11+05:30",
+   "headline": "In continuation of our letter dated October 27, 2026, we wish to inform you that the Board of Directors of the Company, at its meeting held today, has, inter alia:1. approved the unaudited Financial Results (Consolidated and Standalone) for the quarter and half year ended September 30, 2026; and2. passed an enabling resolution authorising the issuance of listed, secured / unsecured, redeemable non-convertible debentures up to Rs. 15,000 crore, in one or more tranches, on private placement basis.",
+   "exchange_category": "Outcome of Board Meeting",
+   "category": "results",
+   "category_method": "rule",
+   "materiality": 84.0,
+   "tier": "needs_you",
+   "reasons": [
+    "Results",
+    "8% of portfolio"
+   ],
+   "summary": "Reliance Industries approved Q2 financial results and authorized non-convertible debentures up to Rs. 15,000 crore.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/kavinavora_30102026193952_SE_30102026_Results.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:106837294",
+   "symbol": "CDSL",
+   "company": "Central Depository Services (India)",
+   "filed_at": "2026-10-30T19:13:48+05:30",
+   "headline": "CDSL has informed the Exchange about Disclosure under Regulation 30 of Securities and Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations, 2015 (SEBI Listing Regulations).",
+   "exchange_category": "General Updates",
+   "category": "litigation",
+   "category_method": "llm",
+   "materiality": 61.5,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Litigation"
+   ],
+   "summary": "SEBI imposed a penalty of Rs 1,00,00,000 on CDSL regarding operational and IT-related matters.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/CDSL_30102026191314_IntimationofPenalty30102026_sd.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:106837197",
+   "symbol": "INFY",
+   "company": "Infosys",
+   "filed_at": "2026-10-30T18:50:50+05:30",
+   "headline": "Infosys Limited has informed the Exchange regarding 'Infosys Announces Expansion of Pocharam Development Center in Hyderabad'.",
+   "exchange_category": "Updates",
+   "category": "press_release",
+   "category_method": "llm",
+   "materiality": 43.0,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Update"
+   ],
+   "summary": "Infosys announced the expansion of its Pocharam Development Center in Hyderabad with a new 1.1 million sq ft facility.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/INFY_30102026185037_PR_30102026.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:106836561",
+   "symbol": "DIXON",
+   "company": "Dixon Technologies (India)",
+   "filed_at": "2026-10-30T16:19:57+05:30",
+   "headline": "Dixon Technologies (India) Limited has informed the Exchange about Investor Presentation",
+   "exchange_category": "Investor Presentation",
+   "category": "results",
+   "category_method": "rule",
+   "materiality": 81.5,
+   "tier": "needs_you",
+   "reasons": [
+    "Results"
+   ],
+   "summary": "Dixon Technologies presented Q2 financial results showing revenue up 42% and PAT down 45% to Rs 411 crore.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/DIXON_30102026161836_OutcomewithPPT30102026.pdf",
+   "price_reaction_pct": null,
+   "card": {
+    "kind": "results",
+    "period": "Q2 FY27 (Jul–Sep 2026)",
+    "basis": "consolidated",
+    "unit": "₹ crore",
+    "metrics": [
+     {
+      "name": "Revenue",
+      "applicable": true,
+      "current": 21793.64,
+      "prev_q": 15547.66,
+      "year_ago": 14855.04,
+      "qoq_pct": 40.2,
+      "yoy_pct": 46.7
+     },
+     {
+      "name": "EBITDA",
+      "applicable": true,
+      "current": 599.63,
+      "prev_q": 471.76,
+      "year_ago": 562.48,
+      "qoq_pct": 27.1,
+      "yoy_pct": 6.6
+     },
+     {
+      "name": "PBT",
+      "applicable": true,
+      "current": 532.35,
+      "prev_q": 868.98,
+      "year_ago": 923.59,
+      "qoq_pct": -38.7,
+      "yoy_pct": -42.4
+     },
+     {
+      "name": "PAT",
+      "applicable": true,
+      "current": 410.87,
+      "prev_q": 717.83,
+      "year_ago": 745.7,
+      "qoq_pct": -42.8,
+      "yoy_pct": -44.9
+     }
+    ],
+    "ebitda_formula": "PBT + finance costs + depreciation − other income",
+    "checks": {
+     "verbatim": true,
+     "identities": true,
+     "cross_check": null
+    },
+    "verified": true,
+    "source": {
+     "label": "Results filing p.11",
+     "kind": "filing",
+     "url": "https://nsearchives.nseindia.com/corporate/DIXON_30102026161836_OutcomewithPPT30102026.pdf",
+     "page": 11
+    }
+   }
+  },
+  {
+   "id": "nse:106836531",
+   "symbol": "DIXON",
+   "company": "Dixon Technologies (India)",
+   "filed_at": "2026-10-30T16:10:12+05:30",
+   "headline": "Dixon Technologies (India) Limited has informed the Exchange about change in Management",
+   "exchange_category": "Change in Management",
+   "category": "management_change",
+   "category_method": "rule",
+   "materiality": 46.5,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Board change"
+   ],
+   "summary": "Dixon Technologies reported Q2 revenue up 42% to Rs 21,863 crore while PAT fell 45% to Rs 411 crore.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/DIXON_30102026160939_Outcome30102026.pdf",
    "price_reaction_pct": null,
    "card": {
     "kind": "management",
     "direction": "joining",
-    "person": "Anup Bagchi",
-    "role": "[MOCK] Role to be extracted",
-    "effective_date": null,
+    "person": "Mr. Prithvi Vachani",
+    "role": "Additional Director in the capacity of Executive Director",
+    "effective_date": "2026-10-30",
     "reason": null,
-    "profile": "[MOCK] The brief profile will be quoted from Annexure I of this filing.",
+    "profile": "Mr. Prithvi Vachani is currently serving as the Vice President at Dixon Technologies (India) Limited. A 2017 graduate of Bentley University, Mr. Prithvi quickly demonstrated his strategic acumen upon entering the professional arena. His exceptional foresight and leadership were notably displayed when he successfully orchestrated a major collaboration with boAt, India’s leading audio product company, resulting in the production of innovative twin wireless speakers.",
     "source": {
-     "label": "Filing, Annexure I",
+     "label": "Filing p.3",
      "kind": "filing",
-     "url": "https://nsearchives.nseindia.com/corporate/HDFCBANK3_01102026182319_SE_Intimation-_Anup_Bagchi.pdf",
-     "page": null
+     "url": "https://nsearchives.nseindia.com/corporate/DIXON_30102026160939_Outcome30102026.pdf",
+     "page": 3
     }
    }
+  },
+  {
+   "id": "nse:106836523",
+   "symbol": "DIXON",
+   "company": "Dixon Technologies (India)",
+   "filed_at": "2026-10-30T16:07:23+05:30",
+   "headline": "Dixon Technologies (India) Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+   "exchange_category": "Outcome of Board Meeting",
+   "category": "results",
+   "category_method": "rule",
+   "materiality": 81.5,
+   "tier": "needs_you",
+   "reasons": [
+    "Results"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/DIXON_30102026160547_Outcome30102026.pdf",
+   "price_reaction_pct": null,
+   "card": null
+  },
+  {
+   "id": "nse:106836415",
+   "symbol": "BHARTIARTL",
+   "company": "Bharti Airtel",
+   "filed_at": "2026-10-30T15:23:54+05:30",
+   "headline": "Bharti Airtel Limited has informed the Exchange about Copy of Newspaper Publication",
+   "exchange_category": "Copy of Newspaper Publication",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 5.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/BHARTIARTL_30102026152337_STXintimationOctober302026.pdf",
+   "price_reaction_pct": 0.08,
+   "card": null
+  },
+  {
+   "id": "nse:106836401",
+   "symbol": "SUNPHARMA",
+   "company": "Sun Pharmaceutical Industries",
+   "filed_at": "2026-10-30T15:18:46+05:30",
+   "headline": "Appointment of Statutory Auditors Pursuant to Mandatory Auditor Rotation",
+   "exchange_category": "General Updates",
+   "category": "unclassified",
+   "category_method": "llm",
+   "materiality": 12.5,
+   "tier": "routine",
+   "reasons": [
+    "Routine",
+    "Vol 3.4×"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/SUNSEC_30102026151827_BMOutcome30102026_Conclusion.pdf",
+   "price_reaction_pct": 0.95,
+   "card": null
+  },
+  {
+   "id": "nse:106836343",
+   "symbol": "BAJFINANCE",
+   "company": "Bajaj Finance",
+   "filed_at": "2026-10-30T14:53:37+05:30",
+   "headline": "Bajaj Finance Limited has informed the Exchange regarding allotment of 2,06,950 securities pursuant to Non Convertible Securities at its meeting held on October 30, 2026",
+   "exchange_category": "Allotment of Securities",
+   "category": "fund_raise",
+   "category_method": "rule",
+   "materiality": 77.5,
+   "tier": "needs_you",
+   "reasons": [
+    "Fund raise"
+   ],
+   "summary": "Bajaj Finance allotted 2,06,950 secured redeemable non-convertible debentures raising Rs. 2,069.501 crore.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_30102026145301_REG30_Allotment_intimation.pdf",
+   "price_reaction_pct": 0.02,
+   "card": null
+  },
+  {
+   "id": "nse:106836275",
+   "symbol": "SUNPHARMA",
+   "company": "Sun Pharmaceutical Industries",
+   "filed_at": "2026-10-30T14:15:10+05:30",
+   "headline": "Unaudited Financial Results for the quarter and half year ended 30 September 2026",
+   "exchange_category": "Outcome of Board Meeting",
+   "category": "results",
+   "category_method": "rule",
+   "materiality": 87.5,
+   "tier": "needs_you",
+   "reasons": [
+    "Results",
+    "Vol 3.4×"
+   ],
+   "summary": "Sun Pharma approved its unaudited financial results for the quarter and half-year ended September 30, 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/SUNSEC_30102026141321_BMOutcomeFinancialoct26signed.pdf",
+   "price_reaction_pct": 0.95,
+   "card": null
+  },
+  {
+   "id": "nse:106836184",
+   "symbol": "HDFCBANK",
+   "company": "HDFC Bank",
+   "filed_at": "2026-10-30T13:24:25+05:30",
+   "headline": "HDFC Bank Limited has informed the Exchange regarding Allotment of 4675598 Shares.",
+   "exchange_category": "ESOP/ESOS/ESPS",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 5.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/HDFCBANK_30102026132409_SELetterESOP30102026.pdf",
+   "price_reaction_pct": 1.39,
+   "card": null
+  },
+  {
+   "id": "nse:106836029",
+   "symbol": "POLYCAB",
+   "company": "Polycab India",
+   "filed_at": "2026-10-30T12:20:09+05:30",
+   "headline": "Polycab India Limited has informed the Exchange about the order passed by NCLAT setting aside the order of NCLT Ahmedabad bench dated October 07, 2026",
+   "exchange_category": "Corporate Insolvency Resolution Process",
+   "category": "litigation",
+   "category_method": "rule",
+   "materiality": 62.0,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Litigation"
+   ],
+   "summary": "NCLAT set aside the NCLT Ahmedabad bench order against Polycab India, ruling in favor of the company.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/POLYCAB_30102026121954_SECIRP30102026.pdf",
+   "price_reaction_pct": 0.54,
+   "card": null
+  },
+  {
+   "id": "nse:106835822",
+   "symbol": "ICICIBANK",
+   "company": "ICICI Bank",
+   "filed_at": "2026-10-30T10:16:13+05:30",
+   "headline": "ICICI Bank Limited has informed the Exchange regarding Allotment of 109039 Shares.",
+   "exchange_category": "ESOP/ESOS/ESPS",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 5.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/ICICIBANK1_30102026101600_Lettertoexchange.pdf",
+   "price_reaction_pct": 0.82,
+   "card": null
+  },
+  {
+   "id": "nse:106835654",
+   "symbol": "SUNPHARMA",
+   "company": "Sun Pharmaceutical Industries",
+   "filed_at": "2026-10-30T08:05:47+05:30",
+   "headline": "Sun Pharmaceutical Industries Limited has informed the Exchange regarding a press release dated October 30, 2026, titled \"ILUMYA® (tildrakizumab-asmn) approved in the U.S. for the Treatment of Adults with Active Psoriatic Arthritis\".",
+   "exchange_category": "Press Release",
+   "category": "press_release",
+   "category_method": "rule",
+   "materiality": 47.5,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Update",
+    "Vol 3.4×"
+   ],
+   "summary": "Sun Pharma announced U.S. approval for ILUMYA to treat adults with active psoriatic arthritis.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/SUNSEC_30102026080437_SE_Intimation_of_Press_Release_ILUMYA_PsA_Approval.pdf",
+   "price_reaction_pct": 0.95,
+   "card": null
+  },
+  {
+   "id": "nse:106835385",
+   "symbol": "ASIANPAINT",
+   "company": "Asian Paints",
+   "filed_at": "2026-10-29T21:18:39+05:30",
+   "headline": "Asian Paints Limited has informed the Exchange about Link of Recording",
+   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+   "category": "investor_meetings",
+   "category_method": "rule",
+   "materiality": 17.0,
+   "tier": "routine",
+   "reasons": [
+    "Investor meet"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_29102026211830_SE_intimation__Audio_Recording_Q2FY26-27signed.pdf",
+   "price_reaction_pct": 0.78,
+   "card": null
+  },
+  {
+   "id": "nse:106834553",
+   "symbol": "ASIANPAINT",
+   "company": "Asian Paints",
+   "filed_at": "2026-10-29T16:45:56+05:30",
+   "headline": "Asian Paints Limited has informed the Exchange about Investor Presentation",
+   "exchange_category": "Investor Presentation",
+   "category": "results",
+   "category_method": "rule",
+   "materiality": 82.0,
+   "tier": "needs_you",
+   "reasons": [
+    "Results"
+   ],
+   "summary": "Asian Paints issued its investor presentation for the quarter and half-year ended September 30, 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_29102026164544_SEIntimation_Investor_Presentation_Q2FY26-27pdfsigned.pdf",
+   "price_reaction_pct": 0.78,
+   "card": null
+  },
+  {
+   "id": "nse:106834503",
+   "symbol": "TRENT",
+   "company": "Trent",
+   "filed_at": "2026-10-29T16:32:13+05:30",
+   "headline": "Trent Limited has informed the Exchange regarding Appointment of Mr Rajiv Dube as Non- Executive Director of the company w.e.f. October 30, 2026.",
+   "exchange_category": "Appointment",
+   "category": "management_change",
+   "category_method": "rule",
+   "materiality": 100.0,
+   "tier": "needs_you",
+   "reasons": [
+    "Top hire",
+    "Move +5.4%",
+    "Vol 3.9×"
+   ],
+   "summary": "Trent announced Chairman Noel N. Tata's retirement and the appointment of Rajiv Dube as Non-Executive Director.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/TRENT_29102026163044_AppointmentofDirector.pdf",
+   "price_reaction_pct": 5.44,
+   "card": {
+    "kind": "management",
+    "direction": "leaving",
+    "person": "Mr. Noel N. Tata",
+    "role": "Chairman",
+    "effective_date": "2026-11-11",
+    "reason": "Retirement",
+    "profile": null,
+    "source": {
+     "label": "Filing p.1",
+     "kind": "filing",
+     "url": "https://nsearchives.nseindia.com/corporate/TRENT_29102026163044_AppointmentofDirector.pdf",
+     "page": 1
+    }
+   }
+  },
+  {
+   "id": "nse:106834504",
+   "symbol": "TRENT",
+   "company": "Trent",
+   "filed_at": "2026-10-29T16:32:13+05:30",
+   "headline": "Trent Limited has informed the Exchange regarding Change in Director(s) of the company.",
+   "exchange_category": "Change in Director(s)",
+   "category": "management_change",
+   "category_method": "rule",
+   "materiality": 62.5,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Board change",
+    "Move +5.4%",
+    "Vol 3.9×"
+   ],
+   "summary": "Chairman Noel N. Tata will retire from Trent on November 11, 2026, and become Chairman Emeritus.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/TRENT_29102026163102_AppointmentofDirector.pdf",
+   "price_reaction_pct": 5.44,
+   "card": {
+    "kind": "management",
+    "direction": "leaving",
+    "person": "Mr. Noel N. Tata",
+    "role": "Chairman",
+    "effective_date": "2026-11-11",
+    "reason": "Retirement",
+    "profile": null,
+    "source": {
+     "label": "Filing p.1",
+     "kind": "filing",
+     "url": "https://nsearchives.nseindia.com/corporate/TRENT_29102026163102_AppointmentofDirector.pdf",
+     "page": 1
+    }
+   }
+  },
+  {
+   "id": "nse:106834506",
+   "symbol": "TRENT",
+   "company": "Trent",
+   "filed_at": "2026-10-29T16:32:13+05:30",
+   "headline": "Trent Limited has informed the Exchange regarding Appointment of Mrs Kalpana Merchant as Non- Executive Independent Director of the company w.e.f. October 30, 2026.",
+   "exchange_category": "Appointment",
+   "category": "management_change",
+   "category_method": "rule",
+   "materiality": 62.5,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Board change",
+    "Move +5.4%",
+    "Vol 3.9×"
+   ],
+   "summary": "Trent appointed Mrs. Kalpana Merchant as a Non-Executive Independent Director, effective October 30, 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/TRENT_29102026163140_AppointmentofDirector.pdf",
+   "price_reaction_pct": 5.44,
+   "card": {
+    "kind": "management",
+    "direction": "leaving",
+    "person": "Mr. Noel N. Tata",
+    "role": "Chairman",
+    "effective_date": "2026-11-11",
+    "reason": "Retirement",
+    "profile": null,
+    "source": {
+     "label": "Filing p.1",
+     "kind": "filing",
+     "url": "https://nsearchives.nseindia.com/corporate/TRENT_29102026163140_AppointmentofDirector.pdf",
+     "page": 1
+    }
+   }
+  },
+  {
+   "id": "nse:106834505",
+   "symbol": "TRENT",
+   "company": "Trent",
+   "filed_at": "2026-10-29T16:32:13+05:30",
+   "headline": "Trent Limited has informed the Exchange about Retirement of Mr. Noel N Tata as the Chairman",
+   "exchange_category": "Retirement",
+   "category": "management_change",
+   "category_method": "rule",
+   "materiality": 100.0,
+   "tier": "needs_you",
+   "reasons": [
+    "Top exit",
+    "Move +5.4%",
+    "Vol 3.9×"
+   ],
+   "summary": "Noel N. Tata will retire as Chairman of Trent on November 11, 2026, becoming Chairman Emeritus.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/TRENT_29102026163122_AppointmentofDirector.pdf",
+   "price_reaction_pct": 5.44,
+   "card": {
+    "kind": "management",
+    "direction": "leaving",
+    "person": "Mr. Noel N. Tata",
+    "role": "Chairman",
+    "effective_date": "2026-11-11",
+    "reason": "Retirement",
+    "profile": null,
+    "source": {
+     "label": "Filing p.1",
+     "kind": "filing",
+     "url": "https://nsearchives.nseindia.com/corporate/TRENT_29102026163122_AppointmentofDirector.pdf",
+     "page": 1
+    }
+   }
+  },
+  {
+   "id": "nse:106834466",
+   "symbol": "TRENT",
+   "company": "Trent",
+   "filed_at": "2026-10-29T16:21:37+05:30",
+   "headline": "Trent Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Press Release on Unaudited Financial Results (Standalone and Consolidated) for thesecond quarter and half-year ended 30th September 2026\".",
+   "exchange_category": "Press Release",
+   "category": "press_release",
+   "category_method": "rule",
+   "materiality": 57.5,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Update",
+    "Move +5.4%",
+    "Vol 3.9×"
+   ],
+   "summary": "Trent reported Q2 standalone revenue growth of 23% to Rs 5,788 crore and operating EBITDA growth of 37%.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/TRENT_29102026162053_PressReleaseOct2026.pdf",
+   "price_reaction_pct": 5.44,
+   "card": null
+  },
+  {
+   "id": "nse:106834446",
+   "symbol": "TRENT",
+   "company": "Trent",
+   "filed_at": "2026-10-29T16:17:38+05:30",
+   "headline": "Trent Limited has informed the Exchange about Investor Presentation",
+   "exchange_category": "Investor Presentation",
+   "category": "results",
+   "category_method": "rule",
+   "materiality": 97.5,
+   "tier": "needs_you",
+   "reasons": [
+    "Results",
+    "Move +5.4%",
+    "Vol 3.9×"
+   ],
+   "summary": "Trent released an investor presentation on its unaudited financial results for the quarter ended September 30, 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/TRENT_29102026161637_InvestorPresentationQ2FY27.pdf",
+   "price_reaction_pct": 5.44,
+   "card": null
+  },
+  {
+   "id": "nse:106834418",
+   "symbol": "TRENT",
+   "company": "Trent",
+   "filed_at": "2026-10-29T16:08:05+05:30",
+   "headline": "Trent Limited has submitted to the Exchange about Outcome of Board Meeting held today i.e. 29th October 2026",
+   "exchange_category": "Outcome of Board Meeting",
+   "category": "results",
+   "category_method": "llm",
+   "materiality": 97.5,
+   "tier": "needs_you",
+   "reasons": [
+    "Results",
+    "Move +5.4%",
+    "Vol 3.9×"
+   ],
+   "summary": "Trent approved its unaudited financial results for the second quarter and half-year ended September 30, 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/TRENT_29102026160446_DraftOutcomeofBM.pdf",
+   "price_reaction_pct": 5.44,
+   "card": {
+    "kind": "results",
+    "period": "Q2 FY27 (Jul–Sep 2026)",
+    "basis": "standalone",
+    "unit": "₹ crore",
+    "metrics": [
+     {
+      "name": "Revenue",
+      "applicable": true,
+      "current": 5787.64,
+      "prev_q": 5666.3,
+      "year_ago": 4724.06,
+      "qoq_pct": 2.1,
+      "yoy_pct": 22.5
+     },
+     {
+      "name": "EBITDA",
+      "applicable": true,
+      "current": 1053.67,
+      "prev_q": 1110.56,
+      "year_ago": 813.24,
+      "qoq_pct": -5.1,
+      "yoy_pct": 29.6
+     },
+     {
+      "name": "PBT",
+      "applicable": true,
+      "current": 644.89,
+      "prev_q": 701.82,
+      "year_ago": 575.88,
+      "qoq_pct": -8.1,
+      "yoy_pct": 12.0
+     },
+     {
+      "name": "PAT",
+      "applicable": true,
+      "current": 489.65,
+      "prev_q": 531.77,
+      "year_ago": 450.77,
+      "qoq_pct": -7.9,
+      "yoy_pct": 8.6
+     }
+    ],
+    "ebitda_formula": "PBT + finance costs + depreciation − other income",
+    "checks": {
+     "verbatim": true,
+     "identities": true,
+     "cross_check": null
+    },
+    "verified": true,
+    "source": {
+     "label": "Results filing p.3",
+     "kind": "filing",
+     "url": "https://nsearchives.nseindia.com/corporate/TRENT_29102026160446_DraftOutcomeofBM.pdf",
+     "page": 3
+    }
+   }
+  },
+  {
+   "id": "nse:106834291",
+   "symbol": "KPITTECH",
+   "company": "KPIT Technologies",
+   "filed_at": "2026-10-29T15:33:13+05:30",
+   "headline": "KPIT Technologies Limited has informed the Exchange about Copy of Newspaper Publication of Unaudited Consolidated Financial Results for the quarter and half year ended September 30, 2026.",
+   "exchange_category": "Copy of Newspaper Publication",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 5.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/KPITTECH_29102026153248_Newspaper_Publication_Signed.pdf",
+   "price_reaction_pct": -2.47,
+   "card": null
+  },
+  {
+   "id": "nse:106834249",
+   "symbol": "INFY",
+   "company": "Infosys",
+   "filed_at": "2026-10-29T15:15:01+05:30",
+   "headline": "Infosys Limited has informed the Exchange about Copy of Newspaper Publication",
+   "exchange_category": "Copy of Newspaper Publication",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 5.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/INFY_29102026151445_SE_intimation_Newspaper_ad_2.pdf",
+   "price_reaction_pct": 2.08,
+   "card": null
+  },
+  {
+   "id": "nse:106834219",
+   "symbol": "INFY",
+   "company": "Infosys",
+   "filed_at": "2026-10-29T15:05:32+05:30",
+   "headline": "Infosys Limited has informed the Exchange regarding 'Winners of Qorus-Infosys Finacle Banking Innovation Awards 2026 Announced'.",
+   "exchange_category": "Updates",
+   "category": "press_release",
+   "category_method": "llm",
+   "materiality": 43.0,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Update"
+   ],
+   "summary": "Infosys Finacle and Qorus announced the winners of the 13th Banking Innovation Awards 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/INFY_29102026150417_PR_29102026.pdf",
+   "price_reaction_pct": 2.08,
+   "card": null
+  },
+  {
+   "id": "nse:106834102",
+   "symbol": "ASIANPAINT",
+   "company": "Asian Paints",
+   "filed_at": "2026-10-29T14:14:43+05:30",
+   "headline": "Please find enclosed the Press Release on the performance of the Company for the quarter and half year ended 30th September 2026.",
+   "exchange_category": "Press Release",
+   "category": "press_release",
+   "category_method": "rule",
+   "materiality": 47.0,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Update",
+    "Vol 3.7×"
+   ],
+   "summary": "Asian Paints issued a press release regarding its financial performance for the quarter ended September 30, 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_29102026141409_OutcomeofBM29102026signed.pdf",
+   "price_reaction_pct": 0.76,
+   "card": null
+  },
+  {
+   "id": "nse:106834098",
+   "symbol": "ASIANPAINT",
+   "company": "Asian Paints",
+   "filed_at": "2026-10-29T14:12:34+05:30",
+   "headline": "The Board of Directors at their meeting held today i.e., 29th October 2026, has, inter alia, approved the payment of interim dividend of Rs. 5.75 (Rupees five and paise seventy-five only) per equity share of the face value of Re. 1 each for the financial year ending 31st March 2027",
+   "exchange_category": "Updates",
+   "category": "dividend",
+   "category_method": "llm",
+   "materiality": 42.0,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Dividend",
+    "Vol 3.7×"
+   ],
+   "summary": "Asian Paints approved an interim dividend of Rs 5.75 per equity share for FY 2026-27.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_29102026141215_OutcomeofBM29102026signed.pdf",
+   "price_reaction_pct": 0.76,
+   "card": null
+  },
+  {
+   "id": "nse:106834096",
+   "symbol": "ASIANPAINT",
+   "company": "Asian Paints",
+   "filed_at": "2026-10-29T14:10:22+05:30",
+   "headline": "The Board of Directors at its meeting held today i.e., 29th October 2026, has, inter alia, approved the audited standalone and unaudited consolidated financial results of the Company for the quarter and half year ended 30th September 2026 and payment of interim dividend of Rs. 5.75 (Rupees five and paise seventy-five only) per equity share of the face value of Re. 1 each for the financial year ending 31st March 2027",
+   "exchange_category": "Outcome of Board Meeting",
+   "category": "results",
+   "category_method": "rule",
+   "materiality": 87.0,
+   "tier": "needs_you",
+   "reasons": [
+    "Results",
+    "Vol 3.7×"
+   ],
+   "summary": "Asian Paints approved its audited standalone and unaudited consolidated financial results for Q2 FY27.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_29102026140936_OutcomeofBM29102026signed.pdf",
+   "price_reaction_pct": 0.76,
+   "card": {
+    "kind": "results",
+    "period": "Q2 FY27 (Jul–Sep 2026)",
+    "basis": "consolidated",
+    "unit": "₹ crore",
+    "metrics": [
+     {
+      "name": "Revenue",
+      "applicable": true,
+      "current": 9976.51,
+      "prev_q": 10541.94,
+      "year_ago": 8531.27,
+      "qoq_pct": -5.4,
+      "yoy_pct": 16.9
+     },
+     {
+      "name": "EBITDA",
+      "applicable": true,
+      "current": 1599.06,
+      "prev_q": 2206.92,
+      "year_ago": 1541.68,
+      "qoq_pct": -27.5,
+      "yoy_pct": 3.7
+     },
+     {
+      "name": "PBT",
+      "applicable": true,
+      "current": 1477.78,
+      "prev_q": 2095.75,
+      "year_ago": 1391.52,
+      "qoq_pct": -29.5,
+      "yoy_pct": 6.2
+     },
+     {
+      "name": "PAT",
+      "applicable": true,
+      "current": 1085.35,
+      "prev_q": 1559.45,
+      "year_ago": 1018.23,
+      "qoq_pct": -30.4,
+      "yoy_pct": 6.6
+     }
+    ],
+    "ebitda_formula": "PBT + finance costs + depreciation − other income",
+    "checks": {
+     "verbatim": true,
+     "identities": true,
+     "cross_check": null
+    },
+    "verified": true,
+    "source": {
+     "label": "Results filing p.12",
+     "kind": "filing",
+     "url": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_29102026140936_OutcomeofBM29102026signed.pdf",
+     "page": 12
+    }
+   }
+  },
+  {
+   "id": "nse:106834090",
+   "symbol": "ASIANPAINT",
+   "company": "Asian Paints",
+   "filed_at": "2026-10-29T14:08:00+05:30",
+   "headline": "The Board of Directors at its meeting held today i.e., 29th October 2026, has, inter alia, approved the audited standalone and unaudited consolidated financial results of the Company for the quarter and half year ended 30th September 2026 and payment of interim dividend of Rs. 5.75 (Rupees five and paise seventy-five only) per equity share of the face value of Re. 1 each for the financial year ending 31st March 2027.",
+   "exchange_category": "Dividend",
+   "category": "dividend",
+   "category_method": "rule",
+   "materiality": 42.0,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Dividend",
+    "Vol 3.7×"
+   ],
+   "summary": "Asian Paints declared an interim dividend of Rs. 5.75 per equity share for FY 2026-27.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_29102026140642_OutcomeofBM29102026signed.pdf",
+   "price_reaction_pct": 0.76,
+   "card": null
+  },
+  {
+   "id": "nse:106834087",
+   "symbol": "ASIANPAINT",
+   "company": "Asian Paints",
+   "filed_at": "2026-10-29T14:04:43+05:30",
+   "headline": "Asian Paints Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+   "exchange_category": "Outcome of Board Meeting",
+   "category": "results",
+   "category_method": "rule",
+   "materiality": 87.0,
+   "tier": "needs_you",
+   "reasons": [
+    "Results",
+    "Vol 3.7×"
+   ],
+   "summary": "Asian Paints approved its Q2 financial results and declared an interim dividend of Rs. 5.75 per share.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_29102026140213_OutcomeofBM29102026signed.pdf",
+   "price_reaction_pct": 0.76,
+   "card": null
+  },
+  {
+   "id": "nse:106834064",
+   "symbol": "BHARTIARTL",
+   "company": "Bharti Airtel",
+   "filed_at": "2026-10-29T13:42:21+05:30",
+   "headline": "Bharti Airtel Limited has informed the Exchange about Action(s) taken or orders passed",
+   "exchange_category": "Action(s) taken or orders passed",
+   "category": "litigation",
+   "category_method": "rule",
+   "materiality": 63.0,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Litigation"
+   ],
+   "summary": "Bharti Airtel disclosed receiving a notice from the Department of Telecommunications.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/BHARTIARTL_29102026134154_BhartiAirtelSTXIntimation.pdf",
+   "price_reaction_pct": 1.23,
+   "card": null
+  },
+  {
+   "id": "nse:106833712",
+   "symbol": "MARUTI",
+   "company": "Maruti Suzuki India",
+   "filed_at": "2026-10-29T10:50:48+05:30",
+   "headline": "Maruti Suzuki India Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Maruti Suzuki, India s No. 1 Electric Vehicle exporter, crosses EV exports of 50,000 units\".",
+   "exchange_category": "Press Release",
+   "category": "press_release",
+   "category_method": "rule",
+   "materiality": 42.5,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Update"
+   ],
+   "summary": "Maruti Suzuki crossed 50,000 units in cumulative EV exports, accounting for nearly 93% of India's EV exports.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/MARUTI_29102026104658_StxIntimation_EVExports.pdf",
+   "price_reaction_pct": -1.32,
+   "card": null
+  },
+  {
+   "id": "nse:106833561",
+   "symbol": "RELIANCE",
+   "company": "Reliance Industries",
+   "filed_at": "2026-10-29T08:55:40+05:30",
+   "headline": "Disclosure under Regulation 30 of the Securities and Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations, 2015 Voluntary strike off of Hamleys (Franchising) Limited",
+   "exchange_category": "Other Restructuring",
+   "category": "M&A",
+   "category_method": "rule",
+   "materiality": 89.0,
+   "tier": "needs_you",
+   "reasons": [
+    "M&A",
+    "8% of portfolio"
+   ],
+   "summary": "Reliance Industries announced the voluntary strike off of step-down subsidiary Hamleys (Franchising) Limited in the UK.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/kavinavora_29102026084603_SE_29102026.pdf",
+   "price_reaction_pct": 0.81,
+   "card": null
+  },
+  {
+   "id": "nse:106833260",
+   "symbol": "KPITTECH",
+   "company": "KPIT Technologies",
+   "filed_at": "2026-10-28T21:53:40+05:30",
+   "headline": "KPIT Technologies Limited has informed the Exchange about Link of Recording",
+   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+   "category": "investor_meetings",
+   "category_method": "rule",
+   "materiality": 17.0,
+   "tier": "routine",
+   "reasons": [
+    "Investor meet"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/KPITTECH_28102026215259_Earnings_call_Audio_Recording_Link_S.pdf",
+   "price_reaction_pct": -1.59,
+   "card": null
+  },
+  {
+   "id": "nse:106833097",
+   "symbol": "LT",
+   "company": "Larsen & Toubro",
+   "filed_at": "2026-10-28T19:47:25+05:30",
+   "headline": "Larsen & Toubro Limited has informed the Exchange about Copy of Newspaper Publication",
+   "exchange_category": "Copy of Newspaper Publication",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 5.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/PAM_28102026194657_NewspaperAdvtSep2026.pdf",
+   "price_reaction_pct": 0.94,
+   "card": null
+  },
+  {
+   "id": "nse:106833000",
+   "symbol": "BHARTIARTL",
+   "company": "Bharti Airtel",
+   "filed_at": "2026-10-28T19:09:29+05:30",
+   "headline": "Bharti Airtel Limited has informed the Exchange about Schedule of meet.",
+   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+   "category": "investor_meetings",
+   "category_method": "rule",
+   "materiality": 18.0,
+   "tier": "routine",
+   "reasons": [
+    "Investor meet"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/BHARTIARTL_28102026185916_AirtelSTXEarningCallIntimation.pdf",
+   "price_reaction_pct": 1.23,
+   "card": null
+  },
+  {
+   "id": "nse:106832707",
+   "symbol": "CDSL",
+   "company": "Central Depository Services (India)",
+   "filed_at": "2026-10-28T18:03:47+05:30",
+   "headline": "CDSL has informed the Exchange about Retirement of Shri Ashish Bhatt, Senior Vice President, Operations.",
+   "exchange_category": "Retirement",
+   "category": "management_change",
+   "category_method": "rule",
+   "materiality": 61.5,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Director exit",
+    "Move +4.1%",
+    "Vol 2.1×"
+   ],
+   "summary": "Ashish Bhatt retired as Senior Vice President of Operations at CDSL on October 30, 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/CDSL_28102026180148_Retirement_Ashish_Bhatt_Signed.pdf",
+   "price_reaction_pct": 4.06,
+   "card": {
+    "kind": "management",
+    "direction": "leaving",
+    "person": "Shri Ashish Bhatt",
+    "role": "Senior Vice President, Operations",
+    "effective_date": "2026-10-30",
+    "reason": "Retirement",
+    "profile": null,
+    "source": {
+     "label": "Filing p.1",
+     "kind": "filing",
+     "url": "https://nsearchives.nseindia.com/corporate/CDSL_28102026180148_Retirement_Ashish_Bhatt_Signed.pdf",
+     "page": 1
+    }
+   }
+  },
+  {
+   "id": "nse:106832611",
+   "symbol": "POLYCAB",
+   "company": "Polycab India",
+   "filed_at": "2026-10-28T17:43:39+05:30",
+   "headline": "Polycab India Limited has informed the Exchange about Analyst(s)/Investor(s) meet.",
+   "exchange_category": "General Updates",
+   "category": "investor_meetings",
+   "category_method": "llm",
+   "materiality": 17.0,
+   "tier": "routine",
+   "reasons": [
+    "Investor meet"
+   ],
+   "summary": "Polycab India scheduled a virtual meeting with William Blair & Company on November 3, 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/POLYCAB_28102026174326_Intimationtostockexchange.pdf",
+   "price_reaction_pct": 0.85,
+   "card": null
+  },
+  {
+   "id": "nse:106832593",
+   "symbol": "INFY",
+   "company": "Infosys",
+   "filed_at": "2026-10-28T17:38:42+05:30",
+   "headline": "Infosys Limited has informed the Exchange regarding 'Earnings Call Transcript'.",
+   "exchange_category": "Updates",
+   "category": "earnings_call",
+   "category_method": "rule",
+   "materiality": 48.0,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Transcript"
+   ],
+   "summary": "Infosys released the transcript of its Q2 earnings call and press conference held on October 23, 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/Infosys_28102026173824_SE_filing_Earnings_call_transcript.pdf",
+   "price_reaction_pct": 2.08,
+   "card": null
+  },
+  {
+   "id": "nse:106832566",
+   "symbol": "INFY",
+   "company": "Infosys",
+   "filed_at": "2026-10-28T17:31:34+05:30",
+   "headline": "Infosys Limited has informed the Exchange regarding 'Canada s UNI Financial Cooperation Advances Branch Modernization with Infosys Finacle Universal Banker'.",
+   "exchange_category": "Updates",
+   "category": "press_release",
+   "category_method": "llm",
+   "materiality": 43.0,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Update"
+   ],
+   "summary": "Infosys Finacle announced the deployment of its Universal Banker solution across all branches of UNI Financial Cooperation.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/Infosys_28102026173120_PR_28102026.pdf",
+   "price_reaction_pct": 2.08,
+   "card": null
+  },
+  {
+   "id": "nse:106832541",
+   "symbol": "TITAN",
+   "company": "Titan Company",
+   "filed_at": "2026-10-28T17:26:00+05:30",
+   "headline": "Titan Company Limited has informed the Exchange about Copy of Newspaper Publication",
+   "exchange_category": "Copy of Newspaper Publication",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 5.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/TITAN_28102026172546_SEnewspaperadlossofshares.pdf",
+   "price_reaction_pct": 2.22,
+   "card": null
+  },
+  {
+   "id": "nse:106831940",
+   "symbol": "TITAN",
+   "company": "Titan Company",
+   "filed_at": "2026-10-28T13:49:00+05:30",
+   "headline": "Titan Company Limited has informed the Exchange about the Company has incorporated Titan Company Canada Inc. as its wholly owned subsidiary.",
+   "exchange_category": "Acquisition",
+   "category": "M&A",
+   "category_method": "rule",
+   "materiality": 87.5,
+   "tier": "needs_you",
+   "reasons": [
+    "M&A"
+   ],
+   "summary": "Titan Company incorporated Titan Company Canada Inc. as a wholly owned subsidiary in Canada.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/TITAN_28102026134838_SEIntimation_-_Canada_Incorporation.pdf",
+   "price_reaction_pct": -0.64,
+   "card": null
+  },
+  {
+   "id": "nse:106831889",
+   "symbol": "KPITTECH",
+   "company": "KPIT Technologies",
+   "filed_at": "2026-10-28T13:28:05+05:30",
+   "headline": "KPIT Technologies Limited has informed the Exchange regarding Appointment of Independent Director, Mr. Anant Talaulicar - Chairman of the Board, on the Board of KPIT Technologies Inc., material subsidiary of the Company w.e.f. October 28, 2026.",
+   "exchange_category": "Appointment",
+   "category": "management_change",
+   "category_method": "rule",
+   "materiality": 92.0,
+   "tier": "needs_you",
+   "reasons": [
+    "Top hire",
+    "Vol 3.0×"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/KPITTECH_28102026132119_1_Outcome.pdf",
+   "price_reaction_pct": 3.87,
+   "card": {
+    "kind": "management",
+    "direction": "joining",
+    "person": "Mr. Anant Talaulicar",
+    "role": "Independent Director, Chairman of the Board",
+    "effective_date": "2026-10-28",
+    "reason": null,
+    "profile": "Mr. Anant Talaulicar holds a bachelor's degree in Mechanical Engineering from Mysore University, a master's degree from the University of Michigan in Ann Arbor and a MBA degree from Tulane University, USA. He was the Chairman and Managing Director of the Cummins Group in India from March 2004 through October 2017, was a member of t he Cummins Inc. global leadership team from August 2009 t ill October 2017 and t he President of the Cummins Inc. Components Group from 2010 through 2014.",
+    "source": {
+     "label": "Filing p.4",
+     "kind": "filing",
+     "url": "https://nsearchives.nseindia.com/corporate/KPITTECH_28102026132119_1_Outcome.pdf",
+     "page": 4
+    }
+   }
+  },
+  {
+   "id": "nse:106831892",
+   "symbol": "KPITTECH",
+   "company": "KPIT Technologies",
+   "filed_at": "2026-10-28T13:28:05+05:30",
+   "headline": "KPIT Technologies Limited has informed the Exchange about Issue of Letter of Comfort in favor of KPIT Technologies (UK) Limited, a wholly-owned subsidiary of the Company.",
+   "exchange_category": "Giving guarantees/indemnity/ becoming a surety for third party",
+   "category": "M&A",
+   "category_method": "rule",
+   "materiality": 92.0,
+   "tier": "needs_you",
+   "reasons": [
+    "M&A",
+    "Vol 3.0×"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/KPITTECH_28102026132739_1_Outcome.pdf",
+   "price_reaction_pct": 3.87,
+   "card": null
+  },
+  {
+   "id": "nse:106831890",
+   "symbol": "KPITTECH",
+   "company": "KPIT Technologies",
+   "filed_at": "2026-10-28T13:28:05+05:30",
+   "headline": "KPIT Technologies Limited has informed the Exchange that the Board of Directors of the Company approved the proposal of incorporation of a wholly owned subsidiary of the Company in Vietnam.",
+   "exchange_category": "Acquisition",
+   "category": "M&A",
+   "category_method": "rule",
+   "materiality": 92.0,
+   "tier": "needs_you",
+   "reasons": [
+    "M&A",
+    "Vol 3.0×"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/KPITTECH_28102026132356_1_Outcome.pdf",
+   "price_reaction_pct": 3.87,
+   "card": null
+  },
+  {
+   "id": "nse:106831891",
+   "symbol": "KPITTECH",
+   "company": "KPIT Technologies",
+   "filed_at": "2026-10-28T13:28:05+05:30",
+   "headline": "KPIT Technologies Limited has informed the Exchange that the Board of Directors of the Company approved the Strike-off of Somit Solutions Limited, wholly owned step-down subsidiary of the Company.",
+   "exchange_category": "Sale or disposal",
+   "category": "M&A",
+   "category_method": "rule",
+   "materiality": 92.0,
+   "tier": "needs_you",
+   "reasons": [
+    "M&A",
+    "Vol 3.0×"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/KPITTECH_28102026132555_1_Outcome.pdf",
+   "price_reaction_pct": 3.87,
+   "card": null
+  },
+  {
+   "id": "nse:106831867",
+   "symbol": "KPITTECH",
+   "company": "KPIT Technologies",
+   "filed_at": "2026-10-28T13:15:54+05:30",
+   "headline": "KPIT Technologies Limited has informed the Exchange about the Investor Presentation",
+   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+   "category": "investor_meetings",
+   "category_method": "rule",
+   "materiality": 22.0,
+   "tier": "routine",
+   "reasons": [
+    "Investor meet",
+    "Vol 3.0×"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/KPITTECH_28102026131505_Investor_Presentation_Sept_2026_Signed.pdf",
+   "price_reaction_pct": 3.87,
+   "card": null
+  },
+  {
+   "id": "nse:106831835",
+   "symbol": "KPITTECH",
+   "company": "KPIT Technologies",
+   "filed_at": "2026-10-28T12:57:10+05:30",
+   "headline": "KPIT Technologies Limited has informed the Exchange regarding Outcome of Board Meeting held on October 28, 2026.",
+   "exchange_category": "Outcome of Board Meeting",
+   "category": "results",
+   "category_method": "llm",
+   "materiality": 87.0,
+   "tier": "needs_you",
+   "reasons": [
+    "Results",
+    "Vol 3.0×"
+   ],
+   "summary": "KPIT Technologies approved its unaudited financial results for the quarter and half year ended September 30, 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/KPITTECH_28102026125528_1_Outcome.pdf",
+   "price_reaction_pct": 3.87,
+   "card": null
+  },
+  {
+   "id": "nse:106831828",
+   "symbol": "KPITTECH",
+   "company": "KPIT Technologies",
+   "filed_at": "2026-10-28T12:52:46+05:30",
+   "headline": "KPIT Technologies Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+   "exchange_category": "Outcome of Board Meeting",
+   "category": "results",
+   "category_method": "rule",
+   "materiality": 87.0,
+   "tier": "needs_you",
+   "reasons": [
+    "Results",
+    "Vol 3.0×"
+   ],
+   "summary": "KPIT Technologies approved Q2 financial results and appointed Anant Talaulicar to its US subsidiary's board.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/KPITTECH_28102026124748_Outcome_NSE.pdf",
+   "price_reaction_pct": 3.87,
+   "card": {
+    "kind": "results",
+    "period": "Q2 FY27 (Jul–Sep 2026)",
+    "basis": "consolidated",
+    "unit": "₹ crore",
+    "metrics": [
+     {
+      "name": "Revenue",
+      "applicable": true,
+      "current": 1690.97,
+      "prev_q": 1674.99,
+      "year_ago": 1587.71,
+      "qoq_pct": 1.0,
+      "yoy_pct": 6.5
+     },
+     {
+      "name": "EBITDA",
+      "applicable": true,
+      "current": 267.27,
+      "prev_q": 257.45,
+      "year_ago": 297.95,
+      "qoq_pct": 3.8,
+      "yoy_pct": -10.3
+     },
+     {
+      "name": "PBT",
+      "applicable": true,
+      "current": 168.04,
+      "prev_q": 160.3,
+      "year_ago": 230.57,
+      "qoq_pct": 4.8,
+      "yoy_pct": -27.1
+     },
+     {
+      "name": "PAT",
+      "applicable": true,
+      "current": 120.66,
+      "prev_q": 116.41,
+      "year_ago": 169.09,
+      "qoq_pct": 3.7,
+      "yoy_pct": -28.6
+     }
+    ],
+    "ebitda_formula": "PBT + finance costs + depreciation − other income",
+    "checks": {
+     "verbatim": true,
+     "identities": true,
+     "cross_check": null
+    },
+    "verified": true,
+    "source": {
+     "label": "Results filing p.9",
+     "kind": "filing",
+     "url": "https://nsearchives.nseindia.com/corporate/KPITTECH_28102026124748_Outcome_NSE.pdf",
+     "page": 9
+    }
+   }
+  },
+  {
+   "id": "nse:106831569",
+   "symbol": "MARUTI",
+   "company": "Maruti Suzuki India",
+   "filed_at": "2026-10-28T10:38:47+05:30",
+   "headline": "Maruti Suzuki India Limited has informed the Exchange about Copy of Newspaper Publication",
+   "exchange_category": "Copy of Newspaper Publication",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 5.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/MARUTI_28102026103729_STxIntimation_NP_27Oct2026.pdf",
+   "price_reaction_pct": 1.13,
+   "card": null
+  },
+  {
+   "id": "nse:106831536",
+   "symbol": "POLYCAB",
+   "company": "Polycab India",
+   "filed_at": "2026-10-28T10:24:43+05:30",
+   "headline": "Polycab India Limited has informed the Exchange on the update of NCLAT order dated October 27, 2026",
+   "exchange_category": "Corporate Insolvency Resolution Process",
+   "category": "litigation",
+   "category_method": "rule",
+   "materiality": 62.0,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Litigation"
+   ],
+   "summary": "NCLAT directed MSCI not to delist Polycab India from the MSCI Index pending final order.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/POLYCAB_28102026102430_StockExchangeintimation27102026.pdf",
+   "price_reaction_pct": -0.49,
+   "card": null
+  },
+  {
+   "id": "nse:106831187",
+   "symbol": "INFY",
+   "company": "Infosys",
+   "filed_at": "2026-10-27T22:53:15+05:30",
+   "headline": "Infosys Limited has informed the Exchange regarding ' Investor Conference'.",
+   "exchange_category": "Updates",
+   "category": "investor_meetings",
+   "category_method": "llm",
+   "materiality": 18.0,
+   "tier": "routine",
+   "reasons": [
+    "Investor meet"
+   ],
+   "summary": "Infosys management will participate in non-deal investor roadshows in London and Edinburgh in November 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/Infosys_27102026225301_SE_filing_Investor_Conference_27102026.pdf",
+   "price_reaction_pct": -3.43,
+   "card": null
+  },
+  {
+   "id": "nse:106831153",
+   "symbol": "LT",
+   "company": "Larsen & Toubro",
+   "filed_at": "2026-10-27T22:13:16+05:30",
+   "headline": "Larsen & Toubro Limited has informed the Exchange about Link of Recording",
+   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+   "category": "investor_meetings",
+   "category_method": "rule",
+   "materiality": 23.5,
+   "tier": "routine",
+   "reasons": [
+    "Investor meet",
+    "Vol 3.2×",
+    "7% of portfolio"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/PAM_27102026221257_Intimation27102026.pdf",
+   "price_reaction_pct": 3.72,
+   "card": null
+  },
+  {
+   "id": "nse:106831152",
+   "symbol": "RELIANCE",
+   "company": "Reliance Industries",
+   "filed_at": "2026-10-27T22:11:29+05:30",
+   "headline": "Trading in equity shares of Jio Platforms Limited (JPL) will commence from October 28, 2026.Further, a meeting of board of directors of JPL is scheduled to be held on Friday, October 30, 2026, inter alia, to consider and approve the standalone and consolidated unaudited financial results of JPL for the quarter and half year ended September 30, 2026.",
+   "exchange_category": "General Updates",
+   "category": "results",
+   "category_method": "llm",
+   "materiality": 84.0,
+   "tier": "needs_you",
+   "reasons": [
+    "Results",
+    "8% of portfolio"
+   ],
+   "summary": "Reliance Industries announced that Jio Platforms equity shares will commence trading on October 28, 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/kavinavora_27102026220855_RIL_SELETTER_271026.pdf",
+   "price_reaction_pct": -3.19,
+   "card": null
+  },
+  {
+   "id": "nse:106831073",
+   "symbol": "MARUTI",
+   "company": "Maruti Suzuki India",
+   "filed_at": "2026-10-27T20:30:49+05:30",
+   "headline": "Maruti Suzuki India Limited has informed the Exchange about Audio Recording of the investors' call held on 27th October 2026.",
+   "exchange_category": "General Updates",
+   "category": "earnings_call",
+   "category_method": "rule",
+   "materiality": 32.5,
+   "tier": "routine",
+   "reasons": [
+    "Earnings call"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/MARUTIASHISH_27102026202705_SubmissionofAudioRecordings.pdf",
+   "price_reaction_pct": 1.13,
+   "card": null
+  },
+  {
+   "id": "nse:106831000",
+   "symbol": "KPITTECH",
+   "company": "KPIT Technologies",
+   "filed_at": "2026-10-27T19:45:47+05:30",
+   "headline": "KPIT Technologies Limited has informed the Exchange about the grant of 54,100 Options to the eligible employees covered under the KPIT Technologies Limited - Restricted Stock Unit Plan 2022",
+   "exchange_category": "General Updates",
+   "category": "unclassified",
+   "category_method": "llm",
+   "materiality": 12.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine",
+    "Vol 3.0×"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/KPITTECH_27102026194517_NRC_Outcome_October_2026_S.pdf",
+   "price_reaction_pct": 3.87,
+   "card": null
+  },
+  {
+   "id": "nse:106830931",
+   "symbol": "RELIANCE",
+   "company": "Reliance Industries",
+   "filed_at": "2026-10-27T19:17:10+05:30",
+   "headline": "The meeting of the Board of Directors of the Company is scheduled on October 30, 2026, inter alia, to consider and approve a. the standalone and consolidated unaudited financial results of the Company for the quarter and half year ended September 30, 2026; and b. raising of funds by way of issuance of listed, secured / unsecured, redeemable non-convertible debentures on private placement basis, in one or more tranches. The Company will hold an analyst meet, post the Board Meeting, to discuss the financial results for the quarter and half year ended September 30, 2026.",
+   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+   "category": "investor_meetings",
+   "category_method": "rule",
+   "materiality": 19.0,
+   "tier": "routine",
+   "reasons": [
+    "Investor meet",
+    "8% of portfolio"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/kavinavora_27102026191700_SE_27102026.pdf",
+   "price_reaction_pct": -3.19,
+   "card": null
+  },
+  {
+   "id": "nse:106830897",
+   "symbol": "POLYCAB",
+   "company": "Polycab India",
+   "filed_at": "2026-10-27T19:04:27+05:30",
+   "headline": "Polycab India Limited has informed the Exchange about Analyst(s)/Investor(s) meet.",
+   "exchange_category": "General Updates",
+   "category": "investor_meetings",
+   "category_method": "llm",
+   "materiality": 17.0,
+   "tier": "routine",
+   "reasons": [
+    "Investor meet"
+   ],
+   "summary": "Polycab India scheduled a virtual meeting with Platinum Asset Management on November 2, 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/POLYCAB_27102026190410_Intimationtostockexchange.pdf",
+   "price_reaction_pct": -0.49,
+   "card": null
+  },
+  {
+   "id": "nse:106830830",
+   "symbol": "POLYCAB",
+   "company": "Polycab India",
+   "filed_at": "2026-10-27T18:42:35+05:30",
+   "headline": "Polycab India Limited has informed the Exchange about Certificate under SEBI (Depositories and Participants) Regulations, 2018",
+   "exchange_category": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 5.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/POLYCAB_27102026184209_IntimationtoStockExchange.pdf",
+   "price_reaction_pct": -0.49,
+   "card": null
+  },
+  {
+   "id": "nse:106830809",
+   "symbol": "LT",
+   "company": "Larsen & Toubro",
+   "filed_at": "2026-10-27T18:37:19+05:30",
+   "headline": "Larsen & Toubro Limited has informed the Exchange regarding 'Analyst Presentation.- Q2 / H1 FY27'.",
+   "exchange_category": "Updates",
+   "category": "results",
+   "category_method": "llm",
+   "materiality": 88.5,
+   "tier": "needs_you",
+   "reasons": [
+    "Results",
+    "Vol 3.2×",
+    "7% of portfolio"
+   ],
+   "summary": "Larsen & Toubro shared its analyst presentation for the Q2 and H1 FY27 financial results.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/PAM_27102026183653_AnalystPresentationSep2026.pdf",
+   "price_reaction_pct": 3.72,
+   "card": null
+  },
+  {
+   "id": "nse:106830528",
+   "symbol": "CDSL",
+   "company": "Central Depository Services (India)",
+   "filed_at": "2026-10-27T17:32:39+05:30",
+   "headline": "CDSL has informed the Exchange about Schedule of Conference Call to be held on Monday, November 02, 2026.",
+   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+   "category": "investor_meetings",
+   "category_method": "rule",
+   "materiality": 16.5,
+   "tier": "routine",
+   "reasons": [
+    "Investor meet"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/CDSL_27102026172744_NSEIntimation_Concall_02112026_Signed.pdf",
+   "price_reaction_pct": 0.82,
+   "card": null
+  },
+  {
+   "id": "nse:106830479",
+   "symbol": "LT",
+   "company": "Larsen & Toubro",
+   "filed_at": "2026-10-27T17:13:09+05:30",
+   "headline": "Larsen & Toubro Limited has submitted to the Exchange, the consolidated and standalone un-audited financial results of the Company for the quarter and half-year ended September 30, 2026.",
+   "exchange_category": "Outcome of Board Meeting",
+   "category": "results",
+   "category_method": "rule",
+   "materiality": 88.5,
+   "tier": "needs_you",
+   "reasons": [
+    "Results",
+    "Vol 3.2×",
+    "7% of portfolio"
+   ],
+   "summary": "Larsen & Toubro approved its unaudited standalone and consolidated financial results for the quarter ended September 30, 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/PAM_27102026171156_LTSep2026.pdf",
+   "price_reaction_pct": 3.72,
+   "card": {
+    "kind": "results",
+    "period": "Q2 FY27 (Jul–Sep 2026)",
+    "basis": "consolidated",
+    "unit": "₹ crore",
+    "metrics": [
+     {
+      "name": "Revenue",
+      "applicable": true,
+      "current": 78749.94,
+      "prev_q": 67941.74,
+      "year_ago": 67983.53,
+      "qoq_pct": 15.9,
+      "yoy_pct": 15.8
+     },
+     {
+      "name": "EBITDA",
+      "applicable": true,
+      "current": 6844.65,
+      "prev_q": 6116.48,
+      "year_ago": 6806.41,
+      "qoq_pct": 11.9,
+      "yoy_pct": 0.6
+     },
+     {
+      "name": "PBT",
+      "applicable": true,
+      "current": 7641.06,
+      "prev_q": 6922.26,
+      "year_ago": 6336.11,
+      "qoq_pct": 10.4,
+      "yoy_pct": 20.6
+     },
+     {
+      "name": "PAT",
+      "applicable": true,
+      "current": 5915.15,
+      "prev_q": 4982.85,
+      "year_ago": 4687.09,
+      "qoq_pct": 18.7,
+      "yoy_pct": 26.2
+     }
+    ],
+    "ebitda_formula": "PBT + finance costs + depreciation − other income",
+    "checks": {
+     "verbatim": true,
+     "identities": true,
+     "cross_check": null
+    },
+    "verified": true,
+    "source": {
+     "label": "Results filing p.11",
+     "kind": "filing",
+     "url": "https://nsearchives.nseindia.com/corporate/PAM_27102026171156_LTSep2026.pdf",
+     "page": 11
+    }
+   }
+  },
+  {
+   "id": "nse:106830354",
+   "symbol": "INFY",
+   "company": "Infosys",
+   "filed_at": "2026-10-27T16:38:30+05:30",
+   "headline": "Infosys Limited has informed the Exchange regarding 'Infosys Successfully Delivers Syngenta s Global SAP S/4HANA Transformation for Crop Protection Business'.",
+   "exchange_category": "Updates",
+   "category": "press_release",
+   "category_method": "llm",
+   "materiality": 43.0,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Update"
+   ],
+   "summary": "Infosys announced the successful delivery of Syngenta's global SAP S/4HANA transformation for its Crop Protection business.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/Infosys_27102026163727_PR_27102026.pdf",
+   "price_reaction_pct": -3.43,
+   "card": null
+  },
+  {
+   "id": "nse:106830231",
+   "symbol": "MARUTI",
+   "company": "Maruti Suzuki India",
+   "filed_at": "2026-10-27T15:44:33+05:30",
+   "headline": "Maruti Suzuki India Limited has informed the Exchange about Investor Presentation",
+   "exchange_category": "Investor Presentation",
+   "category": "results",
+   "category_method": "rule",
+   "materiality": 82.5,
+   "tier": "needs_you",
+   "reasons": [
+    "Results"
+   ],
+   "summary": "Maruti Suzuki submitted an investor presentation on financial results for the quarter ended September 30, 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/MARUTI_27102026154352_STxIntimation_InvestorPresentation_27Oct2026.pdf",
+   "price_reaction_pct": 1.13,
+   "card": null
+  },
+  {
+   "id": "nse:106830222",
+   "symbol": "MARUTI",
+   "company": "Maruti Suzuki India",
+   "filed_at": "2026-10-27T15:39:59+05:30",
+   "headline": "Maruti Suzuki India Limited has informed the Exchange regarding a press release dated October 27, 2026, titled \"Maruti Suzuki India Limited Financial Results Q2 and H1 FY 2026-27\".",
+   "exchange_category": "Press Release",
+   "category": "press_release",
+   "category_method": "rule",
+   "materiality": 42.5,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Update"
+   ],
+   "summary": "Maruti Suzuki achieved a record quarterly sales volume of 696,654 units in Q2, up 26.5%.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/MARUTI_27102026153704_STxIntimation_PR_27Oct2026.pdf",
+   "price_reaction_pct": 1.13,
+   "card": null
+  },
+  {
+   "id": "nse:106830187",
+   "symbol": "MARUTI",
+   "company": "Maruti Suzuki India",
+   "filed_at": "2026-10-27T15:27:51+05:30",
+   "headline": "Maruti Suzuki India Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+   "exchange_category": "Outcome of Board Meeting",
+   "category": "results",
+   "category_method": "rule",
+   "materiality": 82.5,
+   "tier": "needs_you",
+   "reasons": [
+    "Results"
+   ],
+   "summary": "Maruti Suzuki submitted its unaudited standalone financial results for the quarter ended September 30, 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/MARUTI_27102026152412_QuickResults_27Oct2026_signed.pdf",
+   "price_reaction_pct": 2.05,
+   "card": null
+  },
+  {
+   "id": "nse:106829991",
+   "symbol": "LT",
+   "company": "Larsen & Toubro",
+   "filed_at": "2026-10-27T13:29:18+05:30",
+   "headline": "Larsen & Toubro Limited has informed the Exchange regarding allotment of 21098 securities pursuant to ESOP/ESPS at its meeting held on October 27, 2026",
+   "exchange_category": "Allotment of Securities",
+   "category": "fund_raise",
+   "category_method": "rule",
+   "materiality": 78.5,
+   "tier": "needs_you",
+   "reasons": [
+    "Fund raise",
+    "7% of portfolio"
+   ],
+   "summary": "Larsen & Toubro allotted 21,098 equity shares to employees exercising options under stock option schemes.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/PAM_27102026132854_ESOPAllotment27102026.pdf",
+   "price_reaction_pct": -0.4,
+   "card": null
+  },
+  {
+   "id": "nse:106829976",
+   "symbol": "MARUTI",
+   "company": "Maruti Suzuki India",
+   "filed_at": "2026-10-27T13:18:06+05:30",
+   "headline": "Maruti Suzuki India Limited has informed the Exchange about Incorporation of Wholly Owned Subsidiary",
+   "exchange_category": "Acquisition",
+   "category": "M&A",
+   "category_method": "rule",
+   "materiality": 87.5,
+   "tier": "needs_you",
+   "reasons": [
+    "M&A"
+   ],
+   "summary": "Maruti Suzuki approved incorporating OSAMU SUZUKI CENTRE OF EXCELLENCE FOUNDATION as a wholly owned subsidiary.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/MARUTI_27102026131704_Letter_to_Exchange.pdf",
+   "price_reaction_pct": 2.05,
+   "card": null
+  },
+  {
+   "id": "nse:106829696",
+   "symbol": "ICICIBANK",
+   "company": "ICICI Bank",
+   "filed_at": "2026-10-27T10:34:04+05:30",
+   "headline": "ICICI Bank Limited has informed the Exchange regarding Allotment of 1063398 Shares.",
+   "exchange_category": "ESOP/ESOS/ESPS",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 5.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/ICICIBANK1_27102026103348_Letter_to_exchange.pdf",
+   "price_reaction_pct": -1.15,
+   "card": null
+  },
+  {
+   "id": "nse:106829683",
+   "symbol": "LT",
+   "company": "Larsen & Toubro",
+   "filed_at": "2026-10-27T10:16:48+05:30",
+   "headline": "Larsen & Toubro Limited has informed the Exchange about Bagging/Receiving of orders/contracts",
+   "exchange_category": "Bagging/Receiving of orders/contracts",
+   "category": "press_release",
+   "category_method": "rule",
+   "materiality": 43.5,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Update",
+    "7% of portfolio"
+   ],
+   "summary": "Larsen & Toubro won Design & Build orders for two key packages of Dhaka Metro Line 1.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/PAM_27102026101631_PressRelease27102026.pdf",
+   "price_reaction_pct": -0.4,
+   "card": null
+  },
+  {
+   "id": "nse:106829496",
+   "symbol": "HDFCBANK",
+   "company": "HDFC Bank",
+   "filed_at": "2026-10-27T08:02:54+05:30",
+   "headline": "HDFC Bank Limited has informed the Exchange regarding disclosure under Regulation 30 and other applicable regulations of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 - Change in Managing Director and Chief Executive Officer of the Bank",
+   "exchange_category": "General Updates",
+   "category": "management_change",
+   "category_method": "llm",
+   "materiality": 89.0,
+   "tier": "needs_you",
+   "reasons": [
+    "Top hire",
+    "8% of portfolio"
+   ],
+   "summary": "Anup Bagchi assumed charge as MD and CEO of HDFC Bank, succeeding Sashidhar Jagdishan.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/HDFCBANK_27102026080232_SEIntimation_appt_of_AB.pdf",
+   "price_reaction_pct": -1.14,
+   "card": {
+    "kind": "management",
+    "direction": "joining",
+    "person": "Mr. Anup Bagchi",
+    "role": "Managing Director and Chief Executive Officer",
+    "effective_date": "2026-10-27",
+    "reason": null,
+    "profile": null,
+    "source": {
+     "label": "Filing p.1",
+     "kind": "filing",
+     "url": "https://nsearchives.nseindia.com/corporate/HDFCBANK_27102026080232_SEIntimation_appt_of_AB.pdf",
+     "page": 1
+    }
+   }
+  },
+  {
+   "id": "nse:106829445",
+   "symbol": "PERSISTENT",
+   "company": "Persistent Systems",
+   "filed_at": "2026-10-26T23:25:38+05:30",
+   "headline": "Persistent Systems Limited has informed the Exchange regarding allotment of 7683981 securities pursuant to Qualified Institution Placement at its meeting held on October 26, 2026",
+   "exchange_category": "Allotment of Securities",
+   "category": "fund_raise",
+   "category_method": "rule",
+   "materiality": 77.5,
+   "tier": "needs_you",
+   "reasons": [
+    "Fund raise"
+   ],
+   "summary": "Persistent Systems allotted 7,683,981 equity shares under a QIP at INR 5,550.00 per share.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/PERSISTENTUSER1_26102026232529_PersistentSEOutcomeAllotmentofsharesOct262026IIFLSigned.pdf",
+   "price_reaction_pct": -0.3,
+   "card": null
+  },
+  {
+   "id": "nse:106829444",
+   "symbol": "PERSISTENT",
+   "company": "Persistent Systems",
+   "filed_at": "2026-10-26T23:21:37+05:30",
+   "headline": "Persistent Systems Limited has informed the Exchange regarding Outcome of Committee Meeting held on October 26, 2026.",
+   "exchange_category": "Committee Meeting Updates",
+   "category": "fund_raise",
+   "category_method": "llm",
+   "materiality": 77.5,
+   "tier": "needs_you",
+   "reasons": [
+    "Fund raise"
+   ],
+   "summary": "Persistent Systems approved the allotment of 7,683,981 equity shares under QIP at Rs 5,550 per share.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/PERSISTENTUSER1_26102026232129_PersistentSEOutcomeAllotmentofsharesOct262026IIFLSigned.pdf",
+   "price_reaction_pct": -0.3,
+   "card": null
+  },
+  {
+   "id": "nse:106829106",
+   "symbol": "PERSISTENT",
+   "company": "Persistent Systems",
+   "filed_at": "2026-10-26T19:30:09+05:30",
+   "headline": "Persistent Systems Limited has informed the Exchange regarding Outcome of Committee Meeting held on October 26, 2026.",
+   "exchange_category": "Committee Meeting Updates",
+   "category": "fund_raise",
+   "category_method": "llm",
+   "materiality": 77.5,
+   "tier": "needs_you",
+   "reasons": [
+    "Fund raise"
+   ],
+   "summary": "Persistent Systems approved the closure of its QIP issue, allocating shares at Rs 5,550 per share.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/PERSISTENTUSER1_26102026192958_PersistentSEOutcomeQIPissueclosingOct262026signed.pdf",
+   "price_reaction_pct": -0.3,
+   "card": null
+  },
+  {
+   "id": "nse:106829096",
+   "symbol": "BAJFINANCE",
+   "company": "Bajaj Finance",
+   "filed_at": "2026-10-26T19:26:31+05:30",
+   "headline": "Bajaj Finance Limited has informed the Exchange about Schedule of meet",
+   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+   "category": "investor_meetings",
+   "category_method": "rule",
+   "materiality": 17.5,
+   "tier": "routine",
+   "reasons": [
+    "Investor meet"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_26102026192457_BSENSE_Intimation_Investor_meet.pdf",
+   "price_reaction_pct": -0.73,
+   "card": null
+  },
+  {
+   "id": "nse:106829031",
+   "symbol": "BHARTIARTL",
+   "company": "Bharti Airtel",
+   "filed_at": "2026-10-26T19:01:02+05:30",
+   "headline": "Bharti Airtel Limited has informed the Exchange about Certificate under Regulation 74(5) of SEBI (Depositories and Participants) Regulations, 2018 for the period from July 01, 2026 to September 30, 2026.",
+   "exchange_category": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 5.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/BHARTIARTL_26102026190028_BhartiAirtelReg74_5_disclosure.pdf",
+   "price_reaction_pct": 3.2,
+   "card": null
+  },
+  {
+   "id": "nse:106828196",
+   "symbol": "SUNPHARMA",
+   "company": "Sun Pharmaceutical Industries",
+   "filed_at": "2026-10-26T12:30:34+05:30",
+   "headline": "Sun Pharmaceutical Industries Limited has informed the Exchange regarding allotment of 781600 securities pursuant to Non Convertible Securities at its meeting held on October 26, 2026",
+   "exchange_category": "Allotment of Securities",
+   "category": "fund_raise",
+   "category_method": "rule",
+   "materiality": 77.5,
+   "tier": "needs_you",
+   "reasons": [
+    "Fund raise"
+   ],
+   "summary": "Sun Pharma allotted non-convertible debentures worth INR 7,816 crore on a private placement basis.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/SUNSEC_26102026122925_SE_Intimation_of_allotment_of_NCDs_26_Oct_2026.pdf",
+   "price_reaction_pct": -0.46,
+   "card": null
+  },
+  {
+   "id": "nse:106827787",
+   "symbol": "HDFCBANK",
+   "company": "HDFC Bank",
+   "filed_at": "2026-10-24T22:27:22+05:30",
+   "headline": "HDFC Bank Limited has informed the Exchange regarding Grant of 1302379 Options.",
+   "exchange_category": "ESOP/ESOS/ESPS",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 5.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/HDFCBANK_24102026222634_SE_Intimation_grant_of_ESOPs.pdf",
+   "price_reaction_pct": -0.69,
+   "card": null
+  },
+  {
+   "id": "nse:106827783",
+   "symbol": "RELIANCE",
+   "company": "Reliance Industries",
+   "filed_at": "2026-10-24T21:48:04+05:30",
+   "headline": "Initial Public Offer of Jio Platforms Limited",
+   "exchange_category": "General Updates",
+   "category": "fund_raise",
+   "category_method": "llm",
+   "materiality": 79.0,
+   "tier": "needs_you",
+   "reasons": [
+    "Fund raise",
+    "8% of portfolio"
+   ],
+   "summary": "Jio Platforms finalized its IPO issue price at Rs 1,119 per equity share.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/PVIVINMA_24102026214355_RIL_SE_241026.pdf",
+   "price_reaction_pct": 0.99,
+   "card": null
+  },
+  {
+   "id": "nse:106827749",
+   "symbol": "INFY",
+   "company": "Infosys",
+   "filed_at": "2026-10-24T19:43:00+05:30",
+   "headline": "Infosys Limited has informed the Exchange about Copy of Newspaper Publication",
+   "exchange_category": "Copy of Newspaper Publication",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 5.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/Infosys_24102026194244_Financials_newspaper_ad_SE_filing.pdf",
+   "price_reaction_pct": 1.06,
+   "card": null
+  },
+  {
+   "id": "nse:106827467",
+   "symbol": "ICICIBANK",
+   "company": "ICICI Bank",
+   "filed_at": "2026-10-24T13:46:13+05:30",
+   "headline": "ICICI Bank Limited has informed the Exchange about Credit Rating",
+   "exchange_category": "Credit Rating",
+   "category": "credit_rating",
+   "category_method": "rule",
+   "materiality": 48.5,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Credit rating",
+    "7% of portfolio"
+   ],
+   "summary": "ICRA and CARE Ratings reaffirmed the credit ratings for ICICI Bank's facilities and instruments.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/ICICI2022_24102026134600_NSEBSE24102026.pdf",
+   "price_reaction_pct": 0.63,
+   "card": null
+  },
+  {
+   "id": "nse:106827323",
+   "symbol": "MARUTI",
+   "company": "Maruti Suzuki India",
+   "filed_at": "2026-10-24T10:25:13+05:30",
+   "headline": "Maruti Suzuki India Limited has informed the Exchange regarding a press release dated October 24, 2026, titled \"Maruti Suzuki VICTORIS AURUM Edition Launched to Celebrate 1 Year of Record Sales Success\".",
+   "exchange_category": "Press Release",
+   "category": "press_release",
+   "category_method": "rule",
+   "materiality": 42.5,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Update"
+   ],
+   "summary": "Maruti Suzuki launched the VICTORIS AURUM Edition after crossing 1.5 lakh sales since launch.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/MARUTI_24102026102410_STxIntimation_VictorisAURUM_24Oct2026.pdf",
+   "price_reaction_pct": -0.09,
+   "card": null
+  },
+  {
+   "id": "nse:106827180",
+   "symbol": "HDFCBANK",
+   "company": "HDFC Bank",
+   "filed_at": "2026-10-23T22:50:22+05:30",
+   "headline": "HDFC Bank Limited has informed the Exchange about Transcript",
+   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+   "category": "earnings_call",
+   "category_method": "rule",
+   "materiality": 49.0,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Transcript",
+    "8% of portfolio"
+   ],
+   "summary": "HDFC Bank published the transcript of its earnings call held on October 17, 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/HDFCBANK_23102026224657_SEintimationTranscriptofearningscall17oct2026.pdf",
+   "price_reaction_pct": -0.69,
+   "card": null
+  },
+  {
+   "id": "nse:106827050",
+   "symbol": "PERSISTENT",
+   "company": "Persistent Systems",
+   "filed_at": "2026-10-23T20:43:45+05:30",
+   "headline": "Persistent Systems Limited has informed the Exchange about Transcript",
+   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+   "category": "earnings_call",
+   "category_method": "rule",
+   "materiality": 47.5,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Transcript"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/PERSISTENTUSER1_23102026204328_PSLTranscriptSubmissionOctober2026Sd.pdf",
+   "price_reaction_pct": 2.14,
+   "card": null
+  },
+  {
+   "id": "nse:106826996",
+   "symbol": "INFY",
+   "company": "Infosys",
+   "filed_at": "2026-10-23T20:07:11+05:30",
+   "headline": "Infosys Limited has informed the Exchange regarding 'Report of auditors on financial statements for the quarter and half year ended September 30, 2026 withUDIN'.",
+   "exchange_category": "Updates",
+   "category": "results",
+   "category_method": "llm",
+   "materiality": 83.0,
+   "tier": "needs_you",
+   "reasons": [
+    "Results"
+   ],
+   "summary": "Infosys submitted auditor reports with UDIN for its financial statements for the period ended September 30, 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/Infosys_23102026200652_SE_filing_Auditors_report_with_UDIN.pdf",
+   "price_reaction_pct": 1.06,
+   "card": null
+  },
+  {
+   "id": "nse:106826990",
+   "symbol": "TITAN",
+   "company": "Titan Company",
+   "filed_at": "2026-10-23T19:58:53+05:30",
+   "headline": "Titan Company Limited has informed the Exchange about Earnings call for Q2 and half year ended FY 2026-27",
+   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+   "category": "investor_meetings",
+   "category_method": "rule",
+   "materiality": 17.5,
+   "tier": "routine",
+   "reasons": [
+    "Investor meet"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/TITAN_23102026195704_SEQ2FY27EarningCall.pdf",
+   "price_reaction_pct": 0.54,
+   "card": null
+  },
+  {
+   "id": "nse:106826976",
+   "symbol": "TRENT",
+   "company": "Trent",
+   "filed_at": "2026-10-23T19:48:20+05:30",
+   "headline": "Trent Limited has informed the Exchange about Nahar Retail Trading Services Limited ( Nahar ), a wholly owned subsidiary of the Company, has entered into a binding term sheet dated 22nd October 2026 with TreBits Investment Trust, a Small and Medium Real Estate Investment Trust registered with the Securities and Exchange Board of India (the Trust ), in relation to the proposed divestment of its entire shareholding (100%) in its wholly owned subsidiary, Netria Property Holdings Limited.",
+   "exchange_category": "Sale or disposal",
+   "category": "M&A",
+   "category_method": "rule",
+   "materiality": 87.5,
+   "tier": "needs_you",
+   "reasons": [
+    "M&A"
+   ],
+   "summary": "Trent subsidiary Nahar signed a term sheet to divest 100% of Netria Property Holdings to TreBits.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/TRENT_23102026194710_Reg30DivestmentofstepdownsubsidiaryofNahar.pdf",
+   "price_reaction_pct": 0.97,
+   "card": null
+  },
+  {
+   "id": "nse:106826802",
+   "symbol": "DIXON",
+   "company": "Dixon Technologies (India)",
+   "filed_at": "2026-10-23T18:10:54+05:30",
+   "headline": "Dixon Technologies (India) Limited has informed the Exchange about Schedule of meet",
+   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+   "category": "investor_meetings",
+   "category_method": "rule",
+   "materiality": 16.5,
+   "tier": "routine",
+   "reasons": [
+    "Investor meet"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/DIXON_23102026181003_Q2ResultsConferenceCallIntimation30102026.pdf",
+   "price_reaction_pct": -0.27,
+   "card": null
+  },
+  {
+   "id": "nse:106826784",
+   "symbol": "SUNPHARMA",
+   "company": "Sun Pharmaceutical Industries",
+   "filed_at": "2026-10-23T18:01:41+05:30",
+   "headline": "Sun Pharmaceutical Industries Limited has informed the Exchange regarding a press release dated October 23, 2026.",
+   "exchange_category": "Press Release",
+   "category": "press_release",
+   "category_method": "rule",
+   "materiality": 42.5,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Update"
+   ],
+   "summary": "Sun Pharma announced it will present long-term follow-up data on UNLOXCYT at ESMO 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/SUNSEC_23102026180028_SE_Intimation_of_Press_Release_-_ESMO.pdf",
+   "price_reaction_pct": -0.46,
+   "card": null
+  },
+  {
+   "id": "nse:106826781",
+   "symbol": "ICICIBANK",
+   "company": "ICICI Bank",
+   "filed_at": "2026-10-23T18:00:27+05:30",
+   "headline": "ICICI Bank Limited has informed the Exchange about transcript of the call with media and of earnings call with analysts and investors on the financial results for the quarter and six months ended September 30, 2026",
+   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+   "category": "earnings_call",
+   "category_method": "rule",
+   "materiality": 48.5,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Transcript",
+    "7% of portfolio"
+   ],
+   "summary": "ICICI Bank released transcripts of its media call and earnings call for the quarter ended September 30, 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/ICICI2022_23102026175603_NSEBSE23102026.pdf",
+   "price_reaction_pct": 0.63,
+   "card": null
+  },
+  {
+   "id": "nse:106826524",
+   "symbol": "TRENT",
+   "company": "Trent",
+   "filed_at": "2026-10-23T16:34:41+05:30",
+   "headline": "Trent Limited has informed the Exchange about Reminder letter for transfer of equity shares to the Investor Education and Protection Fund ( IEPF )",
+   "exchange_category": "General Updates",
+   "category": "unclassified",
+   "category_method": "llm",
+   "materiality": 7.5,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/TRENT_23102026163319_Reg30Reminderlettertoshareholder2026.pdf",
+   "price_reaction_pct": 0.97,
+   "card": null
+  },
+  {
+   "id": "nse:106826469",
+   "symbol": "INFY",
+   "company": "Infosys",
+   "filed_at": "2026-10-23T16:10:52+05:30",
+   "headline": "Infosys Limited has informed the Exchange that Record date for the purpose of Dividend is 03-Nov-2026.",
+   "exchange_category": "Record Date",
+   "category": "dividend",
+   "category_method": "rule",
+   "materiality": 38.0,
+   "tier": "routine",
+   "reasons": [
+    "Dividend"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/Infosys_23102026160926_BM_Outcome_Oct232026_1.pdf",
+   "price_reaction_pct": 1.06,
+   "card": null
+  },
+  {
+   "id": "nse:106826465",
+   "symbol": "INFY",
+   "company": "Infosys",
+   "filed_at": "2026-10-23T16:08:26+05:30",
+   "headline": "Infosys Limited has submitted to the Exchange, Financial Results for the quarter and half year ended September 30, 2026 and declaration of interim dividend",
+   "exchange_category": "Outcome of Board Meeting",
+   "category": "results",
+   "category_method": "rule",
+   "materiality": 83.0,
+   "tier": "needs_you",
+   "reasons": [
+    "Results"
+   ],
+   "summary": "Infosys declared an interim dividend of ₹ 26 per share and approved granting 9,640 restricted stock units.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/Infosys_23102026160704_BM_Outcome_Oct232026_1.pdf",
+   "price_reaction_pct": 1.06,
+   "card": null
+  },
+  {
+   "id": "nse:106826278",
+   "symbol": "BAJFINANCE",
+   "company": "Bajaj Finance",
+   "filed_at": "2026-10-23T14:53:17+05:30",
+   "headline": "Bajaj Finance Limited has informed the Exchange about Transcript",
+   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+   "category": "earnings_call",
+   "category_method": "rule",
+   "materiality": 47.5,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Transcript"
+   ],
+   "summary": "Bajaj Finance uploaded the transcript of its Q2 FY2027 earnings call held on October 19, 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_23102026145254_BFL_Investor_Call_outcome_Transcript_for_filing.pdf",
+   "price_reaction_pct": -1.4,
+   "card": null
+  },
+  {
+   "id": "nse:106826247",
+   "symbol": "POLYCAB",
+   "company": "Polycab India",
+   "filed_at": "2026-10-23T14:34:30+05:30",
+   "headline": "Polycab India Limited has informed the Exchange about Analyst(s)/Investor(s) meet.",
+   "exchange_category": "General Updates",
+   "category": "investor_meetings",
+   "category_method": "llm",
+   "materiality": 17.0,
+   "tier": "routine",
+   "reasons": [
+    "Investor meet"
+   ],
+   "summary": "Polycab India scheduled meetings with institutional investors and analysts in October and November 2026.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/POLYCAB_23102026143418_Intimationtostockexchange.pdf",
+   "price_reaction_pct": -3.01,
+   "card": null
+  },
+  {
+   "id": "nse:106825617",
+   "symbol": "PERSISTENT",
+   "company": "Persistent Systems",
+   "filed_at": "2026-10-22T23:01:42+05:30",
+   "headline": "Persistent Systems Limited has informed the Exchange about Credit Rating",
+   "exchange_category": "Credit Rating",
+   "category": "credit_rating",
+   "category_method": "rule",
+   "materiality": 47.5,
+   "tier": "worth_knowing",
+   "reasons": [
+    "Credit rating"
+   ],
+   "summary": "ICRA continued Persistent Systems' issuer rating at [ICRA]AA+ on Rating Watch with Negative Implications.",
+   "filing_url": "https://nsearchives.nseindia.com/corporate/PERSISTENTUSER1_22102026230112_PSLCreditRatingIntimationICRA22102026Sd.pdf",
+   "price_reaction_pct": -0.23,
+   "card": null
+  },
+  {
+   "id": "nse:106824971",
+   "symbol": "ICICIBANK",
+   "company": "ICICI Bank",
+   "filed_at": "2026-10-22T16:45:26+05:30",
+   "headline": "ICICI Bank Limited has informed the Exchange regarding Allotment of 24096 Shares.",
+   "exchange_category": "ESOP/ESOS/ESPS",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 5.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/ICICIBANK1_22102026164514_Lettertoexchange.pdf",
+   "price_reaction_pct": -0.31,
+   "card": null
+  },
+  {
+   "id": "nse:106824670",
+   "symbol": "HDFCBANK",
+   "company": "HDFC Bank",
+   "filed_at": "2026-10-22T13:57:50+05:30",
+   "headline": "HDFC Bank Limited has informed the Exchange regarding Allotment of 9138522 Shares.",
+   "exchange_category": "ESOP/ESOS/ESPS",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 5.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/HDFCBANK_22102026135701_SELetterESOP22102026.pdf",
+   "price_reaction_pct": -1.82,
+   "card": null
+  },
+  {
+   "id": "nse:106824495",
+   "symbol": "HDFCBANK",
+   "company": "HDFC Bank",
+   "filed_at": "2026-10-22T11:55:18+05:30",
+   "headline": "HDFC Bank Limited has informed the Exchange about Copy of Newspaper Publication",
+   "exchange_category": "Copy of Newspaper Publication",
+   "category": "unclassified",
+   "category_method": "rule",
+   "materiality": 5.0,
+   "tier": "routine",
+   "reasons": [
+    "Routine"
+   ],
+   "summary": null,
+   "filing_url": "https://nsearchives.nseindia.com/corporate/HDFCBANK3_22102026115451_PB_adv_22102026.pdf",
+   "price_reaction_pct": -1.82,
+   "card": null
   }
  ]
 }
